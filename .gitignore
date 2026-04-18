@@ -1,0 +1,6 @@
+data/raw/
+data/processed/ratings_processed.csv
+*.ipynb_checkpoints
+__pycache__/
+*.pyc
+.env
