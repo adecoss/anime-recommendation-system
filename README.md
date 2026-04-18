@@ -4,6 +4,7 @@
 This project builds a large-scale anime recommendation and graph analysis system using user interaction data and metadata.
 
 [User Animelist Dataset]: https://www.kaggle.com/datasets/ramazanturann/user-animelist-dataset?select=ratings.csv
+
 [MyAnimeList Anime Metadata Dataset]: https://www.kaggle.com/datasets/battos/myanimelist-animes?select=animes.csv
 
 ## Datasets
