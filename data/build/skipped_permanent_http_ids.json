@@ -1,0 +1,64 @@
+{
+  "permanent_http_skip_ids": [
+    {
+      "mal_id": 6272,
+      "status_code": null,
+      "index": null,
+      "reason": "anidb_anime_not_found",
+      "anidb_id": 4612
+    },
+    {
+      "mal_id": 7810,
+      "status_code": null,
+      "index": null,
+      "reason": "anidb_anime_not_found",
+      "anidb_id": 6997
+    },
+    {
+      "mal_id": 14853,
+      "status_code": null,
+      "index": null,
+      "reason": "anidb_anime_not_found",
+      "anidb_id": 9569
+    },
+    {
+      "mal_id": 17679,
+      "status_code": null,
+      "index": null,
+      "reason": "anidb_anime_not_found",
+      "anidb_id": 9733
+    },
+    {
+      "mal_id": 50398,
+      "status_code": 404,
+      "index": 20303
+    },
+    {
+      "mal_id": 51125,
+      "status_code": null,
+      "index": null,
+      "reason": "anidb_anime_not_found",
+      "anidb_id": 209027
+    },
+    {
+      "mal_id": 64158,
+      "status_code": 404,
+      "index": 28381
+    },
+    {
+      "mal_id": 64159,
+      "status_code": 404,
+      "index": 28382
+    },
+    {
+      "mal_id": 64160,
+      "status_code": 404,
+      "index": 28383
+    },
+    {
+      "mal_id": 64161,
+      "status_code": 404,
+      "index": 28384
+    }
+  ]
+}

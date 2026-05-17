@@ -1,0 +1,18 @@
+{
+  "updated_at": "2026-05-16T20:23:47",
+  "failures": [
+    {
+      "mal_id": 64160,
+      "is_nsfw": false,
+      "stage": "anime_full",
+      "reason": "Jikan returned no data payload",
+      "status_code": null,
+      "retryable": true,
+      "index": 28383,
+      "anidb_id": null,
+      "attempts": 1,
+      "first_seen": "2026-05-15T18:18:37",
+      "last_seen": "2026-05-15T18:18:37"
+    }
+  ]
+}

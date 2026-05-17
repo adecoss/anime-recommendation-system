@@ -1,0 +1,31 @@
+{
+  "updated_at": "2026-05-16T20:23:47",
+  "completed": false,
+  "rows_collected": 16672,
+  "failed_ids": 1,
+  "invalid_type_ids": 5238,
+  "permanent_http_skip_ids": 10,
+  "anidb_cache_entries": 15719,
+  "stats": {
+    "processed": 0,
+    "added": 0,
+    "filtered": 8,
+    "failed": 1,
+    "skipped_existing": 0,
+    "skipped_invalid_type": 0,
+    "skipped_permanent_http": 0,
+    "anidb_episode_fills": 89,
+    "anidb_tag_fills": 23,
+    "anidb_explicit_fills": 17,
+    "anidb_demographic_fills": 24,
+    "anidb_cache_hits": 2,
+    "anidb_live_requests": 89,
+    "anidb_cooldowns": 0,
+    "anidb_cooldown_skips": 0,
+    "anidb_ban_resets": 0,
+    "shoko_xml_cache_imported": 0,
+    "shoko_xml_cache_skipped_existing": 15638,
+    "shoko_xml_cache_parse_errors": 0,
+    "recommendation_fills": 0
+  }
+}
