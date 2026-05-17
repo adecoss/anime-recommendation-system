@@ -1,3 +1,7 @@
+# LINK VIDEO:
+
+https://youtu.be/NWI_h2xTTJk
+
 # Anime Recommendation and Graph Intelligence
 
 Semester project for an anime discovery and recommendation system. The project builds a reproducible anime catalog from MyAnimeList/Jikan metadata, AniDB metadata/cache enrichment, and a Kaggle user-rating interaction dataset.
