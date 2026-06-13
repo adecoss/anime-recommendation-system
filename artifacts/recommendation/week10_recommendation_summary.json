@@ -2,7 +2,8 @@
   "task": "personalized anime recommendation/ranking",
   "decision_supported": "rank candidate anime for a user based on completed liked anime, while allowing product filters and maturity-aware recommendation modes",
   "baseline": "popularity_baseline: globally common liked anime in training data",
-  "stronger_system": "hybrid_svd_popularity: latent collaborative SVD score blended with popularity",
+  "stronger_system": "latent_svd and hybrid_svd_popularity: personalized collaborative models that beat the popularity baseline",
+  "product_safe_system": "hybrid_svd_popularity: latent collaborative SVD score blended with popularity for safer sparse-profile recommendations",
   "user_levels": [
     {
       "level": "Absolute Beginner",
@@ -45,19 +46,19 @@
   "level_policy_note": "Level thresholds are product rules based on completed/known entries. Offline evaluation approximates this with known liked ratings because the Kaggle source has ratings but no chronological watch history.",
   "ratings_source": "C:\\Users\\CHAMPUX\\Downloads\\UPC TRABAJOS 2026\\BIG DATA\\proyect\\data\\processed\\ratings_processed.csv",
   "catalog_source": "C:\\Users\\CHAMPUX\\Downloads\\UPC TRABAJOS 2026\\BIG DATA\\proyect\\data\\processed\\anime_dataset.csv",
-  "like_threshold": 8,
+  "like_threshold": 7,
   "candidate_pool": {
     "definition": "catalog anime with at least 20 positive ratings in the filtered interaction layer",
-    "items": 8181,
+    "items": 9197,
     "sampled_negatives_per_user": 100
   },
   "train_test_logic": "per eligible user, one liked anime is deterministically held out; the user's remaining liked anime stay in training",
   "leakage_note": "held-out user-item pairs are removed from the training matrix; no timestamp claims are made because the rating source has no event time",
-  "model_users": 109794,
+  "model_users": 109857,
   "evaluated_users": 15000,
-  "positive_interactions": 29610091,
+  "positive_interactions": 41928689,
   "svd_components": 64,
-  "svd_retained_energy_proxy": 0.35355299711227417,
+  "svd_retained_energy_proxy": 0.36927497386932373,
   "outputs": {
     "metrics": "C:\\Users\\CHAMPUX\\Downloads\\UPC TRABAJOS 2026\\BIG DATA\\proyect\\artifacts\\recommendation\\week10_evaluation_metrics.csv",
     "level_metrics": "C:\\Users\\CHAMPUX\\Downloads\\UPC TRABAJOS 2026\\BIG DATA\\proyect\\artifacts\\recommendation\\week10_metrics_by_user_level.csv",

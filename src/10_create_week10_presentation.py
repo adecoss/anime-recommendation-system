@@ -139,7 +139,7 @@ def main() -> None:
     )
     add_card(slide, "Main decision", "Given liked/completed anime, choose the next titles to recommend.", 7.2, 1.25, 4.9, 1.05)
     add_card(slide, "Not claimed", "This is not chronological next-watch prediction because the ratings source has no timestamps.", 7.2, 2.55, 4.9, 1.05)
-    add_card(slide, "Core result", "Hybrid SVD + popularity beats popularity-only ranking on Hit@10, NDCG@10, and MRR.", 7.2, 3.85, 4.9, 1.05)
+    add_card(slide, "Core result", "Personalized SVD and hybrid ranking both beat popularity-only discovery.", 7.2, 3.85, 4.9, 1.05)
 
     slide = prs.slides.add_slide(blank)
     add_title(slide, "From Dataset to Recommender", "The Week 10 model uses all previous project layers")
@@ -191,7 +191,7 @@ def main() -> None:
     slide = prs.slides.add_slide(blank)
     add_title(slide, "Evaluation Design", "Ranking recovery test with a serious popularity baseline")
     eval_cards = [
-        ("Positive", "rating >= 8"),
+        ("Positive", "rating >= 7"),
         ("Candidate pool", "8,181 anime with enough positive ratings"),
         ("Evaluation users", "15,000 users"),
         ("Candidate list", "1 held-out liked item + 100 sampled negatives"),
@@ -213,7 +213,7 @@ def main() -> None:
     )
 
     slide = prs.slides.add_slide(blank)
-    add_title(slide, "Overall Recommendation Results", "Hybrid SVD + popularity is the final offline model")
+    add_title(slide, "Overall Recommendation Results", "Personalized models beat popularity-only discovery")
     table_df = metrics.copy()
     table_df["hit_rate_at_10"] = table_df["hit_rate_at_10"].map(lambda x: f"{x:.3f}")
     table_df["ndcg_at_10"] = table_df["ndcg_at_10"].map(lambda x: f"{x:.3f}")

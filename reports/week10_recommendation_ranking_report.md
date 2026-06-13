@@ -23,9 +23,9 @@ The model uses:
 
 - `data/processed/anime_dataset.csv` as the item catalog.
 - `data/processed/ratings_processed.csv` as the anonymized interaction layer.
-- Positive interactions defined as ratings `>= 8`.
+- Positive interactions defined as ratings `>= 7`, matching MAL's own `Good` label.
 
-The candidate pool is restricted to catalog anime with at least 20 positive ratings in the filtered interaction data. The current run aligns 29,610,091 positive interactions to 8,181 candidate anime and evaluates 15,000 users.
+The candidate pool is restricted to catalog anime with at least 20 positive ratings in the filtered interaction data. The current run aligns 41,928,689 positive interactions to 9,197 candidate anime and evaluates 15,000 users.
 
 ## User Controls
 
@@ -58,7 +58,7 @@ Because the rating source has no timestamps, this is not claimed as chronologica
 | --- | --- | --- |
 | `popularity_baseline` | Baseline | Ranks candidates by global positive interaction count in training data. |
 | `latent_svd` | Stronger model | Truncated SVD over the sparse positive user-anime matrix. |
-| `hybrid_svd_popularity` | Final offline model | Fixed blend of latent SVD score and popularity score. |
+| `hybrid_svd_popularity` | Product-safe blend | Fixed blend of latent SVD score and popularity score. |
 
 Popularity is a serious baseline in anime discovery because discourse often concentrates around current or famous shows. The model only counts as useful if it beats that baseline while still producing explainable recommendations.
 
@@ -66,11 +66,11 @@ Popularity is a serious baseline in anime discovery because discourse often conc
 
 | Method | Hit@10 | NDCG@10 | MRR | Median rank |
 | --- | ---: | ---: | ---: | ---: |
-| `hybrid_svd_popularity` | 0.903 | 0.702 | 0.642 | 1 |
-| `latent_svd` | 0.901 | 0.701 | 0.642 | 1 |
-| `popularity_baseline` | 0.782 | 0.508 | 0.435 | 4 |
+| `latent_svd` | 0.910 | 0.716 | 0.658 | 1 |
+| `hybrid_svd_popularity` | 0.910 | 0.716 | 0.658 | 1 |
+| `popularity_baseline` | 0.770 | 0.501 | 0.430 | 4 |
 
-The hybrid model beats the popularity baseline on every metric. The SVD-only model is very close to the hybrid model, but the hybrid is preferred for product use because it keeps personalization while avoiding overly obscure recommendations for sparse profiles.
+Both personalized models beat the popularity baseline on every metric. With the `7+` threshold, SVD is the narrow metric winner, while the hybrid has a lower mean rank. The hybrid remains useful as a product-safe option when the interface should avoid overly obscure recommendations for sparse profiles.
 
 ## Results by User Level
 
@@ -78,10 +78,10 @@ Offline levels use known liked ratings as a proxy for experience. This is not pe
 
 | Level | Hybrid Hit@10 | Hybrid median rank | Evaluated users | Median profile size |
 | --- | ---: | ---: | ---: | ---: |
-| Absolute Beginner | 0.904 | 1.0 | 5,793 | 24 |
-| Amateur | 0.916 | 1.0 | 6,150 | 86 |
-| Good | 0.877 | 2.0 | 3,039 | 228 |
-| Pro | 0.667 | 4.5 | 18 | 1,193.5 |
+| Absolute Beginner | 0.913 | 1.0 | 4,499 | 25 |
+| Amateur | 0.920 | 1.0 | 5,575 | 90 |
+| Good | 0.896 | 2.0 | 4,864 | 245 |
+| Pro | 0.806 | 3.0 | 62 | 1,153.5 |
 
 The Pro group is tiny in the evaluation sample and should not be overclaimed. It is still useful as a warning: heavy users are harder because obvious titles are often already known, and the recommender should shift toward novelty and niche discovery.
 

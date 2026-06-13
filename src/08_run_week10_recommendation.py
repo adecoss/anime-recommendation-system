@@ -32,7 +32,7 @@ ARTIFACT_DIR.mkdir(parents=True, exist_ok=True)
 PLOT_DIR.mkdir(parents=True, exist_ok=True)
 
 
-LIKE_THRESHOLD = 8
+LIKE_THRESHOLD = 7
 MIN_USER_POSITIVES = 5
 MIN_ITEM_POSITIVES = 20
 MAX_MODEL_USERS = 100_000
@@ -602,7 +602,8 @@ def main() -> None:
         "task": "personalized anime recommendation/ranking",
         "decision_supported": "rank candidate anime for a user based on completed liked anime, while allowing product filters and maturity-aware recommendation modes",
         "baseline": "popularity_baseline: globally common liked anime in training data",
-        "stronger_system": "hybrid_svd_popularity: latent collaborative SVD score blended with popularity",
+        "stronger_system": "latent_svd and hybrid_svd_popularity: personalized collaborative models that beat the popularity baseline",
+        "product_safe_system": "hybrid_svd_popularity: latent collaborative SVD score blended with popularity for safer sparse-profile recommendations",
         "user_levels": USER_LEVELS,
         "control_filters": CONTROL_FILTERS,
         "level_policy_note": (

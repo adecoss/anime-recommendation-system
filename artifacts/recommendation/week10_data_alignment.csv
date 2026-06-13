@@ -1,6 +1,6 @@
 layer,rows,definition
 catalog,14965,anime_dataset rows
-positive_interactions,29610091,ratings >= 8 aligned to catalog
-candidate_pool,8181,catalog anime with >= 20 positive interactions
-model_users,109794,eligible users used for matrix factorization training
+positive_interactions,41928689,ratings >= 7 aligned to catalog
+candidate_pool,9197,catalog anime with >= 20 positive interactions
+model_users,109857,eligible users used for matrix factorization training
 evaluation_users,15000,users with one positive item held out
