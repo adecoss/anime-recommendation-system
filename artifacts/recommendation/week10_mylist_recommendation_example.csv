@@ -1,0 +1,201 @@
+mal_id,title,type,score,members,episodes,duration,total_watch_minutes,aired_year,genres,demographics,rating,relations,mylist_hybrid_score,mylist_latent_score,popularity_score
+11979,Mahou Shoujo Madoka★Magica Movie 2: Eien no Monogatari,Movie,8.38,221149,1.0,111.0,111.0,2012.0,Drama|Suspense|Action|Sci-Fi|Fantasy|Adventure|Horror|Comedy|Mystery,,PG-13 - Teens 13 or older,Prequel:11977|Sequel:11981,0.6533105,0.0015730686,0.7673087
+11977,Mahou Shoujo Madoka★Magica Movie 1: Hajimari no Monogatari,Movie,8.22,217478,1.0,131.0,131.0,2012.0,Drama|Suspense|Action|Sci-Fi|Fantasy|Adventure|Horror|Comedy|Mystery,,PG-13 - Teens 13 or older,Sequel:11979,0.6504477,0.0015593019,0.7700023
+31765,Sword Art Online Movie: Ordinal Scale,Movie,7.56,783753,1.0,119.0,119.0,2017.0,Action|Adventure|Sci-Fi,18+,R+ - Mild Nudity,Prequel:21881|Sequel:36474,0.5683746,0.0011723952,0.8349139
+27787,Nisekoi:,TV,7.34,744915,12.0,24.0,288.0,2015.0,Comedy|Romance,Shounen,PG-13 - Teens 13 or older,Prequel:18897|Side Story:32553,0.5528393,0.0011046582,0.8385018
+8937,Toaru Majutsu no Index II,TV,7.51,486102,24.0,23.0,552.0,2010.0,Action|Fantasy|Sci-Fi|Girls Love|Comedy|Romance,Seinen,R - 17+ (violence & profanity),Prequel:4654|Sequel:36432|Side Story:11743,0.5429146,0.0010662683,0.8330681
+10379,Natsume Yuujinchou San,TV,8.56,272933,13.0,24.0,312.0,2011.0,Slice of Life|Supernatural|Fantasy|Comedy,Shoujo,PG-13 - Teens 13 or older,Prequel:5300|Sequel:11665,0.53737444,0.0010693427,0.7912698
+36296,Hinamatsuri,TV,8.11,556713,12.0,23.0,276.0,2018.0,Comedy|Action|Slice of Life,Seinen,PG-13 - Teens 13 or older,,0.52957463,0.0010245248,0.8101709
+11665,Natsume Yuujinchou Shi,TV,8.63,266720,13.0,24.0,312.0,2012.0,Slice of Life|Supernatural|Action|Fantasy|Horror|Comedy,Shoujo,PG-13 - Teens 13 or older,Prequel:10379|Sequel:32983|Side Story:18849|Side Story:20651,0.5254605,0.0010263078,0.7799223
+15315,Mondaiji-tachi ga Isekai kara Kuru Sou desu yo?,TV,7.4,618785,10.0,23.0,230.0,2013.0,Action|Comedy|Fantasy,,PG-13 - Teens 13 or older,Sequel:16444,0.51874816,0.00095789833,0.8433941
+4898,Kuroshitsuji,TV,7.65,1277059,24.0,24.0,576.0,2008.0,Action|Mystery|Supernatural|Gourmet|Boys Love|Sci-Fi|Fantasy|Horror|Suspense|Comedy|Romance|Slice of Life|Sports,Shounen,R - 17+ (violence & profanity),Sequel:6707|Sequel:22145,0.5142367,0.0009133952,0.8837187
+38408,Boku no Hero Academia 4th Season,TV,7.86,1916080,25.0,24.0,600.0,2019.0,Action,Shounen,PG-13 - Teens 13 or older,Prequel:36456|Sequel:41587|Side Story:39565,0.5050192,0.00089317164,0.8542618
+585,Mimi wo Sumaseba,Movie,8.23,408875,1.0,111.0,111.0,1995.0,Drama|Romance|Fantasy|Comedy|Slice of Life|Sports,Shoujo,G - All Ages,Spin-Off:597,0.49834695,0.00089759903,0.80277616
+35838,Shoujo Shuumatsu Ryokou,TV,8.24,405479,12.0,23.0,276.0,2017.0,Adventure|Mystery|Sci-Fi|Slice of Life|Comedy,Seinen,PG-13 - Teens 13 or older,,0.49585226,0.000923406,0.7453195
+37171,Asobi Asobase,TV,8.19,536835,12.0,23.0,276.0,2018.0,Comedy|Sci-Fi|Sports,Seinen,PG-13 - Teens 13 or older,Sequel:37996,0.49424767,0.0008959322,0.7780845
+24227,Nisekoi OVA,OVA,7.36,173822,3.0,26.0,78.0,2014.0,Comedy|Romance,Shounen,PG-13 - Teens 13 or older,Parent Story:18897,0.49348956,0.00092168816,0.73228604
+5365,Tsumiki no Ie,Movie,7.99,101673,1.0,12.0,12.0,2008.0,Award Winning|Drama,Kodomo,G - All Ages,,0.48894012,0.0008940032,0.7457525
+416,Kurenai no Buta,Movie,7.97,289165,1.0,93.0,93.0,1992.0,Action|Adventure|Award Winning|Comedy|Drama|Romance|Sci-Fi,Kodomo,G - All Ages,,0.48498937,0.0008590964,0.774635
+34577,Nanatsu no Taizai: Imashime no Fukkatsu,TV,7.53,1212722,24.0,24.0,576.0,2018.0,Action|Adventure|Fantasy|Gourmet|Comedy|Romance,Shounen,PG-13 - Teens 13 or older,Prequel:31722|Sequel:39701|Side Story:35946|Side Story:38198,0.48385262,0.000809807,0.84502983
+270,Hellsing,TV,7.5,795101,13.0,23.0,299.0,2001.0,Action|Horror|Supernatural|Fantasy,Seinen,R - 17+ (violence & profanity),Alternative Version:777,0.48320276,0.00079997466,0.8562517
+39597,Sword Art Online: Alicization - War of Underworld,TV,7.58,849498,12.0,23.0,276.0,2019.0,Action|Adventure|Fantasy|Sci-Fi|Comedy|Romance,Seinen,R - 17+ (violence & profanity),Prequel:36474|Sequel:40540,0.4774557,0.00081494986,0.7942482
+23755,Nanatsu no Taizai,TV,7.6,2216775,24.0,24.0,576.0,2014.0,Action|Adventure|Fantasy|Comedy|Romance,Shounen,PG-13 - Teens 13 or older,Sequel:31722|Side Story:30347,0.47688913,0.00073327986,0.9196687
+32867,Bungou Stray Dogs 2nd Season,TV,8.16,956377,12.0,23.0,276.0,2016.0,Action|Mystery|Sci-Fi|Fantasy|Horror|Comedy|Slice of Life,Shounen|Seinen,R - 17+ (violence & profanity),Prequel:31478|Sequel:38003|Side Story:33071|Side Story:34944,0.47641787,0.000788509,0.8291572
+20,Naruto,TV,8.02,3127433,220.0,23.0,5060.0,2002.0,Action|Adventure|Fantasy|Comedy|Romance|Sports,Shounen,PG-13 - Teens 13 or older,Sequel:1735|Side Story:442|Side Story:936|Side Story:1074|Side Story:2144|Side Story:7367,0.47541124,0.0007095996,0.94727695
+32902,Mahoutsukai no Yome: Hoshi Matsu Hito,OVA,8.09,299432,3.0,23.0,69.0,2016.0,Drama|Fantasy|Horror|Romance,Shounen,PG-13 - Teens 13 or older,Parent Story:35062,0.47473985,0.0008180934,0.7711691
+36098,Kimi no Suizou wo Tabetai,Movie,8.55,1124720,1.0,108.0,108.0,2018.0,Drama|Romance|Comedy|Slice of Life,Seinen,PG-13 - Teens 13 or older,,0.47398806,0.00078894844,0.81226325
+37141,Hataraku Saibou,TV,7.55,699446,13.0,23.0,299.0,2018.0,Comedy|Action,Shounen,PG-13 - Teens 13 or older,Sequel:39586|Spin-Off:41694,0.47386524,0.0007988827,0.7957291
+36946,Dragon Ball Super: Broly,Movie,8.21,472163,1.0,100.0,100.0,2018.0,Action|Adventure|Fantasy|Sci-Fi,Shounen,PG-13 - Teens 13 or older,Prequel:30694|Sequel:48903,0.46911716,0.00081213703,0.7431075
+32983,Natsume Yuujinchou Go,TV,8.56,206562,11.0,23.0,253.0,2016.0,Slice of Life|Supernatural|Fantasy|Horror|Comedy,Shoujo,PG-13 - Teens 13 or older,Prequel:11665|Sequel:34591,0.4675817,0.00081652484,0.72592956
+16664,Kaguya-hime no Monogatari,Movie,8.22,262547,1.0,137.0,137.0,2013.0,Award Winning|Fantasy|Romance,18+,R+ - Mild Nudity,Alternative Version:29927,0.46495134,0.0007977903,0.7380311
+36949,Shokugeki no Souma: San no Sara - Tootsuki Ressha-hen,TV,7.92,776466,12.0,24.0,288.0,2018.0,Gourmet|Ecchi|Comedy,Shounen,PG-13 - Teens 13 or older,Prequel:35788|Sequel:39940,0.4648603,0.00073908176,0.830298
+16904,K: Missing Kings,Movie,7.62,267167,1.0,73.0,73.0,2014.0,Action|Fantasy|Comedy,Shounen|Shoujo,PG-13 - Teens 13 or older,Prequel:14467|Sequel:27991,0.4644719,0.00077934837,0.76400906
+15039,Ano Hi Mita Hana no Namae wo Bokutachi wa Mada Shiranai. Movie,Movie,7.83,314644,1.0,99.0,99.0,2013.0,Drama|Supernatural|Fantasy|Comedy|Romance|Slice of Life,Shounen|Seinen,PG-13 - Teens 13 or older,Prequel:9989,0.4586871,0.0007492754,0.77301764
+39741,Violet Evergarden Gaiden: Eien to Jidou Shuki Ningyou,Movie,8.42,485087,1.0,91.0,91.0,2019.0,Drama|Sci-Fi|Slice of Life,Seinen,PG-13 - Teens 13 or older,Parent Story:33352,0.45784613,0.00077160087,0.73209316
+32093,Tanaka-kun wa Itsumo Kedaruge,TV,7.8,515512,12.0,24.0,288.0,2016.0,Slice of Life|Comedy,,PG-13 - Teens 13 or older,Side Story:33004,0.45604828,0.0007265789,0.7913301
+962,Aria the Natural,TV,8.17,86179,26.0,24.0,624.0,2006.0,Sci-Fi|Slice of Life|Fantasy|Adventure|Comedy|Romance,Shounen,G - All Ages,Prequel:477|Sequel:2563,0.45183533,0.0007806199,0.6777537
+3297,Aria the Origination,TV,8.48,142552,13.0,24.0,312.0,2008.0,Sci-Fi|Slice of Life|Adventure|Comedy|Romance,Shounen,G - All Ages,Prequel:2563|Sequel:29893,0.4518339,0.0007807748,0.67749923
+36475,Sword Art Online Alternative: Gun Gale Online,TV,7.01,676462,12.0,23.0,276.0,2018.0,Action|Sci-Fi|Fantasy|Adventure,,PG-13 - Teens 13 or older,Sequel:55994|Summary:59968,0.4468773,0.00069544953,0.77943546
+4472,Lucky☆Star: Original na Visual to Animation,OVA,7.8,152693,1.0,42.0,42.0,2008.0,Comedy|Girls Love|Romance|Slice of Life|Sports,Seinen,PG-13 - Teens 13 or older,Parent Story:1887,0.4464938,0.00069095026,0.7839964
+14749,Ore no Kanojo to Osananajimi ga Shuraba Sugiru,TV,6.88,593016,13.0,23.0,299.0,2013.0,Comedy|Romance|Gourmet|Slice of Life|Sports,Seinen,PG-13 - Teens 13 or older,,0.44611517,0.000671661,0.81198674
+35968,Wotaku ni Koi wa Muzukashii,TV,7.91,1106155,11.0,22.0,242.0,2018.0,Comedy|Romance|Slice of Life,Josei,PG-13 - Teens 13 or older,Sequel:38349,0.44536507,0.0006538568,0.83515126
+30544,Gakusen Toshi Asterisk,TV,6.8,707286,12.0,23.0,276.0,2015.0,Action|Comedy|Fantasy|Romance|Ecchi|Sci-Fi,Seinen,PG-13 - Teens 13 or older,Sequel:31737,0.44512266,0.00067288504,0.8034336
+22145,Kuroshitsuji: Book of Circus,TV,8.06,444710,10.0,24.0,240.0,2014.0,Action|Mystery|Supernatural|Fantasy,Shounen,R - 17+ (violence & profanity),Prequel:4898|Sequel:23317,0.4446261,0.00068264606,0.7846816
+34591,Natsume Yuujinchou Roku,TV,8.61,206448,11.0,23.0,253.0,2017.0,Slice of Life|Supernatural|Fantasy|Comedy,Shoujo,PG-13 - Teens 13 or older,Prequel:32983|Sequel:36538,0.44162163,0.0007177597,0.70910394
+12115,Berserk: Ougon Jidai-hen III - Kourin,Movie,8.21,247799,1.0,112.0,112.0,2013.0,Action|Adventure|Drama|Fantasy|Horror|Romance,Seinen,R+ - Mild Nudity,Prequel:12113|Sequel:32379|Alternative Version:52976,0.43915886,0.00067641074,0.75809735
+32998,91 Days,TV,7.82,796207,12.0,24.0,288.0,2016.0,Action|Drama|Suspense|Horror,Seinen,R - 17+ (violence & profanity),,0.43867853,0.00063868536,0.81457466
+11743,Toaru Majutsu no Index Movie: Endymion no Kiseki,Movie,7.4,140175,1.0,90.0,90.0,2013.0,Action|Fantasy|Sci-Fi|Girls Love|Comedy|Romance,Seinen,R - 17+ (violence & profanity),Parent Story:8937,0.4383448,0.0006967263,0.72053206
+16762,Mirai Nikki: Redial,OVA,7.28,374265,1.0,29.0,29.0,2013.0,Supernatural|Suspense|Action|Fantasy|Comedy|Romance,Shounen,R - 17+ (violence & profanity),Prequel:10620,0.43631697,0.00063032564,0.81205595
+20031,D-Frag!,TV,7.49,415822,12.0,24.0,288.0,2014.0,Comedy|Action|Romance|Sports,Seinen,PG-13 - Teens 13 or older,Side Story:23383,0.43545756,0.00062573014,0.81359595
+10800,Chihayafuru,TV,8.17,497551,25.0,22.0,550.0,2011.0,Drama|Romance|Sports|Comedy,Josei,PG-13 - Teens 13 or older,Sequel:14397,0.43496975,0.0006223042,0.8157638
+31737,Gakusen Toshi Asterisk 2nd Season,TV,6.98,464946,12.0,24.0,288.0,2016.0,Action|Comedy|Fantasy|Romance|Ecchi|Sci-Fi,Seinen,PG-13 - Teens 13 or older,Prequel:30544,0.4340429,0.0006462823,0.77165264
+14467,K,TV,7.41,805541,13.0,24.0,312.0,2012.0,Action|Mystery|Boys Love|Fantasy|Comedy|Romance,Shounen|Shoujo,PG-13 - Teens 13 or older,Sequel:16904,0.43362325,0.0005921986,0.85441273
+23317,Kuroshitsuji: Book of Murder,OVA,8.04,273547,2.0,61.0,122.0,2015.0,Action|Mystery|Supernatural|Fantasy,Shounen,R - 17+ (violence & profanity),Prequel:22145|Sequel:31812,0.43266535,0.0006647691,0.7332236
+35860,Karakai Jouzu no Takagi-san,TV,7.67,641406,12.0,23.0,276.0,2018.0,Comedy|Romance|Action|Slice of Life,Shounen,PG-13 - Teens 13 or older,Sequel:38993|Side Story:37621,0.43238556,0.00063085847,0.7850032
+8516,Baka to Test to Shoukanjuu Ni!,TV,7.66,386347,13.0,24.0,312.0,2011.0,Comedy|Romance|Gourmet|Girls Love|Boys Love|Sci-Fi|Fantasy|Slice of Life,Seinen,PG-13 - Teens 13 or older,Prequel:9471,0.43107796,0.0005941541,0.8343501
+597,Neko no Ongaeshi,Movie,7.72,306278,1.0,75.0,75.0,2002.0,Adventure|Award Winning|Drama|Fantasy|Action|Comedy|Romance,Kodomo,G - All Ages,Parent Story:585,0.43031853,0.00061475567,0.7966969
+14397,Chihayafuru 2,TV,8.37,253383,25.0,22.0,550.0,2013.0,Drama|Romance|Sports|Comedy|Slice of Life,Shoujo|Josei,PG-13 - Teens 13 or older,Prequel:10800|Sequel:37379|Side Story:18745,0.42981732,0.0006179107,0.78836447
+31478,Bungou Stray Dogs,TV,7.8,1558801,12.0,23.0,276.0,2016.0,Action|Mystery|Fantasy|Comedy|Slice of Life,Shounen|Seinen,R - 17+ (violence & profanity),Sequel:32867|Spin-Off:42250,0.42978275,0.0005752474,0.8556251
+12477,Sakasama no Patema,Movie,7.93,322808,1.0,98.0,98.0,2013.0,Adventure|Award Winning|Sci-Fi|Action|Comedy|Romance,Seinen,PG-13 - Teens 13 or older,,0.4295839,0.0006219148,0.780474
+38555,Otome Game no Hametsu Flag shika Nai Akuyaku Reijou ni Tensei shiteshimatta...,TV,7.44,512780,12.0,24.0,288.0,2020.0,Comedy|Fantasy|Romance|Girls Love,Shoujo|Josei,PG-13 - Teens 13 or older,Sequel:42282,0.42889014,0.00063734705,0.75143594
+4565,Tengen Toppa Gurren Lagann Movie 2: Lagann-hen,Movie,8.61,239685,1.0,125.0,125.0,2009.0,Sci-Fi|Action|Comedy,Shounen,R+ - Mild Nudity,Prequel:4107|Alternative Version:2001,0.42879412,0.0006348301,0.7547773
+25879,Working!!!,TV,7.94,264468,13.0,23.0,299.0,2015.0,Comedy|Romance|Gourmet|Girls Love|Slice of Life,Seinen,PG-13 - Teens 13 or older,Prequel:10521,0.42875907,0.0006177553,0.7815553
+1379,Kino no Tabi: The Beautiful World - Nanika wo Suru Tame ni - Life Goes On.,Movie,7.73,63010,1.0,29.0,29.0,2005.0,Adventure|Drama|Fantasy|Action|Sci-Fi,Seinen,R - 17+ (violence & profanity),Sequel:486,0.42808917,0.0006860529,0.6690462
+20651,Natsume Yuujinchou: Itsuka Yuki no Hi ni,OVA,8.32,87115,1.0,22.0,22.0,2014.0,Slice of Life|Supernatural|Fantasy,Shoujo,PG-13 - Teens 13 or older,Parent Story:4081,0.42782974,0.00067525584,0.6843969
+6347,Baka to Test to Shoukanjuu,TV,7.5,668871,13.0,24.0,312.0,2010.0,Comedy|Romance|Gourmet|Girls Love|Boys Love|Action|Sci-Fi|Fantasy|Slice of Life,Seinen,PG-13 - Teens 13 or older,Sequel:9471|Spin-Off:7805,0.42712417,0.00055288523,0.8732772
+41389,Tonikaku Kawaii,TV,7.84,843529,12.0,23.0,276.0,2020.0,Comedy|Romance|Slice of Life,Shounen,PG-13 - Teens 13 or older,Sequel:44931,0.4257284,0.0006233631,0.7524797
+38003,Bungou Stray Dogs 3rd Season,TV,8.19,712077,12.0,23.0,276.0,2019.0,Action|Mystery|Sci-Fi|Fantasy|Horror|Comedy|Slice of Life,Shounen|Seinen,R - 17+ (violence & profanity),Prequel:32867|Sequel:50330,0.42440045,0.0006150535,0.75677204
+1735,Naruto: Shippuuden,TV,8.29,2757989,500.0,23.0,11500.0,2007.0,Action|Adventure|Fantasy|Romance|Sports,Shounen,PG-13 - Teens 13 or older,Prequel:20|Sequel:28755|Sequel:34566|Side Story:2472|Side Story:4437|Side Story:6325|Side Story:8246|Side Story:10589|Side Story:13667|Side Story:16870|Spin-Off:12979,0.4240347,0.00054367894,0.8672445
+34480,Shokugeki no Souma: Ni no Sara OVA,OVA,7.44,177122,2.0,25.0,50.0,2017.0,Gourmet|Ecchi|Comedy,Shounen,PG-13 - Teens 13 or older,Prequel:32282|Sequel:35788,0.4229473,0.00063787046,0.71098906
+11701,Another: The Other - Inga,OVA,7.25,200647,1.0,24.0,24.0,2012.0,Horror|Mystery|Suspense|Slice of Life,Seinen,R - 17+ (violence & profanity),Sequel:11111,0.42270622,0.00059630827,0.775131
+12113,Berserk: Ougon Jidai-hen II - Doldrey Kouryaku,Movie,7.87,233886,1.0,92.0,92.0,2012.0,Action|Adventure|Drama|Fantasy|Horror|Romance,Seinen,R+ - Mild Nudity,Prequel:10218|Sequel:12115|Alternative Version:52976,0.4224955,0.00060619856,0.7580807
+39792,Eizouken ni wa Te wo Dasu na!,TV,8.13,371074,12.0,25.0,300.0,2020.0,Adventure|Award Winning|Comedy|Action|Sci-Fi|Slice of Life,Seinen,PG-13 - Teens 13 or older,,0.42238513,0.0006264178,0.72535884
+263,Hajime no Ippo,TV,8.78,698235,75.0,23.0,1725.0,2000.0,Sports|Action|Comedy|Romance,Shounen,PG-13 - Teens 13 or older,Sequel:264,0.42020914,0.00056389667,0.8097575
+34451,Kekkai Sensen & Beyond,TV,7.77,477686,12.0,24.0,288.0,2017.0,Action|Fantasy|Sci-Fi|Comedy,Shounen,R - 17+ (violence & profanity),Prequel:24439|Side Story:37364,0.41991508,0.0005913478,0.7643705
+31722,Nanatsu no Taizai: Seisen no Shirushi,TV,6.94,775801,4.0,24.0,96.0,2016.0,Action|Adventure|Fantasy|Gourmet|Comedy|Romance,Shounen,PG-13 - Teens 13 or older,Prequel:23755|Sequel:34577,0.41854882,0.00056285504,0.80033636
+40221,Kami no Tou,TV,7.55,1073148,13.0,23.0,299.0,2020.0,Action|Adventure|Drama|Fantasy|Mystery|Romance,,PG-13 - Teens 13 or older,Sequel:52635,0.41812092,0.0005545557,0.81061286
+4106,Trigun: Badlands Rumble,Movie,7.9,154629,1.0,90.0,90.0,2010.0,Action|Adventure|Sci-Fi|Comedy,Shounen,PG-13 - Teens 13 or older,Parent Story:6,0.4179501,0.0006024349,0.73373145
+40540,Sword Art Online: Alicization - War of Underworld 2nd Season,TV,7.51,690669,11.0,24.0,264.0,2020.0,Action|Adventure|Fantasy|Sci-Fi,Seinen,R - 17+ (violence & profanity),Prequel:39597,0.4174392,0.00058819714,0.7528487
+1827,Seirei no Moribito,TV,8.12,236343,26.0,25.0,650.0,2007.0,Action|Adventure|Fantasy|Gourmet|Romance,,PG-13 - Teens 13 or older,,0.41722736,0.0005903341,0.7480562
+6114,Rainbow: Nisha Rokubou no Shichinin,TV,8.46,426165,26.0,22.0,572.0,2010.0,Drama|Suspense|Romance|Sports,Seinen,R - 17+ (violence & profanity),,0.41721994,0.00056694745,0.7850032
+1430,Lupin III: Cagliostro no Shiro,Movie,8.15,138813,1.0,99.0,99.0,1979.0,Action|Adventure|Award Winning|Comedy|Mystery,Seinen,PG-13 - Teens 13 or older,Parent Story:1412,0.4170587,0.0006124092,0.71201015
+10218,Berserk: Ougon Jidai-hen I - Haou no Tamago,Movie,7.71,248171,1.0,76.0,76.0,2012.0,Action|Adventure|Drama|Fantasy|Horror|Romance,Seinen,R+ - Mild Nudity,Sequel:12113|Alternative Version:33|Alternative Version:52976,0.4162861,0.0005735165,0.7683856
+4214,Rosario to Vampire Capu2,TV,6.88,441918,13.0,24.0,312.0,2008.0,Comedy|Fantasy|Romance|Ecchi|Gourmet|Girls Love,Shounen,PG-13 - Teens 13 or older,Prequel:2993,0.41562182,0.0005369466,0.821809
+10711,Plastic Neesan,ONA,7.19,211687,12.0,2.0,24.0,2011.0,Comedy,Seinen,PG-13 - Teens 13 or older,,0.4150537,0.0005784221,0.7524093
+9790,Sora no Otoshimono: Tokeijikake no Angeloid,Movie,7.53,139147,1.0,97.0,97.0,2011.0,Comedy|Romance|Sci-Fi|Supernatural|Ecchi|Gourmet|Action|Fantasy|Slice of Life,Shounen,R - 17+ (violence & profanity),Prequel:8407|Sequel:12783,0.41501027,0.0005899126,0.7339423
+10521,Working'!!,TV,7.81,289374,13.0,24.0,312.0,2011.0,Comedy|Romance|Gourmet|Girls Love|Slice of Life,Seinen,PG-13 - Teens 13 or older,Prequel:6956|Sequel:25879,0.41497552,0.00053834624,0.815286
+5040,One Outs,TV,8.32,257730,25.0,23.0,575.0,2008.0,Sports|Suspense,Seinen,PG-13 - Teens 13 or older,,0.41438654,0.0005644613,0.7700469
+6811,InuYasha: Kanketsu-hen,TV,8.2,307106,26.0,24.0,624.0,2009.0,Action|Adventure|Fantasy|Romance,Shounen,PG-13 - Teens 13 or older,Prequel:249|Sequel:41911,0.4134693,0.0005675411,0.75905967
+27991,K: Return of Kings,TV,7.54,350402,13.0,24.0,312.0,2015.0,Action|Fantasy|Comedy,Shounen|Shoujo,PG-13 - Teens 13 or older,Prequel:16904,0.41226685,0.0005604994,0.76218283
+6033,Dragon Ball Kai,TV,7.79,435442,97.0,23.0,2231.0,2009.0,Action|Adventure|Comedy|Fantasy|Sci-Fi,Shounen,PG-13 - Teens 13 or older,Prequel:223|Alternative Version:813,0.4122427,0.0005569556,0.76762843
+37614,Hitoribocchi no Marumaru Seikatsu,TV,7.47,234774,12.0,23.0,276.0,2019.0,Comedy|Sports,Shounen,PG-13 - Teens 13 or older,,0.41206416,0.0005984886,0.70073503
+40716,Kakushigoto,TV,7.96,354685,12.0,23.0,276.0,2020.0,Comedy|Slice of Life,Shounen,PG-13 - Teens 13 or older,Summary:44586,0.41190684,0.00057534664,0.7362956
+34277,"New Game! Watashi, Shain Ryokou tte Hajimete nanode...",OVA,7.4,79379,1.0,22.0,22.0,2017.0,Comedy,,PG-13 - Teens 13 or older,Prequel:31953|Sequel:34914,0.41100118,0.00062282046,0.6551563
+2175,Kino no Tabi: The Beautiful World - Byouki no Kuni - For You,Movie,7.66,54352,1.0,28.0,28.0,2007.0,Adventure|Drama|Fantasy|Action|Sci-Fi|Comedy,Seinen,R - 17+ (violence & profanity),Prequel:486|Prequel:1379,0.41065562,0.0006214214,0.6550659
+35240,Princess Principal,TV,7.67,225805,12.0,24.0,288.0,2017.0,Action|Mystery|Sci-Fi,,R - 17+ (violence & profanity),Sequel:37807|Summary:36424,0.41053572,0.0005887346,0.7059755
+32686,Keijo!!!!!!!!,TV,6.9,427951,12.0,23.0,276.0,2016.0,Sports|Ecchi|Action|Comedy,Shounen,PG-13 - Teens 13 or older,,0.40995806,0.0005564267,0.7532338
+9289,Hanasaku Iroha,TV,7.89,348073,26.0,24.0,624.0,2011.0,Drama|Adventure|Comedy|Romance|Slice of Life,Shounen|Seinen,PG-13 - Teens 13 or older,Side Story:14175,0.40916708,0.0005233743,0.8002477
+31859,Hai to Gensou no Grimgar,TV,7.66,809886,12.0,24.0,288.0,2016.0,Action|Adventure|Drama|Fantasy|Gourmet|Horror|Comedy|Romance|Slice of Life,Seinen,R - 17+ (violence & profanity),,0.40909612,0.0004960508,0.84299946
+8857,Nichijou: Nichijou no 0-wa,OVA,7.41,93591,1.0,22.0,22.0,2011.0,Comedy|Sci-Fi|Slice of Life,Shounen,PG-13 - Teens 13 or older,Sequel:10165,0.4082768,0.0005816338,0.70214915
+2563,Aria the OVA: Arietta,OVA,7.99,42137,1.0,30.0,30.0,2007.0,Sci-Fi|Slice of Life|Fantasy|Comedy|Romance,Shounen,G - All Ages,Prequel:962|Sequel:3297,0.4066703,0.000611558,0.6441004
+30347,Nanatsu no Taizai OVA,OVA,7.48,199367,2.0,24.0,48.0,2015.0,Action|Adventure|Fantasy|Comedy|Romance,Shounen,PG-13 - Teens 13 or older,Parent Story:23755,0.40647924,0.00056508393,0.7163466
+21511,Kantai Collection: KanColle,TV,6.82,226275,12.0,24.0,288.0,2015.0,Action|Sci-Fi|Comedy|Slice of Life,,PG-13 - Teens 13 or older,Sequel:31418|Sequel:30455,0.40642196,0.00056348287,0.7184972
+38759,Sewayaki Kitsune no Senko-san,TV,7.31,384687,12.0,23.0,276.0,2019.0,Slice of Life|Supernatural|Gourmet|Fantasy|Comedy,Seinen,PG-13 - Teens 13 or older,,0.40614623,0.0005607623,0.720963
+6956,Working!!,TV,7.64,455911,13.0,24.0,312.0,2010.0,Comedy|Romance|Gourmet|Girls Love|Slice of Life,Seinen,PG-13 - Teens 13 or older,Sequel:10521,0.40564632,0.00048142925,0.8431312
+15227,Kono Sekai no Katasumi ni,Movie,8.23,209607,1.0,168.0,168.0,2016.0,Award Winning|Drama|Romance|Slice of Life,Seinen,PG-13 - Teens 13 or older,,0.40493023,0.0005700239,0.69820523
+28069,Shigatsu wa Kimi no Uso: Moments,OVA,7.69,120557,1.0,23.0,23.0,2015.0,,Shounen,PG-13 - Teens 13 or older,Sequel:23273,0.40452093,0.00055904756,0.71284044
+38680,Fruits Basket 1st Season,TV,8.2,951295,25.0,23.0,575.0,2019.0,Drama|Romance|Supernatural|Gourmet|Action|Fantasy|Comedy|Slice of Life,Shoujo,PG-13 - Teens 13 or older,Sequel:40417|Summary:49310|Alternative Version:120,0.40435076,0.0005238991,0.7673087
+40571,Majo no Tabitabi,TV,7.56,460753,12.0,24.0,288.0,2020.0,Adventure|Fantasy|Girls Love|Action|Horror|Comedy|Romance,,R - 17+ (violence & profanity),,0.4041339,0.0005614771,0.7064165
+1482,D.Gray-man,TV,8.0,732911,103.0,23.0,2369.0,2006.0,Action|Adventure|Fantasy|Sci-Fi|Horror|Comedy|Romance,Shounen,PG-13 - Teens 13 or older,Sequel:32370,0.40360808,0.00047979466,0.8321286
+72,Full Metal Panic? Fumoffu,TV,8.02,312237,12.0,24.0,288.0,2003.0,Action|Comedy|Sci-Fi|Sports,Shounen|Seinen,PG-13 - Teens 13 or older,Parent Story:71|Parent Story:73,0.39967662,0.0004615712,0.8347475
+9471,Baka to Test to Shoukanjuu: Matsuri,OVA,7.55,131514,2.0,29.0,58.0,2011.0,Comedy|Gourmet|Boys Love|Action|Fantasy|Romance|Sports,Seinen,PG-13 - Teens 13 or older,Prequel:6347|Sequel:8516|Side Story:10431,0.39890724,0.00050670805,0.758214
+38993,Karakai Jouzu no Takagi-san 2,TV,8.01,362940,12.0,23.0,276.0,2019.0,Comedy|Romance|Slice of Life,Shounen,PG-13 - Teens 13 or older,Prequel:35860|Sequel:49721,0.39834043,0.0005246701,0.7260205
+40004,Bokutachi wa Benkyou ga Dekinai!,TV,7.33,326711,13.0,23.0,299.0,2019.0,Comedy|Romance|Gourmet|Sports,Shounen,PG-13 - Teens 13 or older,Prequel:38186|Side Story:42519,0.39807743,0.0005295507,0.71654624
+39565,Boku no Hero Academia the Movie 2: Heroes:Rising,Movie,7.93,634893,1.0,104.0,104.0,2019.0,Action,Shounen,PG-13 - Teens 13 or older,Parent Story:38408,0.39787465,0.0005203075,0.72981656
+6802,So Ra No Wo To,TV,7.54,173798,12.0,24.0,288.0,2010.0,Sci-Fi|Slice of Life|Comedy,Seinen,PG-13 - Teens 13 or older,,0.39786756,0.0005245292,0.72309077
+16353,Love Lab,TV,7.3,212202,13.0,24.0,312.0,2013.0,Comedy|Romance,Seinen,PG-13 - Teens 13 or older,,0.39774734,0.00051667215,0.73471874
+4107,Tengen Toppa Gurren Lagann Movie 1: Gurren-hen,Movie,8.18,193180,1.0,112.0,112.0,2008.0,Sci-Fi|Action|Comedy|Romance,Shounen,PG-13 - Teens 13 or older,Sequel:4565|Alternative Version:2001,0.39743322,0.00050701026,0.7479091
+31404,Netoge no Yome wa Onnanoko ja Nai to Omotta?,TV,6.66,602298,12.0,24.0,288.0,2016.0,Comedy|Romance|Ecchi,Shounen,PG-13 - Teens 13 or older,,0.39695236,0.00047948144,0.7882525
+3167,Eve no Jikan,ONA,7.98,196435,6.0,18.0,108.0,2008.0,Sci-Fi|Slice of Life|Comedy|Romance,Seinen,PG-13 - Teens 13 or older,Summary:7465,0.39608875,0.00048499095,0.77377945
+32547,Non Non Biyori Repeat: Hotaru ga Tanoshinda,OVA,7.86,53922,1.0,24.0,24.0,2016.0,Slice of Life|Comedy,Seinen,PG-13 - Teens 13 or older,Parent Story:23623,0.39581186,0.00058022264,0.62128186
+25519,Yuuki Yuuna wa Yuusha de Aru,TV,7.37,166021,12.0,24.0,288.0,2014.0,Drama|Action|Fantasy|Comedy,,PG-13 - Teens 13 or older,Prequel:34284|Sequel:34445,0.39479464,0.0005352261,0.6856826
+34881,Aho Girl,TV,6.71,533478,12.0,12.0,144.0,2017.0,Comedy|Action|Slice of Life|Sports,Shounen,PG-13 - Teens 13 or older,,0.39451352,0.00047650517,0.77670187
+528,Pokemon Movie 01: Mewtwo no Gyakushuu,Movie,7.67,285557,1.0,85.0,85.0,1998.0,Action|Adventure|Award Winning|Comedy|Fantasy,Shounen|Kodomo,PG - Children,Sequel:1709|Alternative Version:37966|Parent Story:527,0.39428017,0.00045727278,0.80557084
+38668,Dorohedoro,TV,8.05,648377,12.0,23.0,276.0,2020.0,Action|Comedy|Fantasy|Horror|Gourmet|Sci-Fi|Adventure|Romance|Sports|Mystery,Seinen,R - 17+ (violence & profanity),Sequel:57779,0.39412856,0.00048686512,0.75774676
+7858,Sora no Otoshimono: Project Pink,OVA,7.34,114662,1.0,23.0,23.0,2010.0,Comedy|Sci-Fi|Supernatural|Ecchi,Shounen,PG-13 - Teens 13 or older,Prequel:5958|Sequel:8407,0.39401785,0.0005031594,0.73123187
+9047,Toaru Kagaku no Railgun: Misaka-san wa Ima Chuumoku no Mato desu kara,OVA,7.44,71090,1.0,34.0,34.0,2010.0,Action|Fantasy|Sci-Fi|Girls Love|Comedy|Romance,Seinen,PG-13 - Teens 13 or older,Parent Story:6213,0.39326844,0.0005200554,0.69950724
+16870,The Last: Naruto the Movie,Movie,7.8,671782,1.0,112.0,112.0,2014.0,Action|Adventure|Fantasy|Romance,Shounen,PG-13 - Teens 13 or older,Parent Story:1735,0.3929264,0.00045150146,0.80567604
+32887,Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka Gaiden: Sword Oratoria,TV,7.09,490662,12.0,23.0,276.0,2017.0,Action|Adventure|Fantasy|Comedy|Romance,,PG-13 - Teens 13 or older,Parent Story:28121,0.392745,0.00049087586,0.74217814
+534,Slayers,TV,7.72,154877,26.0,22.0,572.0,1995.0,Action|Adventure|Comedy|Fantasy,,PG-13 - Teens 13 or older,Prequel:536|Prequel:1170|Prequel:867|Sequel:535,0.3925364,0.0005010208,0.7247389
+8142,Colorful (Movie),Movie,7.74,215547,1.0,127.0,127.0,2010.0,Award Winning|Drama|Gourmet|Fantasy|Comedy|Romance|Slice of Life,Kodomo,PG-13 - Teens 13 or older,,0.39206955,0.00048858504,0.7412992
+2787,Shakugan no Shana II (Second),TV,7.54,320161,24.0,24.0,576.0,2007.0,Action|Drama|Fantasy|Romance,Seinen,PG-13 - Teens 13 or older,Prequel:355|Sequel:6773|Side Story:6572,0.3920369,0.0004338373,0.8276897
+400,Seihou Bukyou Outlaw Star,TV,7.83,171449,24.0,25.0,600.0,1998.0,Action|Adventure|Comedy|Sci-Fi|Gourmet|Boys Love|Fantasy|Romance|Sports,Seinen,R+ - Mild Nudity,Spin-Off:1226,0.3912356,0.00050252327,0.71368986
+19021,Takanashi Rikka Kai: Chuunibyou demo Koi ga Shitai! Movie,Movie,7.4,114619,1.0,90.0,90.0,2013.0,Comedy|Romance|Action|Fantasy|Slice of Life,Seinen,PG-13 - Teens 13 or older,,0.39107946,0.00052941515,0.6701073
+1004,Kanojo to Kanojo no Neko,OVA,7.24,103369,1.0,4.0,4.0,1999.0,Slice of Life|Romance,,G - All Ages,Alternative Version:32491,0.39076874,0.0004841028,0.73971784
+39940,Shokugeki no Souma: Shin no Sara,TV,7.73,673969,12.0,24.0,288.0,2019.0,Gourmet|Ecchi|Comedy,Shounen,PG-13 - Teens 13 or older,Prequel:36949|Sequel:40902,0.3906443,0.0004581639,0.7799223
+21843,Shingeki no Bahamut: Genesis,TV,7.61,439332,12.0,24.0,288.0,2014.0,Action|Adventure|Fantasy|Horror|Comedy|Romance,,R - 17+ (violence & profanity),Sequel:34642|Sequel:30736,0.39012885,0.00044108854,0.8034981
+16444,Mondaiji-tachi ga Isekai kara Kuru Sou desu yo?: Onsen Manyuuki,OVA,7.17,90075,1.0,23.0,23.0,2013.0,Comedy|Fantasy|Ecchi,,PG-13 - Teens 13 or older,Prequel:15315,0.39011124,0.0005052981,0.7018046
+20159,Pokemon: The Origin,TV Special,7.74,247444,4.0,21.0,84.0,2013.0,Action|Adventure|Comedy|Fantasy,Shounen|Kodomo,PG - Children,,0.38983622,0.00045651323,0.77714634
+433,"Kumo no Mukou, Yakusoku no Basho",Movie,7.41,232801,1.0,90.0,90.0,2004.0,Award Winning|Drama|Romance|Sci-Fi|Action|Slice of Life,Seinen,PG-13 - Teens 13 or older,,0.38935858,0.0004549221,0.77647895
+20021,Sword Art Online: Extra Edition,Special,6.55,336663,1.0,101.0,101.0,2013.0,Action|Fantasy|Sci-Fi|Adventure|Romance,Seinen,PG-13 - Teens 13 or older,Prequel:11757|Sequel:21881,0.38930595,0.0004574011,0.77220666
+36038,Net-juu no Susume,TV,7.51,512938,10.0,23.0,230.0,2017.0,Comedy|Romance|Fantasy|Adventure|Slice of Life,Josei,PG-13 - Teens 13 or older,,0.38872933,0.0004294073,0.8126471
+5277,Sekirei: Pure Engagement,TV,7.25,256204,13.0,24.0,312.0,2010.0,Action|Comedy|Romance|Ecchi,Seinen,R+ - Mild Nudity,Prequel:4063,0.3885926,0.00045195056,0.7760736
+28755,Boruto: Naruto the Movie,Movie,7.37,499487,1.0,95.0,95.0,2015.0,Action|Adventure|Fantasy,Shounen,PG-13 - Teens 13 or older,Prequel:1735|Alternative Version:34566,0.38850033,0.00044129422,0.7923161
+25015,Kyoukai no Kanata Movie 1: I'll Be Here - Kako-hen,Movie,7.72,178457,1.0,82.0,82.0,2015.0,Action|Supernatural|Fantasy|Horror|Suspense|Romance,Seinen,PG-13 - Teens 13 or older,Sequel:28675,0.3884992,0.0005015945,0.6969166
+5177,Denpa-teki na Kanojo,OVA,7.47,156998,2.0,42.0,84.0,2009.0,Mystery|Suspense|Action|Romance,Seinen,R - 17+ (violence & profanity),,0.38841093,0.0004598643,0.7623429
+65,Rozen Maiden: Träumend,TV,7.61,111339,12.0,24.0,288.0,2005.0,Action|Drama|Supernatural|Fantasy|Comedy,Seinen,PG-13 - Teens 13 or older,Prequel:64|Side Story:1719,0.3879047,0.00046932025,0.74400944
+19703,Kyousou Giga (TV),TV,7.69,210221,10.0,25.0,250.0,2013.0,Action|Fantasy|Adventure|Comedy|Slice of Life,,PG-13 - Teens 13 or older,,0.3878547,0.00049780065,0.69862133
+11319,Zero no Tsukaima F,TV,7.41,447666,12.0,24.0,288.0,2012.0,Action|Adventure|Comedy|Fantasy|Romance|Ecchi,Seinen,PG-13 - Teens 13 or older,Prequel:3712,0.38591546,0.00041554892,0.8158114
+14175,Hanasaku Iroha Movie: Home Sweet Home,Movie,7.84,98408,1.0,66.0,66.0,2013.0,Drama|Romance|Slice of Life,Shounen|Seinen,PG-13 - Teens 13 or older,Parent Story:9289,0.38505533,0.0004961897,0.6825075
+34280,Gamers!,TV,6.72,703214,12.0,24.0,288.0,2017.0,Comedy|Romance|Sports,,PG-13 - Teens 13 or older,,0.38502395,0.000423326,0.7975649
+2164,Dennou Coil,TV,8.02,159891,26.0,25.0,650.0,2007.0,Adventure|Award Winning|Drama|Mystery|Sci-Fi|Action|Horror|Comedy|Romance|Sports,,G - All Ages,,0.38478574,0.00048604043,0.6967658
+34944,Bungou Stray Dogs: Dead Apple,Movie,7.91,315859,1.0,90.0,90.0,2018.0,Action|Mystery|Sci-Fi|Fantasy|Comedy|Slice of Life,Seinen,R - 17+ (violence & profanity),Parent Story:32867,0.38388357,0.00048327754,0.69512206
+39468,Honzuki no Gekokujou: Shisho ni Naru Tame ni wa Shudan wo Erandeiraremasen,TV,7.96,375971,14.0,23.0,322.0,2019.0,Fantasy|Action|Comedy|Slice of Life,Shoujo,PG-13 - Teens 13 or older,Sequel:40815|Side Story:40841,0.3838075,0.0004648056,0.72383684
+793,xxxHOLiC Movie: Manatsu no Yoru no Yume,Movie,7.92,71313,1.0,60.0,60.0,2005.0,Comedy|Drama|Mystery|Supernatural|Fantasy|Horror|Suspense,Seinen,PG-13 - Teens 13 or older,Parent Story:861,0.38312703,0.0004702259,0.71072567
+6707,Kuroshitsuji II,TV,7.12,603863,12.0,24.0,288.0,2010.0,Action|Comedy|Supernatural|Boys Love|Fantasy|Horror|Romance|Slice of Life|Sports,Shounen,R - 17+ (violence & profanity),Prequel:4898,0.3826734,0.00040058605,0.81786823
+20939,"Ore no Nounai Sentakushi ga, Gakuen Love Comedy wo Zenryoku de Jama Shiteiru OVA",OVA,7.13,75516,1.0,24.0,24.0,2014.0,Comedy|Romance,,PG-13 - Teens 13 or older,Parent Story:19221,0.38258564,0.0004902256,0.67547786
+33926,Quanzhi Gaoshou,ONA,7.85,394599,12.0,23.0,276.0,2017.0,Action|Fantasy|Adventure,Shounen|Seinen,PG-13 - Teens 13 or older,Prequel:40080|Sequel:37078,0.3821327,0.000431838,0.7648244
+40839,"Kanojo, Okarishimasu",TV,6.83,1093448,12.0,24.0,288.0,2020.0,Comedy|Romance,Shounen,PG-13 - Teens 13 or older,Sequel:42963,0.38198277,0.00042521127,0.77430797
+34933,Kakegurui,TV,7.21,1631680,12.0,24.0,288.0,2017.0,Drama|Mystery|Suspense,Shounen,R - 17+ (violence & profanity),Sequel:37086|Side Story:50339,0.38190103,0.00036912967,0.8624811
+4725,Ga-Rei: Zero,TV,7.56,253738,12.0,23.0,276.0,2008.0,Action|Supernatural|Suspense|Girls Love|Sci-Fi|Fantasy|Horror|Comedy|Romance|Slice of Life|Sports,Shounen,R - 17+ (violence & profanity),Character:21353,0.38144603,0.00041558238,0.78596205
+522,Metropolis,Movie,7.53,120686,1.0,107.0,107.0,2001.0,Adventure|Drama|Romance|Sci-Fi|Action,Shounen,PG-13 - Teens 13 or older,,0.38136137,0.00047749857,0.68744934
+317,Final Fantasy VII: Advent Children,Movie,7.71,220264,1.0,101.0,101.0,2005.0,Action|Fantasy|Sci-Fi,Seinen,PG-13 - Teens 13 or older,Prequel:408|Side Story:6151|Summary:6152|Alternative Version:2952,0.38128173,0.00038953533,0.8260718
+267,Gungrave,TV,7.82,219406,26.0,24.0,624.0,2003.0,Action|Drama|Sci-Fi|Fantasy|Horror|Romance,Seinen,R - 17+ (violence & profanity),,0.38126865,0.00045314414,0.72535884
+31952,Kono Bijutsu-bu ni wa Mondai ga Aru!,TV,7.16,327607,12.0,24.0,288.0,2016.0,Comedy|Romance|Slice of Life|Mystery,Seinen,PG-13 - Teens 13 or older,,0.38125253,0.00044138316,0.7438565
+31812,Kuroshitsuji Movie: Book of the Atlantic,Movie,8.25,227168,1.0,100.0,100.0,2017.0,Action|Mystery|Supernatural|Fantasy|Horror,Shounen,R - 17+ (violence & profanity),Prequel:23317|Sequel:55855,0.38122797,0.00047903834,0.6841243
+32491,Kanojo to Kanojo no Neko: Everything Flows,TV,7.66,146603,4.0,7.0,28.0,2016.0,Slice of Life,,G - All Ages,Alternative Version:1004,0.3812244,0.00046362355,0.7084858
+35376,Himouto! Umaru-chan R,TV,7.32,277103,12.0,23.0,276.0,2017.0,Comedy,Seinen,PG-13 - Teens 13 or older,Prequel:28825,0.38115904,0.00045565757,0.720652
+15197,Code Geass: Boukoku no Akito 2 - Hikisakareshi Yokuryuu,Movie,7.43,146161,1.0,59.0,59.0,2013.0,Action|Sci-Fi|Adventure,Seinen,R - 17+ (violence & profanity),Prequel:8888|Sequel:15199,0.3809589,0.00045242015,0.7244391
+2154,Tekkon Kinkreet,Movie,7.94,124647,1.0,110.0,110.0,2006.0,Action|Adventure|Award Winning|Supernatural|Suspense|Fantasy|Horror,Seinen,R - 17+ (violence & profanity),Alternative Version:32247,0.38011146,0.0004728189,0.6865197
+33071,Bungou Stray Dogs: Hitori Ayumu,OVA,7.66,187550,1.0,23.0,23.0,2017.0,Action|Mystery|Sci-Fi|Fantasy|Comedy|Slice of Life,Shounen|Seinen,PG-13 - Teens 13 or older,Parent Story:32867,0.38010627,0.00047829235,0.6778263
+36028,Golden Kamuy,TV,7.89,460298,12.0,23.0,276.0,2018.0,Action|Adventure|Gourmet|Horror|Comedy,Seinen,R - 17+ (violence & profanity),Sequel:37989|Side Story:37755|Side Story:37884,0.38004062,0.0004368226,0.7429918
+6773,Shakugan no Shana III (Final),TV,7.5,247381,24.0,23.0,552.0,2011.0,Action|Drama|Fantasy|Romance|Comedy,Seinen,PG-13 - Teens 13 or older,Prequel:6572,0.3796106,0.0004202294,0.76637447
+19369,Outbreak Company,TV,7.15,385316,12.0,24.0,288.0,2013.0,Comedy|Fantasy|Boys Love|Action|Romance,,PG-13 - Teens 13 or older,,0.37909973,0.00039817352,0.7978601
+31173,Akagami no Shirayuki-hime 2nd Season,TV,7.97,391118,12.0,24.0,288.0,2016.0,Drama|Romance,Shoujo,PG-13 - Teens 13 or older,Prequel:30123|Side Story:31483,0.37877548,0.00040585006,0.78355455
+23383,D-Frag!*,OVA,7.31,68122,1.0,24.0,24.0,2014.0,Comedy|Action|Romance,Seinen,PG-13 - Teens 13 or older,Parent Story:20031,0.37856042,0.0004756518,0.671698
+37475,Kishuku Gakkou no Juliet,TV,7.45,417835,12.0,24.0,288.0,2018.0,Action|Comedy|Romance,Shounen,PG-13 - Teens 13 or older,,0.37852964,0.00043823145,0.73068976
+30458,"Tokyo Ghoul: ""Jack""",OVA,7.29,272886,1.0,30.0,30.0,2015.0,Action|Fantasy|Horror|Suspense|Comedy|Sports,Seinen,R - 17+ (violence & profanity),Parent Story:22319,0.37845463,0.00042861968,0.7453949
+32553,Nisekoi: OVA,OVA,7.06,104868,2.0,13.0,26.0,2016.0,Comedy|Romance,Shounen,PG-13 - Teens 13 or older,Parent Story:27787,0.3768961,0.00049124233,0.63593924
+996,Bishoujo Senshi Sailor Moon: Sailor Stars,TV,7.96,122742,34.0,24.0,816.0,1996.0,Adventure|Comedy|Drama|Romance|Girls Love|Action|Fantasy,Shoujo,PG-13 - Teens 13 or older,Prequel:1239|Summary:13931|Summary:8756,0.37669495,0.00045094013,0.69835395
+8557,Shinryaku! Ika Musume,TV,7.41,215040,12.0,24.0,288.0,2010.0,Comedy|Sci-Fi|Slice of Life|Sports,Shounen,PG-13 - Teens 13 or older,Sequel:10378,0.3766272,0.00041470543,0.75522393
+11737,Ao no Exorcist Movie,Movie,7.57,286769,1.0,88.0,88.0,2012.0,Action|Supernatural|Gourmet|Fantasy|Comedy,Shounen,PG-13 - Teens 13 or older,Parent Story:9919,0.37637308,0.00040074752,0.7756103
+73,Full Metal Panic! The Second Raid,TV,7.91,273887,13.0,24.0,312.0,2005.0,Girls Love|Action|Sci-Fi|Comedy|Romance,Seinen,R - 17+ (violence & profanity),Prequel:71|Sequel:31931|Side Story:72,0.3753741,0.00036715798,0.82208735
+8888,Code Geass: Boukoku no Akito 1 - Yokuryuu wa Maiorita,Movie,7.32,194771,1.0,51.0,51.0,2012.0,Sci-Fi|Action|Adventure,Seinen,R - 17+ (violence & profanity),Sequel:15197,0.37513977,0.0004087303,0.7547601
+5530,Pandora Hearts,TV,7.64,454176,25.0,24.0,600.0,2009.0,Adventure|Fantasy|Mystery|Comedy|Sports,Shounen,PG-13 - Teens 13 or older,,0.37502936,0.00037146197,0.8129807
+25099,"Ore ga Ojousama Gakkou ni ""Shomin Sample"" Toshite Gets♥Sareta Ken",TV,6.65,299089,12.0,23.0,276.0,2015.0,Comedy|Romance|Ecchi|Gourmet|Slice of Life,,PG-13 - Teens 13 or older,,0.37491956,0.0004248717,0.7277572
+25313,Gintama': Futon ni Haitte kara Buki Nokoshi ni Kizuite Neru ni Nerenai Toki mo Aru,Special,8.12,45792,1.0,24.0,24.0,2015.0,Action|Comedy|Sci-Fi,Shounen,PG-13 - Teens 13 or older,Parent Story:15417,0.37486815,0.00049724674,0.6129207
+40052,Great Pretender,TV,8.19,751171,23.0,23.0,529.0,2020.0,Action|Adventure|Mystery|Comedy|Sports,Shounen,R - 17+ (violence & profanity),Sequel:57184,0.37458482,0.0004237442,0.7273089
+5258,Hajime no Ippo: New Challenger,TV,8.67,327937,26.0,23.0,598.0,2009.0,Sports|Action|Comedy,Shounen,PG-13 - Teens 13 or older,Prequel:265|Sequel:19647,0.3742306,0.00039016327,0.7780708
+16157,Choujigen Game Neptune The Animation,TV,6.89,159338,12.0,24.0,288.0,2013.0,Action|Comedy|Fantasy|Sci-Fi|Girls Love|Romance,Seinen,PG-13 - Teens 13 or older,Sequel:20479|Summary:40073,0.37381446,0.00044812064,0.68361104
+37989,Golden Kamuy 2nd Season,TV,8.24,240181,12.0,23.0,276.0,2018.0,Action|Adventure|Gourmet|Comedy,Seinen,R - 17+ (violence & profanity),Prequel:36028|Sequel:40059|Side Story:37755|Side Story:38710,0.37196046,0.0004226857,0.7114878
+5060,Hetalia Axis Powers,ONA,7.25,267322,52.0,5.0,260.0,2009.0,Comedy|Boys Love|Romance,,PG-13 - Teens 13 or older,Sequel:8479|Side Story:9865|Side Story:7337|Side Story:43591,0.3716237,0.000392641,0.75677204
+401,Rurouni Kenshin: Meiji Kenkaku Romantan - Seisou-hen,OVA,7.96,89820,2.0,41.0,82.0,2001.0,Drama|Romance|Action,Shounen,R - 17+ (violence & profanity),Prequel:45,0.37146664,0.00042029098,0.71198416
+2994,Death Note: Rewrite,TV Special,7.73,226544,2.0,112.0,224.0,2007.0,Supernatural|Suspense|Fantasy|Mystery,Shounen,R - 17+ (violence & profanity),,0.37142584,0.0003950231,0.7516845
+31297,"Tokyo Ghoul: ""Pinto""",OVA,7.2,235510,1.0,24.0,24.0,2015.0,Action|Fantasy|Horror|Suspense|Comedy|Sports,Seinen,R - 17+ (violence & profanity),Parent Story:22319,0.37107652,0.0004110517,0.7239993
+1239,Bishoujo Senshi Sailor Moon SuperS,TV,7.64,130022,39.0,24.0,936.0,1995.0,Romance|Action|Fantasy|Adventure|Comedy,Shoujo,PG-13 - Teens 13 or older,Prequel:532|Sequel:996|Side Story:1240|Summary:8756,0.3708382,0.00042824348,0.6952141
+16774,Inferno Cop,ONA,7.21,107592,13.0,3.0,39.0,2012.0,Action|Comedy,,R - 17+ (violence & profanity),Character:32681,0.36958653,0.00043535084,0.67562616
+33028,Danganronpa 3: The End of Kibougamine Gakuen - Zetsubou-hen,TV,7.34,351868,11.0,23.0,253.0,2016.0,Action|Horror|Mystery|Suspense,Shounen,R - 17+ (violence & profanity),Prequel:16592|Sequel:32189|Sequel:34103,0.36935475,0.0003898197,0.74610883
+4672,Koukaku Kidoutai 2.0,Movie,7.96,93946,1.0,83.0,83.0,2008.0,Mystery|Sci-Fi|Suspense|Action,Seinen,R+ - Mild Nudity,Alternative Version:43,0.36830652,0.00042413306,0.68483865
+770,Pale Cocoon,OVA,7.25,75094,1.0,23.0,23.0,2005.0,Drama|Sci-Fi,Seinen,PG-13 - Teens 13 or older,,0.36818767,0.0004113979,0.7041925
+28497,Rokka no Yuusha,TV,7.25,675582,12.0,24.0,288.0,2015.0,Action|Fantasy|Mystery|Adventure|Romance,,PG-13 - Teens 13 or older,,0.368039,0.00033069082,0.8308761
+19647,Hajime no Ippo: Rising,TV,8.61,300383,25.0,22.0,550.0,2013.0,Sports|Action|Comedy|Romance,Shounen,PG-13 - Teens 13 or older,Prequel:5258,0.3677644,0.00038272832,0.74672484

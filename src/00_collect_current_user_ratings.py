@@ -1,0 +1,62 @@
+from __future__ import annotations
+
+import argparse
+from pathlib import Path
+
+
+BASE_DIR = Path(__file__).resolve().parents[1]
+NOTEBOOK_PATH = BASE_DIR / "notebooks" / "00_collect_current_user_ratings.ipynb"
+OUTPUT_CSV = BASE_DIR / "data" / "processed" / "current_user_ratings.csv"
+PROFILE_FEATURES_CSV = BASE_DIR / "data" / "processed" / "current_user_profile_features.csv"
+
+
+def execute_notebook(notebook_path: Path) -> None:
+    try:
+        import nbformat
+        from nbconvert.preprocessors import ExecutePreprocessor
+    except ImportError as exc:
+        raise SystemExit(
+            "Notebook execution requires nbformat and nbconvert. "
+            "Install project requirements, then run this command again."
+        ) from exc
+
+    notebook = nbformat.read(notebook_path, as_version=4)
+    executor = ExecutePreprocessor(timeout=None, kernel_name="python3")
+    executor.preprocess(notebook, {"metadata": {"path": str(BASE_DIR)}})
+    nbformat.write(notebook, notebook_path)
+
+
+def main() -> None:
+    parser = argparse.ArgumentParser(
+        description="Run the experimental current MAL user ratings and profile-feature collection notebook."
+    )
+    parser.add_argument(
+        "--execute",
+        action="store_true",
+        help="Actually execute the notebook. Omit this flag for a dry run.",
+    )
+    args = parser.parse_args()
+
+    print(f"Current ratings notebook: {NOTEBOOK_PATH}")
+    print(f"Expected ratings output: {OUTPUT_CSV}")
+    print("Expected ratings columns: userID, animeID, rating, status")
+    print(f"Expected profile feature output: {PROFILE_FEATURES_CSV}")
+    print(
+        "Expected profile columns: userID, scored_count, completed_count, watching_count, "
+        "on_hold_count, dropped_count, plan_to_watch_count, mean_score, favorite_anime_ids, "
+        "account_age_years, activity_recency_month"
+    )
+
+    if not NOTEBOOK_PATH.exists():
+        raise SystemExit("Current user ratings notebook is missing.")
+
+    if not args.execute:
+        print("Dry run only. Use --execute to run the collection notebook.")
+        return
+
+    execute_notebook(NOTEBOOK_PATH)
+    print("Current user ratings collection notebook executed.")
+
+
+if __name__ == "__main__":
+    main()
