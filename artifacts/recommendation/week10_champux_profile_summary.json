@@ -1,0 +1,17 @@
+{
+  "source": "https://api.jikan.moe/v4/users/Champux/full",
+  "fetched_at": "2026-06-13T14:05:24+00:00",
+  "username": "Champux",
+  "joined": "2017-03-07T00:00:00+00:00",
+  "last_online": "2026-06-13T13:49:25+00:00",
+  "anime_statistics": {
+    "completed": 1023,
+    "watching": 3,
+    "on_hold": 5,
+    "dropped": 0,
+    "plan_to_watch": 308,
+    "total_entries": 1339,
+    "mean_score": 7.44,
+    "days_watched": 244.7
+  }
+}

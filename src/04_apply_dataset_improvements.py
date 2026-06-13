@@ -176,6 +176,7 @@ MINOR_SHARED_ANIDB_RELATIONS = {FULL_STORY_RELATION}
 TAG_MIN_GLOBAL_COUNT = 5
 TAG_MIN_POSITIVE_WEIGHT = 1
 TAG_LOW_COUNT_FALLBACK_MIN = 3
+GENRE_PROMOTION_MIN_TAG_WEIGHT = 400
 ANIDB_SIMILAR_MIN_APPROVAL_RATIO = 0.25
 ANIDB_SIMILAR_SHARED_MIN_MEMBER_RATIO = 0.10
 ANIDB_SIMILAR_SHARED_MIN_DURATION_MINUTES = 10
@@ -520,7 +521,8 @@ def normalize_tags_and_promote_genres(df: pd.DataFrame) -> tuple[pd.DataFrame, d
             canonical = canonical_tag_name(tag)
             canonical_key = normalize_name(canonical)
             genre = GENRE_TAG_ALIASES.get(canonical_key)
-            if genre:
+            weight = tag_weights.get(normalize_name(tag), tag_weights.get(canonical_key))
+            if genre and weight is not None and weight >= GENRE_PROMOTION_MIN_TAG_WEIGHT:
                 added_genres.append(genre)
                 dropped_genre_tags += 1
                 continue
@@ -529,7 +531,6 @@ def normalize_tags_and_promote_genres(df: pd.DataFrame) -> tuple[pd.DataFrame, d
                 continue
 
             new_tags.append(canonical)
-            weight = tag_weights.get(normalize_name(tag), tag_weights.get(canonical_key))
             if weight is not None:
                 new_weights.append(f"{canonical}:{weight}")
 
@@ -940,8 +941,6 @@ def parse_anidb_tag_records(raw_tags: list[dict[str, Any]] | None, rating: Any =
                 parsed["explicit_tag_weights"].append(f"{canonical}:{tag['weight']}")
         else:
             if not canonical:
-                continue
-            if GENRE_TAG_ALIASES.get(canonical_key):
                 continue
             if should_drop_normal_tag(canonical):
                 continue

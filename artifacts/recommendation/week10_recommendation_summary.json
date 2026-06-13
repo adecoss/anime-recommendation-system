@@ -1,37 +1,59 @@
 {
   "task": "personalized anime recommendation/ranking",
-  "decision_supported": "rank candidate anime for a user based on completed liked anime, while allowing product filters and maturity-aware recommendation modes",
+  "decision_supported": "rank candidate anime for a user based on scored liked anime, while allowing product filters and profile-band-aware recommendation modes",
+  "chance_floor": "random_uniform: sanity baseline for top-k ranking under sampled candidates",
   "baseline": "popularity_baseline: globally common liked anime in training data",
-  "stronger_system": "latent_svd and hybrid_svd_popularity: personalized collaborative models that beat the popularity baseline",
+  "stronger_system": "latent_svd and hybrid_svd_popularity: personalized collaborative models that should beat random and popularity baselines",
   "product_safe_system": "hybrid_svd_popularity: latent collaborative SVD score blended with popularity for safer sparse-profile recommendations",
   "user_levels": [
     {
-      "level": "Absolute Beginner",
+      "level": "Newcomer",
       "min_known_entries": 0,
+      "max_known_entries": 19,
+      "primary_signal": "cold-start onboarding, genre filters, popularity, score, short entry points",
+      "risk": "no reliable personal vector; collaborative filtering needs a popularity/content fallback"
+    },
+    {
+      "level": "Casual Viewer",
+      "min_known_entries": 20,
       "max_known_entries": 49,
-      "primary_signal": "guided onboarding, genre filters, popularity, score, short entry points",
-      "risk": "cold start: no reliable personal taste vector yet"
+      "primary_signal": "genre onboarding, recognizable popular titles, short lists, early content similarity",
+      "risk": "some watched anime exist, but the profile is still too small for a stable latent taste vector"
     },
     {
-      "level": "Amateur",
+      "level": "Explorer",
       "min_known_entries": 50,
-      "max_known_entries": 149,
-      "primary_signal": "similar anime, relation navigation, popularity, high-rated catalog anchors",
-      "risk": "taste is still forming and may overfit to a few early favorites"
+      "max_known_entries": 99,
+      "primary_signal": "similar anime, relation navigation, popularity prior, high-rated anchors",
+      "risk": "taste is still forming; the model can overfit to a few early favorites"
     },
     {
-      "level": "Good",
-      "min_known_entries": 150,
-      "max_known_entries": 999,
-      "primary_signal": "collaborative filtering, relation continuation, seasonal/current discovery, controlled exploration",
-      "risk": "model should not only repeat the user's comfort zone"
+      "level": "Regular Fan",
+      "min_known_entries": 100,
+      "max_known_entries": 249,
+      "primary_signal": "collaborative filtering, relation continuation, content/tag similarity, current discovery",
+      "risk": "model should balance familiar taste with controlled exploration"
     },
     {
-      "level": "Pro",
-      "min_known_entries": 1000,
+      "level": "Dedicated Fan",
+      "min_known_entries": 250,
+      "max_known_entries": 499,
+      "primary_signal": "collaborative ranking, niche clusters, relation navigation, controlled novelty",
+      "risk": "the user knows many common recommendations, so repetition becomes more visible"
+    },
+    {
+      "level": "Veteran Fan",
+      "min_known_entries": 500,
+      "max_known_entries": 749,
+      "primary_signal": "collaborative ranking, niche clusters, graph-aware expansion, seasonal/current discovery",
+      "risk": "many obvious items are already known; recommendations need novelty and coverage"
+    },
+    {
+      "level": "Completionist",
+      "min_known_entries": 750,
       "max_known_entries": null,
-      "primary_signal": "long-tail discovery, novelty, niche clusters, graph-aware exploration",
-      "risk": "hardest group: most obvious catalog items are already known"
+      "primary_signal": "long-tail discovery, novelty, obscure catalog coverage, graph-aware exploration",
+      "risk": "hardest group: exact recovery is difficult and obvious catalog items are saturated"
     }
   ],
   "control_filters": {
@@ -45,6 +67,7 @@
   },
   "level_policy_note": "Level thresholds are product rules based on completed/known entries. Offline evaluation approximates this with known liked ratings because the Kaggle source has ratings but no chronological watch history.",
   "ratings_source": "C:\\Users\\CHAMPUX\\Downloads\\UPC TRABAJOS 2026\\BIG DATA\\proyect\\data\\processed\\ratings_processed.csv",
+  "ratings_source_note": "The stable interaction layer is the 2020 Kaggle MAL ratings dataset. A separate current-user ratings collector is being built for a later deliverable, but it is not yet used for this benchmark.",
   "catalog_source": "C:\\Users\\CHAMPUX\\Downloads\\UPC TRABAJOS 2026\\BIG DATA\\proyect\\data\\processed\\anime_dataset.csv",
   "like_threshold": 7,
   "candidate_pool": {
@@ -59,16 +82,54 @@
   "positive_interactions": 41928689,
   "svd_components": 64,
   "svd_retained_energy_proxy": 0.36927497386932373,
+  "mylist_example": {
+    "available": true,
+    "path": "C:\\Users\\CHAMPUX\\Downloads\\UPC TRABAJOS 2026\\BIG DATA\\proyect\\data\\raw\\MyList.xml",
+    "user_total_anime": 1338,
+    "user_total_completed": 1022,
+    "user_total_watching": 3,
+    "user_total_onhold": 5,
+    "user_total_dropped": 0,
+    "user_total_plantowatch": 308,
+    "rows_in_mylist_xml": 1338,
+    "known_or_planned_ids_excluded": 1338,
+    "liked_scored_catalog_seed_count": 588,
+    "completed_count_for_level": 1022,
+    "level": "Completionist",
+    "like_threshold": 7
+  },
+  "mylist_guardrail_example": {
+    "available": true,
+    "raw_candidates_reviewed": 200,
+    "blocked_candidates": 91,
+    "kept_candidates": 109,
+    "guardrails": [
+      "block summaries/recaps of known titles",
+      "block candidates with missing prerequisites",
+      "block candidates whose prerequisite is only plan-to-watch",
+      "block candidates whose prerequisite was rated below the like threshold",
+      "block side/special content unless the parent prerequisite is liked"
+    ]
+  },
   "outputs": {
     "metrics": "C:\\Users\\CHAMPUX\\Downloads\\UPC TRABAJOS 2026\\BIG DATA\\proyect\\artifacts\\recommendation\\week10_evaluation_metrics.csv",
     "level_metrics": "C:\\Users\\CHAMPUX\\Downloads\\UPC TRABAJOS 2026\\BIG DATA\\proyect\\artifacts\\recommendation\\week10_metrics_by_user_level.csv",
     "examples": "C:\\Users\\CHAMPUX\\Downloads\\UPC TRABAJOS 2026\\BIG DATA\\proyect\\artifacts\\recommendation\\week10_recommendation_examples.csv",
     "beginner_entrypoint_candidates": "C:\\Users\\CHAMPUX\\Downloads\\UPC TRABAJOS 2026\\BIG DATA\\proyect\\artifacts\\recommendation\\week10_beginner_entrypoint_candidates.csv",
+    "mylist_recommendation_example": "C:\\Users\\CHAMPUX\\Downloads\\UPC TRABAJOS 2026\\BIG DATA\\proyect\\artifacts\\recommendation\\week10_mylist_recommendation_example.csv",
+    "mylist_guarded_recommendation_example": "C:\\Users\\CHAMPUX\\Downloads\\UPC TRABAJOS 2026\\BIG DATA\\proyect\\artifacts\\recommendation\\week10_mylist_guarded_recommendation_example.csv",
+    "mylist_guardrail_comparison": "C:\\Users\\CHAMPUX\\Downloads\\UPC TRABAJOS 2026\\BIG DATA\\proyect\\artifacts\\recommendation\\week10_mylist_guardrail_comparison.csv",
+    "mylist_guardrail_block_summary": "C:\\Users\\CHAMPUX\\Downloads\\UPC TRABAJOS 2026\\BIG DATA\\proyect\\artifacts\\recommendation\\week10_mylist_guardrail_block_summary.csv",
     "alignment": "C:\\Users\\CHAMPUX\\Downloads\\UPC TRABAJOS 2026\\BIG DATA\\proyect\\artifacts\\recommendation\\week10_data_alignment.csv",
     "user_eval_sample": "C:\\Users\\CHAMPUX\\Downloads\\UPC TRABAJOS 2026\\BIG DATA\\proyect\\artifacts\\recommendation\\week10_user_level_eval_sample.csv",
     "metric_plot": "C:\\Users\\CHAMPUX\\Downloads\\UPC TRABAJOS 2026\\BIG DATA\\proyect\\artifacts\\plots\\week10\\week10_metric_comparison.png",
     "rank_plot": "C:\\Users\\CHAMPUX\\Downloads\\UPC TRABAJOS 2026\\BIG DATA\\proyect\\artifacts\\plots\\week10\\week10_median_rank.png",
     "level_distribution_plot": "C:\\Users\\CHAMPUX\\Downloads\\UPC TRABAJOS 2026\\BIG DATA\\proyect\\artifacts\\plots\\week10\\week10_user_level_distribution.png",
-    "level_hit_plot": "C:\\Users\\CHAMPUX\\Downloads\\UPC TRABAJOS 2026\\BIG DATA\\proyect\\artifacts\\plots\\week10\\week10_hit_at_10_by_user_level.png"
+    "level_hit_plot": "C:\\Users\\CHAMPUX\\Downloads\\UPC TRABAJOS 2026\\BIG DATA\\proyect\\artifacts\\plots\\week10\\week10_hit_at_10_by_user_level.png",
+    "rank_distribution_plot": "C:\\Users\\CHAMPUX\\Downloads\\UPC TRABAJOS 2026\\BIG DATA\\proyect\\artifacts\\plots\\week10\\week10_rank_distribution_by_method.png",
+    "level_method_plot": "C:\\Users\\CHAMPUX\\Downloads\\UPC TRABAJOS 2026\\BIG DATA\\proyect\\artifacts\\plots\\week10\\week10_method_hit_by_user_level.png",
+    "mylist_plot": "C:\\Users\\CHAMPUX\\Downloads\\UPC TRABAJOS 2026\\BIG DATA\\proyect\\artifacts\\plots\\week10\\week10_mylist_top_recommendations.png",
+    "mylist_guarded_plot": "C:\\Users\\CHAMPUX\\Downloads\\UPC TRABAJOS 2026\\BIG DATA\\proyect\\artifacts\\plots\\week10\\week10_mylist_guarded_top_recommendations.png",
+    "discovery_metrics_plot": "C:\\Users\\CHAMPUX\\Downloads\\UPC TRABAJOS 2026\\BIG DATA\\proyect\\artifacts\\plots\\week10\\week10_discovery_metrics.png"
   }
 }

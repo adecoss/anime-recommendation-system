@@ -2,6 +2,8 @@
 _assigmentInstructions/
 reports/document/
 reports/video/*script*.txt
+reports/*.pptx
+reports/video/*.pptx
 src/10_create_week7_video_deck.py
 secrets/
 .env
@@ -14,7 +16,10 @@ data/processed/ratings_processed.csv
 data/processed/ratings_processed.*
 data/processed/current_user_ratings.csv
 data/processed/current_user_ratings.*
+data/processed/current_user_profile_features.csv
+data/processed/current_user_profile_features.*
 data/build/current_user_ratings_*.json
+data/build/current_user_ratings_*.json*
 *.zip
 
 # Heavy model/matrix artifacts

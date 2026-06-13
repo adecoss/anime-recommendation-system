@@ -7,6 +7,7 @@ from pathlib import Path
 BASE_DIR = Path(__file__).resolve().parents[1]
 NOTEBOOK_PATH = BASE_DIR / "notebooks" / "00_collect_current_user_ratings.ipynb"
 OUTPUT_CSV = BASE_DIR / "data" / "processed" / "current_user_ratings.csv"
+PROFILE_FEATURES_CSV = BASE_DIR / "data" / "processed" / "current_user_profile_features.csv"
 
 
 def execute_notebook(notebook_path: Path) -> None:
@@ -27,7 +28,7 @@ def execute_notebook(notebook_path: Path) -> None:
 
 def main() -> None:
     parser = argparse.ArgumentParser(
-        description="Run the experimental current MAL user ratings collection notebook."
+        description="Run the experimental current MAL user ratings and profile-feature collection notebook."
     )
     parser.add_argument(
         "--execute",
@@ -37,7 +38,14 @@ def main() -> None:
     args = parser.parse_args()
 
     print(f"Current ratings notebook: {NOTEBOOK_PATH}")
-    print(f"Expected experimental output: {OUTPUT_CSV}")
+    print(f"Expected ratings output: {OUTPUT_CSV}")
+    print("Expected ratings columns: userID, animeID, rating, status")
+    print(f"Expected profile feature output: {PROFILE_FEATURES_CSV}")
+    print(
+        "Expected profile columns: userID, scored_count, completed_count, watching_count, "
+        "on_hold_count, dropped_count, plan_to_watch_count, mean_score, favorite_anime_ids, "
+        "account_age_years, activity_recency_month"
+    )
 
     if not NOTEBOOK_PATH.exists():
         raise SystemExit("Current user ratings notebook is missing.")

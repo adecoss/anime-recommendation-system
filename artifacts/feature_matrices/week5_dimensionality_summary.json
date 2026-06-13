@@ -1,0 +1,8 @@
+{
+  "method": "TruncatedSVD",
+  "input_matrix": "C:\\Users\\CHAMPUX\\Downloads\\UPC TRABAJOS 2026\\BIG DATA\\proyect\\artifacts\\feature_matrices\\catalog_feature_matrix.npz",
+  "rows": 14947,
+  "columns": 4054,
+  "components_tested": 120,
+  "retained_energy": 0.9543524783157168
+}
