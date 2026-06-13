@@ -1,7 +1,9 @@
 from __future__ import annotations
 
 import argparse
+from collections import Counter, defaultdict
 import json
+import os
 import random
 import re
 import sys
@@ -28,9 +30,52 @@ ROOT = Path(__file__).resolve().parents[1]
 DATASET_CSV = ROOT / "data" / "processed" / "anime_dataset.csv"
 DATASET_JSON = ROOT / "data" / "processed" / "anime_dataset.json"
 ANIDB_CACHE_FILE = ROOT / "data" / "caches" / "anidb_metadata_cache.json"
+SKIPPED_INVALID_TYPE_IDS_FILE = ROOT / "data" / "build" / "skipped_invalid_type_ids.json"
+TAG_QUALITY_REVIEW_CSV = ROOT / "artifacts" / "eda_tables" / "tag_quality_review.csv"
+REMOVED_DUPLICATE_SPECIALS_CSV = ROOT / "artifacts" / "eda_tables" / "removed_duplicate_specials.csv"
+REMOVED_SPECIALS_WITHOUT_ANIDB_CSV = ROOT / "artifacts" / "eda_tables" / "removed_specials_without_anidb.csv"
 
-ANIDB_CLIENT = "matuki"
-ANIDB_CLIENTVER = 3
+
+def normalize_secret_key(value: str) -> str:
+    return re.sub(r"[^A-Z0-9]+", "_", str(value).strip().upper()).strip("_")
+
+
+def parse_secret_file(path: Path) -> dict[str, str]:
+    parsed: dict[str, str] = {}
+    if not path.exists():
+        return parsed
+    for raw_line in path.read_text(encoding="utf-8").splitlines():
+        line = raw_line.strip()
+        if not line or line.startswith("#") or "=" not in line:
+            continue
+        key, value = line.split("=", 1)
+        parsed[normalize_secret_key(key)] = value.strip().strip('"').strip("'")
+    return parsed
+
+
+def read_local_secret(*names: str, default: str | None = None, filename: str | None = None) -> str | None:
+    for name in names:
+        value = os.environ.get(name) or os.environ.get(normalize_secret_key(name))
+        if value:
+            return value
+
+    secret_cache = parse_secret_file(ROOT / "secrets" / "secret.txt")
+    for name in names:
+        value = secret_cache.get(normalize_secret_key(name))
+        if value:
+            return value
+
+    if filename:
+        path = ROOT / "secrets" / filename
+        if path.exists():
+            value = path.read_text(encoding="utf-8").strip()
+            if value:
+                return value
+    return default
+
+
+ANIDB_CLIENT = read_local_secret("ANIDB_CLIENT", "ANIDB_CLIENT_NAME", filename="anidb_client.txt", default="")
+ANIDB_CLIENTVER = int(read_local_secret("ANIDB_CLIENTVER", "ANIDB_CLIENT_VERSION", filename="anidb_clientver.txt", default="0") or 0)
 ANIDB_REQUEST_DELAY_SECONDS = 4
 ANIDB_REQUEST_JITTER_SECONDS = 0.5
 
@@ -105,20 +150,233 @@ ORIGIN_TAGS_FOR_STUDIOS = {
     "Thai production",
 }
 
-GENRE_ALIASES = {
+SPECIAL_TYPES = {"Special", "TV Special"}
+RECAP_TITLE_PATTERNS = (
+    r"\brecap\b",
+    r"\brecaps\b",
+    r"\bsummary\b",
+    r"\bdigest\b",
+    r"\bsoushuuhen\b",
+    r"\bsoushuu-hen\b",
+)
+MINOR_SHARED_ANIDB_TITLE_PATTERNS = RECAP_TITLE_PATTERNS + (
+    r"\bmanner\b",
+    r"\bomake\b",
+    r"\bpreview\b",
+    r"\btrailer\b",
+    r"\bteaser\b",
+    r"\bcommercial\b",
+    r"\bcm\b",
+    r"\bpv\b",
+)
+CORE_FRANCHISE_RELATIONS = {"Prequel", "Sequel", "Parent Story", "Alternative Setting", "Alternative Version"}
+SUMMARY_RELATION = "Summary"
+FULL_STORY_RELATION = "Full Story"
+MINOR_SHARED_ANIDB_RELATIONS = {FULL_STORY_RELATION}
+TAG_MIN_GLOBAL_COUNT = 5
+TAG_MIN_POSITIVE_WEIGHT = 1
+TAG_LOW_COUNT_FALLBACK_MIN = 3
+ANIDB_SIMILAR_MIN_APPROVAL_RATIO = 0.25
+ANIDB_SIMILAR_SHARED_MIN_MEMBER_RATIO = 0.10
+ANIDB_SIMILAR_SHARED_MIN_DURATION_MINUTES = 10
+
+MAL_GENRES = {
+    "Action",
+    "Adventure",
+    "Avant Garde",
+    "Award Winning",
+    "Boys Love",
+    "Comedy",
+    "Drama",
+    "Fantasy",
+    "Girls Love",
+    "Gourmet",
+    "Horror",
+    "Mystery",
+    "Romance",
+    "Sci-Fi",
+    "Slice of Life",
+    "Sports",
+    "Supernatural",
+    "Suspense",
+}
+MAL_EXPLICIT_GENRES = {"Ecchi", "Erotica", "Hentai"}
+MAL_THEMES = {
+    "Adult Cast",
+    "Anthropomorphic",
+    "CGDCT",
+    "Childcare",
+    "Combat Sports",
+    "Crossdressing",
+    "Delinquents",
+    "Detective",
+    "Educational",
+    "Gag Humor",
+    "Gore",
+    "Harem",
+    "High Stakes Game",
+    "Historical",
+    "Idols (Female)",
+    "Idols (Male)",
+    "Isekai",
+    "Iyashikei",
+    "Love Polygon",
+    "Love Status Quo",
+    "Magical Sex Shift",
+    "Mahou Shoujo",
+    "Martial Arts",
+    "Mecha",
+    "Medical",
+    "Military",
+    "Music",
+    "Mythology",
+    "Organized Crime",
+    "Otaku Culture",
+    "Parody",
+    "Performing Arts",
+    "Pets",
+    "Psychological",
+    "Racing",
+    "Reincarnation",
+    "Reverse Harem",
+    "Samurai",
+    "School",
+    "Showbiz",
+    "Space",
+    "Strategy Game",
+    "Super Power",
+    "Survival",
+    "Team Sports",
+    "Time Travel",
+    "Urban Fantasy",
+    "Vampire",
+    "Video Game",
+    "Villainess",
+    "Visual Arts",
+    "Workplace",
+}
+PROTECTED_TAGS: set[str] = set()
+GENRE_TAG_ALIASES = {
+    "action": "Action",
+    "adventure": "Adventure",
+    "avant garde": "Avant Garde",
+    "award winning": "Award Winning",
+    "boys love": "Boys Love",
+    "shounen ai": "Boys Love",
+    "comedy": "Comedy",
+    "drama": "Drama",
+    "fantasy": "Fantasy",
+    "girls love": "Girls Love",
+    "shoujo ai": "Girls Love",
+    "gourmet": "Gourmet",
+    "cooking": "Gourmet",
+    "horror": "Horror",
+    "mystery": "Mystery",
+    "romance": "Romance",
+    "hard science fiction": "Sci-Fi",
     "science fiction": "Sci-Fi",
+    "soft science fiction": "Sci-Fi",
     "sci fi": "Sci-Fi",
     "sci-fi": "Sci-Fi",
-    "daily life": "Slice of Life",
     "slice of life": "Slice of Life",
-    "shounen ai": "Boys Love",
-    "boys love": "Boys Love",
-    "shoujo ai": "Girls Love",
-    "girls love": "Girls Love",
-    "cooking": "Gourmet",
-    "food": "Gourmet",
-    "thriller": "Suspense",
+    "daily life": "Slice of Life",
+    "sports": "Sports",
+    "supernatural": "Supernatural",
     "suspense": "Suspense",
+    "thriller": "Suspense",
+}
+THEME_TAG_ALIASES = {
+    "adult cast": "Adult Cast",
+    "predominantly adult cast": "Adult Cast",
+    "anthropomorphism": "Anthropomorphic",
+    "anthropomorphic": "Anthropomorphic",
+    "cute girls doing cute things": "CGDCT",
+    "childcare": "Childcare",
+    "combat sports": "Combat Sports",
+    "cross dressing": "Crossdressing",
+    "cross-dressing": "Crossdressing",
+    "crossdressing": "Crossdressing",
+    "delinquents": "Delinquents",
+    "detective": "Detective",
+    "educational": "Educational",
+    "gag humor": "Gag Humor",
+    "slapstick": "Gag Humor",
+    "gore": "Gore",
+    "harem": "Harem",
+    "high stakes game": "High Stakes Game",
+    "historical": "Historical",
+    "idols female": "Idols (Female)",
+    "female idol": "Idols (Female)",
+    "female idols": "Idols (Female)",
+    "idols male": "Idols (Male)",
+    "male idol": "Idols (Male)",
+    "male idols": "Idols (Male)",
+    "isekai": "Isekai",
+    "iyashikei": "Iyashikei",
+    "love polygon": "Love Polygon",
+    "love status quo": "Love Status Quo",
+    "magical sex shift": "Magical Sex Shift",
+    "gender bender": "Magical Sex Shift",
+    "mahou shoujo": "Mahou Shoujo",
+    "magical girl": "Mahou Shoujo",
+    "martial arts": "Martial Arts",
+    "mecha": "Mecha",
+    "medical": "Medical",
+    "military": "Military",
+    "music": "Music",
+    "mythology": "Mythology",
+    "organized crime": "Organized Crime",
+    "otaku culture": "Otaku Culture",
+    "parody": "Parody",
+    "performing arts": "Performing Arts",
+    "pets": "Pets",
+    "psychological": "Psychological",
+    "racing": "Racing",
+    "reincarnation": "Reincarnation",
+    "reverse harem": "Reverse Harem",
+    "samurai": "Samurai",
+    "school life": "School",
+    "school": "School",
+    "showbiz": "Showbiz",
+    "space": "Space",
+    "strategy game": "Strategy Game",
+    "card games": "Strategy Game",
+    "super power": "Super Power",
+    "superpower": "Super Power",
+    "survival": "Survival",
+    "team sports": "Team Sports",
+    "time travel": "Time Travel",
+    "urban fantasy": "Urban Fantasy",
+    "vampire": "Vampire",
+    "video game": "Video Game",
+    "visual novel": "Video Game",
+    "villainess": "Villainess",
+    "visual arts": "Visual Arts",
+    "workplace": "Workplace",
+    "association football": "football",
+}
+NOISY_TAGS = {
+    "cast",
+    "cast-free",
+    "ending",
+    "ending tags that need merging",
+    "old animetags op ed",
+    "old animetags - op ed",
+    "only makes sense with original work knowledge",
+    "some weird shit goin on",
+    "some weird shit goin` on",
+    "slow when it comes to love",
+    "speculative fiction",
+    "storytelling",
+    "technical aspects",
+    "tropes",
+    "violent retribution for accidental infringement",
+}
+VAGUE_TAGS = {
+    "air",
+    "earth",
+    "fire",
+    "water",
 }
 
 
@@ -165,10 +423,318 @@ def merge_pipe_values(values: list[str]) -> str:
     return "|".join(merged)
 
 
+def parse_weight_map(value: Any) -> dict[str, int]:
+    weights: dict[str, int] = {}
+    for item in split_pipe_values(value):
+        if ":" not in item:
+            continue
+        name, weight = item.rsplit(":", 1)
+        name = name.strip()
+        parsed_weight = parse_int(weight, default=None)
+        if name and parsed_weight is not None:
+            weights[normalize_name(name)] = parsed_weight
+    return weights
+
+
+def count_pipe_values(series: pd.Series) -> Counter[str]:
+    counts: Counter[str] = Counter()
+    for value in series.fillna(""):
+        counts.update(split_pipe_values(value))
+    return counts
+
+
 def normalize_name(value: Any) -> str:
     text = str(value or "").strip().casefold()
     text = re.sub(r"[\W_]+", " ", text)
     return re.sub(r"\s+", " ", text).strip()
+
+
+PROTECTED_TAGS = {normalize_name(tag) for tag in MAL_THEMES}
+NOISY_TAG_KEYS = {normalize_name(tag) for tag in NOISY_TAGS}
+VAGUE_TAG_KEYS = {normalize_name(tag) for tag in VAGUE_TAGS}
+
+
+def strip_anidb_maintenance_suffix(value: Any) -> str:
+    text = str(value or "").strip()
+    text = re.sub(r"\s*--\s*TO BE (?:SPLIT|MOVED|DELETED|MERGED).*", "", text, flags=re.IGNORECASE)
+    text = re.sub(r"\s*-\s*TO BE (?:SPLIT|MOVED|DELETED|MERGED).*", "", text, flags=re.IGNORECASE)
+    return re.sub(r"\s+", " ", text).strip()
+
+
+def canonical_tag_name(value: Any) -> str:
+    clean = strip_anidb_maintenance_suffix(value)
+    key = normalize_name(clean)
+    if key in THEME_TAG_ALIASES:
+        return THEME_TAG_ALIASES[key]
+    if key == "sexual abuse":
+        return "sexual abuse"
+    return clean
+
+
+def should_drop_normal_tag(value: Any) -> bool:
+    key = normalize_name(strip_anidb_maintenance_suffix(value))
+    return key in NOISY_TAG_KEYS or key in VAGUE_TAG_KEYS or "need deleting" in key or "needs merging" in key
+
+
+def canonicalize_pipe_column(value: Any) -> str:
+    return merge_pipe_values([canonical_tag_name(item) for item in split_pipe_values(value)])
+
+
+def canonicalize_weight_column(value: Any) -> str:
+    pairs = []
+    for item in split_pipe_values(value):
+        if ":" not in item:
+            continue
+        tag, weight = item.rsplit(":", 1)
+        tag = canonical_tag_name(tag)
+        parsed_weight = parse_int(weight, default=None)
+        if tag and parsed_weight is not None:
+            pairs.append(f"{tag}:{parsed_weight}")
+    return merge_pipe_values(pairs)
+
+
+def normalize_tags_and_promote_genres(df: pd.DataFrame) -> tuple[pd.DataFrame, dict[str, int]]:
+    summary = {
+        "genre_values_added_from_tags": 0,
+        "normal_tags_removed_as_genre_equivalents": 0,
+        "normal_tags_removed_as_noisy_or_vague": 0,
+        "normal_tags_canonicalized": 0,
+        "explicit_tags_canonicalized": 0,
+    }
+    df = df.copy()
+
+    if "genres" not in df.columns:
+        df["genres"] = ""
+
+    for idx, row in df.iterrows():
+        genres = split_pipe_values(row.get("genres"))
+        tags = split_pipe_values(row.get("tags"))
+        tag_weights = parse_weight_map(row.get("tag_weights"))
+        new_tags: list[str] = []
+        new_weights: list[str] = []
+        added_genres: list[str] = []
+        dropped_genre_tags = 0
+        dropped_noisy = 0
+
+        for tag in tags:
+            canonical = canonical_tag_name(tag)
+            canonical_key = normalize_name(canonical)
+            genre = GENRE_TAG_ALIASES.get(canonical_key)
+            if genre:
+                added_genres.append(genre)
+                dropped_genre_tags += 1
+                continue
+            if should_drop_normal_tag(canonical):
+                dropped_noisy += 1
+                continue
+
+            new_tags.append(canonical)
+            weight = tag_weights.get(normalize_name(tag), tag_weights.get(canonical_key))
+            if weight is not None:
+                new_weights.append(f"{canonical}:{weight}")
+
+        merged_genres = merge_pipe_values(genres + added_genres)
+        merged_tags = merge_pipe_values(new_tags)
+        merged_weights = merge_pipe_values(new_weights)
+
+        if merged_genres != ("" if is_missing_text(row.get("genres")) else str(row.get("genres"))):
+            summary["genre_values_added_from_tags"] += len(set(map(normalize_name, added_genres)) - set(map(normalize_name, genres)))
+            df.at[idx, "genres"] = merged_genres
+        if merged_tags != ("" if is_missing_text(row.get("tags")) else str(row.get("tags"))) or merged_weights != (
+            "" if is_missing_text(row.get("tag_weights")) else str(row.get("tag_weights"))
+        ):
+            summary["normal_tags_canonicalized"] += 1
+            df.at[idx, "tags"] = merged_tags
+            df.at[idx, "tag_weights"] = merged_weights
+        summary["normal_tags_removed_as_genre_equivalents"] += dropped_genre_tags
+        summary["normal_tags_removed_as_noisy_or_vague"] += dropped_noisy
+
+    for tag_col, weight_col in [("explicit_tags", "explicit_tag_weights")]:
+        if tag_col not in df.columns:
+            continue
+        for idx, row in df.iterrows():
+            old_tags = "" if is_missing_text(row.get(tag_col)) else str(row.get(tag_col))
+            old_weights = "" if is_missing_text(row.get(weight_col)) else str(row.get(weight_col))
+            new_tags = canonicalize_pipe_column(old_tags)
+            new_weights = canonicalize_weight_column(old_weights)
+            if new_tags != old_tags or new_weights != old_weights:
+                df.at[idx, tag_col] = new_tags
+                if weight_col in df.columns:
+                    df.at[idx, weight_col] = new_weights
+                summary["explicit_tags_canonicalized"] += 1
+
+    return df, summary
+
+
+def row_sort_for_canonical(df: pd.DataFrame) -> pd.DataFrame:
+    working = df.copy()
+    working["_type_priority"] = working["type"].apply(
+        lambda value: 1 if str(value).strip() in SPECIAL_TYPES else 0
+    )
+    working["_members_sort"] = pd.to_numeric(
+        working["members"] if "members" in working.columns else pd.Series(-1, index=working.index),
+        errors="coerce",
+    ).fillna(-1)
+    working["_episodes_sort"] = pd.to_numeric(
+        working["episodes"] if "episodes" in working.columns else pd.Series(-1, index=working.index),
+        errors="coerce",
+    ).fillna(-1)
+    working["_popularity_sort"] = pd.to_numeric(
+        working["popularity"] if "popularity" in working.columns else pd.Series(999999999, index=working.index),
+        errors="coerce",
+    ).fillna(999999999)
+    return working.sort_values(
+        ["_type_priority", "_members_sort", "_episodes_sort", "_popularity_sort"],
+        ascending=[True, False, False, True],
+    )
+
+
+def canonical_mal_by_anidb(df: pd.DataFrame) -> dict[int, int]:
+    mapping: dict[int, int] = {}
+    candidates = df[df["anidb_id"].notna()].copy()
+    if candidates.empty:
+        return mapping
+    sorted_candidates = row_sort_for_canonical(candidates)
+    for anidb_id, group in sorted_candidates.groupby("anidb_id", sort=False):
+        parsed_anidb_id = parse_int(anidb_id, default=None)
+        if parsed_anidb_id is None or group.empty:
+            continue
+        mapping[parsed_anidb_id] = int(group.iloc[0]["mal_id"])
+    return mapping
+
+
+def anidb_group_stats(df: pd.DataFrame) -> dict[int, dict[str, Any]]:
+    stats: dict[int, dict[str, Any]] = {}
+    if "anidb_id" not in df.columns:
+        return stats
+
+    for anidb_id, group in df[df["anidb_id"].notna()].groupby("anidb_id"):
+        parsed_anidb_id = parse_int(anidb_id, default=None)
+        if parsed_anidb_id is None:
+            continue
+        members = pd.to_numeric(group.get("members"), errors="coerce").fillna(0)
+        group_mal_ids = {int(value) for value in group["mal_id"].dropna().astype(int)}
+        minor_relation_sources: set[int] = set()
+        minor_relation_targets: set[int] = set()
+        for _idx, row in group.iterrows():
+            source_mal_id = parse_int(row.get("mal_id"), default=None)
+            for relation, target in parse_relation_edges(row.get("relations")):
+                if relation == SUMMARY_RELATION and target in group_mal_ids:
+                    minor_relation_targets.add(int(target))
+                if relation == FULL_STORY_RELATION and target in group_mal_ids and source_mal_id is not None:
+                    minor_relation_sources.add(int(source_mal_id))
+        stats[parsed_anidb_id] = {
+            "row_count": int(len(group)),
+            "canonical_mal_id": int(row_sort_for_canonical(group).iloc[0]["mal_id"]),
+            "max_members": int(members.max()) if not members.empty else 0,
+            "minor_relation_sources": minor_relation_sources,
+            "minor_relation_targets": minor_relation_targets,
+        }
+    return stats
+
+
+def has_core_franchise_relation(value: Any) -> bool:
+    for relation, _target in parse_relation_edges(value):
+        if relation in CORE_FRANCHISE_RELATIONS:
+            return True
+    return False
+
+
+def has_minor_shared_anidb_relation(value: Any) -> bool:
+    for relation, _target in parse_relation_edges(value):
+        if relation in MINOR_SHARED_ANIDB_RELATIONS:
+            return True
+    return False
+
+
+def is_minor_shared_anidb_title(value: Any) -> bool:
+    title = str(value or "")
+    return any(re.search(pattern, title, flags=re.IGNORECASE) for pattern in MINOR_SHARED_ANIDB_TITLE_PATTERNS)
+
+
+def should_receive_anidb_similar_edges(row: pd.Series, group_stats: dict[int, dict[str, Any]]) -> bool:
+    anidb_id = parse_int(row.get("anidb_id"), default=None)
+    if anidb_id is None:
+        return False
+
+    stats = group_stats.get(anidb_id, {"row_count": 1, "canonical_mal_id": parse_int(row.get("mal_id"), default=None)})
+    if stats.get("row_count", 1) <= 1:
+        return True
+
+    mal_id = parse_int(row.get("mal_id"), default=None)
+    if mal_id == stats.get("canonical_mal_id"):
+        return True
+
+    if mal_id in stats.get("minor_relation_targets", set()):
+        return False
+
+    if mal_id in stats.get("minor_relation_sources", set()):
+        return False
+
+    if is_minor_shared_anidb_title(row.get("title")):
+        return False
+
+    duration = parse_duration_minutes(row.get("duration"))
+    members = parse_int(row.get("members"), default=0) or 0
+    max_members = int(stats.get("max_members") or 0)
+    member_ratio = members / max_members if max_members else 0
+
+    if duration is not None and duration < ANIDB_SIMILAR_SHARED_MIN_DURATION_MINUTES:
+        return False
+
+    if has_minor_shared_anidb_relation(row.get("relations")):
+        return False
+
+    if has_core_franchise_relation(row.get("relations")):
+        return True
+
+    if not is_missing_text(row.get("recommendations")):
+        return True
+
+    return member_ratio >= ANIDB_SIMILAR_SHARED_MIN_MEMBER_RATIO
+
+
+def parse_recommendation_edges(value: Any) -> dict[int, int]:
+    edges: dict[int, int] = {}
+    for item in split_pipe_values(value):
+        if ":" in item:
+            target, weight = item.split(":", 1)
+        else:
+            target, weight = item, "1"
+        target_id = parse_int(target, default=None)
+        if target_id is None:
+            continue
+        edges[target_id] = max(edges.get(target_id, 0), parse_int(weight, default=1) or 1)
+    return edges
+
+
+def format_recommendation_edges(edges: dict[int, int]) -> str:
+    return "|".join(f"{target}:{weight}" for target, weight in edges.items())
+
+
+def parse_relation_edges(value: Any) -> list[tuple[str, int]]:
+    edges: list[tuple[str, int]] = []
+    for item in split_pipe_values(value):
+        if ":" not in item:
+            continue
+        relation, target = item.rsplit(":", 1)
+        target_id = parse_int(target, default=None)
+        relation = relation.strip()
+        if relation and target_id is not None:
+            edges.append((relation, target_id))
+    return edges
+
+
+def format_relation_edges(edges: list[tuple[str, int]]) -> str:
+    seen: set[tuple[str, int]] = set()
+    formatted: list[str] = []
+    for relation, target in edges:
+        key = (relation, int(target))
+        if key in seen:
+            continue
+        seen.add(key)
+        formatted.append(f"{relation}:{int(target)}")
+    return "|".join(formatted)
 
 
 def normalize_demographic_name(name: str) -> str | None:
@@ -310,6 +876,12 @@ def tag_ancestor_names(tag_id: int, tags_by_id: dict[int, dict[str, Any]]) -> li
 
 
 def parse_anidb_tag_records(raw_tags: list[dict[str, Any]] | None, rating: Any = None) -> dict[str, str]:
+    """Classify AniDB raw tags using the same cleanup rules used by the dataset.
+
+    This intentionally does not return normal tags that are equivalent to MAL
+    genres. Values such as ``action`` and ``science fiction`` belong in
+    ``genres`` after promotion, not back in the cleaned descriptive ``tags``.
+    """
     tags_by_id = {
         int(tag["id"]): {
             "id": int(tag["id"]),
@@ -359,12 +931,22 @@ def parse_anidb_tag_records(raw_tags: list[dict[str, Any]] | None, rating: Any =
             or (name_key in RATING_GATED_EXPLICIT_TAGS)
         )
 
+        canonical = canonical_tag_name(name)
+        canonical_key = normalize_name(canonical)
+
         if is_always_explicit or is_rating_gated_explicit:
-            parsed["explicit_tags"].append(name)
-            parsed["explicit_tag_weights"].append(f"{name}:{tag['weight']}")
+            if canonical:
+                parsed["explicit_tags"].append(canonical)
+                parsed["explicit_tag_weights"].append(f"{canonical}:{tag['weight']}")
         else:
-            parsed["tags"].append(name)
-            parsed["tag_weights"].append(f"{name}:{tag['weight']}")
+            if not canonical:
+                continue
+            if GENRE_TAG_ALIASES.get(canonical_key):
+                continue
+            if should_drop_normal_tag(canonical):
+                continue
+            parsed["tags"].append(canonical)
+            parsed["tag_weights"].append(f"{canonical}:{tag['weight']}")
 
     return {key: merge_pipe_values(values) for key, values in parsed.items()}
 
@@ -426,28 +1008,201 @@ def preferred_episode_count_from_payload(payload: dict[str, Any] | None) -> int 
 
 
 def merge_recommendation_edges(existing: Any, new_edges: list[str]) -> str:
-    merged: dict[str, int] = {}
-    for edge in split_pipe_values(existing):
-        if ":" in edge:
-            target, weight = edge.split(":", 1)
-        else:
-            target, weight = edge, "1"
-        target = target.strip()
-        if not target:
-            continue
-        merged[target] = max(merged.get(target, 0), parse_int(weight, default=1) or 1)
+    merged = parse_recommendation_edges(existing)
 
     for edge in new_edges:
-        if ":" in edge:
-            target, weight = edge.split(":", 1)
-        else:
-            target, weight = edge, "1"
-        target = target.strip()
-        if not target:
-            continue
-        merged[target] = max(merged.get(target, 0), parse_int(weight, default=1) or 1)
+        for target, weight in parse_recommendation_edges(edge).items():
+            merged[target] = max(merged.get(target, 0), weight)
 
-    return "|".join(f"{target}:{weight}" for target, weight in merged.items())
+    return format_recommendation_edges(merged)
+
+
+def remove_duplicate_specials_with_shared_anidb(df: pd.DataFrame) -> tuple[pd.DataFrame, dict[int, int], pd.DataFrame]:
+    if "anidb_id" not in df.columns:
+        return df, {}, pd.DataFrame()
+
+    removals: list[dict[str, Any]] = []
+    removed_to_canonical: dict[int, int] = {}
+    duplicate_groups = df[df["anidb_id"].notna()].groupby("anidb_id")
+
+    for anidb_id, group in duplicate_groups:
+        if len(group) <= 1:
+            continue
+
+        sorted_group = row_sort_for_canonical(group)
+        canonical_row = sorted_group.iloc[0]
+        canonical_mal_id = int(canonical_row["mal_id"])
+        canonical_members = parse_int(canonical_row.get("members"), default=0) or 0
+        canonical_episodes = parse_int(canonical_row.get("episodes"), default=0) or 0
+
+        for _, row in group.iterrows():
+            mal_id = int(row["mal_id"])
+            if mal_id == canonical_mal_id:
+                continue
+
+            row_type = str(row.get("type") or "").strip()
+            row_title = str(row.get("title") or "")
+            is_special_type = row_type in SPECIAL_TYPES
+            is_recap_like = any(
+                re.search(pattern, row_title, flags=re.IGNORECASE)
+                for pattern in RECAP_TITLE_PATTERNS
+            )
+            if not is_special_type and not is_recap_like:
+                continue
+
+            row_members = parse_int(row.get("members"), default=0) or 0
+            row_episodes = parse_int(row.get("episodes"), default=0) or 0
+            clearly_smaller = canonical_members > row_members or canonical_episodes > row_episodes
+            if not is_recap_like and not clearly_smaller:
+                continue
+
+            removed_to_canonical[mal_id] = canonical_mal_id
+            removals.append(
+                {
+                    "removed_mal_id": mal_id,
+                    "removed_title": row.get("title"),
+                    "removed_type": row.get("type"),
+                    "removed_members": row_members,
+                    "removed_episodes": row_episodes,
+                    "shared_anidb_id": parse_int(anidb_id, default=None),
+                    "canonical_mal_id": canonical_mal_id,
+                    "canonical_title": canonical_row.get("title"),
+                    "canonical_type": canonical_row.get("type"),
+                    "canonical_members": canonical_members,
+                    "canonical_episodes": canonical_episodes,
+                }
+            )
+
+    if not removed_to_canonical:
+        return df, {}, pd.DataFrame()
+
+    cleaned = df.loc[~df["mal_id"].astype(int).isin(removed_to_canonical)].copy()
+    return cleaned, removed_to_canonical, pd.DataFrame(removals)
+
+
+def remove_specials_without_anidb(df: pd.DataFrame) -> tuple[pd.DataFrame, pd.DataFrame]:
+    if "anidb_id" not in df.columns:
+        return df, pd.DataFrame()
+    mask = df["type"].astype(str).isin(SPECIAL_TYPES) & df["anidb_id"].isna()
+    removed = df.loc[
+        mask,
+        ["mal_id", "title", "type", "members", "popularity", "relations", "recommendations"],
+    ].copy()
+    if removed.empty:
+        return df, removed
+    cleaned = df.loc[~mask].copy()
+    return cleaned, removed
+
+
+def load_invalid_type_registry(path: Path = SKIPPED_INVALID_TYPE_IDS_FILE) -> dict[int, dict[str, Any]]:
+    if not path.exists():
+        return {}
+
+    try:
+        with path.open("r", encoding="utf-8") as f:
+            payload = json.load(f)
+    except (json.JSONDecodeError, OSError):
+        return {}
+
+    rows = payload.get("invalid_type_ids", []) if isinstance(payload, dict) else []
+    registry: dict[int, dict[str, Any]] = {}
+    for row in rows:
+        if not isinstance(row, dict):
+            continue
+        mal_id = parse_int(row.get("mal_id"), default=None)
+        if mal_id is None:
+            continue
+        registry[mal_id] = {
+            "mal_id": mal_id,
+            "anime_type": row.get("anime_type"),
+            "index": parse_int(row.get("index"), default=None),
+        }
+    return registry
+
+
+def save_invalid_type_registry(
+    registry: dict[int, dict[str, Any]],
+    path: Path = SKIPPED_INVALID_TYPE_IDS_FILE,
+) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    payload = {
+        "invalid_type_ids": [
+            {
+                "mal_id": int(row["mal_id"]),
+                "anime_type": row.get("anime_type"),
+                "index": row.get("index"),
+            }
+            for _, row in sorted(registry.items())
+        ]
+    }
+    atomic_write_json(path, payload)
+
+
+def register_removed_specials_as_invalid_type(
+    removed_no_anidb_specials: pd.DataFrame,
+    removed_duplicate_specials: pd.DataFrame,
+    path: Path = SKIPPED_INVALID_TYPE_IDS_FILE,
+) -> int:
+    registry = load_invalid_type_registry(path)
+    before = len(registry)
+
+    for _, row in removed_no_anidb_specials.iterrows():
+        mal_id = parse_int(row.get("mal_id"), default=None)
+        if mal_id is None:
+            continue
+        registry[mal_id] = {
+            "mal_id": mal_id,
+            "anime_type": row.get("type"),
+            "index": None,
+        }
+
+    for _, row in removed_duplicate_specials.iterrows():
+        mal_id = parse_int(row.get("removed_mal_id"), default=None)
+        if mal_id is None:
+            continue
+        registry[mal_id] = {
+            "mal_id": mal_id,
+            "anime_type": row.get("removed_type"),
+            "index": None,
+        }
+
+    if len(registry) != before:
+        save_invalid_type_registry(registry, path)
+
+    return len(registry) - before
+
+
+def rewrite_edges_after_removals(df: pd.DataFrame, removed_to_canonical: dict[int, int]) -> tuple[pd.DataFrame, int]:
+    valid_ids = set(df["mal_id"].dropna().astype(int))
+    changed = 0
+
+    for idx, row in df.iterrows():
+        if "recommendations" in df.columns:
+            rec_edges = parse_recommendation_edges(row.get("recommendations"))
+            rewritten_rec: dict[int, int] = {}
+            for target, weight in rec_edges.items():
+                target = removed_to_canonical.get(target, target)
+                if target == int(row["mal_id"]) or target not in valid_ids:
+                    continue
+                rewritten_rec[target] = max(rewritten_rec.get(target, 0), weight)
+            formatted_rec = format_recommendation_edges(rewritten_rec)
+            if formatted_rec != ("" if is_missing_text(row.get("recommendations")) else str(row.get("recommendations"))):
+                df.at[idx, "recommendations"] = formatted_rec
+                changed += 1
+
+        if "relations" in df.columns:
+            rewritten_rel: list[tuple[str, int]] = []
+            for relation, target in parse_relation_edges(row.get("relations")):
+                target = removed_to_canonical.get(target, target)
+                if target == int(row["mal_id"]) or target not in valid_ids:
+                    continue
+                rewritten_rel.append((relation, target))
+            formatted_rel = format_relation_edges(rewritten_rel)
+            if formatted_rel != ("" if is_missing_text(row.get("relations")) else str(row.get("relations"))):
+                df.at[idx, "relations"] = formatted_rel
+                changed += 1
+
+    return df, changed
 
 
 def similar_anime_edges_from_payload(
@@ -468,9 +1223,15 @@ def similar_anime_edges_from_payload(
         mal_id = anidb_to_mal.get(anidb_id)
         if mal_id is None:
             continue
+        approval = parse_int(item.get("approval"), default=None)
+        total = parse_int(item.get("total"), default=None)
+        if approval is None or total is None or total <= 0:
+            continue
+        if approval / total < ANIDB_SIMILAR_MIN_APPROVAL_RATIO:
+            continue
 
         weight = (
-            parse_int(item.get("approval"), default=None)
+            approval
             or parse_int(item.get("total"), default=None)
             or 1
         )
@@ -481,6 +1242,8 @@ def similar_anime_edges_from_payload(
 def fetch_anidb_live_payload(anidb_id: int) -> dict[str, Any] | None:
     if requests is None:
         raise RuntimeError("requests is not installed; live AniDB fill is unavailable")
+    if not ANIDB_CLIENT or not ANIDB_CLIENTVER:
+        raise RuntimeError("missing AniDB client/clientver; set secrets/secret.txt or ANIDB_CLIENT and ANIDB_CLIENTVER")
 
     time.sleep(ANIDB_REQUEST_DELAY_SECONDS + random.uniform(0, ANIDB_REQUEST_JITTER_SECONDS))
     url = (
@@ -671,22 +1434,203 @@ def currently_airing_update_candidate_frame(df: pd.DataFrame) -> pd.DataFrame:
     return candidates.sort_values("popularity", na_position="last")
 
 
-def build_genre_lookup(df: pd.DataFrame) -> dict[str, str]:
-    lookup = dict(GENRE_ALIASES)
-    for value in df["genres"].dropna():
-        for genre in split_pipe_values(value):
-            lookup[normalize_name(genre)] = genre
-    return lookup
+def prune_weighted_tags_for_row(
+    tags_value: Any,
+    weights_value: Any,
+    global_counts: Counter[str],
+    min_global_count: int = TAG_MIN_GLOBAL_COUNT,
+    low_count_fallback_min: int = TAG_LOW_COUNT_FALLBACK_MIN,
+) -> tuple[str, str, int]:
+    tags = split_pipe_values(tags_value)
+    if not tags:
+        return "", "", 0
+
+    weight_map = parse_weight_map(weights_value)
+    primary: list[str] = []
+    fallback: list[str] = []
+    dropped = 0
+
+    for tag in tags:
+        count = global_counts.get(tag, 0)
+        weight = weight_map.get(normalize_name(tag))
+        tag_key = normalize_name(tag)
+
+        if tag_key in PROTECTED_TAGS:
+            primary.append(tag)
+            continue
+
+        if should_drop_normal_tag(tag):
+            dropped += 1
+            continue
+
+        if count < min_global_count:
+            dropped += 1
+            continue
+
+        if weight is None or weight >= TAG_MIN_POSITIVE_WEIGHT:
+            primary.append(tag)
+        elif weight == 0:
+            fallback.append(tag)
+            dropped += 1
+        else:
+            dropped += 1
+
+    kept = primary[:]
+    if len(kept) < low_count_fallback_min:
+        for tag in fallback:
+            if tag not in kept:
+                kept.append(tag)
+            if len(kept) >= low_count_fallback_min:
+                break
+
+    actual_dropped = len(tags) - len(kept)
+    kept_weights = []
+    for tag in kept:
+        weight = weight_map.get(normalize_name(tag))
+        if weight is not None:
+            kept_weights.append(f"{tag}:{weight}")
+
+    return merge_pipe_values(kept), merge_pipe_values(kept_weights), actual_dropped
 
 
-def infer_genres_from_tags(row: pd.Series, genre_lookup: dict[str, str]) -> str:
-    candidates = split_pipe_values(row.get("tags")) + split_pipe_values(row.get("explicit_tags"))
-    inferred = []
-    for tag in candidates:
-        genre = genre_lookup.get(normalize_name(tag))
-        if genre:
-            inferred.append(genre)
-    return merge_pipe_values(inferred)
+def export_tag_quality_review(
+    df: pd.DataFrame,
+    path: Path = TAG_QUALITY_REVIEW_CSV,
+    after_df: pd.DataFrame | None = None,
+) -> pd.DataFrame:
+    rows: list[dict[str, Any]] = []
+    after_df = df if after_df is None else after_df
+    for tag_column, weight_column, tag_type in [
+        ("tags", "tag_weights", "tag"),
+        ("explicit_tags", "explicit_tag_weights", "explicit_tag"),
+    ]:
+        if tag_column not in df.columns:
+            continue
+
+        counts = count_pipe_values(df[tag_column])
+        after_counts = count_pipe_values(after_df[tag_column]) if tag_column in after_df.columns else Counter()
+        all_tags = set(counts) | set(after_counts)
+        weight_values: dict[str, list[int]] = defaultdict(list)
+        example_titles: dict[str, list[str]] = defaultdict(list)
+
+        for _, row in df.iterrows():
+            weights = parse_weight_map(row.get(weight_column))
+            for tag in split_pipe_values(row.get(tag_column)):
+                key = normalize_name(tag)
+                if key in weights:
+                    weight_values[tag].append(weights[key])
+                if len(example_titles[tag]) < 5:
+                    title = str(row.get("title") or "").strip()
+                    if title and title not in example_titles[tag]:
+                        example_titles[tag].append(title)
+
+        for tag in all_tags:
+            count = counts.get(tag, 0)
+            after_count = after_counts.get(tag, 0)
+            weights = weight_values.get(tag, [])
+            zero_weight_rows = sum(1 for value in weights if value == 0)
+            positive_weight_rows = sum(1 for value in weights if value and value > 0)
+            avg_weight = round(sum(weights) / len(weights), 2) if weights else None
+            protected = normalize_name(tag) in PROTECTED_TAGS
+            rows.append(
+                {
+                    "tag_type": tag_type,
+                    "tag": tag,
+                    "count": int(count),
+                    "count_after_pruning": int(after_count),
+                    "weight_rows": len(weights),
+                    "positive_weight_rows": positive_weight_rows,
+                    "zero_weight_rows": zero_weight_rows,
+                    "avg_weight": avg_weight,
+                    "protected_mal_theme": protected,
+                    "drop_candidate": bool(
+                        tag_type == "tag"
+                        and not protected
+                        and (
+                            count < TAG_MIN_GLOBAL_COUNT
+                            or after_count == 0
+                            or should_drop_normal_tag(tag)
+                            or (weights and positive_weight_rows == 0)
+                        )
+                    ),
+                    "example_titles": " | ".join(example_titles[tag]),
+                }
+            )
+
+    review = pd.DataFrame(rows)
+    if not review.empty:
+        review["_tag_type_sort"] = review["tag_type"].map({"tag": 0, "explicit_tag": 1}).fillna(2)
+        review = review.sort_values(
+            ["_tag_type_sort", "drop_candidate", "count_after_pruning", "count", "tag"],
+            ascending=[True, False, True, True, True],
+        ).drop(columns=["_tag_type_sort"])
+    path.parent.mkdir(parents=True, exist_ok=True)
+    review.to_csv(path, index=False)
+    return review
+
+
+def prune_dataset_tags(df: pd.DataFrame) -> tuple[pd.DataFrame, dict[str, int]]:
+    summary = {
+        "unique_tags_before": 0,
+        "unique_tags_after": 0,
+        "tag_values_removed": 0,
+        "rows_with_tags_changed": 0,
+    }
+    if "tags" not in df.columns:
+        export_tag_quality_review(df)
+        return df, summary
+
+    before_df = df.copy()
+    counts_before = count_pipe_values(df["tags"])
+    summary["unique_tags_before"] = len(counts_before)
+    rows_changed = 0
+    removed = 0
+
+    for idx, row in df.iterrows():
+        new_tags, new_weights, dropped = prune_weighted_tags_for_row(
+            row.get("tags"),
+            row.get("tag_weights"),
+            counts_before,
+        )
+        old_tags = "" if is_missing_text(row.get("tags")) else str(row.get("tags"))
+        old_weights = "" if is_missing_text(row.get("tag_weights")) else str(row.get("tag_weights"))
+        if new_tags != old_tags or new_weights != old_weights:
+            df.at[idx, "tags"] = new_tags
+            df.at[idx, "tag_weights"] = new_weights
+            rows_changed += 1
+        removed += dropped
+
+    counts_after_weight_prune = count_pipe_values(df["tags"])
+    rare_tags = {
+        tag
+        for tag, count in counts_after_weight_prune.items()
+        if count < TAG_MIN_GLOBAL_COUNT and normalize_name(tag) not in PROTECTED_TAGS
+    }
+    if rare_tags:
+        for idx, row in df.iterrows():
+            tags = split_pipe_values(row.get("tags"))
+            if not tags:
+                continue
+            filtered_tags = [tag for tag in tags if tag not in rare_tags]
+            if len(filtered_tags) == len(tags):
+                continue
+            weights = parse_weight_map(row.get("tag_weights"))
+            filtered_weights = [
+                f"{tag}:{weights[normalize_name(tag)]}"
+                for tag in filtered_tags
+                if normalize_name(tag) in weights
+            ]
+            df.at[idx, "tags"] = merge_pipe_values(filtered_tags)
+            df.at[idx, "tag_weights"] = merge_pipe_values(filtered_weights)
+            rows_changed += 1
+            removed += len(tags) - len(filtered_tags)
+
+    counts_after = count_pipe_values(df["tags"])
+    summary["unique_tags_after"] = len(counts_after)
+    summary["tag_values_removed"] = int(removed)
+    summary["rows_with_tags_changed"] = int(rows_changed)
+    export_tag_quality_review(before_df, after_df=df)
+    return df, summary
 
 
 def apply_improvements(df: pd.DataFrame, cache_payload: dict[str, Any]) -> tuple[pd.DataFrame, dict[str, Any]]:
@@ -699,28 +1643,65 @@ def apply_improvements(df: pd.DataFrame, cache_payload: dict[str, Any]) -> tuple
         "total_watch_minutes_filled": 0,
         "total_watch_minutes_filled_from_anidb_episode_lengths": 0,
         "episodes_filled_from_anidb_cache": 0,
-        "genres_filled_from_tags": 0,
         "studios_filled_from_origin_tags": 0,
         "recommendations_augmented_from_anidb_similar_anime": 0,
+        "anidb_similar_recommendation_rows_skipped_shared_minor": 0,
         "tags_filled_from_anidb_cache": 0,
         "explicit_tags_filled_from_anidb_cache": 0,
         "demographics_filled_from_anidb_cache": 0,
         "demographics_normalized": 0,
         "demographics_inferred_from_rating_genres_tags": 0,
+        "duplicate_special_rows_removed": 0,
+        "special_rows_without_anidb_removed": 0,
+        "removed_special_ids_added_to_invalid_type_registry": 0,
+        "edge_rows_rewritten_after_duplicate_special_removal": 0,
+        "duplicate_special_removal_audit_csv": str(REMOVED_DUPLICATE_SPECIALS_CSV),
+        "special_without_anidb_removal_audit_csv": str(REMOVED_SPECIALS_WITHOUT_ANIDB_CSV),
+        "tag_quality_review_csv": str(TAG_QUALITY_REVIEW_CSV),
+        "genre_values_added_from_tags": 0,
+        "normal_tags_removed_as_genre_equivalents": 0,
+        "normal_tags_removed_as_noisy_or_vague": 0,
+        "normal_tags_canonicalized": 0,
+        "explicit_tags_canonicalized": 0,
+        "unique_tags_before_pruning": 0,
+        "unique_tags_after_pruning": 0,
+        "tag_values_removed_by_pruning": 0,
+        "rows_with_tags_changed_by_pruning": 0,
         "remaining_episode_live_candidates": [],
         "remaining_tag_demographic_or_explicit_live_candidates": [],
     }
 
     items = cache_payload.get("items", {})
     df = df.copy()
-    anidb_to_mal = {
-        int(row["anidb_id"]): int(row["mal_id"])
-        for _, row in df[df["anidb_id"].notna()].iterrows()
-    }
 
     missing_air_date = df["aired_year"].isna() & df["aired_month"].isna()
     summary["dropped_missing_air_date"] = int(missing_air_date.sum())
     df = df.loc[~missing_air_date].copy()
+
+    df, removed_no_anidb_specials = remove_specials_without_anidb(df)
+    summary["special_rows_without_anidb_removed"] = int(len(removed_no_anidb_specials))
+    REMOVED_SPECIALS_WITHOUT_ANIDB_CSV.parent.mkdir(parents=True, exist_ok=True)
+    if not removed_no_anidb_specials.empty or not REMOVED_SPECIALS_WITHOUT_ANIDB_CSV.exists():
+        removed_no_anidb_specials.to_csv(REMOVED_SPECIALS_WITHOUT_ANIDB_CSV, index=False)
+
+    df, removed_to_canonical, removed_specials = remove_duplicate_specials_with_shared_anidb(df)
+    summary["duplicate_special_rows_removed"] = int(len(removed_specials))
+    REMOVED_DUPLICATE_SPECIALS_CSV.parent.mkdir(parents=True, exist_ok=True)
+    if not removed_specials.empty or not REMOVED_DUPLICATE_SPECIALS_CSV.exists():
+        removed_specials.to_csv(REMOVED_DUPLICATE_SPECIALS_CSV, index=False)
+    summary["removed_special_ids_added_to_invalid_type_registry"] = register_removed_specials_as_invalid_type(
+        removed_no_anidb_specials,
+        removed_specials,
+    )
+    df, edge_rewrite_count = rewrite_edges_after_removals(df, removed_to_canonical)
+    summary["edge_rows_rewritten_after_duplicate_special_removal"] = int(edge_rewrite_count)
+
+    anidb_to_mal = canonical_mal_by_anidb(df)
+    shared_anidb_stats = anidb_group_stats(df)
+
+    df, tag_normalization_summary = normalize_tags_and_promote_genres(df)
+    for key, value in tag_normalization_summary.items():
+        summary[key] = int(value)
 
     if "season" in df.columns:
         inferred_season = df["aired_month"].apply(infer_season)
@@ -781,14 +1762,6 @@ def apply_improvements(df: pd.DataFrame, cache_payload: dict[str, Any]) -> tuple
     ].copy()
     summary["remaining_episode_live_candidates"] = episode_live_candidates.to_dict("records")
 
-    genre_lookup = build_genre_lookup(df)
-    genre_missing = df["genres"].apply(is_missing_text)
-    for idx, row in df.loc[genre_missing].iterrows():
-        inferred = infer_genres_from_tags(row, genre_lookup)
-        if inferred:
-            df.at[idx, "genres"] = inferred
-            summary["genres_filled_from_tags"] += 1
-
     studio_missing = df["studios"].apply(is_missing_text)
     for idx, row in df.loc[studio_missing].iterrows():
         anidb_id = parse_int(row.get("anidb_id"), default=None)
@@ -801,6 +1774,9 @@ def apply_improvements(df: pd.DataFrame, cache_payload: dict[str, Any]) -> tuple
     if "recommendations" not in df.columns:
         df["recommendations"] = ""
     for idx, row in df[df["anidb_id"].notna()].iterrows():
+        if not should_receive_anidb_similar_edges(row, shared_anidb_stats):
+            summary["anidb_similar_recommendation_rows_skipped_shared_minor"] += 1
+            continue
         anidb_id = parse_int(row.get("anidb_id"), default=None)
         payload = items.get(str(anidb_id)) if anidb_id is not None else None
         new_edges = similar_anime_edges_from_payload(payload, anidb_to_mal)
@@ -843,6 +1819,16 @@ def apply_improvements(df: pd.DataFrame, cache_payload: dict[str, Any]) -> tuple
         if inferred:
             df.at[idx, "demographics"] = inferred
             summary["demographics_inferred_from_rating_genres_tags"] += 1
+
+    df, tag_normalization_summary = normalize_tags_and_promote_genres(df)
+    for key, value in tag_normalization_summary.items():
+        summary[key] += int(value)
+
+    df, tag_pruning_summary = prune_dataset_tags(df)
+    summary["unique_tags_before_pruning"] = tag_pruning_summary["unique_tags_before"]
+    summary["unique_tags_after_pruning"] = tag_pruning_summary["unique_tags_after"]
+    summary["tag_values_removed_by_pruning"] = tag_pruning_summary["tag_values_removed"]
+    summary["rows_with_tags_changed_by_pruning"] = tag_pruning_summary["rows_with_tags_changed"]
 
     remaining_tag_or_demo = df.loc[
         (

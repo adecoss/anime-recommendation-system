@@ -1,0 +1,18 @@
+{
+  "updated_at": "2026-06-12T21:06:21",
+  "source_dataset": "hernan4444/anime-recommendation-database-2020",
+  "source_file": "rating_complete.csv",
+  "source_collection_window": "2020-02-26 to 2020-03-20, per Kaggle dataset documentation",
+  "processed_file": "C:\\Users\\CHAMPUX\\Downloads\\UPC TRABAJOS 2026\\BIG DATA\\proyect\\data\\processed\\ratings_processed.csv",
+  "catalog_filter_enabled": true,
+  "catalog_anime_ids": 14991,
+  "rows_read": 57633278,
+  "rows_written": 53785886,
+  "unique_users_written": 309982,
+  "unique_anime_written": 11716,
+  "columns": [
+    "userID",
+    "animeID",
+    "rating"
+  ]
+}

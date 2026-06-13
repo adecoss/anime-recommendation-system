@@ -30,9 +30,10 @@ RATINGS = BASE_DIR / "data" / "processed" / "ratings_processed.csv"
 EDA_DIR = BASE_DIR / "artifacts" / "plots" / "eda"
 WEEK5_DIR = BASE_DIR / "artifacts" / "plots" / "week5"
 WEEK7_DIR = BASE_DIR / "artifacts" / "plots" / "week7"
+WEEK10_DIR = BASE_DIR / "artifacts" / "plots" / "week10"
 DOC_FIG_DIR = BASE_DIR / "reports" / "document" / "figures"
 
-for directory in [EDA_DIR, WEEK5_DIR, WEEK7_DIR, DOC_FIG_DIR]:
+for directory in [EDA_DIR, WEEK5_DIR, WEEK7_DIR, WEEK10_DIR, DOC_FIG_DIR]:
     directory.mkdir(parents=True, exist_ok=True)
 
 
@@ -421,6 +422,10 @@ for source in [
     WEEK7_DIR / "kmeans_cluster_sizes.png",
     WEEK7_DIR / "kmeans_svd_cluster_scatter.png",
     WEEK7_DIR / "cluster_genre_profile_heatmap.png",
+    WEEK10_DIR / "week10_metric_comparison.png",
+    WEEK10_DIR / "week10_median_rank.png",
+    WEEK10_DIR / "week10_user_level_distribution.png",
+    WEEK10_DIR / "week10_hit_at_10_by_user_level.png",
 ]:
     if source.exists():
         (DOC_FIG_DIR / source.name).write_bytes(source.read_bytes())

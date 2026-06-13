@@ -1,0 +1,73 @@
+{
+  "task": "personalized anime recommendation/ranking",
+  "decision_supported": "rank candidate anime for a user based on completed liked anime, while allowing product filters and maturity-aware recommendation modes",
+  "baseline": "popularity_baseline: globally common liked anime in training data",
+  "stronger_system": "hybrid_svd_popularity: latent collaborative SVD score blended with popularity",
+  "user_levels": [
+    {
+      "level": "Absolute Beginner",
+      "min_known_entries": 0,
+      "max_known_entries": 49,
+      "primary_signal": "guided onboarding, genre filters, popularity, score, short entry points",
+      "risk": "cold start: no reliable personal taste vector yet"
+    },
+    {
+      "level": "Amateur",
+      "min_known_entries": 50,
+      "max_known_entries": 149,
+      "primary_signal": "similar anime, relation navigation, popularity, high-rated catalog anchors",
+      "risk": "taste is still forming and may overfit to a few early favorites"
+    },
+    {
+      "level": "Good",
+      "min_known_entries": 150,
+      "max_known_entries": 999,
+      "primary_signal": "collaborative filtering, relation continuation, seasonal/current discovery, controlled exploration",
+      "risk": "model should not only repeat the user's comfort zone"
+    },
+    {
+      "level": "Pro",
+      "min_known_entries": 1000,
+      "max_known_entries": null,
+      "primary_signal": "long-tail discovery, novelty, niche clusters, graph-aware exploration",
+      "risk": "hardest group: most obvious catalog items are already known"
+    }
+  ],
+  "control_filters": {
+    "genre_filter": "include/exclude broad MAL genres",
+    "demographic_filter": "Josei, Kodomo, Seinen, Shoujo, Shounen, 18+",
+    "content_rating_filter": "G, PG, PG-13, R, R+, Rx",
+    "explicit_toggle": "exclude or include Ecchi/Erotica/Hentai and explicit tags",
+    "score_floor": "minimum MAL score when a user wants safer picks",
+    "episode_length_filter": "episode count and total watchtime ranges",
+    "year_filter": "release year or season recency range"
+  },
+  "level_policy_note": "Level thresholds are product rules based on completed/known entries. Offline evaluation approximates this with known liked ratings because the Kaggle source has ratings but no chronological watch history.",
+  "ratings_source": "C:\\Users\\CHAMPUX\\Downloads\\UPC TRABAJOS 2026\\BIG DATA\\proyect\\data\\processed\\ratings_processed.csv",
+  "catalog_source": "C:\\Users\\CHAMPUX\\Downloads\\UPC TRABAJOS 2026\\BIG DATA\\proyect\\data\\processed\\anime_dataset.csv",
+  "like_threshold": 8,
+  "candidate_pool": {
+    "definition": "catalog anime with at least 20 positive ratings in the filtered interaction layer",
+    "items": 8181,
+    "sampled_negatives_per_user": 100
+  },
+  "train_test_logic": "per eligible user, one liked anime is deterministically held out; the user's remaining liked anime stay in training",
+  "leakage_note": "held-out user-item pairs are removed from the training matrix; no timestamp claims are made because the rating source has no event time",
+  "model_users": 109794,
+  "evaluated_users": 15000,
+  "positive_interactions": 29610091,
+  "svd_components": 64,
+  "svd_retained_energy_proxy": 0.35355299711227417,
+  "outputs": {
+    "metrics": "C:\\Users\\CHAMPUX\\Downloads\\UPC TRABAJOS 2026\\BIG DATA\\proyect\\artifacts\\recommendation\\week10_evaluation_metrics.csv",
+    "level_metrics": "C:\\Users\\CHAMPUX\\Downloads\\UPC TRABAJOS 2026\\BIG DATA\\proyect\\artifacts\\recommendation\\week10_metrics_by_user_level.csv",
+    "examples": "C:\\Users\\CHAMPUX\\Downloads\\UPC TRABAJOS 2026\\BIG DATA\\proyect\\artifacts\\recommendation\\week10_recommendation_examples.csv",
+    "beginner_entrypoint_candidates": "C:\\Users\\CHAMPUX\\Downloads\\UPC TRABAJOS 2026\\BIG DATA\\proyect\\artifacts\\recommendation\\week10_beginner_entrypoint_candidates.csv",
+    "alignment": "C:\\Users\\CHAMPUX\\Downloads\\UPC TRABAJOS 2026\\BIG DATA\\proyect\\artifacts\\recommendation\\week10_data_alignment.csv",
+    "user_eval_sample": "C:\\Users\\CHAMPUX\\Downloads\\UPC TRABAJOS 2026\\BIG DATA\\proyect\\artifacts\\recommendation\\week10_user_level_eval_sample.csv",
+    "metric_plot": "C:\\Users\\CHAMPUX\\Downloads\\UPC TRABAJOS 2026\\BIG DATA\\proyect\\artifacts\\plots\\week10\\week10_metric_comparison.png",
+    "rank_plot": "C:\\Users\\CHAMPUX\\Downloads\\UPC TRABAJOS 2026\\BIG DATA\\proyect\\artifacts\\plots\\week10\\week10_median_rank.png",
+    "level_distribution_plot": "C:\\Users\\CHAMPUX\\Downloads\\UPC TRABAJOS 2026\\BIG DATA\\proyect\\artifacts\\plots\\week10\\week10_user_level_distribution.png",
+    "level_hit_plot": "C:\\Users\\CHAMPUX\\Downloads\\UPC TRABAJOS 2026\\BIG DATA\\proyect\\artifacts\\plots\\week10\\week10_hit_at_10_by_user_level.png"
+  }
+}

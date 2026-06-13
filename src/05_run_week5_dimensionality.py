@@ -6,6 +6,9 @@ from pathlib import Path
 
 os.environ.setdefault("LOKY_MAX_CPU_COUNT", "4")
 
+import matplotlib
+
+matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 import numpy as np
 from scipy.sparse import load_npz

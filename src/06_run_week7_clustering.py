@@ -1,8 +1,14 @@
 from __future__ import annotations
 
 import json
+import os
 from pathlib import Path
 
+os.environ.setdefault("LOKY_MAX_CPU_COUNT", "4")
+
+import matplotlib
+
+matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
