@@ -1,5 +1,6 @@
 # Local/course-only files
 _assigmentInstructions/
+reports/
 reports/document/
 reports/video/*script*.txt
 reports/*.pptx
@@ -20,7 +21,10 @@ data/processed/current_user_profile_features.csv
 data/processed/current_user_profile_features.*
 data/build/current_user_ratings_*.json
 data/build/current_user_ratings_*.json*
+data/build/current_usernames_*.json
+data/build/current_usernames_*.json*
 *.zip
+*.tmp
 
 # Heavy model/matrix artifacts
 artifacts/embeddings/

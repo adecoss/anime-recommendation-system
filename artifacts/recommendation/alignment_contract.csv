@@ -1,0 +1,8 @@
+check,value,status,detail
+catalog_ids_unique,1,pass,Each anime row must map to one MAL id.
+positive_interactions_aligned_to_catalog,9822758,pass,Every retained positive rating must be recommendable from the catalog.
+candidate_pool_subset_of_catalog,0,pass,Candidate ids are restricted to catalog ids.
+model_matrix_shape,47499 users x 10749 anime,pass,Rows are model users; columns are eligible anime candidate ids.
+holdout_removed_from_train,0,pass,Held-out liked anime must not be present in the training matrix.
+evaluation_top12_targets_in_catalog,0,pass,All emitted recommendation ids must resolve back to catalog rows.
+evaluation_users_have_train_profile,23756,pass,Every evaluated user has a non-empty profile after one liked title is held out.

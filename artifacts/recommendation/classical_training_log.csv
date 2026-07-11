@@ -1,0 +1,11 @@
+component,family,status,train_rows,eval_rows,elapsed_seconds,note
+data_alignment_load,input_layer,loaded,9838285,0,21.03,
+candidate_pool_and_matrix,data_split,built,9798959,23756,32.715,
+popularity_baseline,classical_baseline,built,9798959,23756,0.009,
+metadata_content,content_ranker,built,15492,23756,0.16,
+graph_related,graph_ranker,built,15492,23756,0.193,
+people_staff_affinity,people_staff_ranker,built,10749,23756,1.263,
+latent_svd_and_item_knn,collaborative_factorization,trained,9798959,23756,2.256,
+product_hybrid_weight_search,hybrid_search,tuned,126,23756,79.146,
+classical_product_evaluation,offline_ranking_eval,evaluated,213804,23756,102.939,
+artifact_writing_and_plots,reporting,written,9,23756,11.587,

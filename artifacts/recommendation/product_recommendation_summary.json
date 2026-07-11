@@ -1,0 +1,119 @@
+{
+  "profile_band": "Veteran",
+  "profile_source": "mylist_xml_with_mal_favorites",
+  "username": "Champux",
+  "scored_count": 1022,
+  "positive_count": 811,
+  "known_count": 1339,
+  "favorite_anime_ids_used": 0,
+  "favorite_voice_actor_ids_used": 0,
+  "favorite_staff_ids_used": 0,
+  "favorite_people_names_used": 0,
+  "favorite_studio_names_used": 0,
+  "hentai_majority": false,
+  "general_recommendation_source": "balanced_current_popular_content",
+  "selected_recommender_models": {
+    "classical_backbone": {
+      "method": "level_tuned_product_hybrid",
+      "balanced_profile_hit_at_12": 0.941081,
+      "hit_rate_at_12": 0.955169,
+      "ndcg_at_12": 0.746538,
+      "map_at_12": 0.680129
+    },
+    "advanced_candidates": [
+      {
+        "method": "xgboost_pairwise_ranker",
+        "balanced_profile_hit_at_12": 0.950791,
+        "hit_rate_at_12": 0.961674,
+        "ndcg_at_12": 0.760622,
+        "map_at_12": 0.69655
+      },
+      {
+        "method": "torch_feature_mlp_reranker",
+        "balanced_profile_hit_at_12": 0.950702,
+        "hit_rate_at_12": 0.961359,
+        "ndcg_at_12": 0.760316,
+        "map_at_12": 0.696227
+      }
+    ],
+    "final_general_ranker": "xgboost_pairwise_ranker",
+    "selection_metric_order": [
+      "balanced_profile_hit_at_12",
+      "hit_rate_at_12",
+      "ndcg_at_12",
+      "map_at_12"
+    ]
+  },
+  "models_used_for_rows": {
+    "general_recommendations": [
+      "xgboost_pairwise_ranker",
+      "current_season_quality_prior",
+      "popular_high_score_prior"
+    ],
+    "because_you_liked": [
+      "item-to-item recommendation graph",
+      "anchor-level deduplication"
+    ],
+    "continue_your_journey": [
+      "franchise relation graph",
+      "prerequisite/status guardrails"
+    ],
+    "people_you_like": [
+      "voice actor affinity",
+      "director/original creator/original story affinity",
+      "studio affinity"
+    ],
+    "give_it_a_try": [
+      "metadata-content distance",
+      "quality floor",
+      "novelty and anti-recap guardrails"
+    ]
+  },
+  "rows": {
+    "general_recommendations": 12,
+    "because_you_liked": 12,
+    "continue_your_journey": 12,
+    "people_you_like": 12,
+    "give_it_a_try": 12
+  },
+  "architecture": {
+    "product_shape": "hybrid row-based recommender, not one universal ranked list",
+    "pipeline": [
+      "profile band detection",
+      "candidate generators: collaborative/product hybrid, metadata, graph relations, people/staff/studios, popularity/current season",
+      "hard filters: known titles, explicit defaults, low-value recaps/shorts, unmet prerequisites",
+      "row-specific rankers",
+      "cross-row deduplication and light diversity caps",
+      "user-facing explanations and source links"
+    ],
+    "global_hard_filters": [
+      "remove already known titles outside continuation context",
+      "exclude hentai/explicit entries unless the profile indicates they are wanted",
+      "avoid low-value recaps, manner movies, tiny shorts, and summary-only entries",
+      "block sequels/specials with unmet prerequisites outside continue_your_journey"
+    ]
+  },
+  "row_policy": {
+    "max_items_per_row": 12,
+    "general_row_mix": {
+      "current_recent_items": 3,
+      "popular_high_score_items": 3,
+      "remaining_slots": "learned guarded hybrid profile matches, with content fallback"
+    },
+    "profile_band_cutoffs": {
+      "Beginner": "1-49 scored entries",
+      "Casual": "50-149 scored entries",
+      "Fan": "150-499 scored entries",
+      "Veteran": "500+ scored entries"
+    },
+    "negative_feedback": "Low scores and dropped entries reduce content, similar-title, people/staff, and exploration scores.",
+    "sequencing_guardrail": "Rows other than continue_your_journey block titles with unmet Prequel, Parent Story, or Full Story prerequisites.",
+    "weak_relation_guardrail": "Other and Alternative Setting relations only feed continue_your_journey when title tokens suggest the same franchise.",
+    "diversity_guardrail": "Rows cap repeated primary genres and repeated anchors so one franchise/person cannot fill the whole row.",
+    "cross_row_guardrail": "A title can appear in only one row; earlier rows claim it first.",
+    "exploration_guardrail": "give_it_a_try avoids recaps, summary movies, tiny shorts, low-audience score spikes, and direct continuation entries."
+  },
+  "outputs": {
+    "rows_csv": "artifacts\\recommendation\\product_recommendation_rows.csv"
+  }
+}

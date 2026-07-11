@@ -1,9 +1,0 @@
-{
-  "rows": 14947,
-  "columns": 4054,
-  "numeric_features": 11,
-  "categorical_features": 43,
-  "tfidf_features": 4000,
-  "nonzero_values": 906835,
-  "sparsity": 0.9850345253772671
-}

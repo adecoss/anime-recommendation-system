@@ -1,0 +1,221 @@
+{
+  "updated_at": "2026-06-25T13:25:02",
+  "input_rows": 17270,
+  "output_rows": 17015,
+  "changes": {
+    "season_filled_from_month": 0,
+    "episodes_filled_from_source_columns": 0,
+    "duration_filled_from_source_columns": 0,
+    "total_watch_minutes_recomputed": 16694,
+    "rows_with_missing_year_or_month_removed": 255
+  },
+  "before_top_missing": [
+    {
+      "column": "source_anidb",
+      "missing_or_zero": 17270,
+      "missing_pct": 1.0
+    },
+    {
+      "column": "type_anidb",
+      "missing_or_zero": 17270,
+      "missing_pct": 1.0
+    },
+    {
+      "column": "explicit_tag_weights",
+      "missing_or_zero": 15035,
+      "missing_pct": 0.8706
+    },
+    {
+      "column": "explicit_tags",
+      "missing_or_zero": 15035,
+      "missing_pct": 0.8706
+    },
+    {
+      "column": "recommendations_anidb",
+      "missing_or_zero": 13081,
+      "missing_pct": 0.7574
+    },
+    {
+      "column": "demographics_mal",
+      "missing_or_zero": 12124,
+      "missing_pct": 0.702
+    },
+    {
+      "column": "season_mal",
+      "missing_or_zero": 11798,
+      "missing_pct": 0.6831
+    },
+    {
+      "column": "demographics_anidb",
+      "missing_or_zero": 9805,
+      "missing_pct": 0.5677
+    },
+    {
+      "column": "studios_anidb",
+      "missing_or_zero": 9092,
+      "missing_pct": 0.5265
+    },
+    {
+      "column": "recommendations_jikan",
+      "missing_or_zero": 8737,
+      "missing_pct": 0.5059
+    },
+    {
+      "column": "studios_anilist",
+      "missing_or_zero": 7281,
+      "missing_pct": 0.4216
+    },
+    {
+      "column": "title_english",
+      "missing_or_zero": 7208,
+      "missing_pct": 0.4174
+    },
+    {
+      "column": "demographics",
+      "missing_or_zero": 7038,
+      "missing_pct": 0.4075
+    },
+    {
+      "column": "recommendations_anilist",
+      "missing_or_zero": 6612,
+      "missing_pct": 0.3829
+    },
+    {
+      "column": "voice_actors_anilist",
+      "missing_or_zero": 6368,
+      "missing_pct": 0.3687
+    },
+    {
+      "column": "relations",
+      "missing_or_zero": 5836,
+      "missing_pct": 0.3379
+    },
+    {
+      "column": "voice_actors_jikan",
+      "missing_or_zero": 5530,
+      "missing_pct": 0.3202
+    },
+    {
+      "column": "characters_anilist",
+      "missing_or_zero": 5214,
+      "missing_pct": 0.3019
+    },
+    {
+      "column": "voice_actor_count",
+      "missing_or_zero": 4891,
+      "missing_pct": 0.2832
+    },
+    {
+      "column": "voice_actors",
+      "missing_or_zero": 4891,
+      "missing_pct": 0.2832
+    }
+  ],
+  "after_top_missing": [
+    {
+      "column": "source_anidb",
+      "missing_or_zero": 17015,
+      "missing_pct": 1.0
+    },
+    {
+      "column": "type_anidb",
+      "missing_or_zero": 17015,
+      "missing_pct": 1.0
+    },
+    {
+      "column": "explicit_tag_weights",
+      "missing_or_zero": 14782,
+      "missing_pct": 0.8688
+    },
+    {
+      "column": "explicit_tags",
+      "missing_or_zero": 14782,
+      "missing_pct": 0.8688
+    },
+    {
+      "column": "recommendations_anidb",
+      "missing_or_zero": 12829,
+      "missing_pct": 0.754
+    },
+    {
+      "column": "demographics_mal",
+      "missing_or_zero": 11927,
+      "missing_pct": 0.701
+    },
+    {
+      "column": "season_mal",
+      "missing_or_zero": 11543,
+      "missing_pct": 0.6784
+    },
+    {
+      "column": "demographics_anidb",
+      "missing_or_zero": 9563,
+      "missing_pct": 0.562
+    },
+    {
+      "column": "studios_anidb",
+      "missing_or_zero": 8851,
+      "missing_pct": 0.5202
+    },
+    {
+      "column": "recommendations_jikan",
+      "missing_or_zero": 8484,
+      "missing_pct": 0.4986
+    },
+    {
+      "column": "studios_anilist",
+      "missing_or_zero": 7095,
+      "missing_pct": 0.417
+    },
+    {
+      "column": "title_english",
+      "missing_or_zero": 7081,
+      "missing_pct": 0.4162
+    },
+    {
+      "column": "demographics",
+      "missing_or_zero": 6855,
+      "missing_pct": 0.4029
+    },
+    {
+      "column": "recommendations_anilist",
+      "missing_or_zero": 6360,
+      "missing_pct": 0.3738
+    },
+    {
+      "column": "voice_actors_anilist",
+      "missing_or_zero": 6140,
+      "missing_pct": 0.3609
+    },
+    {
+      "column": "relations",
+      "missing_or_zero": 5712,
+      "missing_pct": 0.3357
+    },
+    {
+      "column": "voice_actors_jikan",
+      "missing_or_zero": 5309,
+      "missing_pct": 0.312
+    },
+    {
+      "column": "characters_anilist",
+      "missing_or_zero": 5066,
+      "missing_pct": 0.2977
+    },
+    {
+      "column": "voice_actor_count",
+      "missing_or_zero": 4679,
+      "missing_pct": 0.275
+    },
+    {
+      "column": "voice_actors",
+      "missing_or_zero": 4679,
+      "missing_pct": 0.275
+    }
+  ],
+  "discrepancy_review_rows": 37712,
+  "output_csv": "data/processed/anime_dataset.csv",
+  "output_json": "data/processed/anime_dataset.json",
+  "null_audit_csv": "artifacts/eda_tables/dataset_null_audit_after_raw_build.csv",
+  "discrepancy_review_csv": "artifacts/eda_tables/dataset_source_discrepancy_review.csv"
+}

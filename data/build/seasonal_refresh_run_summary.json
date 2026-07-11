@@ -1,0 +1,187 @@
+{
+  "updated_at": "2026-07-11T18:03:24",
+  "reference_date": "2026-07-11",
+  "max_age_hours": 6.0,
+  "include_previous_season": true,
+  "forced_mal_ids": [
+    59193,
+    60522,
+    62076,
+    62811,
+    63403,
+    63832
+  ],
+  "seasonal_discovered_rows": 0,
+  "seasonal_mal_html_discovered_rows": 497,
+  "seasonal_candidate_rows": 0,
+  "refresh_characters": true,
+  "run_anidb_recent": true,
+  "dataset_csv": "data\\processed\\anime_dataset.csv",
+  "seasonal_candidates_csv": "data\\build\\seasonal_refresh_candidates.csv",
+  "seasonal_discovery_csv": "data\\build\\seasonal_discovered_jikan_ids.csv",
+  "seasonal_mal_html_discovery_csv": "data\\build\\seasonal_discovered_mal_html_ids.csv",
+  "forced_id_dataset_rows": [
+    {
+      "mal_id": 59193,
+      "anilist_id": 178789.0,
+      "anidb_id": 18727.0,
+      "title": "Mushoku Tensei III: Isekai Ittara Honki Dasu",
+      "type": "TV",
+      "status": "Currently Airing",
+      "score": 8.98,
+      "episodes": 14,
+      "duration": 23.0,
+      "season": "summer",
+      "aired_year": 2026.0,
+      "members": 252128
+    },
+    {
+      "mal_id": 60522,
+      "anilist_id": 185542.0,
+      "anidb_id": 19053.0,
+      "title": "Gaikotsu Kishi-sama, Tadaima Isekai e Odekakechuu II",
+      "type": "TV",
+      "status": "Currently Airing",
+      "score": 7.09,
+      "episodes": 12,
+      "duration": 23.0,
+      "season": "summer",
+      "aired_year": 2026.0,
+      "members": 71716
+    },
+    {
+      "mal_id": 62076,
+      "anilist_id": 196187.0,
+      "anidb_id": 19479.0,
+      "title": "Super no Ura de Yani Suu Futari",
+      "type": "TV",
+      "status": "Currently Airing",
+      "score": 8.47,
+      "episodes": 12,
+      "duration": 23.0,
+      "season": "summer",
+      "aired_year": 2026.0,
+      "members": 157886
+    },
+    {
+      "mal_id": 62811,
+      "anilist_id": 200637.0,
+      "anidb_id": 19663.0,
+      "title": "Kimi no Koto ga Daidaidaidaidaisuki na 100-nin no Kanojo 3rd Season",
+      "type": "TV",
+      "status": "Currently Airing",
+      "score": 8.23,
+      "episodes": 1,
+      "duration": 23.0,
+      "season": "summer",
+      "aired_year": 2026.0,
+      "members": 57775
+    },
+    {
+      "mal_id": 63403,
+      "anilist_id": 207141.0,
+      "anidb_id": 19873.0,
+      "title": "Yani Neko",
+      "type": "TV",
+      "status": "Currently Airing",
+      "score": 7.08,
+      "episodes": 2,
+      "duration": 23.0,
+      "season": "summer",
+      "aired_year": 2026.0,
+      "members": 65279
+    },
+    {
+      "mal_id": 63832,
+      "anilist_id": 210031.0,
+      "anidb_id": 19983.0,
+      "title": "Seihantai na Kimi to Boku 2nd Season",
+      "type": "TV",
+      "status": "Currently Airing",
+      "score": 8.34,
+      "episodes": 13,
+      "duration": 24.0,
+      "season": "summer",
+      "aired_year": 2026.0,
+      "members": 71753
+    }
+  ],
+  "elapsed_seconds": 3126.785,
+  "steps": [
+    {
+      "label": "Targeted MAL id refresh (59193,60522,62076,62811,63403,63832)",
+      "command": [
+        "python",
+        "src\\01_gather_raw_sources.py",
+        "--jikan",
+        "--ids",
+        "59193",
+        "60522",
+        "62076",
+        "62811",
+        "63403",
+        "63832",
+        "--refresh-ids",
+        "59193",
+        "60522",
+        "62076",
+        "62811",
+        "63403",
+        "63832",
+        "--skip-mal-id-download",
+        "--jikan-sleep",
+        "1.0",
+        "--anilist-sleep",
+        "2.2",
+        "--skip-recommendations"
+      ],
+      "return_code": 0,
+      "elapsed_seconds": 238.539,
+      "dry_run": false
+    },
+    {
+      "label": "Recent AniDB live refresh",
+      "command": [
+        "python",
+        "src\\01_gather_raw_sources.py",
+        "--anidb-live-recent",
+        "--anidb-since",
+        "2025-09-14",
+        "--anidb-sleep",
+        "4.0",
+        "--limit",
+        "50"
+      ],
+      "return_code": 0,
+      "elapsed_seconds": 9.147,
+      "dry_run": false
+    },
+    {
+      "label": "Rebuild anime dataset",
+      "command": [
+        "python",
+        "src\\02_build_anime_dataset.py"
+      ],
+      "return_code": 0,
+      "elapsed_seconds": 38.717,
+      "dry_run": false
+    },
+    {
+      "label": "Apply dataset improvements and rebuild people tables",
+      "command": [
+        "python",
+        "src\\04_improve_anime_dataset.py",
+        "--enrich-character-favorites",
+        "--build-va-character-tables",
+        "--max-va-character-edges-per-anime",
+        "30",
+        "--max-dynamic-va-character-edges-per-anime",
+        "150",
+        "--build-staff-tables"
+      ],
+      "return_code": 0,
+      "elapsed_seconds": 2839.818,
+      "dry_run": false
+    }
+  ]
+}

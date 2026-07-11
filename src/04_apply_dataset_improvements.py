@@ -21,6 +21,29 @@ except ImportError:  # Imported from a notebook with project root on sys.path.
     from src.anidb_metadata_utils import extract_anidb_payload, atomic_write_json
 
 try:
+    from anilist_metadata_utils import (
+        ANILIST_CACHE_FILE,
+        classify_anilist_media,
+        get_anilist_media,
+        load_anilist_cache,
+        merge_recommendation_sources,
+        save_anilist_cache,
+        seed_anilist_cache_from_sample,
+        update_anilist_cache_for_mal_ids,
+    )
+except ImportError:  # Imported from a notebook with project root on sys.path.
+    from src.anilist_metadata_utils import (
+        ANILIST_CACHE_FILE,
+        classify_anilist_media,
+        get_anilist_media,
+        load_anilist_cache,
+        merge_recommendation_sources,
+        save_anilist_cache,
+        seed_anilist_cache_from_sample,
+        update_anilist_cache_for_mal_ids,
+    )
+
+try:
     import requests
 except ImportError:  # pragma: no cover - live AniDB fill is optional
     requests = None
@@ -759,6 +782,10 @@ def has_explicit_rating(rating: Any) -> bool:
     return str(rating or "").strip() in EXPLICIT_RATINGS
 
 
+def has_adult_demographic_rating(rating: Any) -> bool:
+    return str(rating or "").strip() == "Rx - Hentai"
+
+
 def infer_season(month: Any) -> str | None:
     month_int = parse_int(month, default=None)
     if month_int is None:
@@ -820,7 +847,7 @@ def infer_demographics_from_row(row: pd.Series) -> str:
     inferred = []
     rating = str(row.get("rating") or "").strip()
 
-    if rating in {"Rx - Hentai", "R+ - Mild Nudity"}:
+    if has_adult_demographic_rating(rating):
         inferred.append("18+")
     if rating == "PG - Children":
         inferred.append("Kodomo")
@@ -1632,6 +1659,167 @@ def prune_dataset_tags(df: pd.DataFrame) -> tuple[pd.DataFrame, dict[str, int]]:
     return df, summary
 
 
+def anilist_season_to_dataset(value: Any) -> str:
+    return str(value or "").strip().lower()
+
+
+def anilist_date_parts(media: dict[str, Any] | None) -> tuple[int | None, int | None]:
+    if not media:
+        return None, None
+    start = media.get("startDate") or {}
+    return parse_int(start.get("year"), default=None), parse_int(start.get("month"), default=None)
+
+
+def consensus_fill_from_anilist(df: pd.DataFrame, anilist_cache: dict[str, Any]) -> tuple[pd.DataFrame, dict[str, Any]]:
+    """Patch catalog metadata from AniList while preserving MAL/AniDB strengths.
+
+    AniList is used as the preferred source for semantic ``genres`` and
+    descriptive ``tags`` because its tag taxonomy has ranks, categories, and
+    adult flags. MAL remains the source for popularity, score, and the public
+    age-rating label. AniDB remains useful for episode/duration repairs and
+    content-indicator safety signals.
+    """
+    summary = {
+        "anilist_cache_file": str(ANILIST_CACHE_FILE),
+        "anilist_cache_entries": len(anilist_cache.get("items", {})),
+        "anilist_rows_seen": 0,
+        "anilist_rows_missing": 0,
+        "anilist_id_filled": 0,
+        "anilist_genre_rows_replaced": 0,
+        "anilist_tag_rows_replaced": 0,
+        "anilist_explicit_tag_rows_replaced": 0,
+        "anilist_demographic_rows_merged": 0,
+        "anilist_recommendation_rows_merged": 0,
+        "anilist_episode_fills": 0,
+        "anilist_duration_fills": 0,
+        "anilist_source_fills": 0,
+        "anilist_aired_year_fills": 0,
+        "anilist_aired_month_fills": 0,
+        "anilist_season_fills": 0,
+    }
+
+    df = df.copy()
+    for column in [
+        "anilist_id",
+        "anilist_format",
+        "anilist_is_adult",
+        "tag_weights",
+        "explicit_tags",
+        "explicit_tag_weights",
+        "recommendations",
+    ]:
+        if column not in df.columns:
+            df[column] = ""
+
+    for idx, row in df.iterrows():
+        mal_id = parse_int(row.get("mal_id"), default=None)
+        if mal_id is None:
+            continue
+        media, source = get_anilist_media(mal_id, anilist_cache, live=False)
+        if not media:
+            summary["anilist_rows_missing"] += 1
+            continue
+
+        summary["anilist_rows_seen"] += 1
+        parsed = classify_anilist_media(row, media)
+        anilist_id = parse_int(parsed.get("anilist_id"), default=None)
+        if anilist_id is not None and is_missing_text(row.get("anilist_id")):
+            df.at[idx, "anilist_id"] = anilist_id
+            summary["anilist_id_filled"] += 1
+        df.at[idx, "anilist_format"] = media.get("format") or ""
+        df.at[idx, "anilist_is_adult"] = bool(media.get("isAdult"))
+
+        if parsed.get("genres"):
+            old = "" if is_missing_text(row.get("genres")) else str(row.get("genres"))
+            if old != parsed["genres"]:
+                df.at[idx, "genres"] = parsed["genres"]
+                summary["anilist_genre_rows_replaced"] += 1
+
+        if parsed.get("tags"):
+            old = "" if is_missing_text(row.get("tags")) else str(row.get("tags"))
+            if old != parsed["tags"]:
+                df.at[idx, "tags"] = parsed["tags"]
+                df.at[idx, "tag_weights"] = parsed["tag_weights"]
+                summary["anilist_tag_rows_replaced"] += 1
+
+        old_explicit = "" if is_missing_text(row.get("explicit_tags")) else str(row.get("explicit_tags"))
+        if parsed.get("explicit_tags") and old_explicit != parsed["explicit_tags"]:
+            df.at[idx, "explicit_tags"] = parsed["explicit_tags"]
+            df.at[idx, "explicit_tag_weights"] = parsed["explicit_tag_weights"]
+            summary["anilist_explicit_tag_rows_replaced"] += 1
+        elif not parsed.get("explicit_tags") and old_explicit:
+            # If AniList has a non-adult consensus and MAL is not Rx, remove
+            # old broad explicit tags created by AniDB sexual/fetish branches.
+            if not has_explicit_rating(row.get("rating")):
+                df.at[idx, "explicit_tags"] = ""
+                df.at[idx, "explicit_tag_weights"] = ""
+                summary["anilist_explicit_tag_rows_replaced"] += 1
+
+        if parsed.get("demographics"):
+            keep_age_demographics = {"Kodomo"}
+            if has_adult_demographic_rating(row.get("rating")):
+                keep_age_demographics.add("18+")
+            existing_demographics = [
+                value for value in split_pipe_values(row.get("demographics")) if value in keep_age_demographics
+            ]
+            merged_demographics = merge_pipe_values(
+                existing_demographics + split_pipe_values(parsed["demographics"])
+            )
+            if merged_demographics != ("" if is_missing_text(row.get("demographics")) else str(row.get("demographics"))):
+                df.at[idx, "demographics"] = merged_demographics
+                summary["anilist_demographic_rows_merged"] += 1
+        else:
+            keep_age_demographics = {"Kodomo"}
+            if has_adult_demographic_rating(row.get("rating")):
+                keep_age_demographics.add("18+")
+            existing_demographics = split_pipe_values(row.get("demographics"))
+            retained_demographics = [value for value in existing_demographics if value in keep_age_demographics]
+            retained = merge_pipe_values(retained_demographics)
+            if retained != ("" if is_missing_text(row.get("demographics")) else str(row.get("demographics"))):
+                df.at[idx, "demographics"] = retained
+                summary["anilist_demographic_rows_merged"] += 1
+
+        if parsed.get("recommendations"):
+            merged_recommendations = merge_recommendation_sources(row.get("recommendations"), parsed["recommendations"])
+            if merged_recommendations != ("" if is_missing_text(row.get("recommendations")) else str(row.get("recommendations"))):
+                df.at[idx, "recommendations"] = merged_recommendations
+                summary["anilist_recommendation_rows_merged"] += 1
+
+        anilist_episodes = parse_int(media.get("episodes"), default=None)
+        next_airing_episode = parse_int(media.get("next_airing_episode"), default=None)
+        if anilist_episodes is None and next_airing_episode and next_airing_episode > 1:
+            anilist_episodes = next_airing_episode - 1
+        current_episodes = parse_int(row.get("episodes"), default=None)
+        if anilist_episodes and (current_episodes is None or current_episodes <= 0):
+            df.at[idx, "episodes"] = anilist_episodes
+            summary["anilist_episode_fills"] += 1
+
+        anilist_duration = parse_int(media.get("duration"), default=None)
+        current_duration = parse_duration_minutes(row.get("duration"))
+        if anilist_duration and current_duration is None:
+            df.at[idx, "duration"] = anilist_duration
+            summary["anilist_duration_fills"] += 1
+
+        if media.get("source") and is_missing_text(row.get("source")):
+            df.at[idx, "source"] = str(media["source"]).replace("_", " ").title()
+            summary["anilist_source_fills"] += 1
+
+        start_year, start_month = anilist_date_parts(media)
+        if start_year and pd.isna(row.get("aired_year")):
+            df.at[idx, "aired_year"] = start_year
+            summary["anilist_aired_year_fills"] += 1
+        if start_month and pd.isna(row.get("aired_month")):
+            df.at[idx, "aired_month"] = start_month
+            summary["anilist_aired_month_fills"] += 1
+
+        season = anilist_season_to_dataset(media.get("season"))
+        if season and is_missing_text(row.get("season")):
+            df.at[idx, "season"] = season
+            summary["anilist_season_fills"] += 1
+
+    return df, summary
+
+
 def apply_improvements(df: pd.DataFrame, cache_payload: dict[str, Any]) -> tuple[pd.DataFrame, dict[str, Any]]:
     summary: dict[str, Any] = {
         "started_rows": int(len(df)),
@@ -1650,6 +1838,22 @@ def apply_improvements(df: pd.DataFrame, cache_payload: dict[str, Any]) -> tuple
         "demographics_filled_from_anidb_cache": 0,
         "demographics_normalized": 0,
         "demographics_inferred_from_rating_genres_tags": 0,
+        "anilist_cache_file": str(ANILIST_CACHE_FILE),
+        "anilist_cache_entries": 0,
+        "anilist_rows_seen": 0,
+        "anilist_rows_missing": 0,
+        "anilist_id_filled": 0,
+        "anilist_genre_rows_replaced": 0,
+        "anilist_tag_rows_replaced": 0,
+        "anilist_explicit_tag_rows_replaced": 0,
+        "anilist_demographic_rows_merged": 0,
+        "anilist_recommendation_rows_merged": 0,
+        "anilist_episode_fills": 0,
+        "anilist_duration_fills": 0,
+        "anilist_source_fills": 0,
+        "anilist_aired_year_fills": 0,
+        "anilist_aired_month_fills": 0,
+        "anilist_season_fills": 0,
         "duplicate_special_rows_removed": 0,
         "special_rows_without_anidb_removed": 0,
         "removed_special_ids_added_to_invalid_type_registry": 0,
@@ -1671,6 +1875,9 @@ def apply_improvements(df: pd.DataFrame, cache_payload: dict[str, Any]) -> tuple
     }
 
     items = cache_payload.get("items", {})
+    anilist_cache = load_anilist_cache()
+    if seed_anilist_cache_from_sample(anilist_cache):
+        save_anilist_cache(anilist_cache)
     df = df.copy()
 
     missing_air_date = df["aired_year"].isna() & df["aired_month"].isna()
@@ -1812,6 +2019,13 @@ def apply_improvements(df: pd.DataFrame, cache_payload: dict[str, Any]) -> tuple
             df.at[idx, "demographics"] = parsed["demographics"]
             summary["demographics_filled_from_anidb_cache"] += 1
 
+    df, anilist_summary = consensus_fill_from_anilist(df, anilist_cache)
+    for key, value in anilist_summary.items():
+        if isinstance(value, int):
+            summary[key] = int(value)
+        else:
+            summary[key] = value
+
     needs_demographics = df["demographics"].apply(is_missing_text)
     for idx, row in df.loc[needs_demographics].iterrows():
         inferred = infer_demographics_from_row(row)
@@ -1819,9 +2033,10 @@ def apply_improvements(df: pd.DataFrame, cache_payload: dict[str, Any]) -> tuple
             df.at[idx, "demographics"] = inferred
             summary["demographics_inferred_from_rating_genres_tags"] += 1
 
-    df, tag_normalization_summary = normalize_tags_and_promote_genres(df)
-    for key, value in tag_normalization_summary.items():
-        summary[key] += int(value)
+    if summary["anilist_rows_seen"] == 0:
+        df, tag_normalization_summary = normalize_tags_and_promote_genres(df)
+        for key, value in tag_normalization_summary.items():
+            summary[key] += int(value)
 
     df, tag_pruning_summary = prune_dataset_tags(df)
     summary["unique_tags_before_pruning"] = tag_pruning_summary["unique_tags_before"]
@@ -1858,6 +2073,7 @@ def json_safe(value: Any) -> Any:
 
 def save_dataset(df: pd.DataFrame, csv_path: Path = DATASET_CSV, json_path: Path = DATASET_JSON) -> None:
     csv_path.parent.mkdir(parents=True, exist_ok=True)
+    df = df.drop(columns=[column for column in ["synopsis", "description"] if column in df.columns])
     df.to_csv(csv_path, index=False)
     records = json_safe(df.to_dict(orient="records"))
     with json_path.open("w", encoding="utf-8") as f:
@@ -1874,6 +2090,9 @@ def main() -> None:
     parser.add_argument("--output-json", type=Path, default=DATASET_JSON)
     parser.add_argument("--live-anidb", action="store_true", help="Try live AniDB calls for remaining cache gaps.")
     parser.add_argument("--live-limit", type=int, default=None, help="Maximum live AniDB calls when --live-anidb is used.")
+    parser.add_argument("--live-anilist", action="store_true", help="Fetch missing AniList media payloads before applying corrections.")
+    parser.add_argument("--anilist-limit", type=int, default=None, help="Maximum live AniList calls when --live-anilist is used.")
+    parser.add_argument("--anilist-sleep", type=float, default=1.0, help="Seconds to sleep between live AniList calls.")
     args = parser.parse_args()
 
     df = pd.read_csv(args.input_csv)
@@ -1898,6 +2117,27 @@ def main() -> None:
         )
         updated = update_cache_with_live_payloads(cache_payload, candidate_ids, limit=args.live_limit)
         print(f"Live AniDB cache updates: {updated}")
+
+    if args.live_anilist:
+        anilist_cache = load_anilist_cache()
+        if seed_anilist_cache_from_sample(anilist_cache):
+            save_anilist_cache(anilist_cache)
+        cached_ids = {int(key) for key in anilist_cache.get("items", {}) if str(key).isdigit()}
+        anilist_candidates = (
+            df.loc[~df["mal_id"].astype(int).isin(cached_ids)]
+            .sort_values("popularity", na_position="last")["mal_id"]
+            .dropna()
+            .astype(int)
+            .drop_duplicates()
+            .tolist()
+        )
+        updated = update_anilist_cache_for_mal_ids(
+            anilist_candidates,
+            anilist_cache,
+            limit=args.anilist_limit,
+            sleep_seconds=args.anilist_sleep,
+        )
+        print(f"Live AniList cache updates: {updated}")
 
     improved, summary = apply_improvements(df, cache_payload)
     save_dataset(improved, csv_path=args.output_csv, json_path=args.output_json)

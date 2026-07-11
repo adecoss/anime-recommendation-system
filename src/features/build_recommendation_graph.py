@@ -14,7 +14,7 @@ BASE_DIR = Path(__file__).resolve().parents[2]
 
 PROCESSED_DIR = BASE_DIR / "data" / "processed"
 ARTIFACTS_DIR = BASE_DIR / "artifacts"
-GRAPH_DIR = ARTIFACTS_DIR / "graph_exports"
+GRAPH_DIR = ARTIFACTS_DIR / "graph"
 PLOTS_DIR = ARTIFACTS_DIR / "plots"
 
 GRAPH_DIR.mkdir(parents=True, exist_ok=True)
