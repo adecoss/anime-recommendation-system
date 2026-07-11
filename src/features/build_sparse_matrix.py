@@ -23,9 +23,9 @@ EMBEDDINGS_DIR.mkdir(parents=True, exist_ok=True)
 
 print("Loading ratings dataset...")
 
-ratings = pd.read_csv(
-    PROCESSED_DIR / "ratings_processed.csv"
-)
+ratings = pd.read_csv(PROCESSED_DIR / "current_user_ratings.csv")
+if "animeID" not in ratings.columns and "mal_id" in ratings.columns:
+    ratings = ratings.rename(columns={"mal_id": "animeID"})
 
 print(f"Ratings shape: {ratings.shape}")
 # =========================================================

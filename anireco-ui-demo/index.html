@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AniReco</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">AniReco local demo</p>
+        <h1>Anime recommendations that explain themselves.</h1>
+      </div>
+      <button id="openPlan" class="plan-button" type="button">
+        Plan to watch <span id="planCount">0</span>
+      </button>
+    </header>
+
+    <main>
+      <section class="onboarding" id="onboarding">
+        <div class="onboarding-copy">
+          <p class="eyebrow">Start</p>
+          <h2>Do you have a MAL or AniList account?</h2>
+          <p>
+            MAL usernames are used for public favorites. For the full list,
+            upload your MAL XML export too. MAL may not return a complete list
+            from username alone, so XML is the safer option. AniList usernames
+            can be imported directly when the public list is available.
+          </p>
+        </div>
+        <div class="account-card">
+          <div class="source-tabs" role="tablist" aria-label="Account source">
+            <button class="source-tab active" data-source="mal" type="button">MAL</button>
+            <button class="source-tab" data-source="anilist" type="button">AniList</button>
+            <button class="source-tab" data-source="cold" type="button">No account yet</button>
+          </div>
+          <label class="field">
+            <span id="usernameLabel">MAL username</span>
+            <input id="username" type="text" placeholder="Champux" />
+          </label>
+          <label class="field xml-field">
+            <span>MAL XML export (optional, recommended)</span>
+            <input id="xmlUpload" type="file" accept=".xml,text/xml" />
+          </label>
+          <details class="manual-favs">
+            <summary>Manual favorites fallback</summary>
+            <p>Add comma-separated favorites if public favorites cannot be imported.</p>
+            <label class="field">
+              <span>Favorite anime</span>
+              <input id="manualAnime" type="text" placeholder="Cowboy Bebop, 5114, Monogatari" />
+            </label>
+            <label class="field">
+              <span>Favorite people / staff / voice actors</span>
+              <input id="manualPeople" type="text" placeholder="Hanazawa, Kana, Miyazaki, Hayao" />
+            </label>
+            <label class="field">
+              <span>Favorite characters</span>
+              <input id="manualCharacters" type="text" placeholder="Lelouch, Kurisu, Luffy" />
+            </label>
+            <label class="field">
+              <span>Favorite studios / companies</span>
+              <input id="manualStudios" type="text" placeholder="Kyoto Animation, Madhouse" />
+            </label>
+          </details>
+          <div class="cold-fields hidden" id="coldFields">
+            <p>Pick a few favorite broad genres for a cold-start profile.</p>
+            <div id="coldGenreChips" class="chip-grid"></div>
+          </div>
+          <div class="demo-profiles">
+            <span>Demo profiles</span>
+            <div id="demoProfileButtons" class="chip-grid"></div>
+          </div>
+          <button id="buildProfile" class="primary" type="button">Build recommendations</button>
+          <button id="useLocalDemo" class="secondary" type="button">Use local demo profile</button>
+          <p id="importStatus" class="status-line"></p>
+        </div>
+      </section>
+
+      <section class="profile hidden" id="profilePanel">
+        <div>
+          <p class="eyebrow">Profile</p>
+          <h2 id="profileTitle">Local demo profile</h2>
+          <p id="profileSubtitle"></p>
+        </div>
+        <div class="profile-stats" id="profileStats"></div>
+      </section>
+
+      <section class="filters hidden" id="filterPanel">
+        <div class="filter-grid">
+          <label>
+            <span>Search</span>
+            <input id="filterSearch" type="search" placeholder="Title, studio, tag" />
+          </label>
+          <label>
+            <span>Year from</span>
+            <input id="filterYearMin" type="number" min="1900" max="2035" placeholder="Any" />
+          </label>
+          <label>
+            <span>Year to</span>
+            <input id="filterYearMax" type="number" min="1900" max="2035" placeholder="Any" />
+          </label>
+          <label>
+            <span>Season</span>
+            <select id="filterSeason"></select>
+          </label>
+          <label>
+            <span>Format</span>
+            <select id="filterType"></select>
+          </label>
+          <label>
+            <span>Airing Status</span>
+            <select id="filterStatus"></select>
+          </label>
+          <label>
+            <span>Rating</span>
+            <select id="filterRating"></select>
+          </label>
+        </div>
+        <div class="filter-controls-row">
+          <label class="episode-field">
+            <span>Max episodes</span>
+            <div class="range-pair">
+              <input id="filterEpisodes" type="range" min="0" max="1500" value="0" />
+              <input id="filterEpisodesNumber" type="number" min="0" max="1500" value="0" aria-label="Maximum episodes" />
+            </div>
+            <b id="episodeValue" class="range-value">No limit</b>
+          </label>
+          <label class="check">
+            <input id="filterExplicit" type="checkbox" />
+            <span>Allow Hentai / Erotica</span>
+          </label>
+        </div>
+        <div class="filter-state">
+          <button id="clearTagFilters" class="secondary compact" type="button">Clear selected genres/tags</button>
+          <div id="selectedFilterChips" class="selected-filter-chips"></div>
+        </div>
+        <details>
+          <summary>Advanced genres and tag filters</summary>
+          <label class="tag-search">
+            <span>Search genres/tags</span>
+            <input id="tagSearch" type="search" placeholder="Action, Romance, Mecha, Cyberpunk..." />
+          </label>
+          <div class="tag-category">
+            <h3>Genres</h3>
+            <div id="genreChips" class="chip-grid"></div>
+          </div>
+          <div id="advancedTagChips" class="chip-grid"></div>
+        </details>
+      </section>
+
+      <section id="rows" class="rows"></section>
+    </main>
+
+    <aside id="planDrawer" class="plan-drawer" aria-hidden="true">
+      <div class="drawer-head">
+        <h2>Plan to watch</h2>
+        <button id="closePlan" type="button" aria-label="Close">&times;</button>
+      </div>
+      <div class="plan-tools">
+        <input id="planSearch" type="search" placeholder="Search selected anime" />
+        <select id="planFilterType"></select>
+      </div>
+      <div id="planItems" class="plan-items"></div>
+      <button id="clearPlan" class="secondary" type="button">Clear list</button>
+    </aside>
+    <div id="drawerShade" class="drawer-shade"></div>
+
+    <script src="assets/anireco-data.js?v=20260711-shelf-layout"></script>
+    <script src="app.js?v=20260711-shelf-layout"></script>
+  </body>
+</html>

@@ -1,87 +1,116 @@
-# Anime Recommendation and Graph Intelligence
+# Anime Discovery Recommender
 
-Semester project for an anime discovery and recommendation system. The project builds a reproducible anime catalog from MyAnimeList/Jikan metadata, AniDB metadata/cache enrichment, and a Kaggle user-rating interaction dataset.
+Personal anime recommendation project built around a raw-source catalog, public user-rating interactions, graph navigation, and people/character metadata. The goal is not a single ranked list, but a streaming-service-style recommendation surface with multiple rows: general picks, similar titles, franchise continuation, voice actor/staff discoveries, and controlled exploration outside the user's comfort zone.
 
-## Current Focus
+## Product Aim
 
-The repository is organized for the Week 3, Week 5, Week 7, and Week 10 course deliverables:
+The final recommender should support four profile bands:
 
-- Week 3: dataset charter, source inventory, schema draft, processed dataset V1/V3, data dictionary, scale analysis, and ethics/access note.
-- Week 5: feature representation, PCA/SVD dimensionality reduction, retained-variance/energy analysis, and t-SNE visualization for comparison only.
-- Week 7: K-means, DBSCAN, and OPTICS clustering with parameter sweeps, validation metrics, cluster profiles, and failure analysis.
-- Week 10: popularity baseline, latent collaborative filtering, hybrid recommendation ranking, offline evaluation, and error analysis.
+- `Beginner` (`1-49` known anime): needs popular, short, high-confidence entry points.
+- `Casual` (`50-149` known anime): has enough history for simple personalization; similar anime and direct relations become useful.
+- `Fan` (`150-499` known anime): has a stronger taste profile; recommendations can mix known preferences with current shows and controlled genre expansion.
+- `Veteran` (`500+` known anime): has seen many obvious titles; novelty, coverage, graph navigation, and people-based discovery matter more.
+
+Cold-start users are handled separately: ask for preferred genres/tags, show recognizable popular titles, then build starter rows from selected interests.
 
 ## Repository Structure
 
 ```text
 data/
-  processed/        processed anime catalog; large ratings file is local-only
-  build/            build logs, retry registries, skipped-ID registries
+  raw_sources/      MAL/Jikan, AniList, and AniDB source caches
+  reference/        static reference metadata such as AniList tag descriptions
+  processed/        final catalog, user ratings, cast/staff edge tables
+  build/            checkpoints, retry registries, build summaries, audits
+
 notebooks/
   00_collect_current_user_ratings.ipynb
-  01_create_dataset.ipynb
-  02_get_user_ratings.ipynb
-  03_anime_dataset_eda.ipynb
-  04_dataset_improvements.ipynb
-  05_week3_dataset_charter.ipynb
-  06_week5_representation_dimensionality.ipynb
-  07_week7_clustering_validation.ipynb
-  08_week10_recommendation_ranking.ipynb
+  01_gather_raw_sources.ipynb
+  02_build_anime_dataset.ipynb
+  03_catalog_eda.ipynb
+  04_improve_anime_dataset.ipynb
+  05_project_foundation_and_schema.ipynb
+  06_catalog_representation.ipynb
+  07_catalog_segmentation.ipynb
+  08_recommender_evaluation.ipynb
+  09_graph_discovery.ipynb
+  10_recommendation_product_rows.ipynb
+
 src/
   00_collect_current_user_ratings.py
-  01_run_dataset_ingestion.py
-  02_run_ratings_ingestion.py
-  03_build_catalog_features.py
-  04_apply_dataset_improvements.py
-  05_run_week5_dimensionality.py
-  06_run_week7_clustering.py
-  07_build_recommendation_graph.py
-  08_run_week10_recommendation.py
-  09_create_project_visualizations.py
-reports/
-  BigData_Doc.pdf
-  runbook_weeks_3_to_7.md
-  week10_recommendation_ranking_report.md
-  week10_recommendation_presentation.pptx
-artifacts/
-  recommendation/   Week 10 recommendation metrics and examples
-  plots/            generated EDA, Week 5, Week 7, and Week 10 figures
+  01_gather_raw_sources.py
+  02_build_anime_dataset.py
+  03_run_catalog_eda.py
+  04_improve_anime_dataset.py
+  05_build_catalog_features.py
+  06_analyze_catalog_representation.py
+  07_segment_catalog.py
+  08_evaluate_recommenders.py
+  09_build_discovery_graph.py
+  10_build_recommendation_product_rows.py
 ```
 
-## Reproducible Commands
+## Data Sources
 
-Run the main pipeline pieces in order:
+- MyAnimeList/Jikan: catalog metadata, user-facing scores, popularity, relations, recommendations, characters, and staff/person identifiers.
+- AniList: genre/tag system, tag weights, current airing status, compact media metadata, character/staff favorite counts, and extra recommendations.
+- AniDB/Shoko: fallback metadata, episode/duration fixes, production-origin tags, explicit/loli fallback tags, and relation edge support.
+- Public MAL lists: anonymized, scored interactions collected through a local encrypted username queue.
+
+## Rebuild Pipeline
+
+Run the core catalog pipeline in order:
 
 ```bash
-python src/00_collect_current_user_ratings.py
-python src/01_run_dataset_ingestion.py
-python src/02_run_ratings_ingestion.py
-python src/03_build_catalog_features.py
-python src/04_apply_dataset_improvements.py
-python src/05_run_week5_dimensionality.py
-python src/06_run_week7_clustering.py
-python src/07_build_recommendation_graph.py
-python src/08_run_week10_recommendation.py
-python src/09_create_project_visualizations.py
+python src/01_gather_raw_sources.py --jikan --anidb --refresh-shoko --retry-failed
+python src/02_build_anime_dataset.py
+python src/03_run_catalog_eda.py
+python src/04_improve_anime_dataset.py
+python src/03_run_catalog_eda.py
 ```
 
-On Windows, if Jupyter spins before executing Week 5 or Week 7, use the local runner:
+Build representation, segmentation, graph, and recommender artifacts:
 
-```powershell
-powershell -ExecutionPolicy Bypass -File .\run_week_notebooks.ps1
+```bash
+python src/05_build_catalog_features.py
+python src/06_analyze_catalog_representation.py
+python src/07_segment_catalog.py
+python src/09_build_discovery_graph.py
+python src/08_evaluate_recommenders.py
+python src/10_build_recommendation_product_rows.py
 ```
 
-That command redirects Jupyter/IPython runtime folders into the project so it does not need write access to the user-level `.jupyter` directory.
+Collect current public user interactions separately:
 
-## Data Notes
+```bash
+python src/00_collect_current_user_ratings.py --discover
+python src/00_collect_current_user_ratings.py --collect
+```
 
-The processed anime catalog is kept in `data/processed/anime_dataset.csv` and `data/processed/anime_dataset.json`.
+The user collector keeps usernames encrypted only while they are pending retry. Successful users are written as anonymized ids and the plaintext username is not retained.
 
-`02_get_user_ratings.ipynb` builds the stable Kaggle interaction layer. `00_collect_current_user_ratings.ipynb` is experimental: it discovers public MAL users transiently, stores no usernames, and writes anonymized ratings to `data/processed/current_user_ratings.csv`.
+## Recommendation Surface
 
-Large or easily regenerated files are ignored:
+The final product layer generates row-based outputs with at most 12 titles per row:
 
-- raw Kaggle files
-- AniDB cache files
-- the 2GB+ `ratings_processed.csv`
-- temporary model/matrix files
+- `general_recommendations`: profile-aware hybrid recommendations with popularity/score/current-season priors.
+- `because_you_liked`: item-to-item recommendations anchored on highly rated or favorite titles.
+- `continue_your_journey`: sequels, parent stories, side stories, specials, and franchise relations that pass sequencing guardrails.
+- `people_you_like`: anime connected through favorite voice actors, directors, original creators, or original character designers.
+- `give_it_a_try`: controlled exploration outside the user's dominant genres/tags.
+
+Optional controls define the candidate search space before each row ranks titles: search text/id, year range, genres/tags, format, airing status, rating, hentai toggle, and episode count. Within those boundaries, each row uses its own recommender logic instead of merely hiding items after a fixed list is produced.
+
+## Important Outputs
+
+```text
+data/processed/anime_dataset.csv
+data/processed/current_user_ratings.csv
+data/processed/current_user_profile_features.csv
+data/processed/anime_voice_actor_edges.csv
+data/processed/anime_staff_edges.csv
+artifacts/recommendation/
+artifacts/graph/
+artifacts/plots/
+```
+
+Large raw caches and generated matrices are intentionally kept local or ignored where appropriate.

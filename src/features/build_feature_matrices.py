@@ -90,8 +90,7 @@ text_cols = [
     "tag_weights",
     "explicit_tag_weights",
     "studios",
-    "demographics",
-    "synopsis"
+    "demographics"
 ]
 
 for col in text_cols:
@@ -118,8 +117,7 @@ anime_df["combined_text"] = (
     anime_df["weighted_tags_text"] + " " +
     anime_df["weighted_explicit_tags_text"] + " " +
     anime_df["studios"] + " " +
-    anime_df["demographics"] + " " +
-    anime_df["synopsis"]
+    anime_df["demographics"]
 )
 
 print("Combined text created")

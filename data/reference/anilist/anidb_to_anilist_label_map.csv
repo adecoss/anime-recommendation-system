@@ -1,0 +1,1650 @@
+anidb_tag_id,anidb_tag_name,parent_id,anime_count,tag_occurrences,max_weight,weight_sum,avg_weight,normalized_name,target_kind,target_label,fallback_weight,mapping_source
+6173,origin,,15821,15821,0,0,0.0,origin,ignore,,,explicit_ignore
+7885,Japanese production,6173.0,14173,14173,0,0,0.0,japanese production,ignore,,,unmapped
+2611,elements,,9758,9758,0,0,0.0,elements,ignore,,,explicit_ignore
+2609,original work,,8975,8975,0,0,0.0,original work,ignore,,,explicit_ignore
+2607,themes,,7756,7756,0,0,0.0,themes,ignore,,,explicit_ignore
+2610,setting,,7130,7130,0,0,0.0,setting,ignore,,,explicit_ignore
+2606,target audience,,6703,6703,0,0,0.0,target audience,ignore,,,explicit_ignore
+2613,place,2610.0,6611,6611,0,0,0.0,place,ignore,,,explicit_ignore
+6151,technical aspects,,6556,6556,0,0,0.0,technical aspects,ignore,,,explicit_ignore
+2605,dynamic,,5766,5766,0,0,0.0,dynamic,ignore,,,explicit_ignore
+7050,speculative fiction,2611.0,5536,5536,0,0,0.0,speculative fiction,ignore,,,unmapped
+2612,time,2610.0,5521,5521,0,0,0.0,time,ignore,,,explicit_ignore
+30,maintenance tags,,5491,5491,0,0,0.0,maintenance tags,ignore,,,explicit_ignore
+2630,Earth,2613.0,5216,5216,600,2304500,441.81,earth,ignore,,,unmapped
+2604,content indicators,,4930,4930,0,0,0.0,content indicators,ignore,,,explicit_ignore
+2853,comedy,2611.0,4708,4708,600,1566600,332.75,comedy,genre,Comedy,,curated_genre
+6230,cast,2605.0,4522,4522,0,0,0.0,cast,ignore,,,explicit_ignore
+2841,action,2611.0,4401,4401,600,1542600,350.51,action,genre,Action,,curated_genre
+2834,Asia,2630.0,4398,4398,600,1902100,432.49,asia,ignore,,,unmapped
+2672,Japan,2834.0,4160,4160,600,2172000,522.12,japan,ignore,,,unmapped
+2798,manga,2609.0,4000,4000,0,0,0.0,manga,ignore,,,unmapped
+2858,romance,2611.0,3560,3560,600,925200,259.89,romance,genre,Romance,,curated_genre
+2624,present,2612.0,3448,3448,600,1828900,530.42,present,ignore,,,explicit_ignore
+2849,fantasy,7050.0,3435,3435,600,1149100,334.53,fantasy,genre,Fantasy,,curated_genre
+2749,nudity,2604.0,3426,3426,600,1318900,384.97,nudity,tag,Nudity,100,curated_tag
+2608,fetishes,,3286,3286,0,0,0.0,fetishes,ignore,,,explicit_ignore
+2931,unsorted,,3138,3138,0,0,0.0,unsorted,ignore,,,explicit_ignore
+2750,violence,2604.0,2870,2870,600,847100,295.16,violence,ignore,,,unmapped
+2846,science fiction,7050.0,2811,2811,600,922400,328.14,science fiction,genre,Sci-Fi,,curated_genre
+6233,tropes,2611.0,2573,2573,0,0,0.0,tropes,ignore,,,explicit_ignore
+2869,school life,2607.0,2565,2565,600,706100,275.28,school life,tag,School,100,curated_tag
+2856,ecchi,2611.0,2424,2424,600,492700,203.26,ecchi,genre,Ecchi,,curated_genre
+6149,TO BE MOVED TO CHARACTER,30.0,2398,2398,0,0,0.0,to be moved to character,ignore,,,unmapped
+922,shounen,2606.0,2050,2050,0,0,0.0,shounen,tag,Shounen,75,curated_tag
+5939,CAST MISSING,30.0,2034,2034,0,0,0.0,cast missing,ignore,,,unmapped
+2748,sex,2604.0,2028,2028,600,1012600,499.31,sex,ignore,,,unmapped
+2891,breasts,2608.0,1949,1949,0,0,0.0,breasts,ignore,,,unmapped
+2653,slapstick,2853.0,1916,1916,600,445300,232.41,slapstick,tag,Slapstick,100,curated_tag
+2790,plot continuity,2605.0,1856,1856,600,786200,423.6,plot continuity,ignore,,,unmapped
+2848,pornography,2611.0,1851,1851,0,0,0.0,pornography,ignore,,,unmapped
+2797,new,2609.0,1817,1817,0,0,0.0,new,ignore,,,unmapped
+1802,seinen,2606.0,1805,1805,0,0,0.0,seinen,tag,Seinen,75,curated_tag
+2800,game,2609.0,1647,1647,0,0,0.0,game,ignore,,,unmapped
+2615,18 restricted,2606.0,1610,1610,0,0,0.0,18 restricted,ignore,,,unmapped
+3955,DESCRIPTION MISSING,30.0,1606,1606,0,0,0.0,description missing,ignore,,,unmapped
+2864,daily life,2607.0,1589,1589,600,547900,344.81,daily life,ignore,,,unmapped
+2887,tragedy,2611.0,1555,1555,600,476400,306.37,tragedy,tag,Tragedy,100,curated_tag
+7905,large breasts,2891.0,1551,1551,600,548000,353.32,large breasts,ignore,,,unmapped
+2094,magic,2849.0,1550,1550,600,499700,322.39,magic,tag,Magic,100,curated_tag
+2638,mecha,2846.0,1533,1533,600,481300,313.96,mecha,genre,Mecha,,curated_genre
+3040,male protagonist,6230.0,1469,1469,0,0,0.0,male protagonist,tag,Male Protagonist,75,curated_tag
+2881,sports,2607.0,1400,1400,600,306900,219.21,sports,genre,Sports,,curated_genre
+2628,fictional location,2613.0,1378,1378,600,542900,393.98,fictional location,ignore,,,unmapped
+2623,super power,2611.0,1378,1378,600,479900,348.26,super power,ignore,,,unmapped
+2850,adventure,2611.0,1357,1357,600,482900,355.86,adventure,genre,Adventure,,curated_genre
+2799,novel,2609.0,1355,1355,0,0,0.0,novel,ignore,,,unmapped
+2874,disaster,2607.0,1354,1354,600,208600,154.06,disaster,ignore,,,unmapped
+6152,Chinese production,6173.0,1329,1329,0,0,0.0,chinese production,ignore,,,unmapped
+2713,oral,2848.0,1291,1291,0,0,0.0,oral,ignore,,,unmapped
+2844,angst,2611.0,1280,1280,600,363000,283.59,angst,ignore,,,unmapped
+2883,the arts,2607.0,1264,1264,600,222700,176.19,the arts,ignore,,,unmapped
+3683,storytelling,2605.0,1241,1241,0,0,0.0,storytelling,ignore,,,explicit_ignore
+2872,crime,2607.0,1196,1196,600,221600,185.28,crime,tag,Crime,100,curated_tag
+2043,high school,2869.0,1191,1191,600,393200,330.14,high school,ignore,,,unmapped
+2625,past,2612.0,1176,1176,600,464100,394.64,past,ignore,,,unmapped
+2622,swordplay,2841.0,1164,1164,600,311300,267.44,swordplay,tag,Swordplay,100,curated_tag
+6268,fellatio,2713.0,1162,1162,0,0,0.0,fellatio,ignore,,,unmapped
+4064,CGI,6151.0,1159,1159,0,0,0.0,cgi,tag,CGI,75,exact_anilist_tag
+5852,short episodes,6151.0,1153,1153,0,0,0.0,short episodes,ignore,,,unmapped
+6242,death,2607.0,1130,1130,0,0,0.0,death,ignore,,,unmapped
+6148,TO BE MOVED TO EPISODE,30.0,1118,1118,0,0,0.0,to be moved to episode,ignore,,,unmapped
+2274,robot,2638.0,1114,1114,600,148800,133.57,robot,ignore,,,unmapped
+6249,family life,2607.0,1099,1099,0,0,0.0,family life,tag,Family Life,75,curated_tag
+2888,coming of age,2607.0,1098,1098,600,343300,312.66,coming of age,ignore,,,unmapped
+5851,female protagonist,6230.0,1091,1091,0,0,0.0,female protagonist,tag,Female Protagonist,75,curated_tag
+7220,sexual abuse,2611.0,1072,1072,0,0,0.0,sexual abuse,ignore,,,unmapped
+2862,friendship,2607.0,1042,1042,600,339300,325.62,friendship,ignore,,,unmapped
+2626,future,2612.0,1014,1014,600,493300,486.49,future,ignore,,,unmapped
+4333,predominantly female cast,6230.0,1006,1006,0,0,0.0,predominantly female cast,ignore,,,unmapped
+2705,creampie,2848.0,963,963,600,332800,345.59,creampie,ignore,,,unmapped
+6246,ending,2605.0,958,958,0,0,0.0,ending,ignore,,,explicit_ignore
+2648,contemporary fantasy,2849.0,951,951,600,411000,432.18,contemporary fantasy,ignore,,,unmapped
+2791,stereotypes,6230.0,928,928,600,314100,338.47,stereotypes,ignore,,,unmapped
+2282,martial arts,2841.0,922,922,600,272200,295.23,martial arts,tag,Martial Arts,100,curated_tag
+2655,parody,2853.0,918,918,600,259500,282.68,parody,tag,Parody,100,curated_tag
+2803,erotic game,2800.0,859,859,0,0,0.0,erotic game,ignore,,,unmapped
+6153,multi-anime projects,6151.0,859,859,0,0,0.0,multi-anime projects,ignore,,,unmapped
+2729,BDSM,2848.0,857,857,600,149800,174.8,bdsm,ignore,,,unmapped
+6097,3D CG animation,4064.0,852,852,0,0,0.0,3d cg animation,ignore,,,unmapped
+36,military,2607.0,847,847,600,259900,306.85,military,tag,Military,100,curated_tag
+4316,murder,6242.0,846,846,600,176700,208.87,murder,ignore,,,unmapped
+2715,rape,7220.0,843,843,600,286600,339.98,rape,ignore,,,unmapped
+7957,group sex,2848.0,843,843,0,0,0.0,group sex,ignore,,,unmapped
+2722,doggy style,2848.0,835,835,0,0,0.0,doggy style,ignore,,,unmapped
+2619,gunfights,2841.0,822,822,600,234600,285.4,gunfights,ignore,,,unmapped
+2617,calling your attacks,2841.0,806,806,0,0,0.0,calling your attacks,ignore,,,unmapped
+2826,pantsu,2856.0,803,803,600,193600,241.1,pantsu,ignore,,,unmapped
+2918,cunnilingus,2713.0,803,803,0,0,0.0,cunnilingus,ignore,,,unmapped
+2794,music,2883.0,799,799,600,231600,289.86,music,genre,Music,,curated_genre
+2859,harem,2611.0,792,792,600,285900,360.98,harem,ignore,,,unmapped
+2646,demon,2849.0,791,791,600,280800,354.99,demon,ignore,,,unmapped
+4096,gore,2750.0,788,788,0,0,0.0,gore,tag,Gore,75,curated_tag
+2618,collateral damage,2841.0,784,784,0,0,0.0,collateral damage,ignore,,,unmapped
+6185,season,2612.0,784,784,0,0,0.0,season,ignore,,,explicit_ignore
+2786,love polygon,2858.0,758,758,600,217300,286.68,love polygon,ignore,,,unmapped
+2851,horror,7050.0,755,755,600,227100,300.79,horror,genre,Horror,,curated_genre
+2652,super deformed,2853.0,752,752,600,194400,258.51,super deformed,ignore,,,unmapped
+2627,space,2613.0,751,751,600,228800,304.66,space,tag,Space,100,curated_tag
+2894,female student,2608.0,744,744,600,323400,434.68,female student,ignore,,,unmapped
+4022,strong female lead,6230.0,739,739,0,0,0.0,strong female lead,ignore,,,unmapped
+2817,skimpy clothing,2856.0,725,725,0,0,0.0,skimpy clothing,ignore,,,unmapped
+4614,narration,3683.0,713,713,0,0,0.0,narration,ignore,,,unmapped
+2696,threesome,7957.0,710,710,0,0,0.0,threesome,ignore,,,unmapped
+2706,masturbation,2848.0,709,709,600,152100,214.53,masturbation,ignore,,,unmapped
+2717,anal,2848.0,706,706,600,181000,256.37,anal,ignore,,,unmapped
+2896,deflowering,2608.0,693,693,600,178100,257.0,deflowering,ignore,,,unmapped
+3148,open-ended,6246.0,690,690,0,0,0.0,open-ended,ignore,,,unmapped
+3023,funny expressions,2853.0,687,687,0,0,0.0,funny expressions,ignore,,,unmapped
+6018,predominantly adult cast,6230.0,662,662,0,0,0.0,predominantly adult cast,ignore,,,unmapped
+2202,alien,2846.0,659,659,600,208800,316.84,alien,ignore,,,unmapped
+2721,public sex,2848.0,658,658,600,147800,224.62,public sex,ignore,,,unmapped
+2641,historical,2625.0,649,649,600,234000,360.55,historical,tag,Historical,100,curated_tag
+2885,law and order,2607.0,649,649,600,136000,209.55,law and order,ignore,,,unmapped
+2008,small breasts,2891.0,649,649,600,176400,271.8,small breasts,ignore,,,unmapped
+6494,half-length episodes,6151.0,649,649,0,0,0.0,half-length episodes,ignore,,,unmapped
+2925,war,2874.0,648,648,600,158200,244.14,war,tag,War,100,curated_tag
+5835,Gainax bounce,2856.0,644,644,0,0,0.0,gainax bounce,ignore,,,unmapped
+1077,shoujo,2606.0,622,622,0,0,0.0,shoujo,tag,Shoujo,75,curated_tag
+2910,parental abandonment,6249.0,606,606,600,184000,303.63,parental abandonment,ignore,,,unmapped
+3411,fighting,2841.0,598,598,0,0,0.0,fighting,ignore,,,unmapped
+2702,mammary intercourse,2848.0,597,597,600,140400,235.18,mammary intercourse,ignore,,,unmapped
+2708,uncensored version available,6151.0,592,592,0,0,0.0,uncensored version available,ignore,,,unmapped
+2804,visual novel,2800.0,588,588,0,0,0.0,visual novel,ignore,,,unmapped
+2636,human enhancement,2846.0,585,585,600,125400,214.36,human enhancement,ignore,,,unmapped
+5948,visible aura,6233.0,579,579,0,0,0.0,visible aura,ignore,,,unmapped
+1760,bishounen,2608.0,575,575,600,183400,318.96,bishounen,ignore,,,unmapped
+2878,conspiracy,2607.0,560,560,600,163500,291.96,conspiracy,tag,Conspiracy,100,curated_tag
+6247,ending tags that need merging,2931.0,559,559,0,0,0.0,ending tags that need merging,ignore,,,unmapped
+2651,absurdist humour,2853.0,555,555,600,151900,273.69,absurdist humour,ignore,,,unmapped
+2857,anthropomorphism,2611.0,555,555,600,208100,374.95,anthropomorphism,tag,Anthropomorphism,100,curated_tag
+1152,undead,2849.0,554,554,0,0,0.0,undead,ignore,,,unmapped
+2712,sex toys,2848.0,550,550,600,61000,110.91,sex toys,ignore,,,unmapped
+2707,internal shots,2848.0,549,549,0,0,0.0,internal shots,ignore,,,unmapped
+2901,bondage,2729.0,547,547,600,124100,226.87,bondage,ignore,,,unmapped
+2645,piloted robot,2274.0,536,536,600,232300,433.4,piloted robot,ignore,,,unmapped
+2854,henshin,2611.0,529,529,600,145800,275.61,henshin,ignore,,,unmapped
+2676,Tokyo,2672.0,528,528,600,200000,378.79,tokyo,ignore,,,unmapped
+1363,breast fondling,2856.0,521,521,0,0,0.0,breast fondling,ignore,,,unmapped
+3597,mythology,2607.0,511,511,0,0,0.0,mythology,tag,Mythology,75,curated_tag
+2669,school clubs,2869.0,499,499,600,159400,319.44,school clubs,ignore,,,unmapped
+308,detective,2611.0,498,498,600,158100,317.47,detective,tag,Detective,100,curated_tag
+2785,unrequited love,2858.0,486,486,600,107200,220.58,unrequited love,ignore,,,unmapped
+4498,heart-warming,2607.0,484,484,0,0,0.0,heart-warming,ignore,,,unmapped
+2782,shoujo ai,2858.0,483,483,600,103000,213.25,shoujo ai,ignore,,,unmapped
+1973,cooking,2607.0,481,481,600,98800,205.41,cooking,ignore,,,unmapped
+2900,dildos - vibrators,2712.0,481,481,600,101500,211.02,dildos - vibrators,ignore,,,unmapped
+2695,yuri,2848.0,472,472,600,116800,247.46,yuri,tag,Yuri,100,curated_tag
+4576,summer,6185.0,463,463,600,133400,288.12,summer,ignore,,,unmapped
+2842,incest,2611.0,459,459,600,136800,298.04,incest,ignore,,,unmapped
+5935,ass-kicking girls,6233.0,456,456,0,0,0.0,ass-kicking girls,ignore,,,unmapped
+2711,urination,2848.0,455,455,600,86000,189.01,urination,ignore,,,unmapped
+2773,magic circles,2094.0,450,450,0,0,0.0,magic circles,ignore,,,unmapped
+4522,social commentary,2611.0,448,448,0,0,0.0,social commentary,ignore,,,unmapped
+2565,cross-dressing,2608.0,442,442,600,78600,177.83,cross-dressing,tag,Crossdressing,100,curated_tag
+2793,performance,2883.0,441,441,600,100500,227.89,performance,ignore,,,unmapped
+2831,Europe,2630.0,440,440,600,137200,311.82,europe,ignore,,,unmapped
+5826,rivalry,2607.0,440,440,600,97000,220.45,rivalry,ignore,,,unmapped
+1846,kodomo,2606.0,440,440,0,0,0.0,kodomo,ignore,,,unmapped
+2770,violent retribution for accidental infringement,2653.0,439,439,600,96500,219.82,violent retribution for accidental infringement,ignore,,,unmapped
+2879,alcohol,2607.0,436,436,600,75700,173.62,alcohol,ignore,,,unmapped
+627,lingerie,2856.0,436,436,600,88500,202.98,lingerie,ignore,,,unmapped
+3977,dialogue driven,3683.0,436,436,0,0,0.0,dialogue driven,ignore,,,unmapped
+4664,short movie,6151.0,430,430,0,0,0.0,short movie,ignore,,,unmapped
+4055,facial distortion,2853.0,429,429,0,0,0.0,facial distortion,ignore,,,unmapped
+3217,working life,2864.0,427,427,600,128000,299.77,working life,ignore,,,unmapped
+2877,revenge,2607.0,424,424,600,112000,264.15,revenge,tag,Revenge,100,curated_tag
+5604,following one`s dream,2607.0,418,418,0,0,0.0,following one s dream,ignore,,,unmapped
+5965,incomplete story,6247.0,417,417,0,0,0.0,incomplete story,ignore,,,unmapped
+4227,detailed landscapes,6151.0,414,414,0,0,0.0,detailed landscapes,ignore,,,unmapped
+2724,double penetration,2696.0,412,412,600,98300,238.59,double penetration,ignore,,,unmapped
+2503,magical girl,2611.0,411,411,600,173300,421.65,magical girl,genre,Mahou Shoujo,,curated_genre
+7229,fingering,2848.0,404,404,0,0,0.0,fingering,ignore,,,unmapped
+2693,handjob,2848.0,402,402,0,0,0.0,handjob,ignore,,,unmapped
+4049,outdoor sex,2721.0,401,401,0,0,0.0,outdoor sex,ignore,,,unmapped
+2778,slow when it comes to love,2858.0,395,395,600,113100,286.33,slow when it comes to love,ignore,,,unmapped
+3795,remastered version available,6151.0,394,394,0,0,0.0,remastered version available,ignore,,,unmapped
+1157,horny nosebleed,2653.0,390,390,0,0,0.0,horny nosebleed,ignore,,,unmapped
+1278,android,2274.0,387,387,600,125900,325.32,android,ignore,,,unmapped
+4083,drastic change of life,2607.0,386,386,0,0,0.0,drastic change of life,ignore,,,unmapped
+5823,predominantly male cast,6230.0,386,386,0,0,0.0,predominantly male cast,ignore,,,unmapped
+2566,loli,2608.0,385,385,600,114600,297.66,loli,ignore,,,unmapped
+4479,sense of foreboding,2931.0,382,382,0,0,0.0,sense of foreboding,ignore,,,unmapped
+2661,shipboard,2627.0,381,381,600,117900,309.45,shipboard,ignore,,,unmapped
+2660,other planet,2627.0,379,379,600,124700,329.02,other planet,ignore,,,unmapped
+2952,rotten world,2607.0,379,379,600,83300,219.79,rotten world,ignore,,,unmapped
+4537,time skip,2605.0,377,377,0,0,0.0,time skip,ignore,,,unmapped
+6399,episodic,2605.0,374,374,0,0,0.0,episodic,tag,Episodic,75,curated_tag
+2704,cum play,2848.0,373,373,600,41900,112.33,cum play,ignore,,,unmapped
+2923,post-apocalyptic,2874.0,370,370,600,159900,432.16,post-apocalyptic,tag,Post-Apocalyptic,100,curated_tag
+3809,character driven,2605.0,369,369,0,0,0.0,character driven,ignore,,,unmapped
+6070,mystery,2611.0,368,368,0,0,0.0,mystery,genre,Mystery,,curated_genre
+2438,idol,2794.0,367,367,600,133900,364.85,idol,tag,Idol,100,curated_tag
+2876,religion,2607.0,364,364,600,63200,173.63,religion,tag,Religion,100,curated_tag
+2855,under one roof,6233.0,362,362,0,0,0.0,under one roof,ignore,,,unmapped
+2719,gang bang,7957.0,361,361,600,108100,299.45,gang bang,ignore,,,unmapped
+2654,medium awareness,2853.0,360,360,600,70300,195.28,medium awareness,ignore,,,unmapped
+3759,teamwork,2607.0,356,356,0,0,0.0,teamwork,ignore,,,unmapped
+2921,throat fucking,2713.0,356,356,0,0,0.0,throat fucking,ignore,,,unmapped
+2699,sixty-nine,2713.0,355,355,0,0,0.0,sixty-nine,ignore,,,unmapped
+6034,Engrish,6233.0,354,354,0,0,0.0,engrish,ignore,,,unmapped
+2897,police,2885.0,352,352,600,97100,275.85,police,tag,Police,100,curated_tag
+4611,nearly almighty protagonist,6230.0,349,349,0,0,0.0,nearly almighty protagonist,ignore,,,unmapped
+2895,dark-skinned girl,2608.0,348,348,600,91400,262.64,dark-skinned girl,ignore,,,unmapped
+2634,countryside,2613.0,347,347,600,113500,327.09,countryside,ignore,,,unmapped
+4251,ensemble cast,6230.0,347,347,0,0,0.0,ensemble cast,tag,Ensemble Cast,75,curated_tag
+1773,tentacle,2608.0,346,346,600,83300,240.75,tentacle,ignore,,,unmapped
+2637,time travel,7050.0,345,345,600,96900,280.87,time travel,tag,Time Manipulation,100,curated_tag
+2639,space travel,2846.0,342,342,600,109300,319.59,space travel,ignore,,,unmapped
+2642,alternative present,2624.0,340,340,600,161600,475.29,alternative present,ignore,,,unmapped
+2979,mutilation,2750.0,339,339,0,0,0.0,mutilation,ignore,,,unmapped
+2774,spellcasting,2094.0,339,339,0,0,0.0,spellcasting,ignore,,,unmapped
+4299,flashback,6148.0,338,338,0,0,0.0,flashback,ignore,,,unmapped
+2838,parallel world,2628.0,337,337,600,137400,407.72,parallel world,ignore,,,unmapped
+6083,master-servant relationship,2611.0,337,337,0,0,0.0,master-servant relationship,ignore,,,unmapped
+6243,money,2607.0,336,336,0,0,0.0,money,ignore,,,unmapped
+3028,real-world location,6151.0,336,336,0,0,0.0,real-world location,ignore,,,unmapped
+3863,competition,2611.0,335,335,0,0,0.0,competition,ignore,,,unmapped
+4440,boy meets girl,2858.0,334,334,0,0,0.0,boy meets girl,ignore,,,unmapped
+2733,enjoyable rape,2715.0,333,333,0,0,0.0,enjoyable rape,ignore,,,unmapped
+3842,TV censoring,6151.0,332,332,0,0,0.0,tv censoring,ignore,,,unmapped
+2867,politics,2607.0,331,331,600,73900,223.26,politics,tag,Politics,100,curated_tag
+3831,training,2607.0,330,330,600,78600,238.18,training,ignore,,,unmapped
+6744,isekai,2607.0,329,329,0,0,0.0,isekai,tag,Isekai,75,curated_tag
+3813,winter,6185.0,328,328,600,75300,229.57,winter,ignore,,,unmapped
+2832,Americas,2630.0,327,327,600,82200,251.38,americas,ignore,,,unmapped
+7,juujin,2611.0,327,327,600,107800,329.66,juujin,ignore,,,unmapped
+2816,sexual fantasies,2856.0,326,326,600,68800,211.04,sexual fantasies,ignore,,,unmapped
+6850,STAFF MISSING,30.0,326,326,0,0,0.0,staff missing,ignore,,,unmapped
+3993,kidnapping,2872.0,323,323,0,0,0.0,kidnapping,ignore,,,unmapped
+7199,sexual humour,2611.0,319,319,600,40100,125.71,sexual humour,ignore,,,unmapped
+7242,adapted into other media,6151.0,318,318,0,0,0.0,adapted into other media,ignore,,,unmapped
+5816,massacre,4316.0,316,316,0,0,0.0,massacre,ignore,,,unmapped
+4656,infidelity,2607.0,309,309,600,33400,108.09,infidelity,ignore,,,unmapped
+3822,strong male lead,6230.0,307,307,0,0,0.0,strong male lead,ignore,,,unmapped
+2852,thriller,2611.0,304,304,600,113500,373.36,thriller,genre,Thriller,,curated_genre
+5697,randomness,2605.0,304,304,0,0,0.0,randomness,ignore,,,unmapped
+2898,special squads,2885.0,303,303,600,99600,328.71,special squads,ignore,,,unmapped
+2355,dragon,2849.0,302,302,600,67500,223.51,dragon,ignore,,,unmapped
+4215,daikaijuu,7050.0,301,301,0,0,0.0,daikaijuu,ignore,,,unmapped
+5626,adults are useless,6233.0,294,294,0,0,0.0,adults are useless,ignore,,,unmapped
+4278,stand-alone movie,6151.0,294,294,0,0,0.0,stand-alone movie,ignore,,,unmapped
+5954,call my name,6233.0,293,293,0,0,0.0,call my name,ignore,,,unmapped
+4520,betrayal,2607.0,286,286,0,0,0.0,betrayal,ignore,,,unmapped
+4480,happy ending,6246.0,284,284,0,0,0.0,happy ending,ignore,,,unmapped
+2697,voyeurism,2848.0,283,283,600,70600,249.47,voyeurism,ignore,,,unmapped
+2775,humanoid alien,2202.0,278,278,600,106900,384.53,humanoid alien,ignore,,,unmapped
+4570,watercolour style,6151.0,277,277,0,0,0.0,watercolour style,ignore,,,unmapped
+6232,character related tags which need deleting or merging,2931.0,275,275,0,0,0.0,character related tags which need deleting or merging,ignore,,,unmapped
+6572,FFM threesome,2696.0,274,274,0,0,0.0,ffm threesome,ignore,,,unmapped
+4340,suicide,6242.0,274,274,0,0,0.0,suicide,ignore,,,unmapped
+2555,amnesia,2607.0,273,273,0,0,0.0,amnesia,tag,Amnesia,75,curated_tag
+2072,maid,2608.0,272,272,600,77800,286.03,maid,ignore,,,unmapped
+2823,paper clothes,2856.0,272,272,0,0,0.0,paper clothes,ignore,,,unmapped
+3276,plot twists,2605.0,271,271,0,0,0.0,plot twists,ignore,,,unmapped
+2893,female teacher,2608.0,270,270,600,83800,310.37,female teacher,ignore,,,unmapped
+4318,plot with porn,2848.0,269,269,0,0,0.0,plot with porn,ignore,,,unmapped
+2616,mina,2606.0,268,268,0,0,0.0,mina,ignore,,,unmapped
+3898,science and magic coexist,2849.0,268,268,0,0,0.0,science and magic coexist,ignore,,,unmapped
+2845,blackmail,2611.0,265,265,600,61300,231.32,blackmail,ignore,,,unmapped
+2056,cosplaying,2607.0,265,265,600,52500,198.11,cosplaying,ignore,,,unmapped
+2535,ghost,1152.0,265,265,600,61500,232.08,ghost,tag,Ghost,100,curated_tag
+2783,shounen ai,2858.0,264,264,600,77800,294.7,shounen ai,ignore,,,unmapped
+6166,South Korean production,6173.0,264,264,0,0,0.0,south korean production,ignore,,,unmapped
+3546,experimental animation,6151.0,264,264,0,0,0.0,experimental animation,ignore,,,unmapped
+2812,United States,2832.0,263,263,600,81300,309.13,united states,ignore,,,unmapped
+3741,bullying,2607.0,263,263,0,0,0.0,bullying,tag,Bullying,75,curated_tag
+6347,body and host,2607.0,262,262,0,0,0.0,body and host,ignore,,,unmapped
+5980,live-action imagery,6151.0,261,261,0,0,0.0,live-action imagery,ignore,,,unmapped
+5875,jealousy,2607.0,260,260,0,0,0.0,jealousy,ignore,,,unmapped
+2180,cyborg,2636.0,256,256,600,82200,321.09,cyborg,tag,Cyborg,100,curated_tag
+5859,monster of the week,2611.0,253,253,0,0,0.0,monster of the week,ignore,,,unmapped
+7871,medium breasts,2891.0,251,251,600,67200,267.73,medium breasts,ignore,,,unmapped
+6019,brainwashing,2611.0,250,250,0,0,0.0,brainwashing,ignore,,,unmapped
+8038,nipple play,2848.0,249,249,600,60600,243.37,nipple play,ignore,,,unmapped
+2644,transforming craft,2274.0,249,249,600,75500,303.21,transforming craft,ignore,,,unmapped
+6218,gokkun,2704.0,249,249,0,0,0.0,gokkun,ignore,,,unmapped
+2840,mafia,2872.0,248,248,600,66700,268.95,mafia,ignore,,,unmapped
+2801,RPG,2800.0,248,248,0,0,0.0,rpg,ignore,,,unmapped
+2710,squirting,2848.0,248,248,0,0,0.0,squirting,ignore,,,unmapped
+1018,middle school,2869.0,246,246,600,78600,319.51,middle school,ignore,,,unmapped
+3953,in medias res,2605.0,246,246,0,0,0.0,in medias res,ignore,,,unmapped
+3805,European stylised,2611.0,245,245,0,0,0.0,european stylised,ignore,,,unmapped
+5863,Weekly Shounen Jump,2798.0,244,244,0,0,0.0,weekly shounen jump,ignore,,,unmapped
+4492,gang rape,2715.0,243,243,0,0,0.0,gang rape,ignore,,,unmapped
+6062,heroic sacrifice,6233.0,243,243,0,0,0.0,heroic sacrifice,ignore,,,unmapped
+3185,wordplay,2853.0,242,242,0,0,0.0,wordplay,ignore,,,unmapped
+7221,psychological sexual abuse,7220.0,241,241,600,91700,380.5,psychological sexual abuse,ignore,,,unmapped
+2725,ahegao,2848.0,239,239,600,72000,301.26,ahegao,ignore,,,unmapped
+2905,erotic torture,2729.0,238,238,600,57900,243.28,erotic torture,ignore,,,unmapped
+1589,samurai,2622.0,238,238,600,82400,346.22,samurai,tag,Samurai,100,curated_tag
+2751,combat,2881.0,237,237,600,44500,187.76,combat,ignore,,,unmapped
+2568,deity,2849.0,237,237,600,75800,319.83,deity,ignore,,,unmapped
+3314,fate,2607.0,237,237,0,0,0.0,fate,ignore,,,unmapped
+4663,tone changes,2605.0,235,235,600,69800,297.02,tone changes,ignore,,,unmapped
+4193,improbable physics,2931.0,233,233,0,0,0.0,improbable physics,ignore,,,unmapped
+6186,spring,6185.0,232,232,600,43600,187.93,spring,ignore,,,unmapped
+2649,dark fantasy,2849.0,231,231,600,84500,365.8,dark fantasy,ignore,,,unmapped
+2726,prostitution,2848.0,230,230,600,55200,240.0,prostitution,ignore,,,unmapped
+3159,emotions awaken superpowers,2623.0,230,230,0,0,0.0,emotions awaken superpowers,ignore,,,unmapped
+1244,summoning,2094.0,229,229,0,0,0.0,summoning,ignore,,,unmapped
+7075,adapted into Japanese movie,7242.0,227,227,0,0,0.0,adapted into japanese movie,ignore,,,unmapped
+5889,magic weapons,2094.0,227,227,0,0,0.0,magic weapons,ignore,,,unmapped
+2907,genetic modification,2636.0,223,223,600,67300,301.79,genetic modification,ignore,,,unmapped
+5993,black humour,2853.0,223,223,500,45500,204.04,black humour,ignore,,,unmapped
+2805,4-koma manga,2798.0,221,221,0,0,0.0,4-koma manga,ignore,,,unmapped
+5529,black and white,6151.0,221,221,0,0,0.0,black and white,ignore,,,unmapped
+3867,ED variety,6151.0,220,220,0,0,0.0,ed variety,ignore,,,unmapped
+6073,age difference romance,2858.0,219,219,0,0,0.0,age difference romance,ignore,,,unmapped
+3575,damsel in distress,2607.0,218,218,0,0,0.0,damsel in distress,ignore,,,unmapped
+2643,power suit,2638.0,217,217,600,71200,328.11,power suit,ignore,,,unmapped
+2572,ninja,2282.0,215,215,600,68200,317.21,ninja,tag,Ninja,100,curated_tag
+2640,alternative past,2625.0,212,212,600,86900,409.91,alternative past,ignore,,,unmapped
+28,baseball,2881.0,211,211,600,67800,321.33,baseball,tag,Baseball,100,curated_tag
+5952,end of the world,2874.0,211,211,600,49900,236.49,end of the world,ignore,,,unmapped
+2863,proxy battles,2607.0,211,211,600,107400,509.0,proxy battles,tag,Proxy Battle,100,curated_tag
+618,trap,2565.0,210,210,600,45900,218.57,trap,ignore,,,unmapped
+2069,delinquent,2869.0,209,209,600,58200,278.47,delinquent,ignore,,,unmapped
+2787,teacher x student,2858.0,209,209,600,66300,317.22,teacher x student,ignore,,,unmapped
+798,moe,6149.0,209,209,0,0,0.0,moe,ignore,,,unmapped
+2861,cyberpunk,2846.0,206,206,600,68600,333.01,cyberpunk,tag,Cyberpunk,100,curated_tag
+4729,colour coded,6230.0,203,203,0,0,0.0,colour coded,ignore,,,unmapped
+6021,gender bender,2611.0,201,201,0,0,0.0,gender bender,tag,Gender Bending,75,curated_tag
+6030,otaku culture,2607.0,201,201,0,0,0.0,otaku culture,tag,Otaku Culture,75,curated_tag
+2709,netorare,4656.0,200,200,600,66100,330.5,netorare,ignore,,,unmapped
+5459,poverty,6243.0,200,200,0,0,0.0,poverty,ignore,,,unmapped
+1609,elf,2849.0,199,199,600,51600,259.3,elf,ignore,,,unmapped
+6349,multi-segment episodes,6151.0,198,198,0,0,0.0,multi-segment episodes,ignore,,,unmapped
+55,awards,6151.0,197,197,0,0,0.0,awards,ignore,,,unmapped
+4223,running gag,2853.0,197,197,0,0,0.0,running gag,ignore,,,unmapped
+6248,thievery,2872.0,195,195,600,49000,251.28,thievery,ignore,,,unmapped
+3395,promise,2607.0,195,195,0,0,0.0,promise,ignore,,,unmapped
+3436,human experimentation,2846.0,194,194,0,0,0.0,human experimentation,ignore,,,unmapped
+2396,swimsuit,6149.0,194,194,0,0,0.0,swimsuit,ignore,,,unmapped
+2884,psychoactive drugs,2607.0,193,193,600,45100,233.68,psychoactive drugs,ignore,,,unmapped
+3663,body takeover,6347.0,193,193,0,0,0.0,body takeover,ignore,,,unmapped
+2674,China,2834.0,191,191,600,68200,357.07,china,ignore,,,unmapped
+6254,terrorism,2872.0,191,191,600,36600,191.62,terrorism,tag,Terrorism,100,curated_tag
+3170,occupation and career,2607.0,191,191,0,0,0.0,occupation and career,ignore,,,unmapped
+6086,the power of love,2607.0,190,190,0,0,0.0,the power of love,ignore,,,unmapped
+2739,brother-sister incest,2842.0,189,189,0,0,0.0,brother-sister incest,ignore,,,unmapped
+5790,family without mother,6249.0,188,188,0,0,0.0,family without mother,ignore,,,unmapped
+4499,some weird shit goin` on,2931.0,188,188,0,0,0.0,some weird shit goin on,ignore,,,unmapped
+6397,tales,2607.0,188,188,0,0,0.0,tales,ignore,,,unmapped
+4606,slide show animation,6151.0,187,187,0,0,0.0,slide show animation,ignore,,,unmapped
+3929,sociocultural evolution,2607.0,187,187,0,0,0.0,sociocultural evolution,ignore,,,unmapped
+5355,tournament,3863.0,187,187,0,0,0.0,tournament,ignore,,,unmapped
+1063,elementary school,2869.0,186,186,600,55200,296.77,elementary school,ignore,,,unmapped
+7119,Super Robot Wars,6153.0,186,186,0,0,0.0,super robot wars,ignore,,,unmapped
+4542,no dialogue,6151.0,186,186,0,0,0.0,no dialogue,ignore,,,unmapped
+2892,housewives,2608.0,185,185,600,69000,372.97,housewives,ignore,,,unmapped
+1409,vampire,1152.0,185,185,600,65100,351.89,vampire,tag,Vampire,100,curated_tag
+5773,secret organisation,2607.0,185,185,0,0,0.0,secret organisation,ignore,,,unmapped
+2784,sudden girlfriend appearance,2858.0,184,184,600,60400,328.26,sudden girlfriend appearance,ignore,,,unmapped
+2828,borderline porn,2856.0,184,184,0,0,0.0,borderline porn,ignore,,,unmapped
+5862,melodrama,2611.0,184,184,0,0,0.0,melodrama,ignore,,,unmapped
+2890,foot fetish,2608.0,183,183,600,34200,186.89,foot fetish,ignore,,,unmapped
+1471,lethal chef,2653.0,183,183,0,0,0.0,lethal chef,ignore,,,unmapped
+2920,rimming,2713.0,183,183,0,0,0.0,rimming,ignore,,,unmapped
+1774,gigantic breasts,2891.0,181,181,600,66500,367.4,gigantic breasts,ignore,,,unmapped
+3909,talking is a free action,3683.0,181,181,0,0,0.0,talking is a free action,ignore,,,unmapped
+6730,torture,2611.0,179,179,600,42900,239.66,torture,tag,Torture,100,curated_tag
+893,dominatrix,2729.0,178,178,600,40800,229.21,dominatrix,ignore,,,unmapped
+1864,extrasensory perception,2623.0,178,178,0,0,0.0,extrasensory perception,ignore,,,unmapped
+4383,hostage situation,2872.0,178,178,0,0,0.0,hostage situation,ignore,,,unmapped
+7872,huge breasts,2891.0,177,177,600,82700,467.23,huge breasts,ignore,,,unmapped
+2631,island,2613.0,176,176,600,56900,323.3,island,ignore,,,unmapped
+4081,space battles,2841.0,176,176,600,45800,260.23,space battles,ignore,,,unmapped
+4588,fast-paced,2605.0,176,176,0,0,0.0,fast-paced,ignore,,,unmapped
+5768,intact family,6249.0,176,176,0,0,0.0,intact family,ignore,,,unmapped
+4521,lost technology,6233.0,176,176,0,0,0.0,lost technology,ignore,,,unmapped
+6029,mundane made awesome,6233.0,176,176,0,0,0.0,mundane made awesome,ignore,,,unmapped
+1279,all-girls school,2869.0,175,175,600,63200,361.14,all-girls school,ignore,,,unmapped
+4046,foursome,7957.0,175,175,0,0,0.0,foursome,ignore,,,unmapped
+5585,curse,2607.0,174,174,600,42700,245.4,curse,ignore,,,unmapped
+4565,war-zone realities,2925.0,174,174,0,0,0.0,war-zone realities,ignore,,,unmapped
+2882,dystopia,2952.0,173,173,600,64900,375.14,dystopia,tag,Dystopian,100,curated_tag
+4170,police are useless,5626.0,173,173,0,0,0.0,police are useless,ignore,,,unmapped
+2629,desert,2613.0,170,170,600,42600,250.59,desert,tag,Desert,100,curated_tag
+3671,footage reuse,6151.0,170,170,0,0,0.0,footage reuse,ignore,,,unmapped
+4048,Japanese mythology,3597.0,169,169,0,0,0.0,japanese mythology,ignore,,,unmapped
+5518,flat chest jokes,7199.0,168,168,0,0,0.0,flat chest jokes,ignore,,,unmapped
+2730,exhibitionism,2848.0,167,167,600,40500,242.51,exhibitionism,ignore,,,unmapped
+301,lactation,2848.0,166,166,600,39600,238.55,lactation,ignore,,,unmapped
+3751,grandiose displays of wealth,6243.0,166,166,0,0,0.0,grandiose displays of wealth,ignore,,,unmapped
+4198,hard work and guts,5604.0,166,166,0,0,0.0,hard work and guts,ignore,,,unmapped
+1996,air force,36.0,165,165,600,41500,251.52,air force,ignore,,,unmapped
+5834,show within a show,6233.0,165,165,0,0,0.0,show within a show,ignore,,,unmapped
+4222,walls of text,3683.0,165,165,0,0,0.0,walls of text,ignore,,,unmapped
+2225,whipping,2729.0,165,165,0,0,0.0,whipping,ignore,,,unmapped
+4612,Do Androids Dream of Electric Sheep?,2846.0,164,164,0,0,0.0,do androids dream of electric sheep,ignore,,,unmapped
+2871,anti-war,2607.0,162,162,600,47200,291.36,anti-war,ignore,,,unmapped
+3150,social class issues,4522.0,162,162,0,0,0.0,social class issues,ignore,,,unmapped
+4257,survival,2607.0,161,161,600,51400,319.25,survival,ignore,,,unmapped
+2821,sudden naked girl appearance,2856.0,161,161,0,0,0.0,sudden naked girl appearance,ignore,,,unmapped
+2839,virtual world,2628.0,158,158,600,61600,389.87,virtual world,ignore,,,unmapped
+5884,slow-paced,2605.0,158,158,0,0,0.0,slow-paced,ignore,,,unmapped
+3876,folklore,3597.0,157,157,0,0,0.0,folklore,ignore,,,unmapped
+2820,wardrobe malfunction,2856.0,157,157,0,0,0.0,wardrobe malfunction,ignore,,,unmapped
+2346,angel,2849.0,155,155,600,48100,310.32,angel,ignore,,,unmapped
+3299,double fellatio,6268.0,155,155,0,0,0.0,double fellatio,ignore,,,unmapped
+3915,child abuse,2607.0,154,154,0,0,0.0,child abuse,ignore,,,unmapped
+2391,bishoujo,2608.0,153,153,600,48300,315.69,bishoujo,ignore,,,unmapped
+4398,antihero,6230.0,153,153,0,0,0.0,antihero,ignore,,,unmapped
+2658,toilet humour,2853.0,152,152,600,28400,186.84,toilet humour,ignore,,,unmapped
+4131,cultural references,2931.0,152,152,0,0,0.0,cultural references,ignore,,,unmapped
+3267,everybody dies,6242.0,152,152,0,0,0.0,everybody dies,ignore,,,unmapped
+2614,josei,2606.0,152,152,0,0,0.0,josei,tag,Josei,75,curated_tag
+760,robot helper,2274.0,151,151,600,42000,278.15,robot helper,ignore,,,unmapped
+3721,RPG aspects,2931.0,151,151,0,0,0.0,rpg aspects,ignore,,,unmapped
+5205,dungeon,2613.0,151,151,0,0,0.0,dungeon,ignore,,,unmapped
+4455,dysfunctional family,6249.0,151,151,0,0,0.0,dysfunctional family,ignore,,,unmapped
+3103,first love,2858.0,151,151,0,0,0.0,first love,ignore,,,unmapped
+4516,animal abuse,2750.0,149,149,0,0,0.0,animal abuse,ignore,,,unmapped
+3443,orgy,7957.0,148,148,0,0,0.0,orgy,ignore,,,unmapped
+2746,shibari,2901.0,148,148,0,0,0.0,shibari,ignore,,,unmapped
+2491,nurse,2608.0,147,147,600,42800,291.16,nurse,ignore,,,unmapped
+7222,groping,7220.0,146,146,600,15500,106.16,groping,ignore,,,unmapped
+3618,ocean,2613.0,146,146,600,28100,192.47,ocean,ignore,,,unmapped
+3027,sex tape,2848.0,146,146,0,0,0.0,sex tape,ignore,,,unmapped
+4280,surreal,2931.0,146,146,0,0,0.0,surreal,ignore,,,unmapped
+2732,female rapes female,2715.0,145,145,0,0,0.0,female rapes female,ignore,,,unmapped
+4314,psychological,2931.0,145,145,0,0,0.0,psychological,genre,Psychological,,curated_genre
+2809,United Kingdom,2831.0,144,144,600,45500,315.97,united kingdom,ignore,,,unmapped
+3435,eating of humans,2851.0,144,144,0,0,0.0,eating of humans,ignore,,,unmapped
+3092,important haircut,6233.0,143,143,0,0,0.0,important haircut,ignore,,,unmapped
+5515,faceless background characters,6233.0,141,141,0,0,0.0,faceless background characters,ignore,,,unmapped
+3976,impregnation,2848.0,140,140,0,0,0.0,impregnation,ignore,,,unmapped
+3087,super robot,2274.0,139,139,600,55700,400.72,super robot,ignore,,,unmapped
+5984,girly tears,2931.0,139,139,0,0,0.0,girly tears,ignore,,,unmapped
+6075,educational,2611.0,138,138,0,0,0.0,educational,tag,Educational,75,curated_tag
+1396,immortality,2607.0,138,138,0,0,0.0,immortality,ignore,,,unmapped
+3843,saving the world,2607.0,138,138,0,0,0.0,saving the world,ignore,,,unmapped
+7403,anal fingering,2848.0,137,137,600,23600,172.26,anal fingering,ignore,,,unmapped
+3285,journey,2850.0,137,137,0,0,0.0,journey,ignore,,,unmapped
+2866,slavery,2607.0,136,136,600,34300,252.21,slavery,tag,Slavery,100,curated_tag
+4323,spacing out,2931.0,136,136,0,0,0.0,spacing out,ignore,,,unmapped
+7146,cute girls doing cute things,2607.0,134,134,600,53600,400.0,cute girls doing cute things,tag,Cute Girls Doing Cute Things,100,curated_tag
+5571,Greek mythology,3597.0,134,134,0,0,0.0,greek mythology,ignore,,,unmapped
+5934,safer sex,2848.0,134,134,0,0,0.0,safer sex,ignore,,,unmapped
+6184,autumn,6185.0,133,133,600,25800,193.98,autumn,ignore,,,unmapped
+1894,shota,2608.0,133,133,600,40600,305.26,shota,ignore,,,unmapped
+4831,alien invasion,2202.0,132,132,0,0,0.0,alien invasion,ignore,,,unmapped
+3191,hanami,6148.0,132,132,0,0,0.0,hanami,ignore,,,unmapped
+3322,remake,6173.0,132,132,0,0,0.0,remake,ignore,,,unmapped
+3528,reincarnation,2931.0,131,131,0,0,0.0,reincarnation,tag,Reincarnation,75,curated_tag
+2779,multiple couples,2858.0,130,130,600,33800,260.0,multiple couples,ignore,,,unmapped
+4327,be careful what you wish for,2607.0,130,130,0,0,0.0,be careful what you wish for,ignore,,,unmapped
+4224,adapted into JDrama,7242.0,129,129,0,0,0.0,adapted into jdrama,ignore,,,unmapped
+5882,secret identity,6149.0,129,129,0,0,0.0,secret identity,ignore,,,unmapped
+6423,Minna no Uta,6153.0,128,128,0,0,0.0,minna no uta,ignore,,,unmapped
+5227,alternating animation style,6151.0,127,127,0,0,0.0,alternating animation style,ignore,,,unmapped
+2914,bukkake,2704.0,127,127,0,0,0.0,bukkake,ignore,,,unmapped
+4394,defeat means friendship,6233.0,127,127,0,0,0.0,defeat means friendship,ignore,,,unmapped
+3086,parricide,4316.0,127,127,0,0,0.0,parricide,ignore,,,unmapped
+3013,Newtype Anime Award,55.0,125,125,0,0,0.0,newtype anime award,ignore,,,unmapped
+6078,gotta catch them all,2850.0,125,125,0,0,0.0,gotta catch them all,ignore,,,unmapped
+4167,air combat,2841.0,124,124,600,22900,184.68,air combat,ignore,,,unmapped
+2603,office lady,2608.0,124,124,600,40000,322.58,office lady,tag,Office Lady,100,curated_tag
+6563,spirit realm,2613.0,124,124,600,19400,156.45,spirit realm,ignore,,,unmapped
+2718,male rape victim,2715.0,124,124,0,0,0.0,male rape victim,ignore,,,unmapped
+1835,animal sidekick,6149.0,123,123,0,0,0.0,animal sidekick,ignore,,,unmapped
+2911,footjob,2848.0,122,122,600,28700,235.25,footjob,ignore,,,unmapped
+2656,satire,2853.0,122,122,600,26400,216.39,satire,tag,Satire,100,curated_tag
+3971,entertainment industry,3170.0,122,122,0,0,0.0,entertainment industry,ignore,,,unmapped
+635,navy,36.0,121,121,600,30600,252.89,navy,ignore,,,unmapped
+4538,long episodes,6151.0,120,120,0,0,0.0,long episodes,ignore,,,unmapped
+2455,tsundere,6149.0,120,120,0,0,0.0,tsundere,tag,Tsundere,75,curated_tag
+3489,car chases,2841.0,119,119,0,0,0.0,car chases,ignore,,,unmapped
+6355,water sex,2848.0,119,119,0,0,0.0,water sex,ignore,,,unmapped
+2691,World War II,2641.0,117,117,600,45000,384.62,world war ii,ignore,,,unmapped
+1876,musical band,2794.0,117,117,600,43600,372.65,musical band,ignore,,,unmapped
+6137,catchphrase,6149.0,117,117,0,0,0.0,catchphrase,ignore,,,unmapped
+4753,disturbing,2931.0,117,117,0,0,0.0,disturbing,ignore,,,unmapped
+780,fairy,2849.0,116,116,600,27200,234.48,fairy,tag,Fairy,100,curated_tag
+2667,university,2869.0,116,116,600,30000,258.62,university,ignore,,,unmapped
+2899,strap-on dildo,2712.0,116,116,500,23300,200.86,strap-on dildo,ignore,,,unmapped
+3606,family without father,6249.0,116,116,0,0,0.0,family without father,ignore,,,unmapped
+3792,iyashi-kei,2607.0,116,116,0,0,0.0,iyashi-kei,ignore,,,unmapped
+2870,steampunk,2846.0,115,115,600,37700,327.83,steampunk,ignore,,,unmapped
+6573,MMF threesome,2696.0,115,115,0,0,0.0,mmf threesome,ignore,,,unmapped
+5750,triple penetration,2724.0,114,114,600,21700,190.35,triple penetration,ignore,,,unmapped
+6005,battle of wits,2607.0,113,113,0,0,0.0,battle of wits,ignore,,,unmapped
+2792,reverse harem,2611.0,112,112,600,41700,372.32,reverse harem,ignore,,,unmapped
+2461,domestic cat,6149.0,112,112,0,0,0.0,domestic cat,ignore,,,unmapped
+5843,sibling yin yang,6233.0,111,111,0,0,0.0,sibling yin yang,ignore,,,unmapped
+2429,futanari,2608.0,110,110,600,29400,267.27,futanari,ignore,,,unmapped
+3818,kids in war,2925.0,110,110,0,0,0.0,kids in war,ignore,,,unmapped
+5638,military is useless,5626.0,110,110,0,0,0.0,military is useless,ignore,,,unmapped
+4228,subtle OP ED sequence change,6151.0,110,110,0,0,0.0,subtle op ed sequence change,ignore,,,unmapped
+2735,enema,2729.0,109,109,0,0,0.0,enema,ignore,,,unmapped
+4474,self-parody,2655.0,109,109,0,0,0.0,self-parody,ignore,,,unmapped
+2759,motorsport,2881.0,108,108,600,42700,395.37,motorsport,ignore,,,unmapped
+362,dancing,2793.0,108,108,0,0,0.0,dancing,tag,Dancing,75,curated_tag
+5792,gangs,2872.0,108,108,0,0,0.0,gangs,ignore,,,unmapped
+6050,human - non-human relationship,2931.0,108,108,0,0,0.0,human - non-human relationship,ignore,,,unmapped
+5865,manly tears,2931.0,108,108,0,0,0.0,manly tears,ignore,,,unmapped
+4665,propaganda,2607.0,108,108,0,0,0.0,propaganda,ignore,,,unmapped
+2843,sexual abuse -- TO BE SPLIT AND DELETED,7220.0,107,107,600,26900,251.4,sexual abuse -- to be split and deleted,ignore,,,unmapped
+4203,rebellion,2607.0,107,107,0,0,0.0,rebellion,ignore,,,unmapped
+4646,hospital,2613.0,106,106,600,27300,257.55,hospital,ignore,,,unmapped
+5929,space opera,2846.0,106,106,600,44400,418.87,space opera,tag,Space Opera,100,curated_tag
+2978,aim for the top,5604.0,106,106,0,0,0.0,aim for the top,ignore,,,unmapped
+5943,misunderstanding,2931.0,106,106,0,0,0.0,misunderstanding,ignore,,,unmapped
+5916,product placement,6151.0,106,106,0,0,0.0,product placement,ignore,,,unmapped
+3363,Buddhism,2876.0,105,105,600,28000,266.67,buddhism,ignore,,,unmapped
+2772,feudal warfare,36.0,105,105,600,29500,280.95,feudal warfare,ignore,,,unmapped
+6577,student government,2869.0,104,104,600,27600,265.38,student government,ignore,,,unmapped
+2747,hidden vibrator,2900.0,104,104,0,0,0.0,hidden vibrator,ignore,,,unmapped
+2807,France,2831.0,103,103,600,32700,317.48,france,ignore,,,unmapped
+2868,racism,2607.0,103,103,600,20500,199.03,racism,ignore,,,unmapped
+2788,confession,6148.0,103,103,0,0,0.0,confession,ignore,,,unmapped
+4558,long time span,2605.0,103,103,0,0,0.0,long time span,ignore,,,unmapped
+235,waitress,2608.0,102,102,600,28000,274.51,waitress,ignore,,,unmapped
+4246,childhood promise,3395.0,102,102,0,0,0.0,childhood promise,ignore,,,unmapped
+2698,pantyjob,2848.0,101,101,600,20500,202.97,pantyjob,ignore,,,unmapped
+2815,boobs in your face,6148.0,101,101,0,0,0.0,boobs in your face,ignore,,,unmapped
+3865,noitaminA,6153.0,101,101,0,0,0.0,noitamina,ignore,,,unmapped
+6480,gun - TO BE SPLIT AND DELETED,6149.0,100,100,0,0,0.0,gun - to be split and deleted,ignore,,,unmapped
+2520,school swimsuit,6149.0,100,100,0,0,0.0,school swimsuit,ignore,,,unmapped
+2647,high fantasy,2849.0,99,99,600,40400,408.08,high fantasy,ignore,,,unmapped
+3968,animal protagonist,6230.0,99,99,0,0,0.0,animal protagonist,ignore,,,unmapped
+2727,stomach stretch,2848.0,99,99,0,0,0.0,stomach stretch,ignore,,,unmapped
+6191,card games,2881.0,98,98,600,38300,390.82,card games,ignore,,,unmapped
+5794,forbidden love,2858.0,98,98,0,0,0.0,forbidden love,ignore,,,unmapped
+6072,just as planned,6233.0,98,98,0,0,0.0,just as planned,ignore,,,unmapped
+1136,transfer student,6149.0,98,98,0,0,0.0,transfer student,ignore,,,unmapped
+2926,post-war,2874.0,97,97,600,26100,269.07,post-war,ignore,,,unmapped
+7238,attempted rape,7220.0,97,97,500,17200,177.32,attempted rape,ignore,,,unmapped
+2257,zombie,1152.0,96,96,600,24000,250.0,zombie,tag,Zombie,100,curated_tag
+6493,manhua,2609.0,96,96,0,0,0.0,manhua,ignore,,,unmapped
+2935,stomach bulge,2848.0,96,96,0,0,0.0,stomach bulge,ignore,,,unmapped
+2700,window fuck,2848.0,94,94,0,0,0.0,window fuck,ignore,,,unmapped
+997,association football,2881.0,93,93,600,32900,353.76,association football,ignore,,,unmapped
+7402,corrupt nobility,2607.0,93,93,600,23900,256.99,corrupt nobility,ignore,,,unmapped
+5781,exorcism,2849.0,93,93,0,0,0.0,exorcism,tag,Exorcism,75,curated_tag
+2744,futa x female,2429.0,92,92,600,22900,248.91,futa x female,ignore,,,unmapped
+5543,magic school,2094.0,92,92,0,0,0.0,magic school,ignore,,,unmapped
+3696,off-model animation,6151.0,92,92,0,0,0.0,off-model animation,ignore,,,unmapped
+1955,child soldier,2925.0,91,91,0,0,0.0,child soldier,ignore,,,unmapped
+2902,facesitting,2729.0,90,90,600,18400,204.44,facesitting,ignore,,,unmapped
+2679,Kyoto,2672.0,89,89,600,24500,275.28,kyoto,ignore,,,unmapped
+4388,deconstruction,2611.0,89,89,600,22200,249.44,deconstruction,ignore,,,unmapped
+3932,older female younger male,6073.0,89,89,0,0,0.0,older female younger male,ignore,,,unmapped
+2752,tennis,2881.0,88,88,600,21200,240.91,tennis,tag,Tennis,100,curated_tag
+4669,parenting,6249.0,87,87,600,20000,229.89,parenting,ignore,,,unmapped
+4084,dark atmosphere,2931.0,87,87,0,0,0.0,dark atmosphere,ignore,,,unmapped
+1446,energetic,6149.0,87,87,0,0,0.0,energetic,ignore,,,unmapped
+6068,human sacrifice,6242.0,87,87,0,0,0.0,human sacrifice,ignore,,,unmapped
+3797,trapped in the body of a child,6233.0,87,87,0,0,0.0,trapped in the body of a child,ignore,,,unmapped
+2756,board games,2881.0,86,86,600,12100,140.7,board games,ignore,,,unmapped
+2802,action game,2800.0,86,86,0,0,0.0,action game,ignore,,,unmapped
+4128,zero to hero,6233.0,86,86,0,0,0.0,zero to hero,ignore,,,unmapped
+4153,dark,2931.0,85,85,0,0,0.0,dark,ignore,,,unmapped
+6004,development hell,6173.0,85,85,0,0,0.0,development hell,ignore,,,unmapped
+7496,preaired episodes,6151.0,85,85,0,0,0.0,preaired episodes,ignore,,,unmapped
+2633,prison,2613.0,84,84,600,15100,179.76,prison,tag,Prison,100,curated_tag
+1637,reverse trap,2565.0,84,84,600,17000,202.38,reverse trap,ignore,,,unmapped
+7706,death game,,84,84,0,0,0.0,death game,tag,Death Game,75,curated_tag
+4564,spirits,2931.0,84,84,0,0,0.0,spirits,ignore,,,unmapped
+3206,stop motion,6151.0,84,84,0,0,0.0,stop motion,ignore,,,unmapped
+3295,world domination,2607.0,84,84,0,0,0.0,world domination,ignore,,,unmapped
+201,bounty hunter,2872.0,83,83,600,25200,303.61,bounty hunter,ignore,,,unmapped
+2701,pussy sandwich,2848.0,83,83,0,0,0.0,pussy sandwich,ignore,,,unmapped
+7247,sumata,2848.0,83,83,0,0,0.0,sumata,ignore,,,unmapped
+2406,talking animal,6149.0,83,83,0,0,0.0,talking animal,ignore,,,unmapped
+5838,fire,2874.0,82,82,500,19600,239.02,fire,ignore,,,unmapped
+3055,fairy tale,3876.0,82,82,0,0,0.0,fairy tale,tag,Fairy Tale,75,curated_tag
+4469,gattai,2644.0,82,82,0,0,0.0,gattai,ignore,,,unmapped
+2912,threesome with sisters,2696.0,82,82,0,0,0.0,threesome with sisters,ignore,,,unmapped
+4387,good vs evil,2607.0,81,81,0,0,0.0,good vs evil,ignore,,,unmapped
+1283,tsukkomi,6149.0,81,81,0,0,0.0,tsukkomi,ignore,,,unmapped
+4404,real robot,2274.0,80,80,600,30900,386.25,real robot,ignore,,,unmapped
+3667,Tokyo Tower,2676.0,80,80,0,0,0.0,tokyo tower,ignore,,,unmapped
+3265,death is cheap,6242.0,80,80,0,0,0.0,death is cheap,ignore,,,unmapped
+5406,submission,2729.0,80,80,0,0,0.0,submission,ignore,,,unmapped
+3253,Vanilla Series,6153.0,79,79,0,0,0.0,vanilla series,ignore,,,unmapped
+5779,anachronisms,2611.0,79,79,0,0,0.0,anachronisms,ignore,,,unmapped
+5485,penis jokes,7199.0,79,79,0,0,0.0,penis jokes,ignore,,,unmapped
+5527,spanking,2729.0,79,79,0,0,0.0,spanking,ignore,,,unmapped
+4302,Christianity,2876.0,78,78,600,20000,256.41,christianity,ignore,,,unmapped
+3167,Tokyo destroyed,2874.0,78,78,0,0,0.0,tokyo destroyed,ignore,,,unmapped
+6028,Shintoism,2876.0,77,77,600,16800,218.18,shintoism,ignore,,,unmapped
+2760,basketball,2881.0,77,77,600,19000,246.75,basketball,tag,Basketball,100,curated_tag
+2671,school dormitory,2869.0,77,77,600,20600,267.53,school dormitory,ignore,,,unmapped
+2621,bullet time,2841.0,77,77,0,0,0.0,bullet time,ignore,,,unmapped
+4057,magical creatures,2931.0,77,77,0,0,0.0,magical creatures,ignore,,,unmapped
+3836,the chosen one!,3314.0,77,77,0,0,0.0,the chosen one,ignore,,,unmapped
+2345,zettai ryouiki,6149.0,77,77,0,0,0.0,zettai ryouiki,ignore,,,unmapped
+2875,ecology,2607.0,76,76,600,18900,248.68,ecology,ignore,,,unmapped
+4112,excessive censoring,3842.0,76,76,0,0,0.0,excessive censoring,ignore,,,unmapped
+6088,unrequited shoujo ai,2785.0,76,76,0,0,0.0,unrequited shoujo ai,ignore,,,unmapped
+3610,game references,2931.0,75,75,0,0,0.0,game references,ignore,,,unmapped
+4431,love at first sight,2858.0,75,75,0,0,0.0,love at first sight,ignore,,,unmapped
+4344,motivational anime,2931.0,75,75,0,0,0.0,motivational anime,ignore,,,unmapped
+6093,short story collection,6151.0,75,75,0,0,0.0,short story collection,ignore,,,unmapped
+7420,spitroast,2696.0,75,75,0,0,0.0,spitroast,ignore,,,unmapped
+204,violent,6149.0,75,75,0,0,0.0,violent,ignore,,,unmapped
+1528,artificial intelligence,2846.0,74,74,0,0,0.0,artificial intelligence,tag,Artificial Intelligence,75,curated_tag
+4274,hidden agenda,2931.0,74,74,0,0,0.0,hidden agenda,ignore,,,unmapped
+6234,motifs,2611.0,74,74,0,0,0.0,motifs,ignore,,,unmapped
+7005,ancient aliens,2846.0,73,73,0,0,0.0,ancient aliens,ignore,,,unmapped
+3394,environmentalism,2607.0,73,73,0,0,0.0,environmentalism,tag,Environmental,75,curated_tag
+4446,faster-than-light travel,2639.0,73,73,0,0,0.0,faster-than-light travel,ignore,,,unmapped
+3934,non-linear,2605.0,73,73,0,0,0.0,non-linear,ignore,,,unmapped
+3138,fictional language,6151.0,72,72,0,0,0.0,fictional language,ignore,,,unmapped
+3244,sexually dominant,6149.0,72,72,0,0,0.0,sexually dominant,ignore,,,unmapped
+4052,treasure hunting,2850.0,72,72,0,0,0.0,treasure hunting,ignore,,,unmapped
+4244,healthcare and medicine,2607.0,71,71,600,21100,297.18,healthcare and medicine,ignore,,,unmapped
+5850,absurdly powerful student council,2869.0,71,71,0,0,0.0,absurdly powerful student council,ignore,,,unmapped
+3245,strategy,2931.0,71,71,0,0,0.0,strategy,ignore,,,unmapped
+1403,nun,2608.0,70,70,600,15200,217.14,nun,ignore,,,unmapped
+1482,wrestling,2751.0,70,70,600,17000,242.86,wrestling,ignore,,,unmapped
+3615,aphrodisiac,2608.0,70,70,0,0,0.0,aphrodisiac,ignore,,,unmapped
+5917,classical music,2794.0,70,70,0,0,0.0,classical music,ignore,,,unmapped
+4343,main character dies,2931.0,70,70,0,0,0.0,main character dies,ignore,,,unmapped
+5821,sibling rivalry,5826.0,70,70,0,0,0.0,sibling rivalry,ignore,,,unmapped
+3315,superhero,2623.0,69,69,600,29400,426.09,superhero,ignore,,,unmapped
+4150,everybody is nice,2931.0,69,69,0,0,0.0,everybody is nice,ignore,,,unmapped
+5417,mind fuck,2931.0,69,69,0,0,0.0,mind fuck,ignore,,,unmapped
+4560,psychological manipulation,2931.0,69,69,0,0,0.0,psychological manipulation,ignore,,,unmapped
+2822,skirt flipping,6148.0,69,69,0,0,0.0,skirt flipping,ignore,,,unmapped
+1651,photography,2883.0,68,68,600,14800,217.65,photography,ignore,,,unmapped
+2558,cat person,6149.0,68,68,0,0,0.0,cat person,ignore,,,unmapped
+5981,seeking protagonist,6232.0,68,68,0,0,0.0,seeking protagonist,ignore,,,unmapped
+2776,parasite,2611.0,67,67,600,18900,282.09,parasite,ignore,,,unmapped
+4481,protection complex,6149.0,67,67,0,0,0.0,protection complex,ignore,,,unmapped
+2578,vulgar,6149.0,67,67,0,0,0.0,vulgar,ignore,,,unmapped
+2777,London,2809.0,66,66,600,17800,269.7,london,ignore,,,unmapped
+2684,New York,2812.0,66,66,600,18600,281.82,new york,ignore,,,unmapped
+2837,floating island,2628.0,66,66,600,22400,339.39,floating island,ignore,,,unmapped
+3374,civil war,2925.0,66,66,0,0,0.0,civil war,ignore,,,unmapped
+2734,scissoring,2695.0,66,66,0,0,0.0,scissoring,ignore,,,unmapped
+2659,Moon,2660.0,65,65,600,13000,200.0,moon,ignore,,,unmapped
+2681,Okinawa,2672.0,65,65,600,17400,267.69,okinawa,ignore,,,unmapped
+4196,fate worse than death,2607.0,65,65,0,0,0.0,fate worse than death,ignore,,,unmapped
+5936,uniform fetish,2608.0,65,65,0,0,0.0,uniform fetish,ignore,,,unmapped
+1306,chikan,7222.0,64,64,600,18600,290.62,chikan,ignore,,,unmapped
+3088,manipulation,2931.0,64,64,0,0,0.0,manipulation,ignore,,,unmapped
+3504,sake,2879.0,64,64,0,0,0.0,sake,ignore,,,unmapped
+2720,bestiality,2848.0,63,63,600,15000,238.1,bestiality,ignore,,,unmapped
+2758,volleyball,2881.0,63,63,600,18300,290.48,volleyball,ignore,,,unmapped
+3738,aliens living on Earth,2202.0,63,63,0,0,0.0,aliens living on earth,ignore,,,unmapped
+3190,master-slave relation,6083.0,63,63,0,0,0.0,master-slave relation,ignore,,,unmapped
+4030,mental cinema,2931.0,63,63,0,0,0.0,mental cinema,ignore,,,unmapped
+4164,promotional,6151.0,63,63,0,0,0.0,promotional,ignore,,,unmapped
+2467,sword,6149.0,63,63,0,0,0.0,sword,ignore,,,unmapped
+2692,Bakumatsu - Meiji Period,2641.0,62,62,600,27300,440.32,bakumatsu - meiji period,ignore,,,unmapped
+2903,scat,2848.0,62,62,600,15400,248.39,scat,ignore,,,unmapped
+7560,suspension bondage,2901.0,62,62,500,14900,240.32,suspension bondage,ignore,,,unmapped
+4397,court politics,2867.0,62,62,0,0,0.0,court politics,ignore,,,unmapped
+5335,dreams and reality,2931.0,62,62,0,0,0.0,dreams and reality,ignore,,,unmapped
+3305,light-hearted,2931.0,62,62,0,0,0.0,light-hearted,ignore,,,unmapped
+4217,nightmares,2931.0,62,62,0,0,0.0,nightmares,ignore,,,unmapped
+2687,Sengoku period,2641.0,61,61,600,26800,439.34,sengoku period,ignore,,,unmapped
+2690,Tokugawa period,2641.0,61,61,600,24900,408.2,tokugawa period,ignore,,,unmapped
+5466,epidemic,2874.0,61,61,600,18200,298.36,epidemic,ignore,,,unmapped
+165,painting,2883.0,61,61,600,14200,232.79,painting,ignore,,,unmapped
+2764,space colony,2627.0,61,61,600,12500,204.92,space colony,ignore,,,unmapped
+3202,adoring fan club,2611.0,61,61,0,0,0.0,adoring fan club,ignore,,,unmapped
+4352,censored uncensored version,6151.0,61,61,0,0,0.0,censored uncensored version,ignore,,,unmapped
+3815,human cannibalism,2851.0,61,61,0,0,0.0,human cannibalism,ignore,,,unmapped
+2731,sex while on the phone,2848.0,61,61,0,0,0.0,sex while on the phone,ignore,,,unmapped
+5445,strappado bondage,2901.0,61,61,0,0,0.0,strappado bondage,ignore,,,unmapped
+2635,jungle,2613.0,60,60,600,13400,223.33,jungle,ignore,,,unmapped
+4259,animal world,2857.0,60,60,0,0,0.0,animal world,ignore,,,unmapped
+3316,despair,2931.0,60,60,0,0,0.0,despair,ignore,,,unmapped
+5824,god is a girl,6233.0,60,60,0,0,0.0,god is a girl,ignore,,,unmapped
+2384,prodigy,6149.0,60,60,0,0,0.0,prodigy,ignore,,,unmapped
+3378,redemption,2607.0,60,60,0,0,0.0,redemption,ignore,,,unmapped
+1155,mermaid,2849.0,59,59,600,15400,261.02,mermaid,tag,Mermaid,100,curated_tag
+7854,surveillance,2607.0,59,59,600,16700,283.05,surveillance,ignore,,,unmapped
+4859,Wakate Animator Ikusei Project,6153.0,59,59,0,0,0.0,wakate animator ikusei project,ignore,,,unmapped
+6389,cervix penetration,2707.0,59,59,0,0,0.0,cervix penetration,ignore,,,unmapped
+569,clumsy,6149.0,59,59,0,0,0.0,clumsy,ignore,,,unmapped
+3278,deception,2931.0,59,59,0,0,0.0,deception,ignore,,,unmapped
+5651,against destiny,3314.0,58,58,0,0,0.0,against destiny,ignore,,,unmapped
+4113,body exchange,6347.0,58,58,0,0,0.0,body exchange,ignore,,,unmapped
+4577,family values,6249.0,58,58,0,0,0.0,family values,ignore,,,unmapped
+3197,guro,2608.0,58,58,0,0,0.0,guro,ignore,,,unmapped
+4149,non-blood-related siblings -- DO NOT USE -- TO BE DELETED,6149.0,58,58,0,0,0.0,non-blood-related siblings -- do not use -- to be deleted,ignore,,,unmapped
+5996,tragic ending,6247.0,58,58,0,0,0.0,tragic ending,ignore,,,unmapped
+2811,Germany,2831.0,57,57,600,14700,257.89,germany,ignore,,,unmapped
+183,boxing,2751.0,57,57,600,19700,345.61,boxing,tag,Boxing,100,curated_tag
+2924,earthquake,2874.0,57,57,600,11700,205.26,earthquake,ignore,,,unmapped
+4148,late for school,6148.0,57,57,0,0,0.0,late for school,ignore,,,unmapped
+7422,reverse spitroast,2696.0,57,57,0,0,0.0,reverse spitroast,ignore,,,unmapped
+3755,unintentional comedy,2931.0,57,57,0,0,0.0,unintentional comedy,ignore,,,unmapped
+2620,battle royale,2841.0,56,56,600,21200,378.57,battle royale,tag,Battle Royale,100,curated_tag
+7004,prostate massage,7403.0,56,56,400,10700,191.07,prostate massage,ignore,,,unmapped
+5915,French kiss,2856.0,56,56,0,0,0.0,french kiss,ignore,,,unmapped
+4616,based on real events,6151.0,56,56,0,0,0.0,based on real events,ignore,,,unmapped
+3958,coup d`etat,2607.0,56,56,0,0,0.0,coup d etat,ignore,,,unmapped
+3227,introspection,2931.0,56,56,0,0,0.0,introspection,ignore,,,unmapped
+2740,mother-son incest,2842.0,56,56,0,0,0.0,mother-son incest,ignore,,,unmapped
+1719,orphan,6149.0,56,56,0,0,0.0,orphan,tag,Orphan,75,curated_tag
+5769,panels that require pausing,6151.0,56,56,0,0,0.0,panels that require pausing,ignore,,,unmapped
+5104,vignetted picture,6151.0,56,56,0,0,0.0,vignetted picture,ignore,,,unmapped
+7345,nurse office,2613.0,55,55,600,14000,254.55,nurse office,ignore,,,unmapped
+1700,pirate,2872.0,55,55,600,19200,349.09,pirate,ignore,,,unmapped
+5881,childhood memory,6148.0,55,55,0,0,0.0,childhood memory,ignore,,,unmapped
+4350,imperial stormtrooper marksmanship academy,6233.0,55,55,0,0,0.0,imperial stormtrooper marksmanship academy,ignore,,,unmapped
+3992,nostalgia,2607.0,55,55,0,0,0.0,nostalgia,ignore,,,unmapped
+3481,recruiting teammates,2931.0,55,55,0,0,0.0,recruiting teammates,ignore,,,unmapped
+3581,tactics,2931.0,55,55,0,0,0.0,tactics,ignore,,,unmapped
+2835,Africa,2630.0,54,54,600,13200,244.44,africa,ignore,,,unmapped
+3568,gambling,2607.0,54,54,600,12600,233.33,gambling,tag,Gambling,100,curated_tag
+7141,goblin,2849.0,54,54,600,12700,235.19,goblin,ignore,,,unmapped
+7678,sex ritual,2848.0,54,54,600,21300,394.44,sex ritual,ignore,,,unmapped
+4176,OP and ED sung by cast,6148.0,54,54,0,0,0.0,op and ed sung by cast,ignore,,,unmapped
+4271,corrupt church,2876.0,54,54,0,0,0.0,corrupt church,ignore,,,unmapped
+6455,double-sided dildo,2900.0,54,54,0,0,0.0,double-sided dildo,ignore,,,unmapped
+4021,evil military,36.0,54,54,0,0,0.0,evil military,ignore,,,unmapped
+2677,Osaka,2672.0,53,53,600,14500,273.58,osaka,ignore,,,unmapped
+2632,hell,6563.0,53,53,600,12600,237.74,hell,ignore,,,unmapped
+6999,pregnant sex,2848.0,53,53,600,11500,216.98,pregnant sex,ignore,,,unmapped
+3896,bloodless wounds,2841.0,53,53,0,0,0.0,bloodless wounds,ignore,,,unmapped
+4610,commercial,6151.0,53,53,0,0,0.0,commercial,ignore,,,unmapped
+3269,genocide,4316.0,53,53,0,0,0.0,genocide,ignore,,,unmapped
+1179,indecisive,6149.0,53,53,0,0,0.0,indecisive,ignore,,,unmapped
+520,nopan,6149.0,53,53,0,0,0.0,nopan,ignore,,,unmapped
+2343,ojou-sama laugh,6149.0,53,53,0,0,0.0,ojou-sama laugh,ignore,,,unmapped
+6017,perpetual ongoing,2605.0,53,53,0,0,0.0,perpetual ongoing,ignore,,,unmapped
+5914,afterlife,2607.0,52,52,600,15600,300.0,afterlife,tag,Afterlife,100,curated_tag
+6350,Oofuji Noburou Award,55.0,52,52,0,0,0.0,oofuji noburou award,ignore,,,unmapped
+428,contractor,6149.0,52,52,0,0,0.0,contractor,ignore,,,unmapped
+4182,hidden power,2931.0,52,52,0,0,0.0,hidden power,ignore,,,unmapped
+5890,medieval -- TO BE SPLIT AND DELETED,2611.0,52,52,0,0,0.0,medieval -- to be split and deleted,ignore,,,unmapped
+8057,medieval European aesthetic,2611.0,52,52,0,0,0.0,medieval european aesthetic,ignore,,,unmapped
+5805,post-credits scene,6148.0,52,52,0,0,0.0,post-credits scene,ignore,,,unmapped
+4225,symbolism,2931.0,52,52,0,0,0.0,symbolism,ignore,,,unmapped
+6055,time loop,2605.0,52,52,0,0,0.0,time loop,ignore,,,unmapped
+2675,Russia,2831.0,51,51,600,13100,256.86,russia,ignore,,,unmapped
+2795,baking,1973.0,51,51,600,11200,219.61,baking,ignore,,,unmapped
+4642,economics,2607.0,51,51,600,10900,213.73,economics,ignore,,,unmapped
+2143,succubus,2646.0,51,51,600,15400,301.96,succubus,ignore,,,unmapped
+3094,befriend attack,6149.0,51,51,0,0,0.0,befriend attack,ignore,,,unmapped
+3075,nervous breakdown,2931.0,51,51,0,0,0.0,nervous breakdown,ignore,,,unmapped
+4277,nuclear weapons,2925.0,51,51,0,0,0.0,nuclear weapons,ignore,,,unmapped
+6348,old animetags - OP ED,2931.0,51,51,0,0,0.0,old animetags - op ed,ignore,,,unmapped
+3508,school for the rich elite,2869.0,51,51,0,0,0.0,school for the rich elite,ignore,,,unmapped
+2090,trauma,6149.0,51,51,0,0,0.0,trauma,ignore,,,unmapped
+7640,demon world,2628.0,50,50,600,16800,336.0,demon world,ignore,,,unmapped
+4413,heaven,6563.0,50,50,400,7200,144.0,heaven,ignore,,,unmapped
+6006,Tokyo is the centre of the universe,6233.0,50,50,0,0,0.0,tokyo is the centre of the universe,ignore,,,unmapped
+1816,uniform -- TO BE SPLIT AND DELETED,6149.0,50,50,0,0,0.0,uniform -- to be split and deleted,ignore,,,unmapped
+4085,unlikely duo,2931.0,50,50,0,0,0.0,unlikely duo,ignore,,,unmapped
+4073,unusual weapons -- TO BE SPLIT AND DELETED,6149.0,50,50,0,0,0.0,unusual weapons -- to be split and deleted,ignore,,,unmapped
+2678,Hokkaido,2672.0,49,49,600,13500,275.51,hokkaido,ignore,,,unmapped
+2716,netori,4656.0,49,49,600,13200,269.39,netori,ignore,,,unmapped
+3149,journalism,2607.0,49,49,400,9300,189.8,journalism,ignore,,,unmapped
+3020,chibi ED,6151.0,49,49,0,0,0.0,chibi ed,ignore,,,unmapped
+2781,first kiss,6148.0,49,49,0,0,0.0,first kiss,ignore,,,unmapped
+3369,human psyche,2931.0,49,49,0,0,0.0,human psyche,ignore,,,unmapped
+3772,library,2931.0,49,49,0,0,0.0,library,ignore,,,unmapped
+3869,mono no aware,2611.0,49,49,0,0,0.0,mono no aware,ignore,,,unmapped
+4349,puppetmation,6151.0,49,49,0,0,0.0,puppetmation,ignore,,,unmapped
+5384,put right what once went wrong,2607.0,49,49,0,0,0.0,put right what once went wrong,ignore,,,unmapped
+6840,social media,2607.0,48,48,600,10700,222.92,social media,ignore,,,unmapped
+6623,tank warfare,36.0,48,48,600,11400,237.5,tank warfare,ignore,,,unmapped
+6351,Chinese mythology,3597.0,48,48,0,0,0.0,chinese mythology,ignore,,,unmapped
+4218,cast-free,6230.0,48,48,0,0,0.0,cast-free,ignore,,,unmapped
+5883,dreams,2931.0,48,48,0,0,0.0,dreams,ignore,,,unmapped
+4178,manipulated memories,2611.0,48,48,0,0,0.0,manipulated memories,ignore,,,unmapped
+5093,royal intrigue,2867.0,48,48,0,0,0.0,royal intrigue,ignore,,,unmapped
+6271,sister-sister incest,2842.0,48,48,0,0,0.0,sister-sister incest,ignore,,,unmapped
+2833,Middle East,2630.0,47,47,600,13700,291.49,middle east,ignore,,,unmapped
+2906,nanomachines,2846.0,47,47,600,11200,238.3,nanomachines,ignore,,,unmapped
+2962,neo-noir,2611.0,47,47,600,14600,310.64,neo-noir,ignore,,,unmapped
+1241,swimming,2881.0,47,47,600,10000,212.77,swimming,ignore,,,unmapped
+3097,underwater,2613.0,47,47,600,8800,187.23,underwater,ignore,,,unmapped
+2880,Christmas,6148.0,47,47,0,0,0.0,christmas,ignore,,,unmapped
+3580,cliffhanger ending,6247.0,47,47,0,0,0.0,cliffhanger ending,ignore,,,unmapped
+2737,father-daughter incest,2842.0,47,47,0,0,0.0,father-daughter incest,ignore,,,unmapped
+4342,large-scale war,2925.0,47,47,0,0,0.0,large-scale war,ignore,,,unmapped
+3718,love between enemies,2858.0,47,47,0,0,0.0,love between enemies,ignore,,,unmapped
+6371,red-light district,2613.0,47,47,0,0,0.0,red-light district,ignore,,,unmapped
+3974,star-crossed lovers,2607.0,47,47,0,0,0.0,star-crossed lovers,ignore,,,unmapped
+2827,sudden naked guy appearance,2856.0,47,47,0,0,0.0,sudden naked guy appearance,ignore,,,unmapped
+2927,Akihabara,2676.0,46,46,600,9800,213.04,akihabara,ignore,,,unmapped
+4004,organic mecha,2638.0,46,46,600,14200,308.7,organic mecha,ignore,,,unmapped
+7086,soft science fiction,2846.0,46,46,600,13500,293.48,soft science fiction,ignore,,,unmapped
+6614,Animeism,6153.0,46,46,0,0,0.0,animeism,ignore,,,unmapped
+3216,Universal Century,2626.0,46,46,0,0,0.0,universal century,ignore,,,unmapped
+5593,branching story,2605.0,46,46,0,0,0.0,branching story,ignore,,,unmapped
+5669,golden shower,2711.0,46,46,0,0,0.0,golden shower,ignore,,,unmapped
+3516,insects of doom,7050.0,46,46,0,0,0.0,insects of doom,ignore,,,unmapped
+6901,underground,2613.0,46,46,0,0,0.0,underground,ignore,,,unmapped
+2964,OP variety,6151.0,45,45,0,0,0.0,op variety,ignore,,,unmapped
+6252,feud,2607.0,45,45,0,0,0.0,feud,ignore,,,unmapped
+2769,hyperspace mallet,2653.0,45,45,0,0,0.0,hyperspace mallet,ignore,,,unmapped
+5888,power gives you wings,6233.0,45,45,0,0,0.0,power gives you wings,ignore,,,unmapped
+1221,scooter,6149.0,45,45,0,0,0.0,scooter,ignore,,,unmapped
+3750,thick line animation,6151.0,45,45,0,0,0.0,thick line animation,ignore,,,unmapped
+2685,Heian period,2641.0,44,44,600,15900,361.36,heian period,ignore,,,unmapped
+4424,American derived,2609.0,44,44,0,0,0.0,american derived,ignore,,,unmapped
+6090,Norse mythology,3597.0,44,44,0,0,0.0,norse mythology,ignore,,,unmapped
+5956,broken friendship,2862.0,44,44,0,0,0.0,broken friendship,ignore,,,unmapped
+6877,misleading beginning,2605.0,44,44,0,0,0.0,misleading beginning,ignore,,,unmapped
+2419,overeater,6149.0,44,44,0,0,0.0,overeater,ignore,,,unmapped
+920,perverted,6149.0,44,44,0,0,0.0,perverted,ignore,,,unmapped
+2810,Italy,2831.0,43,43,600,15100,351.16,italy,ignore,,,unmapped
+7438,cultivation,2282.0,43,43,600,18200,423.26,cultivation,tag,Cultivation,100,curated_tag
+566,dinosaur,2611.0,43,43,600,14300,332.56,dinosaur,ignore,,,unmapped
+1032,fishing,2881.0,43,43,600,8400,195.35,fishing,tag,Fishing,100,curated_tag
+2439,PIC NEEDS IMPROVEMENT,30.0,43,43,0,0,0.0,pic needs improvement,ignore,,,unmapped
+4202,contraband,2872.0,43,43,0,0,0.0,contraband,ignore,,,unmapped
+3694,dear mother in heaven,6233.0,43,43,0,0,0.0,dear mother in heaven,ignore,,,unmapped
+4572,human-animal relationship,2611.0,43,43,0,0,0.0,human-animal relationship,ignore,,,unmapped
+3931,magical realism,2611.0,43,43,0,0,0.0,magical realism,ignore,,,unmapped
+6528,palace,2613.0,43,43,0,0,0.0,palace,ignore,,,unmapped
+1049,bicycling,2881.0,42,42,600,13500,321.43,bicycling,ignore,,,unmapped
+4308,delayed death,6242.0,42,42,0,0,0.0,delayed death,ignore,,,unmapped
+2968,faceless alien invasion,4831.0,42,42,0,0,0.0,faceless alien invasion,ignore,,,unmapped
+4200,flash animation,6151.0,42,42,0,0,0.0,flash animation,ignore,,,unmapped
+3798,giant insects,7050.0,42,42,0,0,0.0,giant insects,ignore,,,unmapped
+3309,space pirates,2846.0,42,42,0,0,0.0,space pirates,ignore,,,unmapped
+2865,summer festival,6148.0,42,42,0,0,0.0,summer festival,ignore,,,unmapped
+2765,Mars,2660.0,41,41,600,12500,304.88,mars,ignore,,,unmapped
+5463,boarding school,2869.0,41,41,600,12300,300.0,boarding school,ignore,,,unmapped
+2753,track and field,2881.0,41,41,600,7000,170.73,track and field,ignore,,,unmapped
+7134,ComicFesta Anime Zone,6153.0,41,41,0,0,0.0,comicfesta anime zone,ignore,,,unmapped
+3752,Journey to the West,6397.0,41,41,0,0,0.0,journey to the west,ignore,,,unmapped
+5150,asymmetric warfare,2925.0,41,41,0,0,0.0,asymmetric warfare,ignore,,,unmapped
+509,clone,6149.0,41,41,0,0,0.0,clone,tag,Clone,75,curated_tag
+3196,photographic backgrounds,6151.0,41,41,0,0,0.0,photographic backgrounds,ignore,,,unmapped
+3433,power corrupts,2931.0,41,41,0,0,0.0,power corrupts,ignore,,,unmapped
+5285,street fighting,3411.0,41,41,0,0,0.0,street fighting,ignore,,,unmapped
+2745,mechanical tentacle,1773.0,40,40,600,8400,210.0,mechanical tentacle,ignore,,,unmapped
+5420,wealth-related humour,2853.0,40,40,300,6600,165.0,wealth-related humour,ignore,,,unmapped
+5973,agriculture,2607.0,40,40,0,0,0.0,agriculture,tag,Agriculture,75,curated_tag
+1783,immature,6149.0,40,40,0,0,0.0,immature,ignore,,,unmapped
+3589,multiple protagonists - TO BE MOVED TO PARENT OR DELETED,4251.0,40,40,0,0,0.0,multiple protagonists - to be moved to parent or deleted,ignore,,,unmapped
+3800,oyakodon,2848.0,40,40,0,0,0.0,oyakodon,ignore,,,unmapped
+4510,ruins,2931.0,40,40,0,0,0.0,ruins,ignore,,,unmapped
+3734,school rivalry,5826.0,40,40,0,0,0.0,school rivalry,ignore,,,unmapped
+2763,Paris,2807.0,39,39,600,9100,233.33,paris,ignore,,,unmapped
+3946,filmmaking,2883.0,39,39,600,11000,282.05,filmmaking,ignore,,,unmapped
+6690,Sino-Japanese co-production,6173.0,39,39,0,0,0.0,sino-japanese co-production,ignore,,,unmapped
+1291,aristocrat,6149.0,39,39,0,0,0.0,aristocrat,ignore,,,unmapped
+3277,bendy lasers,7050.0,39,39,0,0,0.0,bendy lasers,ignore,,,unmapped
+3108,catastrophic gadgets,2653.0,39,39,0,0,0.0,catastrophic gadgets,ignore,,,unmapped
+4116,eternal blush,6149.0,39,39,0,0,0.0,eternal blush,ignore,,,unmapped
+7509,fall of a country,2874.0,38,38,600,10300,271.05,fall of a country,ignore,,,unmapped
+5842,guerilla warfare,2925.0,38,38,600,7700,202.63,guerilla warfare,ignore,,,unmapped
+4667,hard science fiction,2846.0,38,38,600,14000,368.42,hard science fiction,ignore,,,unmapped
+2714,point of view,2848.0,38,38,600,11500,302.63,point of view,ignore,,,unmapped
+6731,wax play,2905.0,38,38,400,7600,200.0,wax play,ignore,,,unmapped
+2488,multiple personality disorder,6149.0,38,38,0,0,0.0,multiple personality disorder,ignore,,,unmapped
+4226,paradise lost,2607.0,38,38,0,0,0.0,paradise lost,ignore,,,unmapped
+3119,restaurant,2931.0,38,38,0,0,0.0,restaurant,ignore,,,unmapped
+3824,sentai,6149.0,38,38,0,0,0.0,sentai,ignore,,,unmapped
+2481,teleportation,6149.0,38,38,0,0,0.0,teleportation,ignore,,,unmapped
+3833,there can be only one,6233.0,38,38,0,0,0.0,there can be only one,ignore,,,unmapped
+153,dark elf,1609.0,37,37,600,9500,256.76,dark elf,ignore,,,unmapped
+904,eccentric,6149.0,37,37,0,0,0.0,eccentric,ignore,,,unmapped
+4517,inter-dimensional schoolgirl,6233.0,37,37,0,0,0.0,inter-dimensional schoolgirl,ignore,,,unmapped
+6039,piggyback ride,6148.0,37,37,0,0,0.0,piggyback ride,ignore,,,unmapped
+5962,rural town,2931.0,37,37,0,0,0.0,rural town,ignore,,,unmapped
+1438,ruthless,6149.0,37,37,0,0,0.0,ruthless,ignore,,,unmapped
+2670,school festival - TO BE SPLIT AND DELETED,6148.0,37,37,0,0,0.0,school festival - to be split and deleted,ignore,,,unmapped
+3550,sex change,6021.0,37,37,0,0,0.0,sex change,ignore,,,unmapped
+4566,transforming weapons,2931.0,37,37,0,0,0.0,transforming weapons,ignore,,,unmapped
+7052,vertical format,6151.0,37,37,0,0,0.0,vertical format,ignore,,,unmapped
+2673,Korea,2834.0,36,36,600,15900,441.67,korea,ignore,,,unmapped
+3684,literature,2883.0,36,36,600,6600,183.33,literature,ignore,,,unmapped
+5807,cosmic reset,2605.0,36,36,0,0,0.0,cosmic reset,ignore,,,unmapped
+587,doll,6149.0,36,36,0,0,0.0,doll,ignore,,,unmapped
+4417,existentialism,2607.0,36,36,0,0,0.0,existentialism,ignore,,,unmapped
+3703,fist fight,2931.0,36,36,0,0,0.0,fist fight,ignore,,,unmapped
+2728,fisting,2848.0,36,36,0,0,0.0,fisting,ignore,,,unmapped
+3327,manly,6149.0,36,36,0,0,0.0,manly,ignore,,,unmapped
+3758,performing in a concert,6148.0,36,36,0,0,0.0,performing in a concert,ignore,,,unmapped
+898,submarine,2613.0,36,36,0,0,0.0,submarine,ignore,,,unmapped
+5213,the effects of time and distance on human relationships,2607.0,36,36,0,0,0.0,the effects of time and distance on human relationships,ignore,,,unmapped
+5276,typhoon,2874.0,36,36,0,0,0.0,typhoon,ignore,,,unmapped
+3852,Bright slap,6233.0,35,35,0,0,0.0,bright slap,ignore,,,unmapped
+7053,Tate Anime,6153.0,35,35,0,0,0.0,tate anime,ignore,,,unmapped
+5455,creepy laugh,6149.0,35,35,0,0,0.0,creepy laugh,ignore,,,unmapped
+4386,eating Pocky,6148.0,35,35,0,0,0.0,eating pocky,ignore,,,unmapped
+1254,precocious,6149.0,35,35,0,0,0.0,precocious,ignore,,,unmapped
+3004,skilled main character,6232.0,35,35,0,0,0.0,skilled main character,ignore,,,unmapped
+5762,violence censoring,3842.0,35,35,0,0,0.0,violence censoring,ignore,,,unmapped
+1298,drawing,2883.0,34,34,600,8400,247.06,drawing,tag,Drawing,100,curated_tag
+6443,wooden horse,2729.0,34,34,300,5400,158.82,wooden horse,ignore,,,unmapped
+7829,FFF threesome,2696.0,34,34,0,0,0.0,fff threesome,ignore,,,unmapped
+6537,beer,2879.0,34,34,0,0,0.0,beer,ignore,,,unmapped
+5293,crash landing,2931.0,34,34,0,0,0.0,crash landing,ignore,,,unmapped
+3779,fight for peace,2931.0,34,34,0,0,0.0,fight for peace,ignore,,,unmapped
+2253,kitsune,6149.0,34,34,0,0,0.0,kitsune,ignore,,,unmapped
+2736,mother-daughter incest,2842.0,34,34,0,0,0.0,mother-daughter incest,ignore,,,unmapped
+3823,recap in opening,6348.0,34,34,0,0,0.0,recap in opening,ignore,,,unmapped
+4136,sudden loli companion appearance,6232.0,34,34,0,0,0.0,sudden loli companion appearance,ignore,,,unmapped
+7360,castle,,33,33,600,11100,336.36,castle,ignore,,,unmapped
+1656,corrupt,6149.0,33,33,0,0,0.0,corrupt,ignore,,,unmapped
+3622,merchandising show,6151.0,33,33,0,0,0.0,merchandising show,ignore,,,unmapped
+4722,omiai,6148.0,33,33,0,0,0.0,omiai,ignore,,,unmapped
+4347,space exploration,2846.0,33,33,0,0,0.0,space exploration,ignore,,,unmapped
+5742,Taishou period,2641.0,32,32,600,15600,487.5,taishou period,ignore,,,unmapped
+1004,judo,2751.0,32,32,600,9200,287.5,judo,ignore,,,unmapped
+3635,sea battles,2841.0,32,32,600,7500,234.38,sea battles,ignore,,,unmapped
+2723,yaoi,2848.0,32,32,600,10400,325.0,yaoi,ignore,,,unmapped
+7090,DESCRIPTION NEEDS IMPROVEMENT,30.0,32,32,0,0,0.0,description needs improvement,ignore,,,unmapped
+3763,Sekai Meisaku Gekijou,6153.0,32,32,0,0,0.0,sekai meisaku gekijou,ignore,,,unmapped
+2983,body sharing,6347.0,32,32,0,0,0.0,body sharing,ignore,,,unmapped
+4715,dementia,2931.0,32,32,0,0,0.0,dementia,ignore,,,unmapped
+4033,discontinued,6151.0,32,32,0,0,0.0,discontinued,ignore,,,unmapped
+2378,hard-working,6149.0,32,32,0,0,0.0,hard-working,ignore,,,unmapped
+5784,hirable protagonist,6232.0,32,32,0,0,0.0,hirable protagonist,ignore,,,unmapped
+7148,impregnation with larvae,3976.0,32,32,0,0,0.0,impregnation with larvae,ignore,,,unmapped
+3459,space monsters,2846.0,32,32,0,0,0.0,space monsters,ignore,,,unmapped
+3209,table tennis,2881.0,31,31,600,4800,154.84,table tennis,ignore,,,unmapped
+5327,urophagia,2711.0,31,31,300,4400,141.94,urophagia,ignore,,,unmapped
+5705,butchered foreign languages,2931.0,31,31,0,0,0.0,butchered foreign languages,ignore,,,unmapped
+4712,childhood ties,2931.0,31,31,0,0,0.0,childhood ties,ignore,,,unmapped
+5991,dark mood,2931.0,31,31,0,0,0.0,dark mood,ignore,,,unmapped
+5944,i got a crush on you,2931.0,31,31,0,0,0.0,i got a crush on you,ignore,,,unmapped
+5095,slum,2613.0,31,31,0,0,0.0,slum,ignore,,,unmapped
+7082,Oceania,2630.0,30,30,600,4500,150.0,oceania,ignore,,,unmapped
+1664,horse riding,2881.0,30,30,600,8200,273.33,horse riding,ignore,,,unmapped
+1645,kendo,2751.0,30,30,600,5400,180.0,kendo,ignore,,,unmapped
+1969,mahjong,2756.0,30,30,600,9600,320.0,mahjong,ignore,,,unmapped
+3457,Alice`s Adventures in Wonderland,6397.0,30,30,0,0,0.0,alice s adventures in wonderland,ignore,,,unmapped
+4389,amusement park visit,6148.0,30,30,0,0,0.0,amusement park visit,ignore,,,unmapped
+3421,aviation,2607.0,30,30,0,0,0.0,aviation,ignore,,,unmapped
+4192,broadcast cropped to 4-3,6151.0,30,30,0,0,0.0,broadcast cropped to 4-3,ignore,,,unmapped
+4812,dark past,2931.0,30,30,0,0,0.0,dark past,ignore,,,unmapped
+1393,drill,6149.0,30,30,0,0,0.0,drill,ignore,,,unmapped
+3826,evil laugh,6149.0,30,30,0,0,0.0,evil laugh,ignore,,,unmapped
+4335,governmental censorship,2867.0,30,30,0,0,0.0,governmental censorship,ignore,,,unmapped
+6063,hallucination,2931.0,30,30,0,0,0.0,hallucination,ignore,,,unmapped
+3145,impact event,2874.0,30,30,0,0,0.0,impact event,ignore,,,unmapped
+5409,longing,2931.0,30,30,0,0,0.0,longing,ignore,,,unmapped
+4042,odd jobs,2931.0,30,30,0,0,0.0,odd jobs,ignore,,,unmapped
+3771,recycled animation -- TO BE SPLIT AND DELETED,6151.0,30,30,0,0,0.0,recycled animation -- to be split and deleted,ignore,,,unmapped
+4461,seven deadly sins,6234.0,30,30,0,0,0.0,seven deadly sins,ignore,,,unmapped
+6829,sleeping sex,2848.0,30,30,0,0,0.0,sleeping sex,ignore,,,unmapped
+2402,archery,2881.0,29,29,600,6500,224.14,archery,tag,Archery,100,curated_tag
+5963,utopia,2607.0,29,29,600,9400,324.14,utopia,ignore,,,unmapped
+5767,Itano circus,2841.0,29,29,0,0,0.0,itano circus,ignore,,,unmapped
+3430,Western comics,2609.0,29,29,0,0,0.0,western comics,ignore,,,unmapped
+3854,breast expansion,2891.0,29,29,0,0,0.0,breast expansion,ignore,,,unmapped
+4171,claymation,6151.0,29,29,0,0,0.0,claymation,ignore,,,unmapped
+2996,journey to the center of the mind,6148.0,29,29,0,0,0.0,journey to the center of the mind,ignore,,,unmapped
+2909,karaoke,6148.0,29,29,0,0,0.0,karaoke,ignore,,,unmapped
+3981,ninja maid,6149.0,29,29,0,0,0.0,ninja maid,ignore,,,unmapped
+3062,unidentified flying object,2611.0,29,29,0,0,0.0,unidentified flying object,ignore,,,unmapped
+5930,unrequited shounen ai,2785.0,29,29,0,0,0.0,unrequited shounen ai,ignore,,,unmapped
+6707,wuxia,2282.0,28,28,600,15100,539.29,wuxia,ignore,,,unmapped
+3569,human-android love,1278.0,28,28,400,5700,203.57,human-android love,ignore,,,unmapped
+3037,Tokyo Skytree,2676.0,28,28,0,0,0.0,tokyo skytree,ignore,,,unmapped
+3887,cheating,2931.0,28,28,0,0,0.0,cheating,ignore,,,unmapped
+596,crime syndicate,6149.0,28,28,0,0,0.0,crime syndicate,ignore,,,unmapped
+5910,diet,2607.0,28,28,0,0,0.0,diet,ignore,,,unmapped
+4716,experimental technology,2931.0,28,28,0,0,0.0,experimental technology,ignore,,,unmapped
+1262,naive,6149.0,28,28,0,0,0.0,naive,ignore,,,unmapped
+3921,occult,2931.0,28,28,0,0,0.0,occult,ignore,,,unmapped
+1999,tomboy,6149.0,28,28,0,0,0.0,tomboy,tag,Tomboy,75,curated_tag
+3502,troubled male lead,6232.0,28,28,0,0,0.0,troubled male lead,ignore,,,unmapped
+1633,xenophobia,6149.0,28,28,0,0,0.0,xenophobia,ignore,,,unmapped
+658,gymnastics,2881.0,27,27,600,7100,262.96,gymnastics,ignore,,,unmapped
+7252,CG collection,2609.0,27,27,0,0,0.0,cg collection,ignore,,,unmapped
+5789,back to square one,2605.0,27,27,0,0,0.0,back to square one,ignore,,,unmapped
+4491,children of destiny,3314.0,27,27,0,0,0.0,children of destiny,ignore,,,unmapped
+4421,circus,2613.0,27,27,0,0,0.0,circus,ignore,,,unmapped
+3964,cyberterrorism,6254.0,27,27,0,0,0.0,cyberterrorism,ignore,,,unmapped
+4418,evil organization,2931.0,27,27,0,0,0.0,evil organization,ignore,,,unmapped
+3313,evolution,2607.0,27,27,0,0,0.0,evolution,ignore,,,unmapped
+3263,fashion,2607.0,27,27,0,0,0.0,fashion,ignore,,,unmapped
+3941,flood,2874.0,27,27,0,0,0.0,flood,ignore,,,unmapped
+3849,it`s time to duel,2931.0,27,27,0,0,0.0,it s time to duel,ignore,,,unmapped
+4874,overcoming adversity,2931.0,27,27,0,0,0.0,overcoming adversity,ignore,,,unmapped
+3870,resurrection,2931.0,27,27,0,0,0.0,resurrection,ignore,,,unmapped
+464,sarcastic,6149.0,27,27,0,0,0.0,sarcastic,ignore,,,unmapped
+3529,space elevator,2627.0,27,27,0,0,0.0,space elevator,ignore,,,unmapped
+4584,time machine,2637.0,27,27,0,0,0.0,time machine,ignore,,,unmapped
+2836,Australia,7082.0,26,26,600,5900,226.92,australia,ignore,,,unmapped
+3515,shinsengumi,2898.0,26,26,600,8900,342.31,shinsengumi,ignore,,,unmapped
+6610,vandalism,2872.0,26,26,600,4800,184.62,vandalism,ignore,,,unmapped
+7600,macrophilia,2848.0,26,26,400,5600,215.38,macrophilia,ignore,,,unmapped
+4951,age change,2931.0,26,26,0,0,0.0,age change,ignore,,,unmapped
+5307,aggressive plants,2931.0,26,26,0,0,0.0,aggressive plants,ignore,,,unmapped
+1253,ambitious,6149.0,26,26,0,0,0.0,ambitious,ignore,,,unmapped
+3146,divorce,6249.0,26,26,0,0,0.0,divorce,ignore,,,unmapped
+3129,fake relationship,2858.0,26,26,0,0,0.0,fake relationship,ignore,,,unmapped
+4110,life force,2931.0,26,26,0,0,0.0,life force,ignore,,,unmapped
+2131,psychotic,6149.0,26,26,0,0,0.0,psychotic,ignore,,,unmapped
+2662,school excursion,6148.0,26,26,0,0,0.0,school excursion,ignore,,,unmapped
+5854,wartime propaganda,4665.0,26,26,0,0,0.0,wartime propaganda,ignore,,,unmapped
+3625,water scarcity,2874.0,26,26,0,0,0.0,water scarcity,ignore,,,unmapped
+4399,Three Kingdoms,2641.0,25,25,600,10000,400.0,three kingdoms,ignore,,,unmapped
+2686,Victorian period,2641.0,25,25,600,12200,488.0,victorian period,ignore,,,unmapped
+1759,carefree,6149.0,25,25,0,0,0.0,carefree,ignore,,,unmapped
+3339,demon hunt,2931.0,25,25,0,0,0.0,demon hunt,ignore,,,unmapped
+3135,hero complex,6149.0,25,25,0,0,0.0,hero complex,ignore,,,unmapped
+3192,hidden base,2931.0,25,25,0,0,0.0,hidden base,ignore,,,unmapped
+3326,jumping very high,6149.0,25,25,0,0,0.0,jumping very high,ignore,,,unmapped
+4199,live-action closing -- TO BE MOVED AND DELETED,6148.0,25,25,0,0,0.0,live-action closing -- to be moved and deleted,ignore,,,unmapped
+215,lonely,6149.0,25,25,0,0,0.0,lonely,ignore,,,unmapped
+2796,movie,2609.0,25,25,0,0,0.0,movie,ignore,,,unmapped
+3137,religious propaganda,4665.0,25,25,0,0,0.0,religious propaganda,ignore,,,unmapped
+3107,unfoundedly feared character,6232.0,25,25,0,0,0.0,unfoundedly feared character,ignore,,,unmapped
+4348,wafuku -- TO BE SPLIT AND DELETED,6149.0,25,25,0,0,0.0,wafuku -- to be split and deleted,ignore,,,unmapped
+2689,1920s,2641.0,24,24,600,9300,387.5,1920s,ignore,,,unmapped
+5911,Hong Kong,2674.0,24,24,600,6700,279.17,hong kong,ignore,,,unmapped
+4596,Shinjuku,2676.0,24,24,600,5900,245.83,shinjuku,ignore,,,unmapped
+6595,Yokohama,2672.0,24,24,600,8400,350.0,yokohama,ignore,,,unmapped
+4919,Sherlock Holmes,6397.0,24,24,0,0,0.0,sherlock holmes,ignore,,,unmapped
+4477,communication with the dead,6149.0,24,24,0,0,0.0,communication with the dead,ignore,,,unmapped
+3611,evil empire,2931.0,24,24,0,0,0.0,evil empire,ignore,,,unmapped
+3664,futuristic motorcycle,2931.0,24,24,0,0,0.0,futuristic motorcycle,ignore,,,unmapped
+2047,human weapon,6149.0,24,24,0,0,0.0,human weapon,ignore,,,unmapped
+4296,illness,2931.0,24,24,0,0,0.0,illness,ignore,,,unmapped
+5003,imperialism,2607.0,24,24,0,0,0.0,imperialism,ignore,,,unmapped
+178,insane,6149.0,24,24,0,0,0.0,insane,ignore,,,unmapped
+3650,living together with god,2931.0,24,24,0,0,0.0,living together with god,ignore,,,unmapped
+4761,love letter,2931.0,24,24,0,0,0.0,love letter,ignore,,,unmapped
+4281,mind games,2931.0,24,24,0,0,0.0,mind games,ignore,,,unmapped
+6115,omimai,6148.0,24,24,0,0,0.0,omimai,ignore,,,unmapped
+3432,pacifism,2607.0,24,24,0,0,0.0,pacifism,ignore,,,unmapped
+3648,person from the past,2637.0,24,24,0,0,0.0,person from the past,ignore,,,unmapped
+4785,rock music,2794.0,24,24,0,0,0.0,rock music,ignore,,,unmapped
+3234,space is an ocean,6233.0,24,24,0,0,0.0,space is an ocean,ignore,,,unmapped
+2980,spiritual powers,2931.0,24,24,0,0,0.0,spiritual powers,ignore,,,unmapped
+2738,twincest,2842.0,24,24,0,0,0.0,twincest,ignore,,,unmapped
+2847,Western,2611.0,23,23,600,8500,369.57,western,ignore,,,unmapped
+2666,art school,2869.0,23,23,600,7000,304.35,art school,ignore,,,unmapped
+2664,catholic school,2869.0,23,23,600,6900,300.0,catholic school,ignore,,,unmapped
+7990,espionage,,23,23,600,8400,365.22,espionage,tag,Espionage,100,curated_tag
+2766,street racing,2759.0,23,23,600,9300,404.35,street racing,ignore,,,unmapped
+2886,New Year`s Day,6148.0,23,23,0,0,0.0,new year s day,ignore,,,unmapped
+4462,barefoot,6149.0,23,23,0,0,0.0,barefoot,ignore,,,unmapped
+4814,biographical film,4616.0,23,23,0,0,0.0,biographical film,ignore,,,unmapped
+5876,biting,6149.0,23,23,0,0,0.0,biting,ignore,,,unmapped
+2973,cute monster,6232.0,23,23,0,0,0.0,cute monster,ignore,,,unmapped
+5505,deus ex machina,2605.0,23,23,0,0,0.0,deus ex machina,ignore,,,unmapped
+2302,helpful,6149.0,23,23,0,0,0.0,helpful,ignore,,,unmapped
+1065,heterochromatic eyes,6149.0,23,23,0,0,0.0,heterochromatic eyes,ignore,,,unmapped
+7398,liberation of slaves,2866.0,23,23,0,0,0.0,liberation of slaves,ignore,,,unmapped
+5010,manhwa,2609.0,23,23,0,0,0.0,manhwa,ignore,,,unmapped
+5111,Hiroshima,2672.0,22,22,600,10300,468.18,hiroshima,ignore,,,unmapped
+2668,all-boys school,2869.0,22,22,600,7300,331.82,all-boys school,ignore,,,unmapped
+2916,shougi,2756.0,22,22,600,5600,254.55,shougi,ignore,,,unmapped
+7935,Historical characters assemble,,22,22,0,0,0.0,historical characters assemble,ignore,,,unmapped
+5786,erotic asphyxiation,2848.0,22,22,0,0,0.0,erotic asphyxiation,ignore,,,unmapped
+5874,guns are useless,6233.0,22,22,0,0,0.0,guns are useless,ignore,,,unmapped
+6010,human-replacement robots,1278.0,22,22,0,0,0.0,human-replacement robots,ignore,,,unmapped
+3328,melancholic,6149.0,22,22,0,0,0.0,melancholic,ignore,,,unmapped
+3007,monologues,2931.0,22,22,0,0,0.0,monologues,ignore,,,unmapped
+7399,orgasm denial,2729.0,22,22,0,0,0.0,orgasm denial,ignore,,,unmapped
+5763,rock-paper-scissors,6148.0,22,22,0,0,0.0,rock-paper-scissors,ignore,,,unmapped
+2344,simple-minded,6149.0,22,22,0,0,0.0,simple-minded,ignore,,,unmapped
+6446,television programme,2609.0,22,22,0,0,0.0,television programme,ignore,,,unmapped
+3926,wardrobe limited to school uniform,6233.0,22,22,0,0,0.0,wardrobe limited to school uniform,ignore,,,unmapped
+382,warrior,6149.0,22,22,0,0,0.0,warrior,ignore,,,unmapped
+5091,India,2834.0,21,21,600,4200,200.0,india,ignore,,,unmapped
+4677,Olympics,2881.0,21,21,600,5200,247.62,olympics,ignore,,,unmapped
+3572,biopunk,2846.0,21,21,600,6100,290.48,biopunk,ignore,,,unmapped
+3408,skiing,2881.0,21,21,600,3200,152.38,skiing,ignore,,,unmapped
+2743,futa x male,2429.0,21,21,400,4200,200.0,futa x male,ignore,,,unmapped
+7251,cockring,2905.0,21,21,0,0,0.0,cockring,ignore,,,unmapped
+4207,doujin,2883.0,21,21,0,0,0.0,doujin,ignore,,,unmapped
+2420,enigmatic,6149.0,21,21,0,0,0.0,enigmatic,ignore,,,unmapped
+7842,fictional religion,,21,21,0,0,0.0,fictional religion,ignore,,,unmapped
+5988,living with the villain,2931.0,21,21,0,0,0.0,living with the villain,ignore,,,unmapped
+4555,man the hell up!,2931.0,21,21,0,0,0.0,man the hell up,ignore,,,unmapped
+363,nostril hook,2901.0,21,21,0,0,0.0,nostril hook,ignore,,,unmapped
+1679,onmyoudou,2611.0,21,21,0,0,0.0,onmyoudou,ignore,,,unmapped
+3487,talks too fast,6149.0,21,21,0,0,0.0,talks too fast,ignore,,,unmapped
+3121,twisted ending,6247.0,21,21,0,0,0.0,twisted ending,ignore,,,unmapped
+3536,undercover,2931.0,21,21,0,0,0.0,undercover,ignore,,,unmapped
+2814,Canada,2832.0,20,20,600,7200,360.0,canada,ignore,,,unmapped
+5891,Taoism,2876.0,20,20,600,6200,310.0,taoism,ignore,,,unmapped
+2762,golf,2881.0,20,20,600,7800,390.0,golf,ignore,,,unmapped
+2917,chess,2756.0,20,20,500,3600,180.0,chess,ignore,,,unmapped
+4151,German suplex,2653.0,20,20,0,0,0.0,german suplex,ignore,,,unmapped
+6442,Weekly Shounen Sunday,2798.0,20,20,0,0,0.0,weekly shounen sunday,ignore,,,unmapped
+2091,blimp,6149.0,20,20,0,0,0.0,blimp,ignore,,,unmapped
+5871,breathing in space,6233.0,20,20,0,0,0.0,breathing in space,ignore,,,unmapped
+3368,covert operations,2931.0,20,20,0,0,0.0,covert operations,ignore,,,unmapped
+389,crybaby,6149.0,20,20,0,0,0.0,crybaby,ignore,,,unmapped
+1869,familiar spirit,6149.0,20,20,0,0,0.0,familiar spirit,ignore,,,unmapped
+3018,first person view,6151.0,20,20,0,0,0.0,first person view,ignore,,,unmapped
+2780,indirect kiss,6148.0,20,20,0,0,0.0,indirect kiss,ignore,,,unmapped
+3379,killing criminals,2931.0,20,20,0,0,0.0,killing criminals,ignore,,,unmapped
+1286,megalomaniac,6149.0,20,20,0,0,0.0,megalomaniac,ignore,,,unmapped
+3837,memory transfer,2611.0,20,20,0,0,0.0,memory transfer,ignore,,,unmapped
+1590,motorcyclist,6149.0,20,20,0,0,0.0,motorcyclist,ignore,,,unmapped
+4952,nationalism,2607.0,20,20,0,0,0.0,nationalism,ignore,,,unmapped
+4363,original in English,6151.0,20,20,0,0,0.0,original in english,ignore,,,unmapped
+4465,stereoscopic imaging,6151.0,20,20,0,0,0.0,stereoscopic imaging,ignore,,,unmapped
+2019,suicidal,6149.0,20,20,0,0,0.0,suicidal,ignore,,,unmapped
+4267,underwater diving,2881.0,20,20,0,0,0.0,underwater diving,ignore,,,unmapped
+5640,video game development,2607.0,20,20,0,0,0.0,video game development,ignore,,,unmapped
+2761,dodgeball,2881.0,19,19,600,2900,152.63,dodgeball,ignore,,,unmapped
+8191,Kinder TV,6153.0,19,19,0,0,0.0,kinder tv,ignore,,,unmapped
+3342,Nazis,2931.0,19,19,0,0,0.0,nazis,ignore,,,unmapped
+3959,TBS Wonderful,6153.0,19,19,0,0,0.0,tbs wonderful,ignore,,,unmapped
+3874,bridge bunnies,6233.0,19,19,0,0,0.0,bridge bunnies,ignore,,,unmapped
+6358,crowdfunded,6151.0,19,19,0,0,0.0,crowdfunded,ignore,,,unmapped
+3834,impending death -- TO BE SPLIT AND DELETED,2607.0,19,19,0,0,0.0,impending death -- to be split and deleted,ignore,,,unmapped
+5162,inter-dimensional travel,6149.0,19,19,0,0,0.0,inter-dimensional travel,ignore,,,unmapped
+4626,nature strikes back,3394.0,19,19,0,0,0.0,nature strikes back,ignore,,,unmapped
+2995,nipple penetration,2848.0,19,19,0,0,0.0,nipple penetration,ignore,,,unmapped
+3592,only makes sense with original work knowledge,2931.0,19,19,0,0,0.0,only makes sense with original work knowledge,ignore,,,unmapped
+7469,picture book,2609.0,19,19,0,0,0.0,picture book,ignore,,,unmapped
+5804,piledriver,2931.0,19,19,0,0,0.0,piledriver,ignore,,,unmapped
+775,pregnant,6149.0,19,19,0,0,0.0,pregnant,ignore,,,unmapped
+807,prosthesis,6149.0,19,19,0,0,0.0,prosthesis,ignore,,,unmapped
+7674,reintroducing technology,2607.0,19,19,0,0,0.0,reintroducing technology,ignore,,,unmapped
+4907,small town,2931.0,19,19,0,0,0.0,small town,ignore,,,unmapped
+1428,smoker,6149.0,19,19,0,0,0.0,smoker,ignore,,,unmapped
+1444,spy,6149.0,19,19,0,0,0.0,spy,ignore,,,unmapped
+7089,Kamakura,2672.0,18,18,600,6700,372.22,kamakura,ignore,,,unmapped
+2767,formula racing,2759.0,18,18,600,6300,350.0,formula racing,ignore,,,unmapped
+7644,gods world,,18,18,600,5700,316.67,gods world,ignore,,,unmapped
+1074,ice skating,2881.0,18,18,600,6100,338.89,ice skating,ignore,,,unmapped
+29,Western zodiac,6234.0,18,18,0,0,0.0,western zodiac,ignore,,,unmapped
+4379,Yggdrasil,6090.0,18,18,0,0,0.0,yggdrasil,ignore,,,unmapped
+5872,bad luck,6149.0,18,18,0,0,0.0,bad luck,ignore,,,unmapped
+3375,cel-shaded animation,6151.0,18,18,0,0,0.0,cel-shaded animation,ignore,,,unmapped
+2913,cum swapping,2704.0,18,18,0,0,0.0,cum swapping,ignore,,,unmapped
+3908,lap pillow,6148.0,18,18,0,0,0.0,lap pillow,ignore,,,unmapped
+1730,mobile phone,6149.0,18,18,0,0,0.0,mobile phone,ignore,,,unmapped
+6849,organism cloning,2846.0,18,18,0,0,0.0,organism cloning,ignore,,,unmapped
+5030,pact,2931.0,18,18,0,0,0.0,pact,ignore,,,unmapped
+3848,preview in ed,6348.0,18,18,0,0,0.0,preview in ed,ignore,,,unmapped
+5257,psychedelic,2931.0,18,18,0,0,0.0,psychedelic,ignore,,,unmapped
+3006,visiting alien superhero,6233.0,18,18,0,0,0.0,visiting alien superhero,ignore,,,unmapped
+6332,famine,2874.0,17,17,600,3600,211.76,famine,ignore,,,unmapped
+3183,necrophilia,2848.0,17,17,600,3400,200.0,necrophilia,ignore,,,unmapped
+7317,aboard ship,2613.0,17,17,400,3100,182.35,aboard ship,ignore,,,unmapped
+7633,petplay,2848.0,17,17,300,3200,188.24,petplay,ignore,,,unmapped
+7131,Crunchyroll Anime Awards,55.0,17,17,0,0,0.0,crunchyroll anime awards,ignore,,,unmapped
+3647,drastic change in sequel,2931.0,17,17,0,0,0.0,drastic change in sequel,ignore,,,unmapped
+3161,enjo-kousai,2726.0,17,17,0,0,0.0,enjo-kousai,ignore,,,unmapped
+4543,even the girls want her,6232.0,17,17,0,0,0.0,even the girls want her,ignore,,,unmapped
+4811,internet,2931.0,17,17,0,0,0.0,internet,ignore,,,unmapped
+3166,political unrest,2931.0,17,17,0,0,0.0,political unrest,ignore,,,unmapped
+4298,rotoscoping,6151.0,17,17,0,0,0.0,rotoscoping,ignore,,,unmapped
+4640,social outcast,6149.0,17,17,0,0,0.0,social outcast,ignore,,,unmapped
+5305,tarot,6234.0,17,17,0,0,0.0,tarot,ignore,,,unmapped
+4488,terraforming,2846.0,17,17,0,0,0.0,terraforming,ignore,,,unmapped
+3590,transforming guardian,2931.0,17,17,0,0,0.0,transforming guardian,ignore,,,unmapped
+5780,tsunami,2874.0,17,17,0,0,0.0,tsunami,ignore,,,unmapped
+8192,Gainax pose,,16,16,600,3800,237.5,gainax pose,ignore,,,unmapped
+4691,Switzerland,2831.0,16,16,600,4200,262.5,switzerland,ignore,,,unmapped
+6408,bowling,2881.0,16,16,600,2600,162.5,bowling,ignore,,,unmapped
+5609,dieselpunk,2846.0,16,16,600,5400,337.5,dieselpunk,ignore,,,unmapped
+4258,drifting,2759.0,16,16,600,7700,481.25,drifting,ignore,,,unmapped
+1543,sumo wrestling,1482.0,16,16,600,4500,281.25,sumo wrestling,ignore,,,unmapped
+2742,futa x futa,2429.0,16,16,500,3700,231.25,futa x futa,ignore,,,unmapped
+6415,3D CG closing,6151.0,16,16,0,0,0.0,3d cg closing,ignore,,,unmapped
+2873,Valentine`s Day,6148.0,16,16,0,0,0.0,valentine s day,ignore,,,unmapped
+5530,colony dome,2764.0,16,16,0,0,0.0,colony dome,ignore,,,unmapped
+1994,flying,6149.0,16,16,0,0,0.0,flying,ignore,,,unmapped
+4851,group suicide,4340.0,16,16,0,0,0.0,group suicide,ignore,,,unmapped
+1754,kappa,6149.0,16,16,0,0,0.0,kappa,ignore,,,unmapped
+1492,mask,6149.0,16,16,0,0,0.0,mask,ignore,,,unmapped
+5284,ocean world,2613.0,16,16,0,0,0.0,ocean world,ignore,,,unmapped
+5902,organ trafficking,2872.0,16,16,0,0,0.0,organ trafficking,ignore,,,unmapped
+4706,astronomy,2607.0,15,15,600,4400,293.33,astronomy,tag,Astronomy,100,curated_tag
+2403,seiyuu,3971.0,15,15,600,4800,320.0,seiyuu,ignore,,,unmapped
+3895,1960s,2641.0,15,15,0,0,0.0,1960s,ignore,,,unmapped
+5793,Asimov`s Three Laws of Robotics,2846.0,15,15,0,0,0.0,asimov s three laws of robotics,ignore,,,unmapped
+7129,Plus Ultra,6153.0,15,15,0,0,0.0,plus ultra,ignore,,,unmapped
+6328,biological warfare,2925.0,15,15,0,0,0.0,biological warfare,ignore,,,unmapped
+155,bodyguard,6149.0,15,15,0,0,0.0,bodyguard,ignore,,,unmapped
+2487,charismatic,6149.0,15,15,0,0,0.0,charismatic,ignore,,,unmapped
+4138,cute but deadly,6232.0,15,15,0,0,0.0,cute but deadly,ignore,,,unmapped
+3872,formerly one-gender school,2869.0,15,15,0,0,0.0,formerly one-gender school,ignore,,,unmapped
+5477,global warming,3394.0,15,15,0,0,0.0,global warming,ignore,,,unmapped
+5084,heavy metal music,2794.0,15,15,0,0,0.0,heavy metal music,ignore,,,unmapped
+5649,jazz,2794.0,15,15,0,0,0.0,jazz,ignore,,,unmapped
+5679,machiavellian intrigues,2931.0,15,15,0,0,0.0,machiavellian intrigues,ignore,,,unmapped
+7927,one vs army,,15,15,0,0,0.0,one vs army,ignore,,,unmapped
+4301,play or die,2931.0,15,15,0,0,0.0,play or die,ignore,,,unmapped
+2538,playing video games,6149.0,15,15,0,0,0.0,playing video games,ignore,,,unmapped
+3884,preview before ed,6148.0,15,15,0,0,0.0,preview before ed,ignore,,,unmapped
+7899,pubic hair shaving,,15,15,0,0,0.0,pubic hair shaving,ignore,,,unmapped
+6556,uncle-niece incest,2842.0,15,15,0,0,0.0,uncle-niece incest,ignore,,,unmapped
+3472,unusual illness,6149.0,15,15,0,0,0.0,unusual illness,ignore,,,unmapped
+6710,Muromachi period,2641.0,14,14,600,3800,271.43,muromachi period,ignore,,,unmapped
+1796,karate,2751.0,14,14,600,4400,314.29,karate,ignore,,,unmapped
+5695,preschool,2869.0,14,14,400,2500,178.57,preschool,ignore,,,unmapped
+7478,Matter of Britain,3597.0,14,14,0,0,0.0,matter of britain,ignore,,,unmapped
+6555,Ultra Super Anime Time,6153.0,14,14,0,0,0.0,ultra super anime time,ignore,,,unmapped
+7330,adapted into manga,7242.0,14,14,0,0,0.0,adapted into manga,ignore,,,unmapped
+6997,aunt-nephew incest,2842.0,14,14,0,0,0.0,aunt-nephew incest,ignore,,,unmapped
+5244,detective agency,6149.0,14,14,0,0,0.0,detective agency,ignore,,,unmapped
+3850,downer ending,6247.0,14,14,0,0,0.0,downer ending,ignore,,,unmapped
+3679,engaged to an alien,2858.0,14,14,0,0,0.0,engaged to an alien,ignore,,,unmapped
+5151,man vs nature,3394.0,14,14,0,0,0.0,man vs nature,ignore,,,unmapped
+5046,out-of-body experience,2931.0,14,14,0,0,0.0,out-of-body experience,ignore,,,unmapped
+4287,pachinko,3568.0,14,14,0,0,0.0,pachinko,ignore,,,unmapped
+3266,space Nazis,2846.0,14,14,0,0,0.0,space nazis,ignore,,,unmapped
+4009,unresolved romance,6247.0,14,14,0,0,0.0,unresolved romance,ignore,,,unmapped
+6221,cybersex,2848.0,13,13,500,3900,300.0,cybersex,ignore,,,unmapped
+7615,assjob,2848.0,13,13,400,3800,292.31,assjob,ignore,,,unmapped
+3248,belly dance,362.0,13,13,0,0,0.0,belly dance,ignore,,,unmapped
+5900,casino,2613.0,13,13,0,0,0.0,casino,ignore,,,unmapped
+3323,computer,6149.0,13,13,0,0,0.0,computer,ignore,,,unmapped
+1843,corporation,6149.0,13,13,0,0,0.0,corporation,ignore,,,unmapped
+5584,euro-beat,2794.0,13,13,0,0,0.0,euro-beat,ignore,,,unmapped
+3645,ganime,6153.0,13,13,0,0,0.0,ganime,ignore,,,unmapped
+6900,gaslamp fantasy,2849.0,13,13,0,0,0.0,gaslamp fantasy,ignore,,,unmapped
+1903,gossip,6149.0,13,13,0,0,0.0,gossip,ignore,,,unmapped
+3539,growing hair,2931.0,13,13,0,0,0.0,growing hair,ignore,,,unmapped
+5561,lonely atmosphere,2931.0,13,13,0,0,0.0,lonely atmosphere,ignore,,,unmapped
+4860,lost love,2931.0,13,13,0,0,0.0,lost love,ignore,,,unmapped
+4020,pegging,2899.0,13,13,0,0,0.0,pegging,ignore,,,unmapped
+1282,pet,6149.0,13,13,0,0,0.0,pet,ignore,,,unmapped
+4916,sea monsters,2931.0,13,13,0,0,0.0,sea monsters,ignore,,,unmapped
+3464,space western,2846.0,13,13,0,0,0.0,space western,ignore,,,unmapped
+4524,stars,2931.0,13,13,0,0,0.0,stars,ignore,,,unmapped
+4809,superstition,2931.0,13,13,0,0,0.0,superstition,ignore,,,unmapped
+3237,test of courage,6148.0,13,13,0,0,0.0,test of courage,ignore,,,unmapped
+5665,trapped,2931.0,13,13,0,0,0.0,trapped,ignore,,,unmapped
+4142,urethra penetration,2848.0,13,13,0,0,0.0,urethra penetration,ignore,,,unmapped
+1662,weaponized paper fan,6149.0,13,13,0,0,0.0,weaponized paper fan,ignore,,,unmapped
+4337,you`re my hidden weapon!,2931.0,13,13,0,0,0.0,you re my hidden weapon,ignore,,,unmapped
+1777,zashiki-warashi,2535.0,13,13,0,0,0.0,zashiki-warashi,ignore,,,unmapped
+6620,Nara,2672.0,12,12,600,2600,216.67,nara,ignore,,,unmapped
+5407,Pacific Ocean,2630.0,12,12,600,3600,300.0,pacific ocean,ignore,,,unmapped
+7793,American-Japanese co-production,6173.0,12,12,0,0,0.0,american-japanese co-production,ignore,,,unmapped
+7378,Korean-Japanese co-production,6173.0,12,12,0,0,0.0,korean-japanese co-production,ignore,,,unmapped
+3714,Western animated cartoon,2609.0,12,12,0,0,0.0,western animated cartoon,ignore,,,unmapped
+601,bicycle,6149.0,12,12,0,0,0.0,bicycle,tag,Cycling,75,curated_tag
+4090,cardiopulmonary resuscitation,6148.0,12,12,0,0,0.0,cardiopulmonary resuscitation,ignore,,,unmapped
+4503,castaway,2607.0,12,12,0,0,0.0,castaway,ignore,,,unmapped
+3233,cooking curry,6148.0,12,12,0,0,0.0,cooking curry,ignore,,,unmapped
+3947,cram school,2869.0,12,12,0,0,0.0,cram school,ignore,,,unmapped
+3283,fighting dolls,2931.0,12,12,0,0,0.0,fighting dolls,ignore,,,unmapped
+3252,history is written by the victors,2607.0,12,12,0,0,0.0,history is written by the victors,ignore,,,unmapped
+4933,loyalty,2931.0,12,12,0,0,0.0,loyalty,ignore,,,unmapped
+2079,magatama,6149.0,12,12,0,0,0.0,magatama,ignore,,,unmapped
+2889,nyotaimori,2608.0,12,12,0,0,0.0,nyotaimori,ignore,,,unmapped
+5818,out-of-place artefact,7050.0,12,12,0,0,0.0,out-of-place artefact,ignore,,,unmapped
+4762,philosopher`s stone,6233.0,12,12,0,0,0.0,philosopher s stone,ignore,,,unmapped
+2665,school sports festival,6148.0,12,12,0,0,0.0,school sports festival,ignore,,,unmapped
+4186,symbiotic aliens,2202.0,12,12,0,0,0.0,symbiotic aliens,ignore,,,unmapped
+3806,tanabata,6148.0,12,12,0,0,0.0,tanabata,ignore,,,unmapped
+1249,tanned,6149.0,12,12,0,0,0.0,tanned,ignore,,,unmapped
+638,telepathy,6149.0,12,12,0,0,0.0,telepathy,ignore,,,unmapped
+8164,transmigration,,12,12,0,0,0.0,transmigration,ignore,,,unmapped
+1632,twin -- TO BE DELETED,6149.0,12,12,0,0,0.0,twin -- to be deleted,ignore,,,unmapped
+355,wings,6149.0,12,12,0,0,0.0,wings,ignore,,,unmapped
+2683,Hawaii,2812.0,11,11,600,2800,254.55,hawaii,ignore,,,unmapped
+6596,Ikebukuro,2676.0,11,11,600,4400,400.0,ikebukuro,ignore,,,unmapped
+2808,Spain,2831.0,11,11,600,3800,345.45,spain,ignore,,,unmapped
+2757,badminton,2881.0,11,11,600,3100,281.82,badminton,ignore,,,unmapped
+7231,Eastern Russia,2675.0,11,11,500,2800,254.55,eastern russia,ignore,,,unmapped
+5405,Egyptian mythology,3597.0,11,11,0,0,0.0,egyptian mythology,ignore,,,unmapped
+7579,Judeo-Christian mythology,,11,11,0,0,0.0,judeo-christian mythology,ignore,,,unmapped
+3841,Jump Super Anime Tour,6153.0,11,11,0,0,0.0,jump super anime tour,ignore,,,unmapped
+6219,Taiwanese production,6173.0,11,11,0,0,0.0,taiwanese production,ignore,,,unmapped
+6327,chemical weapons,2925.0,11,11,0,0,0.0,chemical weapons,ignore,,,unmapped
+5617,childhood town,2931.0,11,11,0,0,0.0,childhood town,ignore,,,unmapped
+6318,concentration camp,4565.0,11,11,0,0,0.0,concentration camp,ignore,,,unmapped
+1563,femme fatale,6149.0,11,11,0,0,0.0,femme fatale,ignore,,,unmapped
+7895,fully black and white,,11,11,0,0,0.0,fully black and white,ignore,,,unmapped
+4254,ghost hunting,2931.0,11,11,0,0,0.0,ghost hunting,ignore,,,unmapped
+4269,hip-hop,2794.0,11,11,0,0,0.0,hip-hop,ignore,,,unmapped
+3017,human - god relationship,2931.0,11,11,0,0,0.0,human - god relationship,ignore,,,unmapped
+6717,improvised dialogue,6151.0,11,11,0,0,0.0,improvised dialogue,ignore,,,unmapped
+5188,inconclusive romantic plot,2931.0,11,11,0,0,0.0,inconclusive romantic plot,ignore,,,unmapped
+5368,mutation,2931.0,11,11,0,0,0.0,mutation,ignore,,,unmapped
+6164,onahole,2712.0,11,11,0,0,0.0,onahole,ignore,,,unmapped
+1133,otaku,6149.0,11,11,0,0,0.0,otaku,ignore,,,unmapped
+4804,poetry,2931.0,11,11,0,0,0.0,poetry,ignore,,,unmapped
+2544,precognition,6149.0,11,11,0,0,0.0,precognition,ignore,,,unmapped
+4117,rolling boulder trap,6148.0,11,11,0,0,0.0,rolling boulder trap,ignore,,,unmapped
+5897,secret military unit,2931.0,11,11,0,0,0.0,secret military unit,ignore,,,unmapped
+5822,series end,6247.0,11,11,0,0,0.0,series end,ignore,,,unmapped
+2460,stoic,6149.0,11,11,0,0,0.0,stoic,ignore,,,unmapped
+5553,twisted love,2931.0,11,11,0,0,0.0,twisted love,ignore,,,unmapped
+3301,underdog,6149.0,11,11,0,0,0.0,underdog,ignore,,,unmapped
+6345,unexpected inheritance,6243.0,11,11,0,0,0.0,unexpected inheritance,ignore,,,unmapped
+380,whale,6149.0,11,11,0,0,0.0,whale,ignore,,,unmapped
+8056,European Middle Ages,2641.0,10,10,600,4100,410.0,european middle ages,ignore,,,unmapped
+4353,Rome,2810.0,10,10,600,2400,240.0,rome,ignore,,,unmapped
+4364,Shanghai,2674.0,10,10,600,3100,310.0,shanghai,ignore,,,unmapped
+7642,afterlife world,,10,10,600,3900,390.0,afterlife world,ignore,,,unmapped
+4375,archaeology,2607.0,10,10,600,2400,240.0,archaeology,ignore,,,unmapped
+2500,karuta,6191.0,10,10,600,3300,330.0,karuta,ignore,,,unmapped
+6972,volcanic eruption,2874.0,10,10,600,1700,170.0,volcanic eruption,ignore,,,unmapped
+2682,Nevada,2812.0,10,10,200,1500,150.0,nevada,ignore,,,unmapped
+4409,Chinese zodiac,6234.0,10,10,0,0,0.0,chinese zodiac,ignore,,,unmapped
+3596,Happy Science,2876.0,10,10,0,0,0.0,happy science,ignore,,,unmapped
+6352,Kaguya-hime,6397.0,10,10,0,0,0.0,kaguya-hime,ignore,,,unmapped
+7825,NO ENGLISH SUBS AVAILABLE,30.0,10,10,0,0,0.0,no english subs available,ignore,,,unmapped
+6743,One Thousand and One Nights,6397.0,10,10,0,0,0.0,one thousand and one nights,ignore,,,unmapped
+3053,allergy to potential love interests,6149.0,10,10,0,0,0.0,allergy to potential love interests,ignore,,,unmapped
+4741,anal pissing,2711.0,10,10,0,0,0.0,anal pissing,ignore,,,unmapped
+1758,artificial life form,6149.0,10,10,0,0,0.0,artificial life form,ignore,,,unmapped
+2145,chain,6149.0,10,10,0,0,0.0,chain,ignore,,,unmapped
+7412,cutout animation,6151.0,10,10,0,0,0.0,cutout animation,ignore,,,unmapped
+4830,flying boats,2931.0,10,10,0,0,0.0,flying boats,ignore,,,unmapped
+5994,kamikaze,2931.0,10,10,0,0,0.0,kamikaze,ignore,,,unmapped
+1539,loner,6149.0,10,10,0,0,0.0,loner,ignore,,,unmapped
+2037,mercenary,6149.0,10,10,0,0,0.0,mercenary,ignore,,,unmapped
+1634,obsessive -- DO NOT USE -- TO BE SPLIT AND DELETED,6149.0,10,10,0,0,0.0,obsessive -- do not use -- to be split and deleted,ignore,,,unmapped
+3573,ominous future,2931.0,10,10,0,0,0.0,ominous future,ignore,,,unmapped
+6947,orphanage,2613.0,10,10,0,0,0.0,orphanage,ignore,,,unmapped
+1985,psychokinesis,6149.0,10,10,0,0,0.0,psychokinesis,ignore,,,unmapped
+5868,rogue artificial intelligence,6149.0,10,10,0,0,0.0,rogue artificial intelligence,ignore,,,unmapped
+1026,sex doll,2712.0,10,10,0,0,0.0,sex doll,ignore,,,unmapped
+3534,slow motion,2931.0,10,10,0,0,0.0,slow motion,ignore,,,unmapped
+5451,soapland,2726.0,10,10,0,0,0.0,soapland,ignore,,,unmapped
+5998,spider tank,6149.0,10,10,0,0,0.0,spider tank,ignore,,,unmapped
+2813,Brazil,2832.0,9,9,600,2800,311.11,brazil,ignore,,,unmapped
+7081,Egypt,2835.0,9,9,600,4200,466.67,egypt,ignore,,,unmapped
+2915,go,2756.0,9,9,600,1700,188.89,go,ignore,,,unmapped
+2754,rugby,2881.0,9,9,600,3000,333.33,rugby,ignore,,,unmapped
+5546,complete manga adaptation,6247.0,9,9,0,0,0.0,complete manga adaptation,ignore,,,unmapped
+5547,frame story,2605.0,9,9,0,0,0.0,frame story,ignore,,,unmapped
+505,giant,6149.0,9,9,0,0,0.0,giant,ignore,,,unmapped
+1500,grimoire,6149.0,9,9,0,0,0.0,grimoire,ignore,,,unmapped
+6052,group love,2858.0,9,9,0,0,0.0,group love,ignore,,,unmapped
+3175,hand signs,2931.0,9,9,0,0,0.0,hand signs,ignore,,,unmapped
+2226,idealist,6149.0,9,9,0,0,0.0,idealist,ignore,,,unmapped
+3101,lottery wheel,6148.0,9,9,0,0,0.0,lottery wheel,ignore,,,unmapped
+4206,magical boy,2611.0,9,9,0,0,0.0,magical boy,ignore,,,unmapped
+7235,male rapes male,2718.0,9,9,0,0,0.0,male rapes male,ignore,,,unmapped
+5725,purikura,6148.0,9,9,0,0,0.0,purikura,ignore,,,unmapped
+4330,quantum mechanics,2931.0,9,9,0,0,0.0,quantum mechanics,ignore,,,unmapped
+3423,religious persecution,2931.0,9,9,0,0,0.0,religious persecution,ignore,,,unmapped
+5641,techno music,2794.0,9,9,0,0,0.0,techno music,ignore,,,unmapped
+5947,tuning,2931.0,9,9,0,0,0.0,tuning,ignore,,,unmapped
+4459,undefeatable spaceship,2931.0,9,9,0,0,0.0,undefeatable spaceship,ignore,,,unmapped
+3453,vile protagonist,6232.0,9,9,0,0,0.0,vile protagonist,ignore,,,unmapped
+4154,weaponized fork,6149.0,9,9,0,0,0.0,weaponized fork,ignore,,,unmapped
+6619,Asuka period,2641.0,8,8,600,2500,312.5,asuka period,ignore,,,unmapped
+7679,Chiba,2672.0,8,8,600,4200,525.0,chiba,ignore,,,unmapped
+2680,Nagasaki,2672.0,8,8,600,3900,487.5,nagasaki,ignore,,,unmapped
+6718,cheerleading,2881.0,8,8,600,2600,325.0,cheerleading,ignore,,,unmapped
+7912,xianxia,,8,8,600,4700,587.5,xianxia,ignore,,,unmapped
+5047,Moscow,2675.0,8,8,300,1100,137.5,moscow,ignore,,,unmapped
+6507,pillory,2901.0,8,8,300,1300,162.5,pillory,ignore,,,unmapped
+7176,Injuu Hentai Series,6153.0,8,8,0,0,0.0,injuu hentai series,ignore,,,unmapped
+6843,MMM threesome,2696.0,8,8,0,0,0.0,mmm threesome,ignore,,,unmapped
+6393,Margaret Video Series,6153.0,8,8,0,0,0.0,margaret video series,ignore,,,unmapped
+5577,Run Melos!,6397.0,8,8,0,0,0.0,run melos,ignore,,,unmapped
+5970,Urashima Tarou,6397.0,8,8,0,0,0.0,urashima tarou,ignore,,,unmapped
+125,ballet,362.0,8,8,0,0,0.0,ballet,ignore,,,unmapped
+3356,banana peel,6148.0,8,8,0,0,0.0,banana peel,ignore,,,unmapped
+5820,combat butler -- DO NOT ADD -- TO BE SPLIT AND DELETED,6149.0,8,8,0,0,0.0,combat butler -- do not add -- to be split and deleted,ignore,,,unmapped
+1616,crippled,6149.0,8,8,0,0,0.0,crippled,ignore,,,unmapped
+6729,documentary,2611.0,8,8,0,0,0.0,documentary,ignore,,,unmapped
+4157,eyeball licking,2608.0,8,8,0,0,0.0,eyeball licking,ignore,,,unmapped
+4770,fan-made,6173.0,8,8,0,0,0.0,fan-made,ignore,,,unmapped
+5613,high-class world,2931.0,8,8,0,0,0.0,high-class world,ignore,,,unmapped
+2309,insecure,6149.0,8,8,0,0,0.0,insecure,ignore,,,unmapped
+8176,kicked from party,,8,8,0,0,0.0,kicked from party,ignore,,,unmapped
+4069,living weapons,2931.0,8,8,0,0,0.0,living weapons,ignore,,,unmapped
+7926,mesophilia,,8,8,0,0,0.0,mesophilia,ignore,,,unmapped
+5700,paramilitary,6149.0,8,8,0,0,0.0,paramilitary,ignore,,,unmapped
+2214,paranoia,6149.0,8,8,0,0,0.0,paranoia,ignore,,,unmapped
+972,part-time worker,6149.0,8,8,0,0,0.0,part-time worker,ignore,,,unmapped
+4943,prison planet,2633.0,8,8,0,0,0.0,prison planet,ignore,,,unmapped
+6453,radio programme,2609.0,8,8,0,0,0.0,radio programme,ignore,,,unmapped
+3250,regeneration from death -- TO BE SPLIT AND REMOVED,6149.0,8,8,0,0,0.0,regeneration from death -- to be split and removed,ignore,,,unmapped
+3554,religious conflicts,2931.0,8,8,0,0,0.0,religious conflicts,ignore,,,unmapped
+3513,special bullet,2931.0,8,8,0,0,0.0,special bullet,ignore,,,unmapped
+7061,the lives of mini-people,7050.0,8,8,0,0,0.0,the lives of mini-people,ignore,,,unmapped
+604,unicorn,6149.0,8,8,0,0,0.0,unicorn,ignore,,,unmapped
+4172,widescreen transition,6151.0,8,8,0,0,0.0,widescreen transition,ignore,,,unmapped
+7169,Antarctic,2630.0,7,7,600,2300,328.57,antarctic,ignore,,,unmapped
+4884,French revolution,2641.0,7,7,600,3000,428.57,french revolution,ignore,,,unmapped
+2755,inline skating,2881.0,7,7,600,2200,314.29,inline skating,ignore,,,unmapped
+8042,premature male ejaculation,2848.0,7,7,400,1500,214.29,premature male ejaculation,ignore,,,unmapped
+5484,poker,6191.0,7,7,300,1400,200.0,poker,ignore,,,unmapped
+2928,Las Vegas,2682.0,7,7,200,1100,157.14,las vegas,ignore,,,unmapped
+7320,aboard aeroplane,2613.0,7,7,100,700,100.0,aboard aeroplane,ignore,,,unmapped
+4087,Animax Taishou,55.0,7,7,0,0,0.0,animax taishou,ignore,,,unmapped
+5709,Anisun,6153.0,7,7,0,0,0.0,anisun,ignore,,,unmapped
+7700,French-Japanese co-production,6173.0,7,7,0,0,0.0,french-japanese co-production,ignore,,,unmapped
+4530,Persian mythology,3597.0,7,7,0,0,0.0,persian mythology,ignore,,,unmapped
+3506,Robinson Crusoe,6397.0,7,7,0,0,0.0,robinson crusoe,ignore,,,unmapped
+7448,Secret Anima Series,6153.0,7,7,0,0,0.0,secret anima series,ignore,,,unmapped
+7962,The Crab and the Monkey,,7,7,0,0,0.0,the crab and the monkey,ignore,,,unmapped
+7332,adapted into video game,7242.0,7,7,0,0,0.0,adapted into video game,ignore,,,unmapped
+5992,animal transforms into weapon,2931.0,7,7,0,0,0.0,animal transforms into weapon,ignore,,,unmapped
+5840,birthday,6148.0,7,7,0,0,0.0,birthday,ignore,,,unmapped
+42,costumes,6149.0,7,7,0,0,0.0,costumes,ignore,,,unmapped
+4236,crossover episode,6148.0,7,7,0,0,0.0,crossover episode,ignore,,,unmapped
+4730,golem,6149.0,7,7,0,0,0.0,golem,ignore,,,unmapped
+4078,grail in the garbage,6233.0,7,7,0,0,0.0,grail in the garbage,ignore,,,unmapped
+6066,improvised weapons -- TO BE SPLIT AND DELETED,6149.0,7,7,0,0,0.0,improvised weapons -- to be split and deleted,ignore,,,unmapped
+2394,mischievous,6149.0,7,7,0,0,0.0,mischievous,ignore,,,unmapped
+4237,organic spaceship,2931.0,7,7,0,0,0.0,organic spaceship,ignore,,,unmapped
+5907,origami,6149.0,7,7,0,0,0.0,origami,ignore,,,unmapped
+226,priest,6149.0,7,7,0,0,0.0,priest,ignore,,,unmapped
+3043,scary dad,6232.0,7,7,0,0,0.0,scary dad,ignore,,,unmapped
+2174,shy,6149.0,7,7,0,0,0.0,shy,ignore,,,unmapped
+4575,ukiyo-e,2931.0,7,7,0,0,0.0,ukiyo-e,ignore,,,unmapped
+3560,world government,2931.0,7,7,0,0,0.0,world government,ignore,,,unmapped
+4360,yuruani?,6153.0,7,7,0,0,0.0,yuruani,ignore,,,unmapped
+4586,Turkey,2834.0,6,6,600,1200,200.0,turkey,ignore,,,unmapped
+6448,mountaineering,2881.0,6,6,500,2000,333.33,mountaineering,ignore,,,unmapped
+7132,Kamakura period,2641.0,6,6,400,1400,233.33,kamakura period,ignore,,,unmapped
+4703,lacrosse,2881.0,6,6,200,900,150.0,lacrosse,ignore,,,unmapped
+6502,Hakkenden,6397.0,6,6,0,0,0.0,hakkenden,ignore,,,unmapped
+4235,Hyakunin Isshu,6397.0,6,6,0,0,0.0,hyakunin isshu,ignore,,,unmapped
+2971,Lion Books,6153.0,6,6,0,0,0.0,lion books,ignore,,,unmapped
+4849,Zaku,6149.0,6,6,0,0,0.0,zaku,ignore,,,unmapped
+6519,autofellatio,6268.0,6,6,0,0,0.0,autofellatio,ignore,,,unmapped
+4053,babysitting,6148.0,6,6,0,0,0.0,babysitting,ignore,,,unmapped
+7775,choose your route,5593.0,6,6,0,0,0.0,choose your route,ignore,,,unmapped
+3975,delayed 16-9 broadcast,6151.0,6,6,0,0,0.0,delayed 16-9 broadcast,ignore,,,unmapped
+6713,dragon person,6149.0,6,6,0,0,0.0,dragon person,ignore,,,unmapped
+5732,evil american,2931.0,6,6,0,0,0.0,evil american,ignore,,,unmapped
+3538,felching,2704.0,6,6,0,0,0.0,felching,ignore,,,unmapped
+7716,fulldome video,6151.0,6,6,0,0,0.0,fulldome video,ignore,,,unmapped
+2694,glory hole,2848.0,6,6,0,0,0.0,glory hole,ignore,,,unmapped
+331,glowing eyes,6149.0,6,6,0,0,0.0,glowing eyes,ignore,,,unmapped
+267,headstrong,6149.0,6,6,0,0,0.0,headstrong,ignore,,,unmapped
+8182,historical asia ambience,,6,6,0,0,0.0,historical asia ambience,ignore,,,unmapped
+2392,manipulative,6149.0,6,6,0,0,0.0,manipulative,ignore,,,unmapped
+4115,mecha musume,2931.0,6,6,0,0,0.0,mecha musume,ignore,,,unmapped
+8144,non-chronological release,,6,6,0,0,0.0,non-chronological release,ignore,,,unmapped
+6076,paparazzi,6149.0,6,6,0,0,0.0,paparazzi,ignore,,,unmapped
+3969,robot pet,6149.0,6,6,0,0,0.0,robot pet,ignore,,,unmapped
+6330,sentient object,6149.0,6,6,0,0,0.0,sentient object,ignore,,,unmapped
+2363,stubborn,6149.0,6,6,0,0,0.0,stubborn,ignore,,,unmapped
+2216,stuffed toy,6149.0,6,6,0,0,0.0,stuffed toy,ignore,,,unmapped
+4552,superflat,6151.0,6,6,0,0,0.0,superflat,ignore,,,unmapped
+3123,symbiotic creatures,2931.0,6,6,0,0,0.0,symbiotic creatures,ignore,,,unmapped
+5787,time dilation,2931.0,6,6,0,0,0.0,time dilation,ignore,,,unmapped
+2703,wakamezake,2848.0,6,6,0,0,0.0,wakamezake,ignore,,,unmapped
+931,weird eyes,6149.0,6,6,0,0,0.0,weird eyes,ignore,,,unmapped
+646,American football,2881.0,5,5,600,1400,280.0,american football,ignore,,,unmapped
+6745,Cold War,2641.0,5,5,600,1600,320.0,cold war,ignore,,,unmapped
+7431,Himalayas,2834.0,5,5,600,1400,280.0,himalayas,ignore,,,unmapped
+4159,Mexico,2832.0,5,5,600,1100,220.0,mexico,ignore,,,unmapped
+6618,Nara period,2641.0,5,5,600,1800,360.0,nara period,ignore,,,unmapped
+774,billiards,2881.0,5,5,600,1500,300.0,billiards,ignore,,,unmapped
+7986,polyamory,,5,5,600,3000,600.0,polyamory,ignore,,,unmapped
+7616,puzzles,,5,5,600,1400,280.0,puzzles,ignore,,,unmapped
+7952,erotic horror,,5,5,500,1600,320.0,erotic horror,ignore,,,unmapped
+7325,panty theft,,5,5,400,1000,200.0,panty theft,ignore,,,unmapped
+3317,Venice,2810.0,5,5,200,700,140.0,venice,ignore,,,unmapped
+3222,Vietnam,2834.0,5,5,200,600,120.0,vietnam,ignore,,,unmapped
+7261,4-koma manhua,6493.0,5,5,0,0,0.0,4-koma manhua,ignore,,,unmapped
+7460,Ainu mythology,3597.0,5,5,0,0,0.0,ainu mythology,ignore,,,unmapped
+6724,Anime no Me,6153.0,5,5,0,0,0.0,anime no me,ignore,,,unmapped
+5751,Night on the Galactic Railroad,6397.0,5,5,0,0,0.0,night on the galactic railroad,ignore,,,unmapped
+6762,North Korean production,6173.0,5,5,0,0,0.0,north korean production,ignore,,,unmapped
+6802,Rumic World,6153.0,5,5,0,0,0.0,rumic world,ignore,,,unmapped
+6612,Snow White,6397.0,5,5,0,0,0.0,snow white,ignore,,,unmapped
+6893,The Wizard of Oz,6397.0,5,5,0,0,0.0,the wizard of oz,ignore,,,unmapped
+4250,Ultra Jump,2798.0,5,5,0,0,0.0,ultra jump,ignore,,,unmapped
+7331,adapted into novel,7242.0,5,5,0,0,0.0,adapted into novel,ignore,,,unmapped
+7884,coitus interruptus,,5,5,0,0,0.0,coitus interruptus,ignore,,,unmapped
+5077,computer geek,6149.0,5,5,0,0,0.0,computer geek,ignore,,,unmapped
+6757,courtroom drama,2607.0,5,5,0,0,0.0,courtroom drama,ignore,,,unmapped
+659,dojo,6149.0,5,5,0,0,0.0,dojo,ignore,,,unmapped
+5814,endless battles,2931.0,5,5,0,0,0.0,endless battles,ignore,,,unmapped
+7838,ghetto,2613.0,5,5,0,0,0.0,ghetto,ignore,,,unmapped
+1761,hunter,6149.0,5,5,0,0,0.0,hunter,ignore,,,unmapped
+401,innocent,6149.0,5,5,0,0,0.0,innocent,ignore,,,unmapped
+2456,ki manipulation,6149.0,5,5,0,0,0.0,ki manipulation,ignore,,,unmapped
+6111,mountain-trip,6148.0,5,5,0,0,0.0,mountain-trip,ignore,,,unmapped
+4024,optic camouflage,6149.0,5,5,0,0,0.0,optic camouflage,ignore,,,unmapped
+157,playing violin,6149.0,5,5,0,0,0.0,playing violin,ignore,,,unmapped
+2393,puppeteer,6149.0,5,5,0,0,0.0,puppeteer,ignore,,,unmapped
+5971,red ones go faster,6233.0,5,5,0,0,0.0,red ones go faster,ignore,,,unmapped
+5494,roulette,3568.0,5,5,0,0,0.0,roulette,ignore,,,unmapped
+4506,secret service,2931.0,5,5,0,0,0.0,secret service,ignore,,,unmapped
+1465,timid -- TO BE SPLIT AND DELETED,6149.0,5,5,0,0,0.0,timid -- to be split and deleted,ignore,,,unmapped
+1913,transsexual,6149.0,5,5,0,0,0.0,transsexual,ignore,,,unmapped
+5172,vigilante,6149.0,5,5,0,0,0.0,vigilante,ignore,,,unmapped
+4248,zoo visit,6148.0,5,5,0,0,0.0,zoo visit,ignore,,,unmapped
+7080,Ancient Rome,2831.0,4,4,600,2000,500.0,ancient rome,ignore,,,unmapped
+2806,Finland,2831.0,4,4,600,1800,450.0,finland,ignore,,,unmapped
+8225,Greece,,4,4,600,2000,500.0,greece,ignore,,,unmapped
+7693,Yamagata,2672.0,4,4,600,1300,325.0,yamagata,ignore,,,unmapped
+7054,time stop,,4,4,600,1300,325.0,time stop,ignore,,,unmapped
+7909,xuanhuan,,4,4,600,2100,525.0,xuanhuan,ignore,,,unmapped
+6402,Chile,2832.0,4,4,400,700,175.0,chile,ignore,,,unmapped
+6400,Easter Island,6402.0,4,4,400,800,200.0,easter island,ignore,,,unmapped
+4050,Tibet,2674.0,4,4,400,1000,250.0,tibet,ignore,,,unmapped
+7452,fictional sport,,4,4,400,1000,250.0,fictional sport,ignore,,,unmapped
+7079,Czech Republic,2831.0,4,4,200,500,125.0,czech republic,ignore,,,unmapped
+4945,Prague,7079.0,4,4,200,600,150.0,prague,ignore,,,unmapped
+7260,4-koma manhwa,5010.0,4,4,0,0,0.0,4-koma manhwa,ignore,,,unmapped
+7067,Gulliver`s Travels,6397.0,4,4,0,0,0.0,gulliver s travels,ignore,,,unmapped
+8010,Italian-Japanese co-production,6173.0,4,4,0,0,0.0,italian-japanese co-production,ignore,,,unmapped
+6640,Korean drama,6446.0,4,4,0,0,0.0,korean drama,ignore,,,unmapped
+5567,Sleeping Beauty,6397.0,4,4,0,0,0.0,sleeping beauty,ignore,,,unmapped
+6611,The Spider`s Thread,6397.0,4,4,0,0,0.0,the spider s thread,ignore,,,unmapped
+6418,Yotsuya Kaidan,6397.0,4,4,0,0,0.0,yotsuya kaidan,ignore,,,unmapped
+4089,battlefield of dreams,2931.0,4,4,0,0,0.0,battlefield of dreams,ignore,,,unmapped
+3142,boob cannon,6149.0,4,4,0,0,0.0,boob cannon,ignore,,,unmapped
+2484,broom,6149.0,4,4,0,0,0.0,broom,ignore,,,unmapped
+5715,eye penetration,2848.0,4,4,0,0,0.0,eye penetration,ignore,,,unmapped
+1046,firefighter,6149.0,4,4,0,0,0.0,firefighter,ignore,,,unmapped
+3816,high jump,2753.0,4,4,0,0,0.0,high jump,ignore,,,unmapped
+4051,indifferent,6149.0,4,4,0,0,0.0,indifferent,ignore,,,unmapped
+4464,ino-shika-chou,5428.0,4,4,0,0,0.0,ino-shika-chou,ignore,,,unmapped
+1681,journalist,6149.0,4,4,0,0,0.0,journalist,ignore,,,unmapped
+5428,koi koi,6191.0,4,4,0,0,0.0,koi koi,ignore,,,unmapped
+7868,microphilia,2848.0,4,4,0,0,0.0,microphilia,ignore,,,unmapped
+1559,narcissistic,6149.0,4,4,0,0,0.0,narcissistic,ignore,,,unmapped
+4898,overconfident,6149.0,4,4,0,0,0.0,overconfident,ignore,,,unmapped
+456,pegasus,6149.0,4,4,0,0,0.0,pegasus,ignore,,,unmapped
+998,phoenix,6149.0,4,4,0,0,0.0,phoenix,ignore,,,unmapped
+3469,popularity fetish,6232.0,4,4,0,0,0.0,popularity fetish,ignore,,,unmapped
+4385,royal guard -- TO BE SPLIT AND DELETED,6149.0,4,4,0,0,0.0,royal guard -- to be split and deleted,ignore,,,unmapped
+5510,softball,2881.0,4,4,0,0,0.0,softball,ignore,,,unmapped
+870,strict,6149.0,4,4,0,0,0.0,strict,ignore,,,unmapped
+4460,tsuchigumo,6149.0,4,4,0,0,0.0,tsuchigumo,ignore,,,unmapped
+7886,wormhole sex,2848.0,4,4,0,0,0.0,wormhole sex,ignore,,,unmapped
+5119,Chicago,2812.0,3,3,600,1200,400.0,chicago,ignore,,,unmapped
+7603,Kumamoto,2672.0,3,3,600,1300,433.33,kumamoto,ignore,,,unmapped
+7681,Nagano,2672.0,3,3,600,1400,466.67,nagano,ignore,,,unmapped
+2688,World War I,2641.0,3,3,600,1100,366.67,world war i,ignore,,,unmapped
+2280,acrobatics,2881.0,3,3,600,1400,466.67,acrobatics,ignore,,,unmapped
+7797,climbing,2881.0,3,3,600,800,266.67,climbing,ignore,,,unmapped
+7553,geology,2607.0,3,3,600,1100,366.67,geology,ignore,,,unmapped
+8097,netorase,,3,3,600,1100,366.67,netorase,ignore,,,unmapped
+7690,train episode,,3,3,600,1600,533.33,train episode,ignore,,,unmapped
+8053,youtuber,,3,3,600,1300,433.33,youtuber,ignore,,,unmapped
+7323,duel,,3,3,200,600,200.0,duel,ignore,,,unmapped
+7614,double assjob,7615.0,3,3,100,300,100.0,double assjob,ignore,,,unmapped
+5408,Anime no Chikara,6153.0,3,3,0,0,0.0,anime no chikara,ignore,,,unmapped
+3224,Animerama,6153.0,3,3,0,0,0.0,animerama,ignore,,,unmapped
+6374,Cinderella,6397.0,3,3,0,0,0.0,cinderella,ignore,,,unmapped
+4999,Little Black Sambo,6397.0,3,3,0,0,0.0,little black sambo,ignore,,,unmapped
+5013,Noise,6153.0,3,3,0,0,0.0,noise,ignore,,,unmapped
+7815,Russian-Japanese co-production,6173.0,3,3,0,0,0.0,russian-japanese co-production,ignore,,,unmapped
+7577,Satanism,,3,3,0,0,0.0,satanism,ignore,,,unmapped
+861,doppelganger,6149.0,3,3,0,0,0.0,doppelganger,ignore,,,unmapped
+1178,greedy,6149.0,3,3,0,0,0.0,greedy,ignore,,,unmapped
+4095,harem member pov,2931.0,3,3,0,0,0.0,harem member pov,ignore,,,unmapped
+8154,heroes party,,3,3,0,0,0.0,heroes party,ignore,,,unmapped
+1270,imaginary person,6149.0,3,3,0,0,0.0,imaginary person,ignore,,,unmapped
+3479,insane driving,6149.0,3,3,0,0,0.0,insane driving,ignore,,,unmapped
+8163,internal breast shots,,3,3,0,0,0.0,internal breast shots,ignore,,,unmapped
+6870,kabuki,2793.0,3,3,0,0,0.0,kabuki,ignore,,,unmapped
+1572,mechanic,6149.0,3,3,0,0,0.0,mechanic,ignore,,,unmapped
+4618,mockumentary,2611.0,3,3,0,0,0.0,mockumentary,ignore,,,unmapped
+6540,navel fuck,2848.0,3,3,0,0,0.0,navel fuck,ignore,,,unmapped
+4786,negotiator,6149.0,3,3,0,0,0.0,negotiator,ignore,,,unmapped
+975,pessimist,6149.0,3,3,0,0,0.0,pessimist,ignore,,,unmapped
+3419,psycho face,6149.0,3,3,0,0,0.0,psycho face,ignore,,,unmapped
+1365,sentient weapon,6149.0,3,3,0,0,0.0,sentient weapon,ignore,,,unmapped
+1377,subservient,6149.0,3,3,0,0,0.0,subservient,ignore,,,unmapped
+5589,youji play,2848.0,3,3,0,0,0.0,youji play,ignore,,,unmapped
+8016,Ishikawa prefecture,,2,2,600,1000,500.0,ishikawa prefecture,ignore,,,unmapped
+8018,Mongolia,,2,2,600,1100,550.0,mongolia,ignore,,,unmapped
+7147,competitive beach volleyball,2881.0,2,2,600,1000,500.0,competitive beach volleyball,ignore,,,unmapped
+7851,cultivation school,,2,2,600,1000,500.0,cultivation school,ignore,,,unmapped
+7178,rampant biomass,2874.0,2,2,600,700,350.0,rampant biomass,ignore,,,unmapped
+7565,Kagawa,2672.0,2,2,500,700,350.0,kagawa,ignore,,,unmapped
+7083,Romania,2831.0,2,2,500,600,300.0,romania,ignore,,,unmapped
+7784,ability stealing,,2,2,400,600,300.0,ability stealing,ignore,,,unmapped
+7444,police procedural,,2,2,300,400,200.0,police procedural,ignore,,,unmapped
+8082,Iceland,2831.0,2,2,200,300,150.0,iceland,ignore,,,unmapped
+6401,Peru,2832.0,2,2,200,300,150.0,peru,ignore,,,unmapped
+7727,Singapore,2834.0,2,2,200,300,150.0,singapore,ignore,,,unmapped
+4268,Vladivostok,7231.0,2,2,200,300,150.0,vladivostok,ignore,,,unmapped
+8038,nipple stimulation,2848.0,2,2,200,300,150.0,nipple stimulation,ignore,,,unmapped
+5147,Istanbul,4586.0,2,2,100,200,100.0,istanbul,ignore,,,unmapped
+4622,Sri Lanka,2834.0,2,2,100,200,100.0,sri lanka,ignore,,,unmapped
+7324,maze,,2,2,100,200,100.0,maze,ignore,,,unmapped
+7305,mecha unit,,2,2,100,200,100.0,mecha unit,ignore,,,unmapped
+3985,Han dynasty,2641.0,2,2,0,0,0.0,han dynasty,ignore,,,unmapped
+6695,Indo-Japanese co-production,6173.0,2,2,0,0,0.0,indo-japanese co-production,ignore,,,unmapped
+4501,Miracle Comic Prize,55.0,2,2,0,0,0.0,miracle comic prize,ignore,,,unmapped
+6641,Moby-Dick,6397.0,2,2,0,0,0.0,moby-dick,ignore,,,unmapped
+7915,Mu,2628.0,2,2,0,0,0.0,mu,ignore,,,unmapped
+7887,Saudi Arabian-Japanese co-production,6173.0,2,2,0,0,0.0,saudi arabian-japanese co-production,ignore,,,unmapped
+8103,Thai production,6173.0,2,2,0,0,0.0,thai production,ignore,,,unmapped
+5735,art nouveau,2931.0,2,2,0,0,0.0,art nouveau,ignore,,,unmapped
+4927,aspidochelone,2837.0,2,2,0,0,0.0,aspidochelone,ignore,,,unmapped
+5490,blackjack,6191.0,2,2,0,0,0.0,blackjack,ignore,,,unmapped
+4184,demon dog,6149.0,2,2,0,0,0.0,demon dog,ignore,,,unmapped
+6520,foreskin sex,2848.0,2,2,0,0,0.0,foreskin sex,ignore,,,unmapped
+2107,ganguro,6149.0,2,2,0,0,0.0,ganguro,ignore,,,unmapped
+859,hand puppet,6149.0,2,2,0,0,0.0,hand puppet,ignore,,,unmapped
+6985,inverted gravity,7050.0,2,2,0,0,0.0,inverted gravity,ignore,,,unmapped
+3447,ki blast,6149.0,2,2,0,0,0.0,ki blast,ignore,,,unmapped
+2259,naked apron,6149.0,2,2,0,0,0.0,naked apron,ignore,,,unmapped
+944,oedipus complex,6149.0,2,2,0,0,0.0,oedipus complex,ignore,,,unmapped
+3012,pillow fight,6148.0,2,2,0,0,0.0,pillow fight,ignore,,,unmapped
+2197,playing harmonica,6149.0,2,2,0,0,0.0,playing harmonica,ignore,,,unmapped
+2060,rakugoka,6149.0,2,2,0,0,0.0,rakugoka,ignore,,,unmapped
+1208,yandere,6149.0,2,2,0,0,0.0,yandere,tag,Yandere,75,curated_tag
+6172,yosakoi,362.0,2,2,0,0,0.0,yosakoi,ignore,,,unmapped
+5299,Belgium,2831.0,1,1,600,600,600.0,belgium,ignore,,,unmapped
+8049,South Korea,,1,1,600,600,600.0,south korea,ignore,,,unmapped
+6903,acrobatic diving,2881.0,1,1,600,600,600.0,acrobatic diving,ignore,,,unmapped
+8271,city builder,,1,1,600,600,600.0,city builder,ignore,,,unmapped
+8081,denmark,,1,1,600,600,600.0,denmark,ignore,,,unmapped
+7881,ice hockey,,1,1,600,600,600.0,ice hockey,ignore,,,unmapped
+7470,soft tennis,2881.0,1,1,600,600,600.0,soft tennis,ignore,,,unmapped
+8173,villainess,,1,1,600,600,600.0,villainess,tag,Villainess,100,curated_tag
+7531,wheelchair basketball,2881.0,1,1,600,600,600.0,wheelchair basketball,ignore,,,unmapped
+2768,Muay Thai,2751.0,1,1,400,400,400.0,muay thai,ignore,,,unmapped
+3199,Pakistan,2834.0,1,1,400,400,400.0,pakistan,ignore,,,unmapped
+7988,antiterrorism,,1,1,400,400,400.0,antiterrorism,ignore,,,unmapped
+7831,hybrid of few species,,1,1,400,400,400.0,hybrid of few species,ignore,,,unmapped
+8015,insomnia,,1,1,400,400,400.0,insomnia,ignore,,,unmapped
+7989,deceitful organization,,1,1,300,300,300.0,deceitful organization,ignore,,,unmapped
+7934,Big Comic Spirits,,1,1,200,200,200.0,big comic spirits,ignore,,,unmapped
+8086,condom,,1,1,200,200,200.0,condom,ignore,,,unmapped
+8219,latex,,1,1,200,200,200.0,latex,ignore,,,unmapped
+7961,living doll,,1,1,200,200,200.0,living doll,ignore,,,unmapped
+7941,love hotel visit,,1,1,200,200,200.0,love hotel visit,ignore,,,unmapped
+7977,Baihe,,1,1,100,100,100.0,baihe,ignore,,,unmapped
+7596,paper talisman magic,,1,1,100,100,100.0,paper talisman magic,ignore,,,unmapped
+7944,sense of justice,,1,1,100,100,100.0,sense of justice,ignore,,,unmapped
+8027,space magic,,1,1,100,100,100.0,space magic,ignore,,,unmapped
+8199,Dutch-Japanese co-production,,1,1,0,0,0.0,dutch-japanese co-production,ignore,,,unmapped
+7270,French-Chinese co-production,6173.0,1,1,0,0,0.0,french-chinese co-production,ignore,,,unmapped
+8242,Mixed Media,,1,1,0,0,0.0,mixed media,tag,Mixed Media,75,curated_tag
+4472,Nagoya dialect,6149.0,1,1,0,0,0.0,nagoya dialect,ignore,,,unmapped
+8244,Pierrot Magical Girl Series,6153.0,1,1,0,0,0.0,pierrot magical girl series,ignore,,,unmapped
+7955,Polish-Japanese co-production,6173.0,1,1,0,0,0.0,polish-japanese co-production,ignore,,,unmapped
+8243,Primarily Female Cast,,1,1,0,0,0.0,primarily female cast,tag,Primarily Female Cast,75,curated_tag
+8090,Shizuoka,,1,1,0,0,0.0,shizuoka,ignore,,,unmapped
+7924,Singaporean production,6173.0,1,1,0,0,0.0,singaporean production,ignore,,,unmapped
+7463,Sumeria,,1,1,0,0,0.0,sumeria,ignore,,,unmapped
+8146,Sydney,,1,1,0,0,0.0,sydney,ignore,,,unmapped
+8210,ai dubbing,,1,1,0,0,0.0,ai dubbing,ignore,,,unmapped
+5746,bousouzoku,6149.0,1,1,0,0,0.0,bousouzoku,ignore,,,unmapped
+8120,dynamic comic,,1,1,0,0,0.0,dynamic comic,ignore,,,unmapped
+5708,going berserk,6149.0,1,1,0,0,0.0,going berserk,ignore,,,unmapped
+8168,less censored version,,1,1,0,0,0.0,less censored version,ignore,,,unmapped
+8132,level system,,1,1,0,0,0.0,level system,ignore,,,unmapped
+4582,only the beginning,6247.0,1,1,0,0,0.0,only the beginning,ignore,,,unmapped
+4947,oppai pillow,6148.0,1,1,0,0,0.0,oppai pillow,ignore,,,unmapped
+3800,oyakodon threesome,6572.0,1,1,0,0,0.0,oyakodon threesome,ignore,,,unmapped
+7203,para para,362.0,1,1,0,0,0.0,para para,ignore,,,unmapped
+7758,sex swing,,1,1,0,0,0.0,sex swing,ignore,,,unmapped
+5345,sign language,6149.0,1,1,0,0,0.0,sign language,ignore,,,unmapped
+159,skateboarding,2881.0,1,1,0,0,0.0,skateboarding,ignore,,,unmapped
+8013,vaginal pissing,2711.0,1,1,0,0,0.0,vaginal pissing,ignore,,,unmapped
+1677,weaponized baseball bat,6149.0,1,1,0,0,0.0,weaponized baseball bat,ignore,,,unmapped

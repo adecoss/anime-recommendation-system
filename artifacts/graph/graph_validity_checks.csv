@@ -1,0 +1,6 @@
+check,value,status,interpretation
+combined_graph_has_edges,199418,pass,"The graph should encode real recommendation/relation structure, not just isolated catalog rows."
+largest_component_share,0.9153111283242964,inspect,Large component means many titles are navigable; isolated nodes remain cold-start content.
+isolated_node_share,0.062419313193906534,inspect,High isolation limits graph recommendations for obscure entries.
+edge_type_balance,181378 recommendation edges; 19196 relation edges,inspect,Recommendation edges measure similarity; relation edges measure franchise/navigation paths.
+definition_sensitivity_top50_overlap,0.7857142857142857,inspect,Overlap between recommendation-only and combined PageRank shows sensitivity to graph definition.

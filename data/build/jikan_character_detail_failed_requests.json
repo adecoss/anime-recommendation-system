@@ -1,0 +1,2081 @@
+{
+  "updated_at": null,
+  "items": {
+    "21": {
+      "mal_id": 21,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T12:45:17"
+    },
+    "22": {
+      "mal_id": 22,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T12:45:29"
+    },
+    "23": {
+      "mal_id": 23,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T12:45:41"
+    },
+    "24": {
+      "mal_id": 24,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T12:45:54"
+    },
+    "25": {
+      "mal_id": 25,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T12:46:06"
+    },
+    "26": {
+      "mal_id": 26,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T12:46:18"
+    },
+    "27": {
+      "mal_id": 27,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T12:46:30"
+    },
+    "28": {
+      "mal_id": 28,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T12:46:43"
+    },
+    "29": {
+      "mal_id": 29,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T12:46:55"
+    },
+    "30": {
+      "mal_id": 30,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T12:47:07"
+    },
+    "31": {
+      "mal_id": 31,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T12:47:19"
+    },
+    "32": {
+      "mal_id": 32,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T12:47:32"
+    },
+    "33": {
+      "mal_id": 33,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T12:47:44"
+    },
+    "43": {
+      "mal_id": 43,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T12:47:56"
+    },
+    "44": {
+      "mal_id": 44,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T12:48:09"
+    },
+    "45": {
+      "mal_id": 45,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T12:48:21"
+    },
+    "46": {
+      "mal_id": 46,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T12:48:33"
+    },
+    "47": {
+      "mal_id": 47,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T12:48:46"
+    },
+    "48": {
+      "mal_id": 48,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T12:48:58"
+    },
+    "49": {
+      "mal_id": 49,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T12:49:10"
+    },
+    "50": {
+      "mal_id": 50,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T12:49:22"
+    },
+    "51": {
+      "mal_id": 51,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T12:49:35"
+    },
+    "52": {
+      "mal_id": 52,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T12:49:47"
+    },
+    "53": {
+      "mal_id": 53,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T12:49:59"
+    },
+    "54": {
+      "mal_id": 54,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T12:50:11"
+    },
+    "55": {
+      "mal_id": 55,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T12:50:24"
+    },
+    "56": {
+      "mal_id": 56,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T12:50:36"
+    },
+    "57": {
+      "mal_id": 57,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T12:50:48"
+    },
+    "58": {
+      "mal_id": 58,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T12:51:01"
+    },
+    "59": {
+      "mal_id": 59,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T12:51:13"
+    },
+    "60": {
+      "mal_id": 60,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T12:51:25"
+    },
+    "61": {
+      "mal_id": 61,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T12:51:37"
+    },
+    "62": {
+      "mal_id": 62,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T12:51:50"
+    },
+    "63": {
+      "mal_id": 63,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T12:52:02"
+    },
+    "64": {
+      "mal_id": 64,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T12:52:14"
+    },
+    "65": {
+      "mal_id": 65,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T12:52:27"
+    },
+    "66": {
+      "mal_id": 66,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T12:52:39"
+    },
+    "67": {
+      "mal_id": 67,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T12:52:51"
+    },
+    "68": {
+      "mal_id": 68,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T12:53:04"
+    },
+    "69": {
+      "mal_id": 69,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T12:53:17"
+    },
+    "71": {
+      "mal_id": 71,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T12:53:29"
+    },
+    "72": {
+      "mal_id": 72,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T12:53:42"
+    },
+    "73": {
+      "mal_id": 73,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T12:53:54"
+    },
+    "74": {
+      "mal_id": 74,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T12:54:06"
+    },
+    "75": {
+      "mal_id": 75,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T12:54:19"
+    },
+    "76": {
+      "mal_id": 76,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T12:54:31"
+    },
+    "77": {
+      "mal_id": 77,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T12:54:43"
+    },
+    "79": {
+      "mal_id": 79,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T12:54:56"
+    },
+    "80": {
+      "mal_id": 80,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T12:55:08"
+    },
+    "81": {
+      "mal_id": 81,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T12:55:20"
+    },
+    "82": {
+      "mal_id": 82,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:01:49"
+    },
+    "83": {
+      "mal_id": 83,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:02:01"
+    },
+    "84": {
+      "mal_id": 84,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:02:13"
+    },
+    "85": {
+      "mal_id": 85,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:02:25"
+    },
+    "86": {
+      "mal_id": 86,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:02:37"
+    },
+    "87": {
+      "mal_id": 87,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:02:49"
+    },
+    "88": {
+      "mal_id": 88,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:03:01"
+    },
+    "89": {
+      "mal_id": 89,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:03:13"
+    },
+    "90": {
+      "mal_id": 90,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:03:25"
+    },
+    "91": {
+      "mal_id": 91,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:03:37"
+    },
+    "92": {
+      "mal_id": 92,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:03:49"
+    },
+    "93": {
+      "mal_id": 93,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:04:01"
+    },
+    "94": {
+      "mal_id": 94,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:04:13"
+    },
+    "95": {
+      "mal_id": 95,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:04:25"
+    },
+    "96": {
+      "mal_id": 96,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:04:37"
+    },
+    "97": {
+      "mal_id": 97,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:04:49"
+    },
+    "98": {
+      "mal_id": 98,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:05:01"
+    },
+    "99": {
+      "mal_id": 99,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:05:13"
+    },
+    "100": {
+      "mal_id": 100,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:05:25"
+    },
+    "101": {
+      "mal_id": 101,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:05:37"
+    },
+    "102": {
+      "mal_id": 102,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:05:49"
+    },
+    "103": {
+      "mal_id": 103,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:06:01"
+    },
+    "104": {
+      "mal_id": 104,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:06:13"
+    },
+    "105": {
+      "mal_id": 105,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:06:24"
+    },
+    "106": {
+      "mal_id": 106,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:06:37"
+    },
+    "107": {
+      "mal_id": 107,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:06:49"
+    },
+    "108": {
+      "mal_id": 108,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:07:01"
+    },
+    "109": {
+      "mal_id": 109,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:07:12"
+    },
+    "110": {
+      "mal_id": 110,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:07:24"
+    },
+    "111": {
+      "mal_id": 111,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:07:36"
+    },
+    "112": {
+      "mal_id": 112,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:07:48"
+    },
+    "113": {
+      "mal_id": 113,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:08:00"
+    },
+    "114": {
+      "mal_id": 114,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:08:12"
+    },
+    "115": {
+      "mal_id": 115,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:08:24"
+    },
+    "116": {
+      "mal_id": 116,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:08:36"
+    },
+    "117": {
+      "mal_id": 117,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:08:48"
+    },
+    "118": {
+      "mal_id": 118,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:09:00"
+    },
+    "119": {
+      "mal_id": 119,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:09:12"
+    },
+    "120": {
+      "mal_id": 120,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:09:24"
+    },
+    "121": {
+      "mal_id": 121,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:09:38"
+    },
+    "122": {
+      "mal_id": 122,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:09:49"
+    },
+    "123": {
+      "mal_id": 123,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:10:01"
+    },
+    "124": {
+      "mal_id": 124,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:10:13"
+    },
+    "125": {
+      "mal_id": 125,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:10:25"
+    },
+    "126": {
+      "mal_id": 126,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:10:37"
+    },
+    "127": {
+      "mal_id": 127,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:10:49"
+    },
+    "128": {
+      "mal_id": 128,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:11:01"
+    },
+    "129": {
+      "mal_id": 129,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:11:13"
+    },
+    "130": {
+      "mal_id": 130,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:11:25"
+    },
+    "131": {
+      "mal_id": 131,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:11:37"
+    },
+    "132": {
+      "mal_id": 132,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:11:49"
+    },
+    "133": {
+      "mal_id": 133,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:12:01"
+    },
+    "134": {
+      "mal_id": 134,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:12:13"
+    },
+    "135": {
+      "mal_id": 135,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:12:25"
+    },
+    "136": {
+      "mal_id": 136,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:12:40"
+    },
+    "137": {
+      "mal_id": 137,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:12:52"
+    },
+    "138": {
+      "mal_id": 138,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:13:04"
+    },
+    "139": {
+      "mal_id": 139,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:13:16"
+    },
+    "141": {
+      "mal_id": 141,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:13:28"
+    },
+    "142": {
+      "mal_id": 142,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:13:40"
+    },
+    "143": {
+      "mal_id": 143,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:13:52"
+    },
+    "144": {
+      "mal_id": 144,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:14:04"
+    },
+    "145": {
+      "mal_id": 145,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:14:16"
+    },
+    "146": {
+      "mal_id": 146,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:14:28"
+    },
+    "147": {
+      "mal_id": 147,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:14:40"
+    },
+    "148": {
+      "mal_id": 148,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:14:52"
+    },
+    "149": {
+      "mal_id": 149,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:15:04"
+    },
+    "150": {
+      "mal_id": 150,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:15:16"
+    },
+    "151": {
+      "mal_id": 151,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:15:28"
+    },
+    "152": {
+      "mal_id": 152,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:15:40"
+    },
+    "153": {
+      "mal_id": 153,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:15:52"
+    },
+    "154": {
+      "mal_id": 154,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:16:04"
+    },
+    "155": {
+      "mal_id": 155,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:16:15"
+    },
+    "156": {
+      "mal_id": 156,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:16:27"
+    },
+    "157": {
+      "mal_id": 157,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:16:39"
+    },
+    "158": {
+      "mal_id": 158,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:16:51"
+    },
+    "159": {
+      "mal_id": 159,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:17:03"
+    },
+    "160": {
+      "mal_id": 160,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:17:15"
+    },
+    "161": {
+      "mal_id": 161,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:17:27"
+    },
+    "162": {
+      "mal_id": 162,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:17:42"
+    },
+    "163": {
+      "mal_id": 163,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:17:54"
+    },
+    "164": {
+      "mal_id": 164,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:18:06"
+    },
+    "165": {
+      "mal_id": 165,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:18:18"
+    },
+    "166": {
+      "mal_id": 166,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:18:30"
+    },
+    "167": {
+      "mal_id": 167,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:18:42"
+    },
+    "168": {
+      "mal_id": 168,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:18:54"
+    },
+    "169": {
+      "mal_id": 169,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:19:06"
+    },
+    "170": {
+      "mal_id": 170,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:19:18"
+    },
+    "171": {
+      "mal_id": 171,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:19:30"
+    },
+    "173": {
+      "mal_id": 173,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:19:42"
+    },
+    "174": {
+      "mal_id": 174,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:19:54"
+    },
+    "175": {
+      "mal_id": 175,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:20:06"
+    },
+    "176": {
+      "mal_id": 176,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:20:18"
+    },
+    "177": {
+      "mal_id": 177,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:20:30"
+    },
+    "178": {
+      "mal_id": 178,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:20:42"
+    },
+    "179": {
+      "mal_id": 179,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:20:54"
+    },
+    "180": {
+      "mal_id": 180,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:21:06"
+    },
+    "181": {
+      "mal_id": 181,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:21:18"
+    },
+    "182": {
+      "mal_id": 182,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:21:30"
+    },
+    "183": {
+      "mal_id": 183,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:21:42"
+    },
+    "184": {
+      "mal_id": 184,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:21:54"
+    },
+    "185": {
+      "mal_id": 185,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:22:06"
+    },
+    "186": {
+      "mal_id": 186,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:22:18"
+    },
+    "187": {
+      "mal_id": 187,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:22:30"
+    },
+    "188": {
+      "mal_id": 188,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:22:42"
+    },
+    "189": {
+      "mal_id": 189,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:22:54"
+    },
+    "190": {
+      "mal_id": 190,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:23:06"
+    },
+    "191": {
+      "mal_id": 191,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:23:18"
+    },
+    "192": {
+      "mal_id": 192,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:23:30"
+    },
+    "193": {
+      "mal_id": 193,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:23:42"
+    },
+    "194": {
+      "mal_id": 194,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:23:54"
+    },
+    "195": {
+      "mal_id": 195,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:24:05"
+    },
+    "196": {
+      "mal_id": 196,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:24:17"
+    },
+    "197": {
+      "mal_id": 197,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:24:29"
+    },
+    "198": {
+      "mal_id": 198,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:24:41"
+    },
+    "199": {
+      "mal_id": 199,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:24:53"
+    },
+    "200": {
+      "mal_id": 200,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:25:05"
+    },
+    "201": {
+      "mal_id": 201,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:25:17"
+    },
+    "202": {
+      "mal_id": 202,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:25:29"
+    },
+    "203": {
+      "mal_id": 203,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:25:41"
+    },
+    "204": {
+      "mal_id": 204,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:25:53"
+    },
+    "205": {
+      "mal_id": 205,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:26:05"
+    },
+    "206": {
+      "mal_id": 206,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:26:17"
+    },
+    "207": {
+      "mal_id": 207,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:26:29"
+    },
+    "208": {
+      "mal_id": 208,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:26:41"
+    },
+    "209": {
+      "mal_id": 209,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:26:53"
+    },
+    "210": {
+      "mal_id": 210,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:27:05"
+    },
+    "211": {
+      "mal_id": 211,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:27:17"
+    },
+    "212": {
+      "mal_id": 212,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:27:29"
+    },
+    "213": {
+      "mal_id": 213,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:27:41"
+    },
+    "214": {
+      "mal_id": 214,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:27:53"
+    },
+    "215": {
+      "mal_id": 215,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:28:05"
+    },
+    "216": {
+      "mal_id": 216,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:28:17"
+    },
+    "217": {
+      "mal_id": 217,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:28:29"
+    },
+    "218": {
+      "mal_id": 218,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:28:41"
+    },
+    "219": {
+      "mal_id": 219,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:28:53"
+    },
+    "220": {
+      "mal_id": 220,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:29:05"
+    },
+    "221": {
+      "mal_id": 221,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:29:17"
+    },
+    "222": {
+      "mal_id": 222,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:29:29"
+    },
+    "223": {
+      "mal_id": 223,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:29:41"
+    },
+    "225": {
+      "mal_id": 225,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:29:53"
+    },
+    "226": {
+      "mal_id": 226,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:30:05"
+    },
+    "227": {
+      "mal_id": 227,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:30:17"
+    },
+    "228": {
+      "mal_id": 228,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:30:29"
+    },
+    "229": {
+      "mal_id": 229,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:30:41"
+    },
+    "230": {
+      "mal_id": 230,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:30:53"
+    },
+    "231": {
+      "mal_id": 231,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:31:04"
+    },
+    "232": {
+      "mal_id": 232,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:31:16"
+    },
+    "233": {
+      "mal_id": 233,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:31:28"
+    },
+    "234": {
+      "mal_id": 234,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:31:40"
+    },
+    "235": {
+      "mal_id": 235,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:31:52"
+    },
+    "236": {
+      "mal_id": 236,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:32:04"
+    },
+    "237": {
+      "mal_id": 237,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:32:16"
+    },
+    "238": {
+      "mal_id": 238,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:32:28"
+    },
+    "239": {
+      "mal_id": 239,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:32:40"
+    },
+    "240": {
+      "mal_id": 240,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:32:52"
+    },
+    "241": {
+      "mal_id": 241,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:33:04"
+    },
+    "242": {
+      "mal_id": 242,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:33:16"
+    },
+    "243": {
+      "mal_id": 243,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:33:28"
+    },
+    "244": {
+      "mal_id": 244,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:33:40"
+    },
+    "245": {
+      "mal_id": 245,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:33:52"
+    },
+    "246": {
+      "mal_id": 246,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:34:04"
+    },
+    "247": {
+      "mal_id": 247,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:34:16"
+    },
+    "248": {
+      "mal_id": 248,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:34:28"
+    },
+    "249": {
+      "mal_id": 249,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:34:40"
+    },
+    "250": {
+      "mal_id": 250,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:34:52"
+    },
+    "251": {
+      "mal_id": 251,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:35:04"
+    },
+    "252": {
+      "mal_id": 252,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:35:16"
+    },
+    "253": {
+      "mal_id": 253,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:35:28"
+    },
+    "254": {
+      "mal_id": 254,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:35:40"
+    },
+    "255": {
+      "mal_id": 255,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:35:52"
+    },
+    "256": {
+      "mal_id": 256,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:36:04"
+    },
+    "257": {
+      "mal_id": 257,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:36:16"
+    },
+    "258": {
+      "mal_id": 258,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:36:28"
+    },
+    "259": {
+      "mal_id": 259,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:36:40"
+    },
+    "260": {
+      "mal_id": 260,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:36:52"
+    },
+    "261": {
+      "mal_id": 261,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:37:04"
+    },
+    "262": {
+      "mal_id": 262,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:37:15"
+    },
+    "263": {
+      "mal_id": 263,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:37:27"
+    },
+    "264": {
+      "mal_id": 264,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:37:39"
+    },
+    "265": {
+      "mal_id": 265,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:37:51"
+    },
+    "266": {
+      "mal_id": 266,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:38:03"
+    },
+    "267": {
+      "mal_id": 267,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:38:15"
+    },
+    "268": {
+      "mal_id": 268,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:38:27"
+    },
+    "269": {
+      "mal_id": 269,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:38:39"
+    },
+    "270": {
+      "mal_id": 270,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:38:51"
+    },
+    "271": {
+      "mal_id": 271,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:39:03"
+    },
+    "272": {
+      "mal_id": 272,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:39:15"
+    },
+    "273": {
+      "mal_id": 273,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:39:27"
+    },
+    "274": {
+      "mal_id": 274,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:39:39"
+    },
+    "275": {
+      "mal_id": 275,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:39:51"
+    },
+    "276": {
+      "mal_id": 276,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:40:03"
+    },
+    "277": {
+      "mal_id": 277,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:40:15"
+    },
+    "278": {
+      "mal_id": 278,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:40:27"
+    },
+    "279": {
+      "mal_id": 279,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:40:39"
+    },
+    "280": {
+      "mal_id": 280,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:40:51"
+    },
+    "281": {
+      "mal_id": 281,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:41:03"
+    },
+    "282": {
+      "mal_id": 282,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:41:15"
+    },
+    "283": {
+      "mal_id": 283,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:41:27"
+    },
+    "284": {
+      "mal_id": 284,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:41:39"
+    },
+    "285": {
+      "mal_id": 285,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:41:51"
+    },
+    "286": {
+      "mal_id": 286,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:42:03"
+    },
+    "287": {
+      "mal_id": 287,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:42:15"
+    },
+    "288": {
+      "mal_id": 288,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:42:27"
+    },
+    "289": {
+      "mal_id": 289,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:42:39"
+    },
+    "290": {
+      "mal_id": 290,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:42:51"
+    },
+    "291": {
+      "mal_id": 291,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:43:03"
+    },
+    "292": {
+      "mal_id": 292,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:43:15"
+    },
+    "293": {
+      "mal_id": 293,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:43:27"
+    },
+    "294": {
+      "mal_id": 294,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:43:39"
+    },
+    "295": {
+      "mal_id": 295,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:43:51"
+    },
+    "296": {
+      "mal_id": 296,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:44:03"
+    },
+    "297": {
+      "mal_id": 297,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:44:15"
+    },
+    "298": {
+      "mal_id": 298,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:44:27"
+    },
+    "299": {
+      "mal_id": 299,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:44:39"
+    },
+    "300": {
+      "mal_id": 300,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:44:51"
+    },
+    "301": {
+      "mal_id": 301,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:45:03"
+    },
+    "302": {
+      "mal_id": 302,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:45:15"
+    },
+    "303": {
+      "mal_id": 303,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:45:27"
+    },
+    "304": {
+      "mal_id": 304,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:45:39"
+    },
+    "305": {
+      "mal_id": 305,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:45:51"
+    },
+    "306": {
+      "mal_id": 306,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:46:03"
+    },
+    "307": {
+      "mal_id": 307,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:46:14"
+    },
+    "308": {
+      "mal_id": 308,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:46:26"
+    },
+    "309": {
+      "mal_id": 309,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:46:38"
+    },
+    "310": {
+      "mal_id": 310,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:46:50"
+    },
+    "311": {
+      "mal_id": 311,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:47:02"
+    },
+    "312": {
+      "mal_id": 312,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:47:14"
+    },
+    "313": {
+      "mal_id": 313,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:47:26"
+    },
+    "314": {
+      "mal_id": 314,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:47:38"
+    },
+    "315": {
+      "mal_id": 315,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:47:50"
+    },
+    "316": {
+      "mal_id": 316,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:48:02"
+    },
+    "317": {
+      "mal_id": 317,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:48:14"
+    },
+    "318": {
+      "mal_id": 318,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:48:26"
+    },
+    "319": {
+      "mal_id": 319,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:48:38"
+    },
+    "320": {
+      "mal_id": 320,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:48:50"
+    },
+    "321": {
+      "mal_id": 321,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:49:02"
+    },
+    "322": {
+      "mal_id": 322,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:49:14"
+    },
+    "323": {
+      "mal_id": 323,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:49:26"
+    },
+    "324": {
+      "mal_id": 324,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:49:38"
+    },
+    "325": {
+      "mal_id": 325,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:49:50"
+    },
+    "326": {
+      "mal_id": 326,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:50:02"
+    },
+    "327": {
+      "mal_id": 327,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:50:14"
+    },
+    "328": {
+      "mal_id": 328,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:50:26"
+    },
+    "329": {
+      "mal_id": 329,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:50:38"
+    },
+    "330": {
+      "mal_id": 330,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:50:50"
+    },
+    "331": {
+      "mal_id": 331,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:51:02"
+    },
+    "332": {
+      "mal_id": 332,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:51:14"
+    },
+    "333": {
+      "mal_id": 333,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:51:26"
+    },
+    "334": {
+      "mal_id": 334,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:51:38"
+    },
+    "335": {
+      "mal_id": 335,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:51:50"
+    },
+    "336": {
+      "mal_id": 336,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:52:02"
+    },
+    "337": {
+      "mal_id": 337,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:52:14"
+    },
+    "338": {
+      "mal_id": 338,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:52:26"
+    },
+    "339": {
+      "mal_id": 339,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:52:38"
+    },
+    "340": {
+      "mal_id": 340,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:52:50"
+    },
+    "341": {
+      "mal_id": 341,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:53:02"
+    },
+    "342": {
+      "mal_id": 342,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:53:14"
+    },
+    "343": {
+      "mal_id": 343,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:53:25"
+    },
+    "344": {
+      "mal_id": 344,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:53:37"
+    },
+    "345": {
+      "mal_id": 345,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:53:49"
+    },
+    "346": {
+      "mal_id": 346,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:54:01"
+    },
+    "347": {
+      "mal_id": 347,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:54:13"
+    },
+    "348": {
+      "mal_id": 348,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:54:25"
+    },
+    "349": {
+      "mal_id": 349,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:54:37"
+    },
+    "350": {
+      "mal_id": 350,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:54:49"
+    },
+    "351": {
+      "mal_id": 351,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:55:01"
+    },
+    "352": {
+      "mal_id": 352,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:55:13"
+    },
+    "353": {
+      "mal_id": 353,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:55:25"
+    },
+    "354": {
+      "mal_id": 354,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:55:37"
+    },
+    "355": {
+      "mal_id": 355,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:55:49"
+    },
+    "356": {
+      "mal_id": 356,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:56:01"
+    },
+    "357": {
+      "mal_id": 357,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:56:13"
+    },
+    "358": {
+      "mal_id": 358,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:56:25"
+    },
+    "359": {
+      "mal_id": 359,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:56:37"
+    },
+    "360": {
+      "mal_id": 360,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:56:49"
+    },
+    "361": {
+      "mal_id": 361,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:57:01"
+    },
+    "362": {
+      "mal_id": 362,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:57:13"
+    },
+    "363": {
+      "mal_id": 363,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:57:25"
+    },
+    "364": {
+      "mal_id": 364,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:57:37"
+    },
+    "365": {
+      "mal_id": 365,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:57:49"
+    },
+    "366": {
+      "mal_id": 366,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:58:01"
+    },
+    "367": {
+      "mal_id": 367,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:58:13"
+    },
+    "368": {
+      "mal_id": 368,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:58:25"
+    },
+    "369": {
+      "mal_id": 369,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:58:37"
+    },
+    "370": {
+      "mal_id": 370,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:58:49"
+    },
+    "371": {
+      "mal_id": 371,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:59:01"
+    },
+    "372": {
+      "mal_id": 372,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:59:13"
+    },
+    "373": {
+      "mal_id": 373,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:59:25"
+    },
+    "374": {
+      "mal_id": 374,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:59:37"
+    },
+    "375": {
+      "mal_id": 375,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T02:59:49"
+    },
+    "376": {
+      "mal_id": 376,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T03:00:01"
+    },
+    "377": {
+      "mal_id": 377,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T03:00:13"
+    },
+    "378": {
+      "mal_id": 378,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T03:00:25"
+    },
+    "379": {
+      "mal_id": 379,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T03:00:37"
+    },
+    "380": {
+      "mal_id": 380,
+      "error": "HTTP 504: {\"status\":504,\"type\":\"BadResponseException\",\"message\":\"Jikan failed to connect to MyAnimeList. MyAnimeList may be down\\/unavailable or refuses to connect\",\"error\":null}",
+      "retryable": true,
+      "last_attempt_at": "2026-06-26T03:00:48"
+    }
+  }
+}

@@ -1,0 +1,4 @@
+comparison,metric,value,interpretation
+combined_pagerank_vs_members,spearman,0.46062021550219967,Graph prestige compared with MAL popularity.
+combined_pagerank_vs_score,spearman,0.38000626450695907,Graph prestige compared with average catalog score.
+combined_pagerank_vs_weighted_in_degree,spearman,0.8287650196315169,PageRank compared with direct incoming recommendation weight.

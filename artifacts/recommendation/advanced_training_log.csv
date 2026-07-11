@@ -1,0 +1,10 @@
+model,family,status,train_rows,eval_rows,elapsed_seconds,note
+pointwise_logistic_reranker,sklearn_pointwise,trained,799718,1599638,7.532,
+gbdt_signal_reranker,sklearn_pointwise,trained,799718,1599638,33.663,
+neural_mlp_reranker,sklearn_pointwise,trained,799718,1599638,100.62,
+lightgbm_lambdarank,groupwise_ranker,trained,799718,1599638,21.902,
+xgboost_pairwise_ranker,groupwise_ranker,trained,799718,1599638,60.668,
+catboost_yetirank,groupwise_ranker,trained,799718,1599638,117.133,
+implicit_als_cf,collaborative_factorization,trained,9798959,15838,72.783,
+torch_feature_mlp_reranker,neural_feature_reranker,trained,799718,1599638,56.756,
+torch_two_tower_cf,neural_collaborative,trained,9798959,15838,77.513,

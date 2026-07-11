@@ -1,0 +1,185 @@
+{
+  "task": "personalized anime recommendation/ranking",
+  "decision_supported": "rank candidate anime for a user based on scored liked anime, while allowing product filters and profile-band-aware recommendation modes",
+  "baseline": "popularity_baseline: globally common liked anime in training data",
+  "content_system": "metadata_content: user-profile similarity from AniList/MAL catalog labels, demographics, studios, rating, source, and type",
+  "graph_system": "graph_related: relation and recommendation edges from liked titles",
+  "people_system": "people_staff_affinity: shared voice actors plus director/original creator/original story signals",
+  "collaborative_system": "latent_svd: personalized collaborative filtering from scored liked interactions",
+  "product_safe_system": "level_tuned_product_hybrid: profile-band-specific tuned blend of SVD, item-item collaborative, popularity, metadata, graph, and people/staff signals",
+  "advanced_architecture_systems": "separate train/eval comparison of pointwise logistic reranking, gradient-boosted tree reranking, neural MLP reranking, and Torch two-tower collaborative embeddings when available",
+  "full_hybrid_weights": {
+    "latent_svd": 0.5,
+    "popularity": 0.15,
+    "metadata_content": 0.15,
+    "graph_related": 0.12,
+    "people_staff_affinity": 0.08
+  },
+  "tuned_hybrid_weights": {
+    "latent_svd": 0.4629,
+    "item_knn_collaborative": 0.0428,
+    "popularity": 0.0664,
+    "metadata_content": 0.0653,
+    "graph_related": 0.3296,
+    "people_staff_affinity": 0.033
+  },
+  "level_tuned_hybrid_weights": {
+    "Beginner": {
+      "latent_svd": 0.4629,
+      "item_knn_collaborative": 0.0428,
+      "popularity": 0.0664,
+      "metadata_content": 0.0653,
+      "graph_related": 0.3296,
+      "people_staff_affinity": 0.033
+    },
+    "Casual": {
+      "latent_svd": 0.4864,
+      "item_knn_collaborative": 0.119,
+      "popularity": 0.044,
+      "metadata_content": 0.0073,
+      "graph_related": 0.285,
+      "people_staff_affinity": 0.0584
+    },
+    "Fan": {
+      "latent_svd": 0.4864,
+      "item_knn_collaborative": 0.119,
+      "popularity": 0.044,
+      "metadata_content": 0.0073,
+      "graph_related": 0.285,
+      "people_staff_affinity": 0.0584
+    },
+    "Veteran": {
+      "latent_svd": 0.4104,
+      "item_knn_collaborative": 0.2455,
+      "popularity": 0.0897,
+      "metadata_content": 0.0975,
+      "graph_related": 0.1556,
+      "people_staff_affinity": 0.0012
+    }
+  },
+  "hybrid_component_weight_search": "artifacts\\recommendation\\hybrid_component_weight_search.csv",
+  "level_hybrid_component_weight_search": "artifacts\\recommendation\\level_hybrid_component_weight_search.csv",
+  "advanced_ranker_metrics": "artifacts\\recommendation\\advanced_ranker_metrics.csv",
+  "advanced_ranker_level_metrics": "artifacts\\recommendation\\advanced_ranker_metrics_by_user_level.csv",
+  "advanced_architecture_inventory": "artifacts\\recommendation\\advanced_architecture_inventory.csv",
+  "advanced_training_log": "artifacts\\recommendation\\advanced_training_log.csv",
+  "classical_training_log": "artifacts\\recommendation\\classical_training_log.csv",
+  "advanced_model_configs": "artifacts\\recommendation\\advanced_model_configs.csv",
+  "advanced_available_models": [
+    "pointwise_logistic_reranker",
+    "gbdt_signal_reranker",
+    "neural_mlp_reranker",
+    "torch_two_tower_cf",
+    "implicit_als_cf",
+    "lightgbm_lambdarank",
+    "xgboost_pairwise_ranker",
+    "catboost_yetirank",
+    "surprise"
+  ],
+  "best_advanced_method": "xgboost_pairwise_ranker",
+  "user_levels": [
+    {
+      "level": "Beginner",
+      "min_known_entries": 1,
+      "max_known_entries": 49,
+      "primary_signal": "popular, high-score, short entry points aligned with early liked genres",
+      "risk": "too little signal for aggressive novelty; keep recommendations safe and recognizable"
+    },
+    {
+      "level": "Casual",
+      "min_known_entries": 50,
+      "max_known_entries": 149,
+      "primary_signal": "similar anime, direct relations, popularity prior, and high-rated anchors",
+      "risk": "profile is usable but still easy to overfit to a few early favorites"
+    },
+    {
+      "level": "Fan",
+      "min_known_entries": 150,
+      "max_known_entries": 499,
+      "primary_signal": "collaborative ranking, relation continuation, current shows, people/studio signals, controlled novelty",
+      "risk": "many obvious titles are known; recommendations must balance familiarity and discovery"
+    },
+    {
+      "level": "Veteran",
+      "min_known_entries": 500,
+      "max_known_entries": null,
+      "primary_signal": "long-tail discovery, graph expansion, staff/VA paths, novelty, obscure catalog coverage",
+      "risk": "hardest group: obvious catalog items are saturated and evaluation recovery is strict"
+    }
+  ],
+  "control_filters": {
+    "genre_filter": "include/exclude broad MAL genres",
+    "demographic_filter": "Josei, Kodomo, Seinen, Shoujo, Shounen, 18+",
+    "content_rating_filter": "G, PG, PG-13, R, R+, Rx",
+    "explicit_toggle": "exclude or include Ecchi/Erotica/Hentai and explicit tags",
+    "score_floor": "minimum MAL score when a user wants safer picks",
+    "episode_length_filter": "episode count and total watchtime ranges",
+    "year_filter": "release year or season recency range"
+  },
+  "level_policy_note": "Level thresholds are product rules based on completed/known entries. Offline evaluation uses scored catalog-matched ratings as interaction evidence; when status exists, dropped rows are excluded from positive seeds.",
+  "ratings_source": "data\\processed\\current_user_ratings.csv",
+  "ratings_source_note": "The evaluator uses current_user_ratings.csv from the public-list collector. The collector includes scored completed, watching, on-hold, dropped, and plan-to-watch rows; positives are ratings >= 7, excluding dropped entries.",
+  "catalog_source": "data\\processed\\anime_dataset.csv",
+  "like_threshold": 7,
+  "candidate_pool": {
+    "definition": "catalog anime with at least 10 positive ratings in the filtered interaction layer",
+    "items": 10749,
+    "sampled_negatives_per_user": 200,
+    "max_eval_users": 23756,
+    "advanced_train_cases": 23756,
+    "advanced_eval_cases": 23756
+  },
+  "train_test_logic": "per eligible user, one liked anime is deterministically held out; the user's remaining liked anime stay in training",
+  "leakage_note": "held-out user-item pairs are removed from the training matrix; no timestamp claims are made because the rating source has no event time",
+  "model_users": 47499,
+  "evaluated_users": 23756,
+  "positive_interactions": 9822758,
+  "svd_components": 64,
+  "svd_retained_energy_proxy": 0.3716138005256653,
+  "mylist_example": {
+    "available": false,
+    "reason": "MyList demo moved to notebook 10 product-row evaluator"
+  },
+  "mylist_guardrail_example": {
+    "available": false,
+    "reason": "MyList demo moved to notebook 10 product-row evaluator"
+  },
+  "outputs": {
+    "metrics": "artifacts\\recommendation\\evaluation_metrics.csv",
+    "level_metrics": "artifacts\\recommendation\\metrics_by_user_level.csv",
+    "examples": "artifacts\\recommendation\\recommendation_examples.csv",
+    "beginner_entrypoint_candidates": "artifacts\\recommendation\\beginner_entrypoint_candidates.csv",
+    "alignment": "artifacts\\recommendation\\data_alignment.csv",
+    "user_eval_rows": "artifacts\\recommendation\\user_level_eval_sample.csv",
+    "negative_sampling_sensitivity": "artifacts\\recommendation\\negative_sampling_sensitivity.csv",
+    "full_catalog_eval_sample": "artifacts\\recommendation\\full_catalog_eval_sample.csv",
+    "level_hybrid_component_weight_search": "artifacts\\recommendation\\level_hybrid_component_weight_search.csv",
+    "advanced_ranker_metrics": "artifacts\\recommendation\\advanced_ranker_metrics.csv",
+    "advanced_ranker_level_metrics": "artifacts\\recommendation\\advanced_ranker_metrics_by_user_level.csv",
+    "advanced_ranker_eval_rows": "artifacts\\recommendation\\advanced_ranker_eval_rows.csv",
+    "advanced_architecture_inventory": "artifacts\\recommendation\\advanced_architecture_inventory.csv",
+    "advanced_training_log": "artifacts\\recommendation\\advanced_training_log.csv",
+    "classical_training_log": "artifacts\\recommendation\\classical_training_log.csv",
+    "advanced_model_configs": "artifacts\\recommendation\\advanced_model_configs.csv",
+    "systematic_error_cases": "artifacts\\recommendation\\systematic_error_cases.csv",
+    "advanced_systematic_error_cases": "artifacts\\recommendation\\advanced_systematic_error_cases.csv",
+    "alignment_contract": "artifacts\\recommendation\\alignment_contract.csv",
+    "metric_plot": "artifacts\\plots\\recommender\\metric_comparison.png",
+    "rank_plot": "artifacts\\plots\\recommender\\median_rank.png",
+    "level_distribution_plot": "artifacts\\plots\\recommender\\user_level_distribution.png",
+    "level_hit_plot": "artifacts\\plots\\recommender\\hit_at_12_by_user_level.png",
+    "rank_distribution_plot": "artifacts\\plots\\recommender\\rank_distribution_by_method.png",
+    "level_method_plot": "artifacts\\plots\\recommender\\method_hit_by_user_level.png",
+    "mylist_plot": "artifacts\\plots\\recommender\\mylist_top_recommendations.png",
+    "mylist_guarded_plot": "artifacts\\plots\\recommender\\mylist_guarded_top_recommendations.png",
+    "discovery_metrics_plot": "artifacts\\plots\\recommender\\discovery_metrics.png"
+  },
+  "feedback_fixes": {
+    "candidate_pool_sensitivity": "artifacts\\recommendation\\negative_sampling_sensitivity.csv",
+    "full_catalog_sample_users": 1000,
+    "error_cases": "artifacts\\recommendation\\systematic_error_cases.csv",
+    "advanced_error_cases": "artifacts\\recommendation\\advanced_systematic_error_cases.csv",
+    "alignment_contract": "artifacts\\recommendation\\alignment_contract.csv",
+    "note": "These artifacts address the feedback about sampled negatives, concrete strong/failure cases, and explicit matrix/id validation."
+  }
+}

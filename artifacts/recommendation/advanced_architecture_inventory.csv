@@ -1,0 +1,10 @@
+architecture,family,available,dependency,role
+pointwise_logistic_reranker,learning_to_rank,True,scikit-learn,linear learned reranker over collaborative/content/graph/people features
+gbdt_signal_reranker,learning_to_rank,True,scikit-learn HistGradientBoostingClassifier,nonlinear tree reranker over the same product features
+neural_mlp_reranker,deep_learning,True,scikit-learn MLPClassifier,small neural reranker over product features
+torch_two_tower_cf,deep_learning,True,torch,user and anime embedding towers trained from implicit positives plus sampled negatives
+implicit_als_cf,matrix_factorization,True,implicit,implicit-feedback ALS collaborative factorization trained on the sparse user-anime matrix
+lightgbm_lambdarank,learning_to_rank,True,lightgbm,group-aware LambdaRank reranker over product candidate features
+xgboost_pairwise_ranker,learning_to_rank,True,xgboost,group-aware pairwise ranking reranker over product candidate features
+catboost_yetirank,learning_to_rank,True,catboost,group-aware YetiRank reranker over product candidate features
+surprise,matrix_factorization,True,surprise,rating-prediction matrix factorization if installed
